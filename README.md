@@ -15,6 +15,7 @@ npm run dev -- <slug>                                       # preview at localho
 npm run verify -- <slug>                                    # config sanity check + preview-mobile.png / preview-desktop.png if built
 npm run build -- <slug>                                     # -> clients/<slug>/build
 npm run deploy -- <slug>                                    # -> https://sf-<slug>.pages.dev (wrangler)
+npm run demo:batch -- leads/out/restorant-prishtine.json --limit 5   # demo+build+deploy every lead with status "new"
 ```
 
 ## Flow per client
@@ -23,6 +24,21 @@ npm run deploy -- <slug>                                    # -> https://sf-<slu
 3. They say yes → send `intake/index.html` (host it anywhere). It downloads a `.intake.json`.
 4. `npm run demo -- <leads.json> <place_id> --intake their.intake.json` regenerates the config with their answers overriding everything.
 5. Edit `clients/<slug>/config.json` by hand for anything else. Rebuild, redeploy. Edit requests later = same loop.
+
+## Batch demos
+`npm run demo:batch -- <leads.json> [--limit N] [--dry-run] [--no-deploy]` runs demo -> build -> deploy for every lead with
+`status: "new"` (up to `--limit`), one after the other, and continues when a lead fails. After each lead it writes back into
+the leads file: `status` (`demo_deployed`, or `demo_built` with `--no-deploy`, or `failed`), `slug`, `demo_url` (the pages.dev URL),
+and `error` when it failed. The file is saved after every lead, so a crash mid-batch loses nothing; rerun the same command and
+it picks up the remaining `new` leads. `--dry-run` lists what would happen and writes nothing (no Claude calls either).
+To retry a failed lead, set its status back to `"new"`. Exit code is 1 if any lead failed.
+
+## Verify + previews
+`npm run verify -- <slug>` checks that config.json has the fields the template cannot do without (business.name,
+business.phone or whatsapp, hero.headline, hero.sub, at least 3 items, seo.title, seo.description) and warns when hero.image
+and gallery are both empty. If `clients/<slug>/build/index.html` exists it also saves `clients/<slug>/preview-mobile.png`
+(390x844) and `preview-desktop.png` (1280x800), full page, via Playwright. `npm run build` runs the same checks before astro
+and the same screenshots after, so a bad config fails before the build starts. Both need `npx playwright install chromium` once.
 
 ## Where things live
 - `leads/` collectors. Output schema: place_id, name, address, phone, website, rating, reviews_count, lat/lng, photos[], hours[], review_snippets[], vertical, city, status.
