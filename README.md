@@ -6,12 +6,13 @@ Lead → demo site → intake → build → deploy. One command per step, Window
 npm install
 cp .env.example .env          # fill GOOGLE_PLACES_KEY (+ Cloudflare for deploy)
 claude login                  # demo copy is generated via your Claude subscription (Claude Code login), no API key
-npx playwright install chromium   # only if you use the scraper
+npx playwright install chromium   # needed for the scraper and for verify/build screenshots
 
 npm run leads:api -- "restorant" "Prishtinë" --pages 3     # -> leads/out/restorant-prishtine.json (no-website only)
 npm run leads:scrape -- "restorant" "Prishtinë" --max 60    # free alternative, brittle
 npm run demo -- leads/out/restorant-prishtine.json 0        # -> clients/<slug>/config.json (Albanian copy via Claude)
 npm run dev -- <slug>                                       # preview at localhost:4321
+npm run verify -- <slug>                                    # config sanity check + preview-mobile.png / preview-desktop.png if built
 npm run build -- <slug>                                     # -> clients/<slug>/build
 npm run deploy -- <slug>                                    # -> https://sf-<slug>.pages.dev (wrangler)
 ```

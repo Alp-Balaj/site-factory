@@ -11,7 +11,8 @@
     "demo": "node factory/demo.mjs",
     "build": "node factory/build.mjs",
     "deploy": "node factory/deploy.mjs",
-    "dev": "node factory/dev.mjs"
+    "dev": "node factory/dev.mjs",
+    "verify": "node factory/verify.mjs"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.3.269",
