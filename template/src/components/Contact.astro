@@ -1,6 +1,7 @@
 ---
 import { site, t, waLink } from '../lib/config';
 const b = site.business;
+const credit = { label: site.credit?.label || 'Alp', url: site.credit?.url || 'https://REPLACE-ME.com' };
 const mapSrc = b.lat ? `https://www.google.com/maps?q=${b.lat},${b.lng}&z=16&output=embed` : b.address ? `https://www.google.com/maps?q=${encodeURIComponent(b.address)}&output=embed` : '';
 ---
 <section id="contact" class="contact">
@@ -23,7 +24,7 @@ const mapSrc = b.lat ? `https://www.google.com/maps?q=${b.lat},${b.lng}&z=16&out
 </section>
 <footer class="wrap foot">
   <span>© {new Date().getFullYear()} {b.name}</span>
-  <span>Uebfaqe nga <a href="https://example.com">Alp</a></span>
+  <span>Uebfaqe nga <a href={credit.url}>{credit.label}</a></span>
 </footer>
 <style>
   .contact{background:var(--primary);color:#fff}

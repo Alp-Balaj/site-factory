@@ -45,6 +45,7 @@ and the same screenshots after, so a bad config fails before the build starts. B
 - `template/` one Astro site, zero client JS, fonts + CSS vars from config. `CLIENT=<slug>` picks the config.
 - `template/src/verticals/*.json` per-branch labels, item groups, default theme, and the copy brief for Claude. **Only `restaurant` has been looked at properly; the other three are stubs.**
 - `clients/<slug>/config.json` single source of truth per client. Commit these; they are your CRM.
+  Optional top-level `credit: { label, url }` drives the footer link "Uebfaqe nga <label>"; defaults to `Alp` and `https://REPLACE-ME.com` when absent, so set it once per client (or put your own site there).
 - `factory/` glue scripts.
 
 ## Known gaps (on purpose)

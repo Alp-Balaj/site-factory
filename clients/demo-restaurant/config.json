@@ -35,5 +35,6 @@
     { "group": "Pije", "name": "Kos i shtëpisë", "desc": "", "price": "1.00 €" }
   ],
   "gallery": [],
-  "seo": { "title": "Te Liria — Restorant tradicional në Prishtinë", "description": "Tavë kosi, flija dhe qebapa në qendër të Prishtinës. Hapur çdo ditë 08:00–23:00. Rezervo në WhatsApp." }
+  "seo": { "title": "Te Liria — Restorant tradicional në Prishtinë", "description": "Tavë kosi, flija dhe qebapa në qendër të Prishtinës. Hapur çdo ditë 08:00–23:00. Rezervo në WhatsApp." },
+  "credit": { "label": "Alp", "url": "https://REPLACE-ME.com" }
 }

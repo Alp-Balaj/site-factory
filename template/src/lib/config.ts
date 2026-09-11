@@ -12,6 +12,7 @@ export interface SiteConfig {
   items: Item[];
   gallery: string[];
   seo: { title: string; description: string };
+  credit?: { label?: string; url?: string }; // footer "Uebfaqe nga <label>" link; defaults in Contact.astro
 }
 export interface Vertical { id: string; labels: Record<string, string>; itemGroups: string[]; theme: SiteConfig['theme'] }
 
