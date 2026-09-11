@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+import { site } from '../lib/config';
+const { theme, business, seo } = site;
+const fonts = [...new Set([theme.display, theme.body])].map(f => f.replace(/ /g, '+') + ':opsz,wght@9..144,400;9..144,500;9..144,600').join('&family=');
+const ld = {
+  '@context': 'https://schema.org', '@type': 'LocalBusiness', name: business.name, telephone: business.phone,
+  address: { '@type': 'PostalAddress', streetAddress: business.address, addressLocality: business.city, addressCountry: 'XK' },
+  ...(business.lat ? { geo: { '@type': 'GeoCoordinates', latitude: business.lat, longitude: business.lng } } : {}),
+};
+---
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{seo.title}</title>
+  <meta name="description" content={seo.description} />
+  <meta property="og:title" content={seo.title} />
+  <meta property="og:description" content={seo.description} />
+  {site.hero.image && <meta property="og:image" content={site.hero.image} />}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?family=${fonts}&display=swap`} />
+  <style set:html={`:root{--bg:${theme.bg};--ink:${theme.ink};--primary:${theme.primary};--accent:${theme.accent};--muted:${theme.muted};--font-display:"${theme.display}";--font-body:"${theme.body}"}`}></style>
+  <script type="application/ld+json" set:html={JSON.stringify(ld)}></script>
+</head>
+<body>
+  <slot />
+</body>
+</html>

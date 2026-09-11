@@ -1,0 +1,16 @@
+---
+import { site, t } from '../lib/config';
+---
+{site.hours?.length ? (
+<section class="wrap">
+  <h2>{t.hours}</h2>
+  <table>
+    <tbody>{site.hours.map(h => <tr><th scope="row">{h.day}</th><td>{h.time}</td></tr>)}</tbody>
+  </table>
+</section>) : null}
+<style>
+  table{border-collapse:collapse;margin-top:1.5rem;max-width:28rem;width:100%}
+  th{text-align:left;font-weight:500;text-transform:capitalize;padding:.55rem 0}
+  td{text-align:right;font-variant-numeric:tabular-nums;padding:.55rem 0}
+  tr+tr{border-top:1px solid color-mix(in srgb,var(--ink) 15%,transparent)}
+</style>

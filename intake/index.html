@@ -1,0 +1,25 @@
+<!doctype html><html lang="sq"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Të dhënat për uebfaqen</title>
+<style>body{font-family:system-ui;max-width:40rem;margin:2rem auto;padding:0 1rem;line-height:1.5}label{display:block;margin-top:1rem;font-weight:600}input,textarea{width:100%;padding:.6rem;margin-top:.3rem;font:inherit}button{margin-top:1.5rem;padding:.8rem 1.2rem;font:inherit}small{color:#666}</style>
+<h1>Të dhënat për uebfaqen tuaj</h1>
+<p>Plotësoni çka dini. Fushat bosh i plotësojmë ne. Fotot dërgoni në WhatsApp.</p>
+<label>Emri i biznesit <input id="name"></label>
+<label>Telefoni <input id="phone" placeholder="+383 4x xxx xxx"></label>
+<label>WhatsApp (nëse ndryshon) <input id="whatsapp"></label>
+<label>Email <input id="email"></label>
+<label>Adresa <input id="address"></label>
+<label>Instagram (link) <input id="instagram"></label>
+<label>Facebook (link) <input id="facebook"></label>
+<label>Orari <small>— një rresht për ditë, p.sh. "e hënë – e premte: 08:00–23:00"</small><textarea id="hours" rows="4"></textarea></label>
+<label>Menyja / shërbimet <small>— një rresht: Grupi | Emri | Përshkrimi | Çmimi</small><textarea id="items" rows="8" placeholder="Kryesore | Tavë kosi | Mish qengji, kos, oriz | 7.50 €"></textarea></label>
+<label>Ngjyra kryesore (opsionale) <input id="primary" type="color" value="#1F3A2E"></label>
+<button onclick="go()">Gjenero skedarin</button>
+<script>
+function go(){
+  const v=id=>document.getElementById(id).value.trim();
+  const hours=v('hours').split('\n').filter(Boolean).map(l=>{const [day,...t]=l.split(':');return {day:day.trim(),time:t.join(':').trim()}});
+  const items=v('items').split('\n').filter(Boolean).map(l=>{const [group,name,desc,price]=l.split('|').map(s=>(s||'').trim());return {group,name,desc,price}});
+  const o={name:v('name'),phone:v('phone'),whatsapp:v('whatsapp'),email:v('email'),address:v('address'),instagram:v('instagram'),facebook:v('facebook'),hours,items,theme:{primary:v('primary')}};
+  const a=document.createElement('a');a.href='data:application/json;charset=utf-8,'+encodeURIComponent(JSON.stringify(o,null,2));a.download=(o.name||'intake').toLowerCase().replace(/[^a-z0-9]+/g,'-')+'.intake.json';a.click();
+}
+</script>

@@ -1,0 +1,37 @@
+---
+import { site, t, waLink } from '../lib/config';
+const b = site.business;
+const mapSrc = b.lat ? `https://www.google.com/maps?q=${b.lat},${b.lng}&z=16&output=embed` : b.address ? `https://www.google.com/maps?q=${encodeURIComponent(b.address)}&output=embed` : '';
+---
+<section id="contact" class="contact">
+  <div class="wrap grid">
+    <div>
+      <h2>{t.contact}</h2>
+      <address>
+        <p>{b.address}</p>
+        {b.phone && <p><a href={`tel:${b.phone}`}>{b.phone}</a></p>}
+        {b.email && <p><a href={`mailto:${b.email}`}>{b.email}</a></p>}
+        <p class="social">
+          {b.instagram && <a href={b.instagram} target="_blank" rel="noopener">Instagram</a>}
+          {b.facebook && <a href={b.facebook} target="_blank" rel="noopener">Facebook</a>}
+        </p>
+      </address>
+      <a class="btn accent" href={waLink()}>{t.cta}</a>
+    </div>
+    {mapSrc && <iframe src={mapSrc} title="Harta" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>}
+  </div>
+</section>
+<footer class="wrap foot">
+  <span>© {new Date().getFullYear()} {b.name}</span>
+  <span>Uebfaqe nga <a href="https://example.com">Alp</a></span>
+</footer>
+<style>
+  .contact{background:var(--primary);color:#fff}
+  .contact .btn.accent{margin-top:1.5rem}
+  .grid{display:grid;gap:2.5rem;grid-template-columns:1fr}
+  @media (min-width:800px){.grid{grid-template-columns:1fr 1fr}}
+  address{font-style:normal;display:grid;gap:.4rem;font-size:1.15rem}
+  .social{display:flex;gap:1rem}
+  iframe{width:100%;min-height:20rem;border:0;border-radius:1rem}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-block:1.5rem 5.5rem;font-size:.9rem;color:color-mix(in srgb,var(--ink) 60%,transparent)}
+</style>

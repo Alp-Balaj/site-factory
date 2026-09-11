@@ -1,0 +1,35 @@
+---
+import { site, t, vertical } from '../lib/config';
+const groups = vertical.itemGroups.filter(g => site.items.some(i => i.group === g));
+const leftovers = site.items.filter(i => !vertical.itemGroups.includes(i.group));
+---
+<section id="items" class="wrap">
+  <h2>{t.items}</h2>
+  <p class="lede">{t.itemsIntro}</p>
+  <div class="cols">
+    {[...groups.map(g => ({ g, items: site.items.filter(i => i.group === g) })), ...(leftovers.length ? [{ g: 'Tjera', items: leftovers }] : [])].map(({ g, items }) => (
+      <div class="group">
+        <h3>{g}</h3>
+        <ul>
+          {items.map(i => (
+            <li>
+              <div class="row"><span class="name">{i.name}</span><span class="dots"></span>{i.price && <span class="price">{i.price}</span>}</div>
+              {i.desc && <p class="desc">{i.desc}</p>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
+<style>
+  .cols{display:grid;gap:2.5rem 4rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));margin-top:2.5rem}
+  h3{font-size:1.5rem;color:var(--primary);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--accent)}
+  ul{list-style:none;padding:0}
+  li{padding-block:.6rem}
+  .row{display:flex;align-items:baseline;gap:.5rem}
+  .name{font-weight:600}
+  .dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--ink) 30%,transparent);min-width:1.5rem;transform:translateY(-.3em)}
+  .price{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .desc{font-size:.95rem;color:color-mix(in srgb,var(--ink) 65%,transparent);max-width:26rem}
+</style>

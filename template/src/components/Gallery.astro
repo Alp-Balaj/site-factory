@@ -1,0 +1,14 @@
+---
+import { site, t } from '../lib/config';
+---
+{site.gallery?.length ? (
+<section class="wrap">
+  <h2>{t.gallery}</h2>
+  <div class="masonry">{site.gallery.map((src, i) => <img src={src} alt="" loading="lazy" width="800" height="600" class={i === 0 ? 'tall' : ''} />)}</div>
+</section>) : null}
+<style>
+  .masonry{display:grid;gap:.75rem;grid-template-columns:repeat(2,1fr);grid-auto-rows:12rem;margin-top:1.5rem}
+  @media (min-width:800px){.masonry{grid-template-columns:repeat(4,1fr)}}
+  img{width:100%;height:100%;object-fit:cover;border-radius:.75rem}
+  .tall{grid-row:span 2;grid-column:span 2}
+</style>

@@ -1,0 +1,7 @@
+{
+  "id": "guesthouse",
+  "labels": { "items": "Dhomat", "itemsIntro": "Ku do të flini", "about": "Vendi", "hours": "Check-in", "contact": "Si të vini", "cta": "Rezervo në WhatsApp", "gallery": "Pamje" },
+  "itemGroups": ["Dhoma", "Apartamente", "Shtesë"],
+  "theme": { "bg": "#FDFCFA", "ink": "#2B2620", "primary": "#4A5D3F", "accent": "#C77D3B", "muted": "#EFEBE4", "display": "Fraunces", "body": "Instrument Sans" },
+  "copyBrief": "Bujtinë / guesthouse. Toni: mikpritës, vizual, përmend rrethinën (male, qytet i vjetër). Listo 3-6 lloje dhomash me çmim për natë."
+}

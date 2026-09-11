@@ -1,0 +1,7 @@
+{
+  "id": "dentist",
+  "labels": { "items": "Shërbimet", "itemsIntro": "Çka ofrojmë", "about": "Klinika", "hours": "Orari", "contact": "Na gjeni", "cta": "Cakto termin", "gallery": "Klinika jonë" },
+  "itemGroups": ["Parandalim", "Estetikë", "Kirurgji", "Fëmijë"],
+  "theme": { "bg": "#F7FAFC", "ink": "#12232E", "primary": "#0E5A6E", "accent": "#5FC2C2", "muted": "#E4EEF2", "display": "Instrument Sans", "body": "Instrument Sans" },
+  "copyBrief": "Klinikë dentare. Toni: i qetë, i besueshëm, pa premtime mjekësore të pavërtetueshme. Listo 8-10 shërbime tipike me çmim orientues 'nga'. Mos shpik emra doktorësh."
+}

@@ -1,0 +1,13 @@
+---
+import { site, t, waLink } from '../lib/config';
+---
+<div class="bar">
+  <a href={`tel:${site.business.phone}`}>Thirr</a>
+  <a class="wa" href={waLink()}>WhatsApp</a>
+</div>
+<style>
+  .bar{position:fixed;inset:auto 0 0 0;display:grid;grid-template-columns:1fr 1fr;gap:.5rem;padding:.6rem;background:var(--bg);border-top:1px solid color-mix(in srgb,var(--ink) 12%,transparent);z-index:10}
+  .bar a{text-align:center;padding:.9rem;border-radius:.75rem;font-weight:600;text-decoration:none;background:var(--muted)}
+  .wa{background:var(--accent)!important}
+  @media (min-width:800px){.bar{display:none}}
+</style>

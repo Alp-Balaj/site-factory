@@ -1,0 +1,7 @@
+{
+  "id": "auto",
+  "labels": { "items": "Shërbimet", "itemsIntro": "Çka rregullojmë", "about": "Servisi", "hours": "Orari", "contact": "Na gjeni", "cta": "Thirr tani", "gallery": "Punëtoria" },
+  "itemGroups": ["Motor", "Frena & pezullim", "Elektrikë", "Servis i rregullt"],
+  "theme": { "bg": "#FFFFFF", "ink": "#1A1A1A", "primary": "#B3261E", "accent": "#FFB300", "muted": "#F2F2F2", "display": "Instrument Sans", "body": "Instrument Sans" },
+  "copyBrief": "Auto-servis. Toni: direkt, punëtor, i besueshëm. Listo 8-10 shërbime pa çmime fikse (shkruaj 'sipas defektit' ku nuk ka kuptim çmimi)."
+}
