@@ -16,6 +16,7 @@
     "deploy": "node factory/deploy.mjs",
     "demo:batch": "node factory/batch.mjs",
     "job": "node factory/jobs/run.mjs",
+    "qa": "node factory/jobs/run.mjs qa",
     "test": "node --test \"factory/**/*.test.mjs\""
   },
   "dependencies": {

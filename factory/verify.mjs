@@ -34,7 +34,7 @@ export function checkConfig(config) {
   const seo = c.seo ?? {};
 
   if (!filled(b.name)) errors.push('business.name is missing or empty');
-  if (!filled(b.phone) && !filled(b.whatsapp)) errors.push('business.phone or business.whatsapp must be set (both are empty)');
+  if (!filled(b.phone) && !filled(b.whatsapp)) warnings.push('business.phone and business.whatsapp are both empty: the site builds, QA fails it with "no phone"'); // item 30: the QA gate owns this
   if (!filled(hero.headline)) errors.push('hero.headline is missing or empty');
   if (!filled(hero.sub)) errors.push('hero.sub is missing or empty');
   if (!Array.isArray(c.items)) errors.push('items is missing or not an array');
