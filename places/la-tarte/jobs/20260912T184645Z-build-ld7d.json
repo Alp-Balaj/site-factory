@@ -1,0 +1,15 @@
+{
+  "id": "20260912T184645Z-build-ld7d",
+  "type": "build",
+  "slug": "la-tarte",
+  "params": {},
+  "status": "done",
+  "createdAt": "2026-09-12T18:46:45.585Z",
+  "startedAt": "2026-09-12T18:46:45.586Z",
+  "endedAt": "2026-09-12T18:47:06.408Z",
+  "error": null,
+  "logPath": "places/la-tarte/jobs/20260912T184645Z-build-ld7d.log",
+  "result": {
+    "dir": "/home/alpi/Documents/Projects/SideHustle/sf-generation/places/la-tarte/build"
+  }
+}

@@ -8,8 +8,8 @@
   "scripts": {
     "leads:api": "node leads/places-api.mjs",
     "leads:scrape": "node leads/scrape-maps.mjs",
-    "demo": "node factory/demo.mjs",
-    "theme": "node factory/theme.mjs",
+    "demo": "node factory/jobs/run.mjs generate",
+    "theme": "node factory/jobs/run.mjs generate --only theme",
     "dev": "node factory/dev.mjs",
     "verify": "node factory/verify.mjs",
     "build": "node factory/build.mjs",

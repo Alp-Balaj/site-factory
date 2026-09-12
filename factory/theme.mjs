@@ -1,14 +1,12 @@
-// Usage: npm run theme -- <slug> [--dry-run]
-// Derives a client's theme (colours, fonts, corner and edge language) from the restaurant itself: its Google photos,
-// name, category and reviews, via Claude vision. Rewrites `theme` in places/<slug>/config.json (photos are read from
-// hero.image + gallery). demo.mjs imports generateTheme() and runs it for every new lead, so a demo never ships the
-// vertical's fallback theme unless generation fails.
+// Usage: npm run theme -- <slug> [--dry-run] [--feedback "one sentence"]
+// (package.json routes that to the generate job with --only theme; --dry-run prints the theme and writes nothing.)
+// Derives a Place's theme (colours, fonts, corner and edge language, layout variants) from the restaurant itself: its
+// curated photos (photos.json, else place.json), name, archetype and reviews, via Claude vision. demo.mjs imports
+// generateTheme() and runs it for every generation, so a demo never ships FALLBACK_THEME unless the call throws.
 import 'dotenv/config';
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { query } from '@anthropic-ai/claude-agent-sdk';
-import { configPath } from './lib/paths.mjs';
+import { askJson } from './lib/claude.mjs';
 
 // Google Fonts the generator may pick from. `w` lists the static weights the family really carries (Google returns
 // 400 Bad Request for a weight a family lacks), `c` is the one-line character Claude reads when choosing.
@@ -94,11 +92,20 @@ export const FONTS = {
 export const DEFAULT_WEIGHTS = [400, 500, 600, 700];
 const RADII = ['0px', '8px', '20px'];
 const FRAMES = ['none', 'line', 'thick'];
+// Layout variants (config contract): the Skeleton renders every combination, all CSS-only. `type` is the no-photo hero.
+export const LAYOUT = {
+  hero: ['photo', 'split', 'type'],
+  menu: ['list', 'cards', 'board'],
+  gallery: ['grid', 'strip', 'single', 'none'],
+  rhythm: ['tight', 'airy'],
+  order: ['menu-first', 'about-first'],
+};
+export const DEFAULT_LAYOUT = { hero: 'photo', menu: 'list', gallery: 'grid', rhythm: 'tight', order: 'menu-first' };
 
 const HEX = '^#[0-9A-Fa-f]{6}$';
 const schema = {
   type: 'object', additionalProperties: false,
-  required: ['bg', 'ink', 'primary', 'accent', 'muted', 'display', 'displayWeight', 'body', 'radius', 'frame', 'note'],
+  required: ['bg', 'ink', 'primary', 'accent', 'muted', 'display', 'displayWeight', 'body', 'radius', 'frame', 'layout', 'note'],
   properties: {
     bg: { type: 'string', pattern: HEX }, ink: { type: 'string', pattern: HEX }, primary: { type: 'string', pattern: HEX },
     accent: { type: 'string', pattern: HEX }, muted: { type: 'string', pattern: HEX },
@@ -107,14 +114,27 @@ const schema = {
     body: { type: 'string', enum: FONTS.body.map(f => f.name) },
     radius: { type: 'string', enum: RADII },
     frame: { type: 'string', enum: FRAMES },
+    layout: {
+      type: 'object', additionalProperties: false, required: Object.keys(LAYOUT),
+      properties: Object.fromEntries(Object.entries(LAYOUT).map(([k, v]) => [k, { type: 'string', enum: v }])),
+    },
     note: { type: 'string' },
   },
 };
 
-function buildPrompt(place, photoCount) {
+function buildPrompt(place, photoCount, { archetype, feedback, notes, layoutDefaults } = {}) {
   const cat = list => list.map(f => `${f.name} (${f.w.join('/')}): ${f.c}`).join('\n');
-  return `You are the art director for a one-page website of one specific restaurant in Kosovo. ${photoCount ? `The ${photoCount} attached photos are its own Google photos.` : 'There are no photos. Work from the name, category, reviews and city only; do not describe a room you have not seen, and say in the note that no photos were available.'}
+  const photosLine = photoCount
+    ? `The ${photoCount} attached photos are its own photos (Google and, when it has one, Instagram), curated: the first is the hero the site will show.`
+    : 'There are no photos. Work from the name, archetype, reviews and city only; do not describe a room you have not seen, and say in the note that no photos were available.';
+  const archetypeBlock = archetype
+    ? `\nARCHETYPE: ${archetype.id} (${archetype.label}). Font bias: ${archetype.fontBias || 'none'}\nDefault layout for this archetype: ${JSON.stringify(layoutDefaults ?? archetype.layout ?? DEFAULT_LAYOUT)}. Start from it; change a variant only when the photos or the reviews ask for it.`
+    : `\nDefault layout: ${JSON.stringify(layoutDefaults ?? DEFAULT_LAYOUT)}.`;
+  const feedbackBlock = feedback ? `\nFEEDBACK from the operator on the previous theme, apply it before anything else: ${feedback}` : '';
+  const notesBlock = notes ? `\nNOTES the operator took when visiting the place (free text, may be in Albanian):\n${notes}` : '';
+  return `You are the art director for a one-page website of one specific restaurant in Kosovo. ${photosLine}
 Derive the site's visual identity from this place: the walls, wood, tiles, metal, lighting, plates, signage, menu boards, the food, the mood of the room and its customers. The owner will open the site on their phone and must feel "this is my place", not "this is a template". Two restaurants with different rooms must get visibly different sites.
+${archetypeBlock}${feedbackBlock}${notesBlock}
 
 The template renders everything from these tokens:
 - bg: the page ground. ink: text on bg (contrast at least 7:1). Light or dark comes from the room's actual light and mood: a bright patisserie is light, a cellar bar or a night grill is dark. Avoid pure #000000 and pure #FFFFFF; tint the ground with the room's own hue.
@@ -125,9 +145,10 @@ The template renders everything from these tokens:
 - display: the face for the name and all headings. body: the text face. displayWeight: a weight the display face carries (listed in brackets).
 - radius: "0px" sharp, "8px" soft, "20px" round: the corner language of cards, photos and buttons.
 - frame: how cards and photos are edged: "none", "line" (hairline), "thick" (3px ink border).
+- layout: the shape of each section. hero "photo" (full photo behind the headline), "split" (photo beside the text), "type" (no photo: the name set large on primary; the only choice when there are no photos). menu "list" (plain rows), "cards" (muted cards in a grid), "board" (dense price board with dotted leaders, for grills, pizza, bars). gallery "grid", "strip" (one scrolling row), "single" (one wide photo), "none" (when there are no photos or they are poor). rhythm "tight" or "airy" (section spacing). order "menu-first" or "about-first" (which section comes right after the hero).
 - note: one English sentence naming what in the photos drove the choices (for the person running the factory).
 
-Rules: hex as #RRGGBB. Choose faces like objects from this place's world; a script or handwritten face is for the rare place that really has that character. Warm cream + terracotta + a serif is the generic result; use it only when the room genuinely looks like that. Do not pick the same palette for a modern café, a family qebaptore and a fine-dining room.
+Rules: hex as #RRGGBB. Choose faces like objects from this place's world; the archetype's font bias is a lean, not a list: pick from the whole catalogue when the photos show something else. A script or handwritten face is for the rare place that really has that character. Warm cream + terracotta + a serif is the generic result; use it only when the room genuinely looks like that. Do not pick the same palette for a modern café, a family qebaptore and a fine-dining room.
 
 Display catalogue (weights):
 ${cat(FONTS.display)}
@@ -139,12 +160,23 @@ THE PLACE:
 ${JSON.stringify(place, null, 2)}`;
 }
 
-// Fetches up to `max` photos as base64 image blocks. Places photo URLs carry maxWidthPx; 900 is plenty for a look.
-export async function fetchPhotos(urls = [], max = 4) {
+const MEDIA = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.gif': 'image/gif' };
+
+// Fetches up to `max` photos as base64 image blocks. Each entry is a URL string, { url } or { file } (local pool, S2).
+// Google photo URLs carry maxWidthPx; 900 is plenty for a look. An unreachable photo is skipped, never a failure.
+export async function fetchPhotos(photos = [], max = 6) {
   const out = [];
-  for (const u of urls.filter(Boolean).slice(0, max)) {
+  for (const p of photos.filter(Boolean).slice(0, max)) {
     try {
-      const r = await fetch(u.replace(/maxWidthPx=\d+/, 'maxWidthPx=900'));
+      if (typeof p === 'object' && p.file) {
+        const type = MEDIA[path.extname(p.file).toLowerCase()];
+        if (!type || !fs.existsSync(p.file)) continue;
+        out.push({ type: 'image', source: { type: 'base64', media_type: type, data: fs.readFileSync(p.file).toString('base64') } });
+        continue;
+      }
+      const url = typeof p === 'string' ? p : p.url;
+      if (!url) continue;
+      const r = await fetch(url.replace(/maxWidthPx=\d+/, 'maxWidthPx=900'));
       const type = r.headers.get('content-type') || '';
       if (!r.ok || !/^image\/(jpeg|png|webp|gif)/.test(type)) continue;
       const data = Buffer.from(await r.arrayBuffer()).toString('base64');
@@ -154,35 +186,14 @@ export async function fetchPhotos(urls = [], max = 4) {
   return out;
 }
 
-// Runs through the local Claude Code login; ANTHROPIC_API_KEY is stripped like in demo.mjs.
-async function askClaude(prompt, images) {
-  const env = { ...process.env };
-  delete env.ANTHROPIC_API_KEY;
-  async function* input() {
-    yield { type: 'user', parent_tool_use_id: null, message: { role: 'user', content: [{ type: 'text', text: prompt }, ...images] } };
-  }
-  let theme;
-  for await (const msg of query({
-    prompt: input(),
-    options: { model: 'claude-sonnet-4-6', tools: [], maxTurns: 3, env, outputFormat: { type: 'json_schema', schema } },
-  })) {
-    if (msg.type !== 'result') continue;
-    if (msg.subtype !== 'success' || !msg.structured_output) {
-      const detail = msg.subtype === 'success' ? msg.result : (msg.errors ? JSON.stringify(msg.errors) : '');
-      throw new Error(`Claude did not return a theme (${msg.subtype})${detail ? `: ${detail}` : ''}`);
-    }
-    theme = msg.structured_output;
-  }
-  if (!theme) throw new Error('No result from Claude (is Claude Code logged in? run: claude login)');
-  return theme;
-}
-
-// place: { name, types, city, address, rating, reviews_count, review_snippets, items? }, photos: URLs.
-// Returns a repaired theme ready for config.json (see fixTheme).
-export async function generateTheme(place, photos = []) {
+// place: { name, types, city, address, rating, reviews_count, review_snippets, items? }; photos: see fetchPhotos.
+// options: archetype (object from factory/archetypes), feedback (one sentence), notes (notes.md text), hasPhotos
+// (the site has photos to show; defaults to "some photo was fetched"). Returns a repaired theme ready for config.json.
+export async function generateTheme(place, photos = [], { archetype, feedback, notes, hasPhotos } = {}) {
   const images = await fetchPhotos(photos);
-  const raw = await askClaude(buildPrompt(place, images.length), images);
-  const { theme, changes } = fixTheme(raw);
+  const layoutDefaults = { ...DEFAULT_LAYOUT, ...(archetype?.layout ?? {}) };
+  const raw = await askJson({ prompt: buildPrompt(place, images.length, { archetype, feedback, notes, layoutDefaults }), images, schema, what: 'a theme' });
+  const { theme, changes } = fixTheme(raw, { hasPhotos: hasPhotos ?? images.length > 0, layoutDefaults });
   return { theme, changes, photosUsed: images.length };
 }
 
@@ -206,11 +217,13 @@ function push(color, against, target) {
 }
 
 // Fallback used when a token is missing or malformed. Deliberately plain: a fixed look is exactly what the factory avoids.
-export const FALLBACK_THEME = { bg: '#FAF9F6', ink: '#1F1E1B', primary: '#2F3A34', accent: '#C8552D', muted: '#EEEBE3', display: 'Archivo', displayWeight: 700, body: 'Onest', radius: '0px', frame: 'line' };
+export const FALLBACK_THEME = { bg: '#FAF9F6', ink: '#1F1E1B', primary: '#2F3A34', accent: '#B84E29', muted: '#EEEBE3', display: 'Archivo', displayWeight: 700, body: 'Onest', radius: '0px', frame: 'line', layout: { ...DEFAULT_LAYOUT } };
 
 // Validates and repairs a theme so every surface the template draws stays readable. Returns the repaired theme
 // plus a list of what changed (empty when the input was already fine). Never throws.
-export function fixTheme(input = {}) {
+// options: hasPhotos false forces hero "type" and gallery "none"; layoutDefaults fills missing layout keys (a missing
+// key is the default, not a repair; only an unknown value is).
+export function fixTheme(input = {}, { hasPhotos = true, layoutDefaults = DEFAULT_LAYOUT } = {}) {
   const t = { ...input };
   const changes = [];
   for (const k of ['bg', 'ink', 'primary', 'accent', 'muted']) {
@@ -245,6 +258,20 @@ export function fixTheme(input = {}) {
   else if (!FRAMES.includes(t.frame)) { changes.push(`frame "${t.frame}" -> ${FALLBACK_THEME.frame}`); t.frame = FALLBACK_THEME.frame; }
   // a card the same colour as the page with no edge is invisible
   if (t.frame === 'none' && contrast(t.muted, t.bg) < 1.15) { changes.push('frame none -> line (muted is the same as bg)'); t.frame = 'line'; }
+
+  const defaults = { ...DEFAULT_LAYOUT, ...layoutDefaults };
+  const given = t.layout && typeof t.layout === 'object' ? t.layout : {};
+  const layout = {};
+  for (const [k, allowed] of Object.entries(LAYOUT)) {
+    if (given[k] === undefined) layout[k] = defaults[k];
+    else if (allowed.includes(given[k])) layout[k] = given[k];
+    else { changes.push(`layout.${k} "${given[k]}" -> ${defaults[k]} (allowed: ${allowed.join(', ')})`); layout[k] = defaults[k]; }
+  }
+  if (!hasPhotos) { // a photo hero or a gallery with nothing to show
+    if (layout.hero !== 'type') { changes.push(`layout.hero ${layout.hero} -> type (no photos)`); layout.hero = 'type'; }
+    if (layout.gallery !== 'none') { changes.push(`layout.gallery ${layout.gallery} -> none (no photos)`); layout.gallery = 'none'; }
+  }
+  t.layout = layout;
   if (typeof t.note !== 'string') delete t.note;
   return { theme: t, changes };
 }
@@ -258,25 +285,12 @@ export function placeFromConfig(config) {
     items: (config.items ?? []).slice(0, 12).map(i => i.name),
   };
 }
-export function placeFromLead(lead, vertical) {
-  return { name: lead.name, city: lead.city, address: lead.address, types: lead.types ?? lead.type, rating: lead.rating, reviews_count: lead.reviews_count, review_snippets: lead.review_snippets, vertical };
+// From place.json (the raw Google record). Reviews are { text, author, rating } objects or plain strings.
+export function placeFromPlace(place, vertical = place.vertical) {
+  return {
+    name: place.name, city: place.city, address: place.address, types: place.types ?? place.type, rating: place.rating, reviews_count: place.reviews_count,
+    reviews: (place.review_snippets ?? []).map(r => (typeof r === 'string' ? r : r.text)).filter(Boolean),
+    vertical,
+  };
 }
-
-const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
-if (isMain) {
-  const [slug, ...rest] = process.argv.slice(2);
-  if (!slug) { console.error('usage: theme <slug> [--dry-run]   (rewrites theme in places/<slug>/config.json from its photos)'); process.exit(1); }
-  const file = configPath(slug);
-  if (!fs.existsSync(file)) { console.error(`${file} not found`); process.exit(1); }
-  const config = JSON.parse(fs.readFileSync(file, 'utf8'));
-  try {
-    const { theme, changes, photosUsed } = await generateTheme(placeFromConfig(config), [config.hero?.image, ...(config.gallery ?? [])]);
-    console.log(`${photosUsed} photo(s) read. ${theme.note ?? ''}`);
-    for (const c of changes) console.log(`repaired: ${c}`);
-    console.log(JSON.stringify(theme, null, 2));
-    if (rest.includes('--dry-run')) process.exit(0);
-    config.theme = theme;
-    fs.writeFileSync(file, JSON.stringify(config, null, 2));
-    console.log(`-> ${file}  (next: npm run build -- ${slug})`);
-  } catch (e) { console.error(e.message); process.exit(1); }
-}
+export const placeFromLead = placeFromPlace; // older name

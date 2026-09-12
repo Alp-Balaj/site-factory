@@ -1,0 +1,55 @@
+{
+  "vertical": "restaurant",
+  "default": "modern-cafe",
+  "archetypes": {
+    "grill-house": {
+      "label": "Qebaptore dhe skarë",
+      "copyBrief": "Qebaptore, skarë apo pllakë mishi. Toni: i drejtpërdrejtë, i sigurt, pa zbukurime. Flet për zjarrin, mishin e freskët, porcionet e mëdha dhe shpejtësinë e shërbimit. Emrat e artikujve janë siç i thonë njerëzit: qebapa, pleskavicë, suxhuk, kofte, bukë të nxehta. Çmimet janë popullore. Mos përdor fjalë si 'ekskluziv' apo 'i rafinuar'.",
+      "itemGroups": ["Nga skara", "Pllaka", "Sallata", "Pije"],
+      "layout": { "hero": "photo", "menu": "board", "gallery": "grid", "rhythm": "tight", "order": "menu-first" },
+      "fontBias": "Lean toward tall condensed or heavy slab signage faces (Anton, Oswald, Alfa Slab One, Ultra): smoke, fire and meat, never a delicate serif or a rounded playful face."
+    },
+    "modern-cafe": {
+      "label": "Kafene moderne",
+      "copyBrief": "Kafene bashkëkohore: kafe speciale, mëngjes, brunch, punë me laptop, takime. Toni: i qetë, i pastër, i ngrohtë por jo i ëmbël. Flet për kafenë, dritën, ambientin dhe arsyen pse njerëzit rrinë gjatë. Artikujt: kafe (espresso, flat white, filtër), mëngjes, tost, ëmbëlsira, lëngje. Mos e teproj me superlativa.",
+      "itemGroups": ["Kafe", "Mëngjes", "Ëmbëlsira", "Pije të ftohta"],
+      "layout": { "hero": "split", "menu": "cards", "gallery": "strip", "rhythm": "airy", "order": "menu-first" },
+      "fontBias": "Lean toward contemporary grotesks and calm geometrics (Bricolage Grotesque, Sora, Gabarito, Familjen Grotesk) with a light, quiet ground; avoid slabs, scripts and anything that shouts."
+    },
+    "patisserie-bakery": {
+      "label": "Pastiçeri dhe furrë",
+      "copyBrief": "Pastiçeri, ëmbëltore apo furrë buke. Toni: i butë, i saktë, me kujdes për detajin. Flet për brumin, gjalpin, sheqerin, orët e hershme të mëngjesit dhe tortat me porosi. Artikujt: torta, pasta, kroasan, bakllava apo ëmbëlsira lokale, bukë, kafe. Përmend porositë për festa nëse ka dëshmi. Mos e bëj tekstin fëmijëror.",
+      "itemGroups": ["Torta", "Pasta dhe ëmbëlsira", "Bukë dhe brumëra", "Kafe"],
+      "layout": { "hero": "photo", "menu": "cards", "gallery": "grid", "rhythm": "airy", "order": "about-first" },
+      "fontBias": "Lean toward soft serifs and chunky rounded display faces (Young Serif, Prata, Arvo, Caprasimo, Courgette) on a light ground: butter, sugar, pastel; nothing industrial or condensed."
+    },
+    "pizza-fast-food": {
+      "label": "Pica dhe ushqim i shpejtë",
+      "copyBrief": "Piceri, burgeri apo ushqim i shpejtë. Toni: i gjallë, i shkurtër, me energji, si një menu në mur. Flet për shpejtësinë, porcionet, çmimet e mira dhe dërgesën nëse ka dëshmi. Artikujt: pica me emra të qartë, burgera, sanduiçë, patate, pije. Fjali të shkurtra, pa poezi.",
+      "itemGroups": ["Pica", "Burger dhe sanduiçë", "Anësore", "Pije"],
+      "layout": { "hero": "photo", "menu": "board", "gallery": "grid", "rhythm": "tight", "order": "menu-first" },
+      "fontBias": "Lean toward playful chunky or block faces (Lilita One, Bungee, Fredoka, Baloo 2, Tilt Warp) with saturated colour: loud, fast, cheerful; never elegant or thin."
+    },
+    "traditional-family": {
+      "label": "Restorant tradicional familjar",
+      "copyBrief": "Restorant familjar me kuzhinë tradicionale shqiptare apo ballkanike. Toni: i ngrohtë, i besueshëm, si një mikpritje në shtëpi. Flet për gjellët e gatuara ngadalë, familjen që e mban lokalin, drekat e së dielës dhe festat. Artikujt: tavë, flija, pite, mish në furrë, gjellë me perime, ëmbëlsira shtëpie, raki apo verë vendi. Mos shpik histori familjare që nuk ka dëshmi.",
+      "itemGroups": ["Paragjellë", "Gjellë tradicionale", "Nga skara", "Ëmbëlsira", "Pije"],
+      "layout": { "hero": "photo", "menu": "list", "gallery": "grid", "rhythm": "tight", "order": "about-first" },
+      "fontBias": "Lean toward warm, honest serifs and readable slabs (Yeseva One, Averia Serif Libre, Zilla Slab, Vollkorn, Libre Caslon Text): wood, cloth and home cooking; nothing sleek, geometric or techy."
+    },
+    "fine-dining": {
+      "label": "Restorant i lartë",
+      "copyBrief": "Restorant i nivelit të lartë: kuzhinë e kujdesshme, shërbim i qetë, rezervime. Toni: i përmbajtur, i saktë, me pak fjalë. Flet për përbërësit, sezonin, verën dhe përvojën e mbrëmjes, jo për 'luks'. Artikujt: paragjellë, pjata kryesore me përshkrim të shkurtër të përbërësve, ëmbëlsira, verë. Çmimet më të larta se mesatarja e qytetit. Pa pikëçuditje.",
+      "itemGroups": ["Paragjellë", "Pjata kryesore", "Ëmbëlsira", "Verë dhe pije"],
+      "layout": { "hero": "split", "menu": "list", "gallery": "single", "rhythm": "airy", "order": "about-first" },
+      "fontBias": "Lean toward refined high-contrast or thin elegant faces (Bodoni Moda, Italiana, Cinzel, Marcellus, Prata) with restraint and space on an ivory or deep dark ground; no rounded, playful or condensed poster faces."
+    },
+    "bar-night": {
+      "label": "Bar dhe natë",
+      "copyBrief": "Bar, pub, lounge apo lokal nate. Toni: i shkurtër, me ritëm, pak i ftohtë, si një ftesë për mbrëmjen. Flet për koktejet, muzikën, tarracën apo ambientin e natës dhe orët e vona. Artikujt: koktej, birra, verë, pije të forta, meze për në tavolinë. Mos përmend ushqim të plotë nëse nuk ka dëshmi. Pa 'atmosferë unike'.",
+      "itemGroups": ["Kokteje", "Birra dhe verë", "Pije të forta", "Meze"],
+      "layout": { "hero": "type", "menu": "board", "gallery": "strip", "rhythm": "tight", "order": "menu-first" },
+      "fontBias": "Lean toward uppercase condensed or very wide poster faces (Bebas Neue, Staatliches, Unbounded, Big Shoulders Display, Krona One) on a dark ground with one neon-bright accent; nothing soft or bookish."
+    }
+  }
+}

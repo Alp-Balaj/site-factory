@@ -1,0 +1,32 @@
+{
+  "id": "20260912T184903Z-generate-6ajm",
+  "type": "generate",
+  "slug": "la-tarte",
+  "params": {
+    "only": "theme",
+    "dry-run": true
+  },
+  "status": "done",
+  "createdAt": "2026-09-12T18:49:03.599Z",
+  "startedAt": "2026-09-12T18:49:03.600Z",
+  "endedAt": "2026-09-12T18:50:55.682Z",
+  "error": null,
+  "logPath": "places/la-tarte/jobs/20260912T184903Z-generate-6ajm.log",
+  "result": {
+    "dryRun": true,
+    "archetype": {
+      "id": "patisserie-bakery",
+      "how": "config"
+    },
+    "theme": {
+      "changes": [],
+      "photosUsed": 6,
+      "fallback": false
+    },
+    "photos": {
+      "from": "google",
+      "hero": true,
+      "gallery": 5
+    }
+  }
+}
