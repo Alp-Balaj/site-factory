@@ -1,11 +1,12 @@
 // Usage: npm run verify -- <slug>
-// 1. Checks clients/<slug>/config.json for the fields the template cannot do without (exit 1 on failure).
-// 2. If clients/<slug>/build/index.html exists, saves clients/<slug>/preview-mobile.png and preview-desktop.png.
+// 1. Checks places/<slug>/config.json for the fields the template cannot do without (exit 1 on failure).
+// 2. If places/<slug>/build/index.html exists, saves places/<slug>/preview-mobile.png and preview-desktop.png.
 // build.mjs imports checkConfig/loadConfig (before astro) and takeScreenshots (after astro) from here.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
+import { buildDir, configPath, previewPath } from './lib/paths.mjs';
 import { fixTheme } from './theme.mjs';
 
 const VIEWPORTS = {
@@ -13,8 +14,7 @@ const VIEWPORTS = {
   desktop: { width: 1280, height: 800 },
 };
 
-export const configPath = (slug) => path.join('clients', slug, 'config.json');
-export const buildDir = (slug) => path.join('clients', slug, 'build');
+export { buildDir, configPath }; // build.mjs and older callers import these from here
 
 export function loadConfig(slug) {
   const file = configPath(slug);
@@ -76,7 +76,7 @@ export async function takeScreenshots(slug) {
         step();
       }));
       await page.waitForLoadState('networkidle', { timeout: 5000 }).catch(() => {});
-      out[name] = path.join('clients', slug, `preview-${name}.png`);
+      out[name] = previewPath(slug, name);
       await page.screenshot({ path: out[name], fullPage: true });
       await page.close();
     }
@@ -86,10 +86,10 @@ export async function takeScreenshots(slug) {
   return out;
 }
 
-// Prints check results the way the CLI does. Returns true when there are no errors.
-export function reportChecks({ errors, warnings }) {
-  for (const w of warnings) console.warn(`warning: ${w}`);
-  for (const e of errors) console.error(`error: ${e}`);
+// Prints check results the way the CLI does (or through a job log). Returns true when there are no errors.
+export function reportChecks({ errors, warnings }, log) {
+  for (const w of warnings) (log ?? console.warn)(`warning: ${w}`);
+  for (const e of errors) (log ?? console.error)(`error: ${e}`);
   return errors.length === 0;
 }
 

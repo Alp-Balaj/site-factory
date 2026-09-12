@@ -29,7 +29,7 @@ export interface Vertical { id: string; labels: Record<string, string>; itemGrou
 
 const slug = process.env.CLIENT || 'demo-restaurant';
 const root = path.resolve(process.cwd(), '..');
-const cfgPath = path.join(root, 'clients', slug, 'config.json');
+const cfgPath = path.resolve(root, process.env.PLACES_DIR || 'places', slug, 'config.json'); // factory/lib/paths.mjs
 if (!fs.existsSync(cfgPath)) throw new Error(`No config at ${cfgPath}. Set CLIENT=<slug>.`);
 
 export const site: SiteConfig = JSON.parse(fs.readFileSync(cfgPath, 'utf8'));

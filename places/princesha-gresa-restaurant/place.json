@@ -1,0 +1,88 @@
+{
+  "place_id": "ChIJn809heGeVBMRd5hXBzRwwyc",
+  "name": "Princesha Gresa Restaurant",
+  "address": "77 Rrugë Fehmi Agani, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 38 245 841",
+  "website": "http://www.restaurantgresa-ks.com/",
+  "rating": 4.7,
+  "reviews_count": 622,
+  "lat": 42.6638708,
+  "lng": 21.1599751,
+  "maps_url": "https://maps.google.com/?cid=2865257156701558903&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 11:00 p.d. – 10:30 m.d.",
+    "e martë: 11:00 p.d. – 10:30 m.d.",
+    "e mërkurë: 11:00 p.d. – 10:30 m.d.",
+    "e enjte: 11:00 p.d. – 10:30 m.d.",
+    "e premte: 11:00 p.d. – 10:30 m.d.",
+    "e shtunë: 11:00 p.d. – 10:30 m.d.",
+    "e diel: 11:00 p.d. – 10:30 m.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXSDI4kXwH9fdTndEqilY_YVzejXWl3dg2d4NdbzIoI6wivMldUaBcdXBj72wOCPf-DC3A5HJHoWucv60hK4AgFmq0-h2OvMiYG04fzktHZ55SnjyNA_Db_FJOaQ-fvIPbHSW4nxFn5fhUrtqQKFvMeymINc7O6mr43YFgMfNZ81oEQkDG0Vq75bsTHlheKGbvUOT-j017cpV_oTcAT2Y4iADltqfefS77_HrRXZJVDWaYy7bMsPUw1eg_1yRL0sI9ct3YztAKUqA5p00JSeykH3N2mWJK-gVgoPoq0wKZkO7x7qZeRNjv--fzh0s86kcblCPyJc8JzHoUDYNJd2C-zFjdHUSCv8yklH8DOuXXGRmcEjFXUtMDq_S33tEs50FdSA_mL4V6xAkDpK4UmlQs4TCsAdVCDMUylwBUjhIT6rjjG5",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXT6gCu25t5vpINZwnfzgj48N1BVuTDpsy1bauXaxWHXsNC3Mt9Yswjt5VCj6fdI-ycirptXZSrwpPag6bG7ThM7pa-hqervmxbB-rtqQvny7llfGBsvyuL-OdM2v050gw7BkHEKavZI14g2Er0rHzryp0sZFhGmyeLl7CNVDboKtjbYCId8dXfpe5RYsw_J4uTD5LPZ9pmFkrtOTCNxoBQkO1AD8hPEeNt0rPRGYh2Stwiu5Tef-Ckpj3imvnMhFc7O4dM_PMVpURRbtJMNuttAzgyLD3jh8PYNZVab_IS_VgB1E_gIu4ZOS0PYwEAwyhuJadGfIjNAnuGwKt2qSXUNXeQYS2pBlH14MLUMgo5isWV06M97E8BV1dw_9FXc5RC7w7VlvBb9-8W0VCxUzTlsOPBBruW674me8qiUYfpCpRP5",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXT9tmFvuteCx0PbrmzXEOE9wTVw1pJcXjtvyUFcywoX6FGSrQb_4AXAILP9VymH4W6-ePcydlciskG9bXgYFpvhNSkKdNItXBzgiwbOqkbQDNuo8TsbSa6sY49JikYXt7OeU6uamAUUlfrXv_jXQVo3wlqvpD3PAJFhzP0MHGL5jVQpWe3hQJYeI91pRec29Uty0Rh1Fp3D5qXtBZIUp73XpwMN33SrsNpnPBB8TyaKoNlA78LDu0jI4OnrWj9Nso7vqVhOoX0znfM0djCXmB8CYk3SqpimcZiV2JJDLNkyDwR6dP1auA5S4i6XrNgNRmvf7lNZqeMBm85iQC02r_bXrIh7VS6FoaLqd2de-3kh6kEZqQ8EcDu39XCyfHreGkg4JW1HEvefWZ3FmrzGKT_AOSBmfT8MllJg4QxDsaMxZ8YxPPUomkSm2epiai49",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXTAT-9G-YM6x7Dq6dvhujMIYZQx99kD39_TJz8KcIWy4k-pyImc-wIdat1qsGinWIpgvRQtfl1_7tOPHYbO6JZUlHQq96E_rh4pa_e38JNzzjcZRXuu0mGeQ155MvrCd1zLxUuAzGfiCgiRmn2NSr-YlGyKTUCHdyOq0C8PwEqkTXR3WGGEnLCj6yokS-Cigd8MclOwWh68ON_Z0BywMOEHme-XOdhCIc247rORrhyqIIj_Z4-f3kzZlC33-70oAl87vKSrvkO6eAFBU_S40WOdQFihCRkjbQW7zy9LfiMFiN9139qyNa56cIOmIzkM3Lpa5H8yY4JkMV5wTYz8YuiRSgbGyKfJyvu3oY7PgFB4vIBv-u5-ZfYErUaZNUJvwyNd7if7mOLcIij4AFiYU08gXLPU1XCvDPRA0whTc6PD9n3u4LbyTXa4DQDGWVaz",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXRrwfoeNmSt_vXv1drcts61b3I0ZxR8imve-AebgUfjnGzGsPAwevxeLxpThnNo534hsGKW9jJ-vHXuR8de86dbPsOrEGTTKN4jfyOv8DDK3pEDrmTdRitFz6rZ8VERBXXcEI3uf8wOEys8xU3k6tTjz5aYU8uTJnTnDSUkilpfUp4CY1lY0spWIDJQ2f3L_f5JVLajvirRSJ5wt-zKmcekxEWtoWxiNmpa1xr8KzTGiiFjXM0t3XXzRe50rS-EEkfyUTvUPv23iJ1idgkQeRMGo5hW-X4UhuN0KaWLy8AvrHVLwYMHKz0ntVF3ENTrjUY6iDyuAvlA6ZyUWFWF5nPy0FIpT4UvPSdjLr4_C69yDu-7dfeHJ0_W6ndiNwRfasZm5vKcsrlCwp0saRl1sthkwo4z3XBL9m2mmbFK_W7yLEiC",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXRcTghJ2aLi8sTQaf4TBwGuEJM4IFuQh9Jr3xTuRkZ6b0aPDh8mxfAZ50RkUCV-3JEoVRtgDtiKsehslBupnq9GSMU96O8M6yg11y9YqvDtsjz36YsjQsMnhoKKrIjgREjUkxvlfNsThQYk9P4aien_Tk5AqmxmJvRoQzOZWQ07QdDDJEWJ8ZjxImFMkEVuyxExiql0rOJOKebvPROtMe2PTDrRV1TULVJDaqBxmUvJMjel8i2zbuTvq5ZL4Zk-mXDEokQ-KFafCJCh2cSoimEVU29MbFe9uc1DsQ4sgf_IaT7rPhSUovOAs4UbLJjXofbAefdaMyfju_XMTKywCbNmvOUyiM2Oijg0dRkEE62-drsMdJLNxxnfO9i5dwO9DUwwVoH_m7zchamdLkvTXxYgrFySqL4BKJ3ALDDrMTqplC5n",
+      "width": null,
+      "height": null,
+      "author": null
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Sot vizitova ket restaurant pas shum rekomandimeve, dhe gjithqka doli ashtu siq me kishin rekomanduar.\nFileto Salmoni ishte me e mira qe kam provuar po ashtu edhe fileto viqi ishte TOP.\nRESPEKT PER KUZHINEN DHE STAFIN SHUM MIKEPRITES",
+      "author": "",
+      "rating": null
+    },
+    {
+      "text": "⸻\n\nIch war heute Abend mit meiner Familie dort, aber der Service und das Verhalten des Restaurantbesitzers waren sehr schlecht und unangebracht. Ich war gezwungen, das Essen zurückzugeben, da es zu stark durchgebraten war und nicht mehr essbar war. Seine Reaktion war unangemessen, da er den Eindruck vermittelte, ich würde das Essen grundlos zurückgeben, was sehr unhöflich war. Aus diesem Grund würde ich dieses Restaurant niemandem empfehlen.\n\nIsha sonte në mbrëmje me familjen time, por shërbimi dhe sjellja e pronarit të restorantit ishin shumë të dobëta dhe të pahijshme. U detyrova ta kthej ushqimin, sepse ishte tepër i pjekur dhe nuk mund të konsumohej. Reagimi i tij ishte i papërshtatshëm, duke lënë të kuptohet sikur unë po e ktheja ushqimin pa arsye, gjë që ishte shumë e pahijshme. Për këtë arsye, nuk do t’ia rekomandoja askujt këtë restorant.",
+      "author": "",
+      "rating": null
+    },
+    {
+      "text": "Shumë thjesht,Restaurant i kompletuar dhe shumë i mirë,cilësi shumë e lartë!\nE rekomandoj për të tjerët!",
+      "author": "",
+      "rating": null
+    }
+  ],
+  "vertical": "restaurant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:12:20.427Z"
+}

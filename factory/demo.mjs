@@ -1,5 +1,5 @@
 // Usage: npm run demo -- leads/out/restorant-prishtine.json <place_id|index> [--intake intake.json] [--vertical id]
-// Produces clients/<slug>/config.json with Albanian copy generated from the lead (+ optional intake answers) and a
+// Produces places/<slug>/config.json with Albanian copy generated from the lead (+ optional intake answers) and a
 // theme derived from the lead's own photos (theme.mjs). Intake answers override both.
 // batch.mjs imports generateDemo() from here and runs it over a whole leads file.
 import 'dotenv/config';
@@ -7,7 +7,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { query } from '@anthropic-ai/claude-agent-sdk';
+import { parseHours } from './lib/hours.mjs';
+import { configPath, placeDir } from './lib/paths.mjs';
+import { slugify } from './lib/slug.mjs';
+import { ensureState } from './lib/state.mjs';
 import { generateTheme, placeFromLead } from './theme.mjs';
+
+export { parseHours, slugify }; // moved to factory/lib; re-exported so batch.mjs and older callers keep working
 
 const schema = {
   type: 'object', additionalProperties: false,
@@ -65,7 +71,7 @@ async function generateCopy(prompt) {
   return copy;
 }
 
-// Generates clients/<slug>/config.json for one lead. Throws with a plain message on failure.
+// Generates places/<slug>/config.json for one lead. Throws with a plain message on failure.
 // Returns { slug, configPath, config }.
 export async function generateDemo(lead, { intake = {}, verticalId } = {}) {
   if (!lead?.name && !intake.name) throw new Error('lead has no name');
@@ -113,11 +119,11 @@ export async function generateDemo(lead, { intake = {}, verticalId } = {}) {
     meta: { lead_place_id: lead.place_id, generated_at: new Date().toISOString(), source: lead.source },
   };
 
-  const dir = path.join('clients', slug);
-  const configPath = path.join(dir, 'config.json');
-  fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
-  return { slug, configPath, config };
+  const file = configPath(slug);
+  fs.mkdirSync(placeDir(slug), { recursive: true });
+  fs.writeFileSync(file, JSON.stringify(config, null, 2));
+  ensureState(slug, 'found', `demo generated from ${lead.source ?? 'lead'} ${lead.place_id ?? ''}`.trim());
+  return { slug, configPath: file, config };
 }
 
 export function guessVertical(l) {
@@ -127,18 +133,6 @@ export function guessVertical(l) {
   if (/guest|hotel|bujtin|lodg|hostel/.test(t)) return 'guesthouse';
   return 'restaurant';
 }
-function parseHours(list = []) {
-  // Places API gives ["e hënë: 08:00–23:00", ...] or, in Albanian locale, "8:00 p.d. – 11:00 m.d." (p.d. = AM, m.d. = PM).
-  // Normalise to 24h "08:00 - 23:00" so hours read the same on every site.
-  const to24 = (h, m, ap) => { let hh = Number(h) % 12; if (/^m/.test(ap)) hh += 12; return `${String(hh).padStart(2, '0')}:${m}`; };
-  const clean = t => t
-    .replace(/(\d{1,2}):(\d{2})\s*(p\.d\.|m\.d\.)/gi, (_, h, m, ap) => to24(h, m, ap.toLowerCase()))
-    .replace(/\b(\d):(\d{2})/g, '0$1:$2')
-    .replace(/\s*[\u2013\u2014\u2009\u202f-]+\s*/g, ' - ')
-    .trim();
-  return list.map(s => { const [day, ...t] = s.split(': '); return { day, time: clean(t.join(': ')) || 'Mbyllur' }; });
-}
-export function slugify(s) { return String(s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ë/g, 'e').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
 
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMain) {

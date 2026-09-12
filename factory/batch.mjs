@@ -1,5 +1,5 @@
 // Usage: npm run demo:batch -- <leads.json> [--limit N] [--dry-run] [--no-deploy]
-// For every lead with status "new": demo (Claude copy -> clients/<slug>/config.json), build, deploy.
+// For every lead with status "new": demo (Claude copy -> places/<slug>/config.json), build, deploy.
 // Writes status/slug/demo_url/error back into the leads file after EACH lead, so a crash loses nothing.
 // Statuses written: demo_deployed | demo_built (--no-deploy) | failed.
 import fs from 'node:fs';
@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { generateDemo, slugify } from './demo.mjs';
 import { build } from './build.mjs';
 import { deploy, pagesUrl } from './deploy.mjs';
+import { buildDir, configPath } from './lib/paths.mjs';
 
 function parseArgs(argv) {
   const [leadsFile, ...rest] = argv;
@@ -49,7 +50,7 @@ export async function runBatch({ leadsFile, limit = Infinity, dryRun = false, no
   if (dryRun) {
     for (const { lead, i } of todo) {
       const slug = slugify(lead.name);
-      const steps = [`generate ${path.join('clients', slug || '?', 'config.json')} via Claude`, 'build'];
+      const steps = [`generate ${configPath(slug || '?')} via Claude`, 'build'];
       steps.push(noDeploy ? `mark demo_built` : `deploy -> ${pagesUrl(slug)}`);
       console.log(`[dry-run] ${label(lead, i)} -> ${slug ? steps.join(', then ') : 'FAIL: lead has no name to derive a slug from'}`);
     }
@@ -69,12 +70,12 @@ export async function runBatch({ leadsFile, limit = Infinity, dryRun = false, no
         delete lead.demo_url;
       } else {
         stage = 'deploy';
-        lead.demo_url = deploy(slug);
+        lead.demo_url = await deploy(slug);
         lead.status = 'demo_deployed';
       }
       delete lead.error;
       totals[lead.status]++;
-      console.log(`${tag} -> ${lead.status}${lead.demo_url ? ` ${lead.demo_url}` : ` (${path.join('clients', slug, 'build')})`}`);
+      console.log(`${tag} -> ${lead.status}${lead.demo_url ? ` ${lead.demo_url}` : ` (${buildDir(slug)})`}`);
     } catch (e) {
       lead.status = 'failed';
       lead.error = `${stage}: ${e.message}`;

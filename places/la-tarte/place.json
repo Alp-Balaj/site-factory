@@ -1,0 +1,89 @@
+{
+  "place_id": "ChIJbd7VBgCfVBMRvgjTEHIkyII",
+  "name": "La Tarté",
+  "address": "Rr Behije Dashi, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 49 877 771",
+  "website": "https://la-tarte.com/",
+  "rating": 4.5,
+  "reviews_count": 90,
+  "lat": 42.657390899999996,
+  "lng": 21.1660145,
+  "maps_url": "https://maps.google.com/?cid=9423822292599900350&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "brunch_restaurant",
+  "types": [
+    "brunch_restaurant",
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 7:00 p.d. – 10:00 m.d.",
+    "e martë: 7:00 p.d. – 10:00 m.d.",
+    "e mërkurë: 7:00 p.d. – 10:00 m.d.",
+    "e enjte: 7:00 p.d. – 10:00 m.d.",
+    "e premte: 7:00 p.d. – 10:00 m.d.",
+    "e shtunë: 7:00 p.d. – 10:00 m.d.",
+    "e diel: 9:00 p.d. – 5:00 m.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXTENtGZ2wzzqg5J738PIZ1uf2dWQbXwjWjlHYhZGRa0zLAfSCOUE1Uu8xGHpklCghjCvdxYKpRuBOxo96vFKc1vV4FcSiuDztmTEM1QdfmAkBrpleF1FmthnFTa48m6vs_mYIPM_71BPslUWx6_tjKe3QMF2_8AYQJ-CotEj6OSDgPPj04R0OHLlsbMMyp93dKmTirAalzaxauBgBXSs10sDQurncTe9SPzAi2b5OSEmMTnnmToq8uBrG0fhLKNUl-JtNho_72JndSRCBa-Z1nVmVROu2psgkNAdDJ9i6_fJxIjuqXic4bp7LFe8s6PGUF8fLKE7YxWguSIPPYNvjmhsXftrP2GOAX5KZ1xa5BKtusLnD7tvbe2T_4r1tXvsvCjJsa2AS85D6xF-3ZuwA3TkJyKinU3cYfIGnzQwWEIvslJ7E_KHsMQ9igVNLOv",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXTbRtM0_RVrVs2Meoqwc4S2dNh2Jwpgzqfp4dtTRJDcg4_9XcWOSXrd2i4ZHwZqhI69HPyVXP3APEMrdQ3FvBG3rRfn2mJuIYvqDJ14HSSI-V4xPlk56n_jPBxFNp1M_Tmnp6dCfMDAgQ2H-124Te_jmD1aUfmCWxsE0Z_NrT_zICCFP2iWpkn3iOmrInH6c9cdIJe7F3cNe3f9pdKcATV_6yjl0Z_62ArMPyQthpwl_4WS5Brg_o6HY-0K7czLlUwWQPxJgKv4xPOSwpW5-6NTHudyUDSh6gpGPTULRYs94YRHpjSEK-TCzHeADJ1LI8eidQX-ASMEmNzpww88POPGRdDkv6N0N25x_h5pTQpAiw4U4vZlj7tzcRftc8bA6z8gW9hYD9AAVOi__UvgrEhoRjCJHD_k5zZvUyCqMXQpgTQkpG8xlgXijVCEwJtD",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXQep3p_aYNczgdCliPPEfDpCBBN1PaFZpB7aDYjK7ExSDKOLfCP3HwWyiVH2XaUKMmffHJlD7j_QuQYa49LqvE4jD5Le-FW2oYUaQMQ5YyeJm6Nlv-crjDTLBY5pNDLrjcxL6LhHRGupOXzB1L6U8JgSqJiKoTkbyNoLvvQ8aeFxAeKLxVNNkPsqMjGFhzurVfICAPdKfBTAmBsEmq-xuhZMHfhZFNdD2KYRcy80W3GCiGlPZW-oypPPIS5QEChQMrl9vXy6ZDo78zjZW2V7HYLpj6U3cGYMoYUF7xy86_YmtZW2-5ZG9SgkGOoXcWQi8HRle3x0hCWndQHXG8i6O1v4EvVkoUf_ovIbu7UKfiBR_SPVEJK7uWrmWYRfCpbwIvDbOgn_4I7p-CFKPVTA_ojwAy-F39dyxUYybLT5RjmK_59THJWiegR2ApdWISJ",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXT4dtcYQOdbS_qbKMhdXXrkCbLPFglcIAdg0v_Ogy2sV9IuOgkAhw_RgOrBm2LYrL8pf0q1H8p6_9WGWcircZIXU2qInpImi2cUbTCJ8swDWlB6mnCNXNipqy01xgmTZtOR9ZQU6m9iVvhCMkxnDSlNKiTD1Pnsr3ipiLY-5f8QmzM8dBbo6rhaoddkXGzHfK5Orr3JeOMibZ5dsDEs44XHU_Qe9uXgqOPOfEioJd1fIecerQSaQNjTiwO2Ef9re-2Fk4sK6LlPRF8fHF7i96EIAt9cRryNKDtBiw28QE1wVoemqsn-BRqrOq9zbUHioMZ6t_Nl6lO7YLGJJXF_6BlWqepd-PFdfGSzqpSbcOwvPi7BM7XktMbVvOGm-8uHcth8Bd8VZEvjuCuHaOSsD9TNIfbl6vink36VU6td2I-Bu3U3J56rKTfag3nVYtVB",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXTqZqK-NRBpx9eJon8vscgq5izVm9RFkLuIS4U35rCUJgCK2n4e7bI-4E4vZURqmVXOqViq65wBzpqxEED3UJ9x7cjVHn-Ine7fiXe5HzGs96j1rCKbK4daJKDOBSu5OPV89quNTSC1gYhRwWPKhULUhhM0VRnc5t_NvPgsXUYeVsiKTs2_bn2d9mniWRInvrgWPsVIroriMYGu8P5lkWbe8Q7rYb0xSYuxHBUlFHdWldUiWWh8u91aFcalJfl-JXK3-YE8yiFZSJRWWRQJYceMMri_kgPnOqLjZtBDHaBDrIOYid5lhFf1WvHuQIEoOq_aeum4OQzs7-EHd1bJW-oDILDsi3PzodPDLyUaXogaYzFEBUz9qkCRFPNTpOJQjjaS4pq3aPOCWDgCDRkNALMtjocz1GGTp6Rcw-gOZmIYpoqD8orF8rOuLPBkyg",
+      "width": null,
+      "height": null,
+      "author": null
+    },
+    {
+      "name": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXRnthfcKBGaopOvXJ_fTNYM27YsmCoYsu5yzySErdQBPgq8-oe90Fn-z-2U9u1rg0PObcCdqHlh9-1SRuGpqk2bw2yItAlJoRVYlLCcxUz-cAyCOsbUkdfx1UM-slhntPfobuZj9FZygYZQKm-nTn-vovnXKyXCiz0N5-zyVMf8UkMQ36yjF5GHOIQ8IVpSaopMp7jAydMREQFc4cIA8d_pOSwdDv6AQRDyPhEcH9_G3pI5gvFH0lMjm4ONLa2ZihByIYr2KmJuJ2mJFK_kPY-gniz_U_PM5DioTX1jgxE-tvTdLeXoDF97Hk80deqhSvpVhBX1Wfh3GpTsanz5Xo-mNVzKdSscEwuhqX4c2T-Xh5YJjuDGfvNdBo7B60JtcMGZsHeV-4AY0ufLRwqy4ARrYo6L-g08Fe2YNonTHKUbe4VXH7cYdk3VK_Ac7w",
+      "width": null,
+      "height": null,
+      "author": null
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Shërbim shumë profesional, ambient modern dhe atmosferë relaksuese. Kualiteti i kafesë dhe kujdesi ndaj klientit janë gjithmonë në nivel. Një nga vendet që e vizitojmë më shpesh dhe që e rekomandojmë pa hezitim.🫶🫶🫶",
+      "author": "",
+      "rating": null
+    },
+    {
+      "text": "Erdha për të ngrënë dhe prita mbi 10 minuta pa ardhur askush të më merrte porosinë. Kur e ngrita shqetësimin, reagimi ishte me shaka në vend të një kërkimfaljeje.\nRespekti ndaj klientit fillon nga momenti që hyn në lokal. Fatkeqësisht, përvoja ime ishte zhgënjyese dhe nuk do të kthehem përsëri.",
+      "author": "",
+      "rating": null
+    },
+    {
+      "text": "Ushqimi #1",
+      "author": "",
+      "rating": null
+    }
+  ],
+  "vertical": "restaurant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:12:20.424Z"
+}

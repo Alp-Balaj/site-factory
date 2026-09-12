@@ -1,6 +1,6 @@
 // Usage: npm run theme -- <slug> [--dry-run]
 // Derives a client's theme (colours, fonts, corner and edge language) from the restaurant itself: its Google photos,
-// name, category and reviews, via Claude vision. Rewrites `theme` in clients/<slug>/config.json (photos are read from
+// name, category and reviews, via Claude vision. Rewrites `theme` in places/<slug>/config.json (photos are read from
 // hero.image + gallery). demo.mjs imports generateTheme() and runs it for every new lead, so a demo never ships the
 // vertical's fallback theme unless generation fails.
 import 'dotenv/config';
@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { query } from '@anthropic-ai/claude-agent-sdk';
+import { configPath } from './lib/paths.mjs';
 
 // Google Fonts the generator may pick from. `w` lists the static weights the family really carries (Google returns
 // 400 Bad Request for a weight a family lacks), `c` is the one-line character Claude reads when choosing.
@@ -264,8 +265,8 @@ export function placeFromLead(lead, vertical) {
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMain) {
   const [slug, ...rest] = process.argv.slice(2);
-  if (!slug) { console.error('usage: theme <slug> [--dry-run]   (rewrites theme in clients/<slug>/config.json from its photos)'); process.exit(1); }
-  const file = path.join('clients', slug, 'config.json');
+  if (!slug) { console.error('usage: theme <slug> [--dry-run]   (rewrites theme in places/<slug>/config.json from its photos)'); process.exit(1); }
+  const file = configPath(slug);
   if (!fs.existsSync(file)) { console.error(`${file} not found`); process.exit(1); }
   const config = JSON.parse(fs.readFileSync(file, 'utf8'));
   try {

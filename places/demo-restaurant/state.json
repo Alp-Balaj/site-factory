@@ -1,0 +1,32 @@
+{
+  "status": "ready",
+  "flags": {
+    "hasRealWebsite": false,
+    "fixture": true
+  },
+  "archetype": "",
+  "instagram": {
+    "handle": "",
+    "how": ""
+  },
+  "contact": {
+    "person": "",
+    "phone": "+383 44 000 000"
+  },
+  "feedback": "",
+  "followUp": null,
+  "priceAgreed": null,
+  "paidAt": null,
+  "domain": "",
+  "pagesUrl": "",
+  "notes": [],
+  "qa": null,
+  "log": [
+    {
+      "at": "2026-09-12T18:12:20.423Z",
+      "from": null,
+      "to": "ready",
+      "reason": "migrated from clients/"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "qa_passed",
+  "flags": {
+    "hasRealWebsite": true,
+    "fixture": false
+  },
+  "archetype": "",
+  "instagram": {
+    "handle": "",
+    "how": ""
+  },
+  "contact": {
+    "person": "",
+    "phone": "+383 38 245 841"
+  },
+  "feedback": "",
+  "followUp": null,
+  "priceAgreed": null,
+  "paidAt": null,
+  "domain": "",
+  "pagesUrl": "",
+  "notes": [],
+  "qa": null,
+  "log": [
+    {
+      "at": "2026-09-12T18:12:20.427Z",
+      "from": null,
+      "to": "qa_passed",
+      "reason": "migrated from clients/"
+    }
+  ]
+}

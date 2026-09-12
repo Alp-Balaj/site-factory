@@ -10,13 +10,18 @@ npx playwright install chromium   # needed for the scraper and for verify/build 
 
 npm run leads:api -- "restorant" "Prishtinë" --pages 3     # -> leads/out/restorant-prishtine.json (open businesses of that vertical; phone/website not filtered)
 npm run leads:scrape -- "restorant" "Prishtinë" --max 60    # free alternative, brittle
-npm run demo -- leads/out/restorant-prishtine.json 0        # -> clients/<slug>/config.json (Albanian copy + a theme from the place's photos, via Claude)
+npm run demo -- leads/out/restorant-prishtine.json 0        # -> places/<slug>/config.json (Albanian copy + a theme from the place's photos, via Claude)
 npm run theme -- <slug>                                     # regenerate only the theme from the photos in config.json (--dry-run to preview)
 npm run dev -- <slug>                                       # preview at localhost:4321
 npm run verify -- <slug>                                    # config sanity check + preview-mobile.png / preview-desktop.png if built
-npm run build -- <slug>                                     # -> clients/<slug>/build
+npm run build -- <slug>                                     # -> places/<slug>/build
 npm run deploy -- <slug>                                    # -> https://sf-<slug>.pages.dev (wrangler)
 npm run demo:batch -- leads/out/restorant-prishtine.json --limit 5   # demo+build+deploy every lead with status "new"
+
+npm run job -- <type> [slug] [--param k=v]                  # run one job in the foreground through the queue (types: noop, build, deploy, …)
+npm test                                                    # node:test over factory/**/*.test.mjs
+node factory/migrate/hours.mjs                              # one-off: normalise hours in older configs (idempotent)
+node factory/migrate/clients-to-places.mjs                  # one-off: state.json + place.json for folders that predate places/
 ```
 
 ## Lead filtering (`leads:api`)
@@ -32,7 +37,7 @@ one of the four verticals), `--all` skips filtering and dumps everything.
 2. `demo` builds a site from Google data alone, before you contact them. Deploy it; send the link.
 3. They say yes → send `intake/index.html` (host it anywhere). It downloads a `.intake.json`.
 4. `npm run demo -- <leads.json> <place_id> --intake their.intake.json` regenerates the config with their answers overriding everything.
-5. Edit `clients/<slug>/config.json` by hand for anything else. Rebuild, redeploy. Edit requests later = same loop.
+5. Edit `places/<slug>/config.json` by hand for anything else. Rebuild, redeploy. Edit requests later = same loop.
 
 ## Batch demos
 `npm run demo:batch -- <leads.json> [--limit N] [--dry-run] [--no-deploy]` runs demo -> build -> deploy for every lead with
@@ -45,7 +50,7 @@ To retry a failed lead, set its status back to `"new"`. Exit code is 1 if any le
 ## Verify + previews
 `npm run verify -- <slug>` checks that config.json has the fields the template cannot do without (business.name,
 business.phone or whatsapp, hero.headline, hero.sub, at least 3 items, seo.title, seo.description) and warns when hero.image
-and gallery are both empty. If `clients/<slug>/build/index.html` exists it also saves `clients/<slug>/preview-mobile.png`
+and gallery are both empty. If `places/<slug>/build/index.html` exists it also saves `places/<slug>/preview-mobile.png`
 (390x844) and `preview-desktop.png` (1280x800), full page, via Playwright. `npm run build` runs the same checks before astro
 and the same screenshots after, so a bad config fails before the build starts. Both need `npx playwright install chromium` once.
 
@@ -65,14 +70,21 @@ and the same screenshots after, so a bad config fails before the build starts. B
   the vertical's plain theme if the call fails); `npm run theme -- <slug>` reruns it for an existing client from the photos in its
   config. `verify` warns when a hand-edited theme would be repaired. Intake's `theme.primary` still overrides.
 - `template/src/verticals/*.json` per-branch labels, item groups, the fallback theme (used only when generation fails), and the copy brief for Claude. **Only `restaurant` has a proper fallback; the other three still carry stub themes (light, Instrument Sans) and render on the same structure.**
-- `clients/<slug>/config.json` single source of truth per client. Commit these; they are your CRM.
-  Optional top-level `credit: { label, url }` drives the footer link "Uebfaqe nga <label>"; defaults to `Alp` and `https://REPLACE-ME.com` when absent, so set it once per client (or put your own site there).
+- `places/<slug>/` everything about one Place (see `CONTEXT.md` for the words). `config.json` is the site config the Skeleton
+  builds from; `state.json` holds the status and the CRM fields (every status change goes through `factory/lib/state.mjs`,
+  which refuses moves outside the transition table); `place.json` is the raw, key-free Google record; `jobs/<id>.json` and
+  `.log` are job records; `build/` and `photos/` are gitignored. Commit the rest; the repo is the CRM (`docs/adr/0001`).
+  Optional top-level `credit: { label, url }` in `config.json` drives the footer link "Uebfaqe nga <label>"; defaults to `Alp` and `https://REPLACE-ME.com` when absent, so set it once per client (or put your own site there).
+- `factory/lib/` shared code: `paths.mjs` (every path under `places/`), `state.mjs` (status enum, transitions, `state.json`
+  reads and writes), `slug.mjs`, `hours.mjs`, `jobs.mjs` (the one-worker job queue with log files and events), `git.mjs`
+  (auto-commit of state and config writes when `AUTO_COMMIT=1`, which the Portal sets). `factory/jobs/index.mjs` is the job
+  registry (`noop`, `build`, `deploy`; the streams add theirs), `factory/jobs/run.mjs` runs one job from the terminal.
 - `factory/` glue scripts. `factory/hooks/design-skills.mjs` is the Claude Code hook that makes the design skills mandatory for `template/src` edits (see CLAUDE.md).
 - `.claude/skills/` design skills for Claude Code (impeccable, design-taste-frontend, emil-design-eng, animate, review-animations). `skills-lock.json` pins them; the impeccable binary is gitignored, re-run `npx impeccable install -y --project --providers=claude-code` on a fresh clone.
 
 ## Known gaps (on purpose)
 - Hours from Google come as `8:00 p.d. – 11:00 m.d.` in the Albanian locale; `demo` normalises them to `08:00 - 23:00`. Older configs keep whatever they were generated with.
-- Photos from the Places API URLs embed your API key and expire; for a paying client, download them into `clients/<slug>/photos/` and point `gallery`/`hero.image` at copies you host.
+- Photos from the Places API URLs embed your API key and expire; for a paying client, download them into `places/<slug>/photos/` and point `gallery`/`hero.image` at copies you host.
 - No invoicing, no contact form backend (WhatsApp + tel are the funnel). Add Formspree or a Cloudflare Worker if a client insists.
 - Scraper selectors will break; Places API is the reliable path (~$0.03–0.05 per lead with photos).
 - Custom domains: buy via Cloudflare Registrar, attach in Pages → Custom domains. Not automated.

@@ -2,7 +2,10 @@ node_modules
 dist
 .env
 leads/out
-clients/*/build
+places/*/build
+places/*/photos
+places/*/jobs/*.log
+jobs/
 .claude/.design-skills
 .claude/skills/impeccable/scripts/bin
 **/.impeccable/review
@@ -10,7 +13,7 @@ clients/*/build
 **/.impeccable/mocks
 **/.impeccable/live
 **/.impeccable/config.local.json
-clients/_preview-*
+places/_preview-*
 .claude/settings.local.json
 **/.impeccable/hook.cache.json
 **/.impeccable/questions
