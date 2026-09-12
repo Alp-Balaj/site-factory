@@ -22,6 +22,7 @@ const schema = {
 function buildPrompt(lead, intake, preset) {
   return `Ti shkruan tekstin për një uebfaqe të thjeshtë biznesi në Kosovë, në shqip.
 ${preset.copyBrief}
+Stil: fjali të shkurtra. Mos përdor vizë të gjatë (— ose –); përdor pikë, presje ose dy pika.
 
 TË DHËNAT E BIZNESIT (mos i ndrysho faktet):
 ${JSON.stringify({ name: lead.name, address: lead.address, phone: lead.phone, rating: lead.rating, reviews_count: lead.reviews_count, review_snippets: lead.review_snippets, hours: lead.hours, city: lead.city }, null, 2)}
@@ -115,8 +116,15 @@ export function guessVertical(l) {
   return 'restaurant';
 }
 function parseHours(list = []) {
-  // Places API gives ["e hënë: 08:00–23:00", ...]; keep as displayable strings
-  return list.map(s => { const [day, ...t] = s.split(': '); return { day, time: t.join(': ') || 'Mbyllur' }; });
+  // Places API gives ["e hënë: 08:00–23:00", ...] or, in Albanian locale, "8:00 p.d. – 11:00 m.d." (p.d. = AM, m.d. = PM).
+  // Normalise to 24h "08:00 - 23:00" so hours read the same on every site.
+  const to24 = (h, m, ap) => { let hh = Number(h) % 12; if (/^m/.test(ap)) hh += 12; return `${String(hh).padStart(2, '0')}:${m}`; };
+  const clean = t => t
+    .replace(/(\d{1,2}):(\d{2})\s*(p\.d\.|m\.d\.)/gi, (_, h, m, ap) => to24(h, m, ap.toLowerCase()))
+    .replace(/\b(\d):(\d{2})/g, '0$1:$2')
+    .replace(/\s*[\u2013\u2014\u2009\u202f-]+\s*/g, ' - ')
+    .trim();
+  return list.map(s => { const [day, ...t] = s.split(': '); return { day, time: clean(t.join(': ')) || 'Mbyllur' }; });
 }
 export function slugify(s) { return String(s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ë/g, 'e').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
 

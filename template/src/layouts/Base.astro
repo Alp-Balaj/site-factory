@@ -1,8 +1,16 @@
 ---
 import '../styles/global.css';
-import { site } from '../lib/config';
+import { site, luminance } from '../lib/config';
 const { theme, business, seo } = site;
-const fonts = [...new Set([theme.display, theme.body])].map(f => f.replace(/ /g, '+') + ':opsz,wght@9..144,400;9..144,500;9..144,600').join('&family=');
+// Google Fonts css2: one family per entry, static weight list every catalogue face carries.
+// An optional theme.displayWeight (e.g. 800) is requested for the display face only; every face carries 400-700.
+const weights = (f: string) => [400, 500, 600, 700, ...(f === theme.display && theme.displayWeight ? [theme.displayWeight] : [])].filter((w, i, a) => a.indexOf(w) === i).sort().join(';');
+const fonts = [...new Set([theme.display, theme.body])].map(f => `${f.replace(/ /g, '+')}:wght@${weights(f)}`).join('&family=');
+const scheme = luminance(theme.bg) < 0.4 ? 'dark' : 'light';
+// Text on each coloured surface: whichever of ink/bg contrasts more with it (WCAG ratio), so any token set stays readable.
+const contrast = (a: string, b: string) => { const [x, y] = [luminance(a), luminance(b)]; return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+const on = (surface: string) => (contrast(theme.ink, surface) >= contrast(theme.bg, surface) ? theme.ink : theme.bg);
+const onColors = `--on-primary:${on(theme.primary)};--on-accent:${on(theme.accent)};--on-muted:${on(theme.muted)}`;
 const ld = {
   '@context': 'https://schema.org', '@type': 'LocalBusiness', name: business.name, telephone: business.phone,
   address: { '@type': 'PostalAddress', streetAddress: business.address, addressLocality: business.city, addressCountry: 'XK' },
@@ -13,16 +21,17 @@ const ld = {
 <html lang="sq">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>{seo.title}</title>
   <meta name="description" content={seo.description} />
   <meta property="og:title" content={seo.title} />
   <meta property="og:description" content={seo.description} />
   {site.hero.image && <meta property="og:image" content={site.hero.image} />}
+  <meta name="theme-color" content={theme.primary} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?family=${fonts}&display=swap`} />
-  <style set:html={`:root{--bg:${theme.bg};--ink:${theme.ink};--primary:${theme.primary};--accent:${theme.accent};--muted:${theme.muted};--font-display:"${theme.display}";--font-body:"${theme.body}"}`}></style>
+  <style set:html={`:root{--bg:${theme.bg};--ink:${theme.ink};--primary:${theme.primary};--accent:${theme.accent};--muted:${theme.muted};--font-display:"${theme.display}";--font-body:"${theme.body}";${theme.displayWeight ? `--display-weight:${theme.displayWeight};` : ''}${onColors};color-scheme:${scheme}}`}></style>
   <script type="application/ld+json" set:html={JSON.stringify(ld)}></script>
 </head>
 <body>

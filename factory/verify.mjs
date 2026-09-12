@@ -63,9 +63,14 @@ export async function takeScreenshots(slug) {
   const out = {};
   try {
     for (const [name, viewport] of Object.entries(VIEWPORTS)) {
-      const page = await browser.newPage({ viewport });
+      const page = await browser.newPage({ viewport, reducedMotion: 'reduce' }); // settle motion so nothing mid-animation reads as missing
       await page.goto(pathToFileURL(path.resolve(html)).href, { waitUntil: 'load' });
       await page.waitForLoadState('networkidle', { timeout: 5000 }).catch(() => {}); // fonts/map iframe; best effort
+      await page.evaluate(() => new Promise(done => { // scroll through so lazy-loaded photos land in the capture
+        const step = () => { window.scrollBy(0, 600); if (window.scrollY + innerHeight < document.body.scrollHeight) setTimeout(step, 60); else { window.scrollTo(0, 0); setTimeout(done, 300); } };
+        step();
+      }));
+      await page.waitForLoadState('networkidle', { timeout: 5000 }).catch(() => {});
       out[name] = path.join('clients', slug, `preview-${name}.png`);
       await page.screenshot({ path: out[name], fullPage: true });
       await page.close();

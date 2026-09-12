@@ -2,12 +2,13 @@
 import { site, t, waLink } from '../lib/config';
 ---
 <div class="bar">
-  <a href={`tel:${site.business.phone}`}>Thirr</a>
-  <a class="wa" href={waLink()}>WhatsApp</a>
+  {site.business.phone && <a class="btn call" href={`tel:${site.business.phone}`}>{t.call}</a>}
+  {site.business.whatsapp && <a class="btn primary" href={waLink()}>{t.cta}</a>}
 </div>
 <style>
-  .bar{position:fixed;inset:auto 0 0 0;display:grid;grid-template-columns:1fr 1fr;gap:.5rem;padding:.6rem;background:var(--bg);border-top:1px solid color-mix(in srgb,var(--ink) 12%,transparent);z-index:10}
-  .bar a{text-align:center;padding:.9rem;border-radius:.75rem;font-weight:600;text-decoration:none;background:var(--muted)}
-  .wa{background:var(--accent)!important}
-  @media (min-width:800px){.bar{display:none}}
+  /* the locked anchor: two woven buttons, same proportion at every width, phones only */
+  .bar { position: fixed; inset: auto 0 0 0; z-index: 10; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; background: var(--bg); padding-bottom: env(safe-area-inset-bottom); }
+  .bar .btn { min-height: 3.75rem; border-width: 2px 0 0 0; font-size: 1rem; padding-inline: .75rem; }
+  .bar .btn.primary { border-top-color: var(--accent); }
+  @media (min-width: 800px) { .bar { display: none; } }
 </style>

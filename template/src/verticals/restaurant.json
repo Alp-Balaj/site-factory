@@ -1,7 +1,11 @@
 {
   "id": "restaurant",
-  "labels": { "items": "Menyja", "itemsIntro": "Çka gatuajmë", "about": "Për ne", "hours": "Orari", "contact": "Na gjeni", "cta": "Rezervo në WhatsApp", "gallery": "Nga kuzhina" },
+  "labels": {
+    "items": "Menyja", "itemsIntro": "Çka gatuajmë", "about": "Për ne", "hours": "Orari", "contact": "Na gjeni",
+    "cta": "Rezervo në WhatsApp", "gallery": "Nga kuzhina", "call": "Thirr",
+    "reviews": "nga %n vlerësime në Google", "readReviews": "Lexoji vlerësimet", "map": "Harta", "allHours": "Shih orarin e plotë", "otherGroup": "Tjera"
+  },
   "itemGroups": ["Të ftohta", "Kryesore", "Ëmbëlsira", "Pije"],
-  "theme": { "bg": "#FFFFFF", "ink": "#1E2A24", "primary": "#1F3A2E", "accent": "#D9A21B", "muted": "#EEF1EC", "display": "Fraunces", "body": "Instrument Sans" },
+  "theme": { "bg": "#1A1717", "ink": "#F3ECDD", "primary": "#B5311F", "accent": "#D9A441", "muted": "#2E5A4B", "display": "Unbounded", "displayWeight": 800, "body": "Onest" },
   "copyBrief": "Restorant apo kafene. Toni: i ngrohtë, konkret, pa fjalë boshe. Theksoje ushqimin, atmosferën dhe pse vijnë njerëzit. Krijo 8-12 artikuj menyje realistë sipas emrit dhe reviews (çmimet në euro, tipike për Kosovën). Mos shpik adresë apo telefon."
 }

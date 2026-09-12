@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "${fonts}",
+        "createdAt": "2026-09-12T12:45:14.614Z",
+        "reason": "template design: font families are config.json theme tokens injected per client (Base.astro builds the Google Fonts URL from theme.display/theme.body); DESIGN.md documents the restaurant instance, not a literal"
+      }
+    ]
+  }
+}

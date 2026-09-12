@@ -10,31 +10,115 @@
     "address": "Rr. Rexhep Luci 12, Prishtinë",
     "city": "Prishtinë",
     "mapsUrl": "",
-    "lat": 42.6629, "lng": 21.1655,
-    "instagram": "", "facebook": "",
-    "rating": 4.6, "reviews_count": 212
+    "lat": 42.6629,
+    "lng": 21.1655,
+    "instagram": "",
+    "facebook": "",
+    "rating": 4.6,
+    "reviews_count": 212
   },
   "hours": [
-    { "day": "e hënë – e premte", "time": "08:00 – 23:00" },
-    { "day": "e shtunë", "time": "09:00 – 00:00" },
-    { "day": "e diel", "time": "10:00 – 22:00" }
+    {
+      "day": "e hënë - e premte",
+      "time": "08:00 - 23:00"
+    },
+    {
+      "day": "e shtunë",
+      "time": "09:00 - 00:00"
+    },
+    {
+      "day": "e diel",
+      "time": "10:00 - 22:00"
+    }
   ],
-  "theme": { "bg": "#FFFFFF", "ink": "#1E2A24", "primary": "#1F3A2E", "accent": "#D9A21B", "muted": "#EEF1EC", "display": "Fraunces", "body": "Instrument Sans" },
-  "hero": { "headline": "Tavë, flija dhe kafe si te gjyshja.", "sub": "Gatuajmë çdo ditë me perime nga tregu i gjelbër dhe mish nga Drenica. Vend për familje, punë dhe darka të gjata.", "image": "" },
-  "about": { "title": "Që nga 2009, e njëjta kuzhinë", "text": "Filluam me tri tavolina dhe një furrë. Sot kemi më shumë tavolina, por furra është e njëjta.\n\nMenyja ndryshon pak me stinën: speca të mbushur në verë, pasul në vjeshtë, sarma në dimër. Çka nuk ndryshon: buka piqet këtu çdo mëngjes." },
+  "theme": {
+    "bg": "#1A1717",
+    "ink": "#F3ECDD",
+    "primary": "#B5311F",
+    "accent": "#D9A441",
+    "muted": "#2E5A4B",
+    "display": "Unbounded",
+    "displayWeight": 800,
+    "body": "Onest"
+  },
+  "hero": {
+    "headline": "Tavë, flija dhe kafe si te gjyshja.",
+    "sub": "Gatuajmë çdo ditë me perime nga tregu i gjelbër dhe mish nga Drenica. Vend për familje, punë dhe darka të gjata.",
+    "image": ""
+  },
+  "about": {
+    "title": "Që nga 2009, e njëjta kuzhinë",
+    "text": "Filluam me tri tavolina dhe një furrë. Sot kemi më shumë tavolina, por furra është e njëjta.\n\nMenyja ndryshon pak me stinën: speca të mbushur në verë, pasul në vjeshtë, sarma në dimër. Çka nuk ndryshon: buka piqet këtu çdo mëngjes."
+  },
   "items": [
-    { "group": "Të ftohta", "name": "Sallatë shope", "desc": "Domate, kastravec, djathë i bardhë", "price": "3.50 €" },
-    { "group": "Të ftohta", "name": "Ajvar me djathë", "desc": "", "price": "3.00 €" },
-    { "group": "Kryesore", "name": "Tavë kosi", "desc": "Mish qengji, kos, oriz", "price": "7.50 €" },
-    { "group": "Kryesore", "name": "Flija e Rugovës", "desc": "Për dy persona, me kajmak", "price": "9.00 €" },
-    { "group": "Kryesore", "name": "Speca të mbushur", "desc": "Me mish ose vegjetarianë", "price": "5.50 €" },
-    { "group": "Kryesore", "name": "Qebapa (10 copë)", "desc": "Me qepë, lepinjë, kajmak", "price": "5.00 €" },
-    { "group": "Ëmbëlsira", "name": "Trileçe", "desc": "", "price": "2.50 €" },
-    { "group": "Ëmbëlsira", "name": "Bakllava", "desc": "", "price": "2.00 €" },
-    { "group": "Pije", "name": "Makiato", "desc": "", "price": "1.20 €" },
-    { "group": "Pije", "name": "Kos i shtëpisë", "desc": "", "price": "1.00 €" }
+    {
+      "group": "Të ftohta",
+      "name": "Sallatë shope",
+      "desc": "Domate, kastravec, djathë i bardhë",
+      "price": "3.50 €"
+    },
+    {
+      "group": "Të ftohta",
+      "name": "Ajvar me djathë",
+      "desc": "",
+      "price": "3.00 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Tavë kosi",
+      "desc": "Mish qengji, kos, oriz",
+      "price": "7.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Flija e Rugovës",
+      "desc": "Për dy persona, me kajmak",
+      "price": "9.00 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Speca të mbushur",
+      "desc": "Me mish ose vegjetarianë",
+      "price": "5.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Qebapa (10 copë)",
+      "desc": "Me qepë, lepinjë, kajmak",
+      "price": "5.00 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Trileçe",
+      "desc": "",
+      "price": "2.50 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Bakllava",
+      "desc": "",
+      "price": "2.00 €"
+    },
+    {
+      "group": "Pije",
+      "name": "Makiato",
+      "desc": "",
+      "price": "1.20 €"
+    },
+    {
+      "group": "Pije",
+      "name": "Kos i shtëpisë",
+      "desc": "",
+      "price": "1.00 €"
+    }
   ],
   "gallery": [],
-  "seo": { "title": "Te Liria — Restorant tradicional në Prishtinë", "description": "Tavë kosi, flija dhe qebapa në qendër të Prishtinës. Hapur çdo ditë 08:00–23:00. Rezervo në WhatsApp." },
-  "credit": { "label": "Alp", "url": "https://REPLACE-ME.com" }
+  "seo": {
+    "title": "Te Liria — Restorant tradicional në Prishtinë",
+    "description": "Tavë kosi, flija dhe qebapa në qendër të Prishtinës. Hapur çdo ditë 08:00–23:00. Rezervo në WhatsApp."
+  },
+  "credit": {
+    "label": "Alp",
+    "url": "https://REPLACE-ME.com"
+  }
 }

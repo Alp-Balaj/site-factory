@@ -51,13 +51,20 @@ and the same screenshots after, so a bad config fails before the build starts. B
 ## Where things live
 - `leads/` collectors. Output schema: place_id, name, address, phone, website, rating, reviews_count, lat/lng, photos[], hours[], review_snippets[], vertical, city, status.
 - `template/` one Astro site, zero client JS, fonts + CSS vars from config. `CLIENT=<slug>` picks the config.
-- `template/src/verticals/*.json` per-branch labels, item groups, default theme, and the copy brief for Claude. **Only `restaurant` has been looked at properly; the other three are stubs.**
+  The visual world is "the kilim": woven border bands, patches with a 4px frame, stitch rules, the name set huge on a colour field.
+  It is driven entirely by the seven theme tokens; text on each coloured surface is picked at build time from `ink`/`bg` by
+  contrast, so any token set stays readable. Product truth lives in `PRODUCT.md`, the direction contract in
+  `template/.impeccable/surfaces/template-src.md`, the recorded system in `DESIGN.md` (impeccable reads all three).
+  A client's `config.json` snapshots the preset theme at demo time; to move an old client onto new preset tokens, copy
+  `theme` from the vertical JSON into its config.
+- `template/src/verticals/*.json` per-branch labels, item groups, default theme, and the copy brief for Claude. **Only `restaurant` has been designed; the other three still carry their stub themes (light, Instrument Sans) and render on the same structure.**
 - `clients/<slug>/config.json` single source of truth per client. Commit these; they are your CRM.
   Optional top-level `credit: { label, url }` drives the footer link "Uebfaqe nga <label>"; defaults to `Alp` and `https://REPLACE-ME.com` when absent, so set it once per client (or put your own site there).
 - `factory/` glue scripts. `factory/hooks/design-skills.mjs` is the Claude Code hook that makes the design skills mandatory for `template/src` edits (see CLAUDE.md).
 - `.claude/skills/` design skills for Claude Code (impeccable, design-taste-frontend, emil-design-eng, animate, review-animations). `skills-lock.json` pins them; the impeccable binary is gitignored, re-run `npx impeccable install -y --project --providers=claude-code` on a fresh clone.
 
 ## Known gaps (on purpose)
+- Hours from Google come as `8:00 p.d. – 11:00 m.d.` in the Albanian locale; `demo` normalises them to `08:00 - 23:00`. Older configs keep whatever they were generated with.
 - Photos from the Places API URLs embed your API key and expire; for a paying client, download them into `clients/<slug>/photos/` and point `gallery`/`hero.image` at copies you host.
 - No invoicing, no contact form backend (WhatsApp + tel are the funnel). Add Formspree or a Cloudflare Worker if a client insists.
 - Scraper selectors will break; Places API is the reliable path (~$0.03–0.05 per lead with photos).

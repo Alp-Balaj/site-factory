@@ -5,5 +5,12 @@ leads/out
 clients/*/build
 .claude/.design-skills
 .claude/skills/impeccable/scripts/bin
-.impeccable
+.impeccable/review
+.impeccable/build
+.impeccable/mocks
+.impeccable/live
+.impeccable/config.local.json
+clients/_preview-*
 .claude/settings.local.json
+.impeccable/hook.cache.json
+.impeccable/questions
