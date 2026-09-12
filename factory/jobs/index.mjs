@@ -1,6 +1,7 @@
 // The job registry. Every stream appends one line; the queue (factory/lib/jobs.mjs) looks types up here.
 // build and deploy wrap the existing scripts; noop exists so the queue can be exercised without credentials.
 import * as noop from './noop.mjs';
+import * as photos from './photos.mjs';
 import { build } from '../build.mjs';
 import { deploy } from '../deploy.mjs';
 import { canTransition } from '../lib/state.mjs';
@@ -31,4 +32,5 @@ export const jobs = {
   noop,
   build: buildJob,
   deploy: deployJob,
+  photos,
 };

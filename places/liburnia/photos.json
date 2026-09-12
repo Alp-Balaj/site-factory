@@ -1,0 +1,147 @@
+{
+  "store": "local",
+  "instagram": {
+    "handle": "",
+    "how": "",
+    "posts": 0
+  },
+  "pool": [
+    {
+      "id": "g01",
+      "source": "google",
+      "ref": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSiAl793KmL-w-pQDq11_4nu1QmMIifKMG-2PNZ1pJRcNWRSEfnmHXwqj2mdtUFGB2bXopjDlOqP44EcXrBxRnZMMV9PCUJ7nDct7dDJK1oX7bn2pOpHQ20NBMR9w3Jc4RimYuy6tFVNs8XaIGPTOArWi2kIxkNXMJeW8z2IT7gOzOiG4HB401AUtl0GkrEQXaHQLsaKV2V0E-NqnmOCWdI-YB5HFhmgoyFzudWr8v_SqaHPM2axear8RhIC8g8Nq4D0nhXMMdn4pIb-OhRyy3PXq4X-dnFsA7H9mtHivnayY8bmWKSkw_u1AlTxVhHEyMiz1zk_PirZWMxHoIOFiRUoy-R_g6aHzqWBwQ7gPQCNJtoTzl0GM7j2siK3n3MClpIo_l2KpU9shpnI0rJP3BVfH975O4Mp3J5Uvsnq2_CbQ",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 1200,
+      "orientation": "landscape",
+      "original": "photos/g01.orig.jpg",
+      "web": "photos/g01-1600.webp",
+      "thumb": "photos/g01-800.webp",
+      "scores": {
+        "food": 0,
+        "room": 5,
+        "exterior": 1,
+        "people": 0,
+        "textHeavy": 0,
+        "dark": 2
+      }
+    },
+    {
+      "id": "g02",
+      "source": "google",
+      "ref": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXQEHvE_jOhecG7HUe73ePdp9WuLq2aeafVDZi6SmOf3TJTwCa5tR5rynLzg136tKTnZ1-fYKhx8nAe69sQK3V4VDeSi-cIXsx_cXYro_KOT35UuaGTEfObu5TySjezzUgnFX8Tvl2oPgKa1uw_3flLVide_IJzwqkA7ClyHEdZ4oWF26D4ogzggrmljlLk3iu3R8D1IKHiEzcXljo2dV7JDG2miRlabydReBkP-748xSHgrLKVFeeSXofN-fv9sbIjgpbEqUJgRyeBElIrAMRujd-FnekDOOYaYZnOrpnG-CVhRPVfyI-1zstJ7x7Uu4XMocjf8ZvAV8qiQ0tbQJG9VJmnckBJuCsXpC1xIHKLYJgEYqCSoA-M7tz7lCcKIkm0Xbmto0WyeQej5qQD24433GEGL1MWthWAd62uDOVepuWjSH-HSlL4I-KlqyA",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 901,
+      "orientation": "landscape",
+      "original": "photos/g02.orig.jpg",
+      "web": "photos/g02-1600.webp",
+      "thumb": "photos/g02-800.webp",
+      "scores": {
+        "food": 1,
+        "room": 4,
+        "exterior": 0,
+        "people": 3,
+        "textHeavy": 0,
+        "dark": 3
+      }
+    },
+    {
+      "id": "g03",
+      "source": "google",
+      "ref": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXRt5eLSCEtg2dNYgMpetS4pVHo1NqqhSPzBPJbjJP0QVPz5UilNDMWoWBlfr2TKDPMn0AbfG4vFvqZRPfJ-B7qSd9prfyEW5R_IHFvJUF29EA6hYMkqgP5JiIJ8G7uIdZVjAuNbR4M7Q3uApgny7M_PI3HU8bStBDr7PgLE3R-a790hZd5q162Zx9GBip8ZpLW5voWfBnlz5OMDtpv9R734eHOwDuS4_0afG5dcUvdxPCyzOn0NLcQsuDiD5t-y7M2HKa8N1rsA_AzoFqAWzwQb3NgfCCgVqTeIbsEOB5oFlvfK4yhdYu__9f4hwOnsna-vpbMugoSJhffHyuvEMzakgkw_pRjXfg38BwPvOxTkACZD7-wXMINB4jTJZfrn69E_AFMleGKZBMO1Seo7PHxEpwE176BbJKzoCh4yOj4MBlKdFQLsrimQk646Sqa4",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 1205,
+      "orientation": "landscape",
+      "original": "photos/g03.orig.jpg",
+      "web": "photos/g03-1600.webp",
+      "thumb": "photos/g03-800.webp",
+      "scores": {
+        "food": 5,
+        "room": 0,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 0,
+        "dark": 1
+      }
+    },
+    {
+      "id": "g04",
+      "source": "google",
+      "ref": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXTZsVb_ngxQ2VnxO5zuJ1_o-lc8eraKyEYOAF_LnVBlj0UpbzkfGrqOJ0BYp8VA1wpnZSoT6PY6UGS2RN-gaaWpN1kGJbGgjCfXfS2mHSMVuBwisazqus5C7tTCrY7vvP0BUzU8cIb5Tmkir2vZ2lxnYtxoTh0f_1Yrm7pKiH74P0zKHpN7nRt3_lTwbDFnzxf3-Tx_HExT3pms3_lAafPRRJtjC9bN_IzFKYQy0IYIgBHqiURMq_w6X9-dSsXBrOysYB-ebbPhnVdqCR7jO5hiSm4GEa4uRTegOm4vvG-XYike0OuRItgLPveCbAPAPNfYmHEDnaEjFr2D4zmmDGmoJlV8EPdRUrsQtaQ50s7PN-gSLaPBPMNCm_HWrRBza1zJU1IuoDj8T3Eu1qbs-_x6-QQBjCylNSwtggyg4UxJmwCgLjKnXJLDdZwxqg",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 1200,
+      "orientation": "landscape",
+      "original": "photos/g04.orig.jpg",
+      "web": "photos/g04-1600.webp",
+      "thumb": "photos/g04-800.webp",
+      "scores": {
+        "food": 5,
+        "room": 0,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 0,
+        "dark": 1
+      }
+    },
+    {
+      "id": "g05",
+      "source": "google",
+      "ref": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSzrj6dzKMp5TPNDmzKAySIZbaR9vLxSy0ZCPrU9l45HylK8mWNwXoj02aVtCETZ1tsXR3ArSTM02j7uOHUPrtUUKBMXrGb8c1pi-TUF5KXGv-n_yFW0PpT812m8tzQf7ylr4SeUMALu-8mdunKVJBMW7HvtTRLNnXQn81aPtWZRncjT00ypEhMqy1XeT9fSHlk6yzXqNJgoE55SP58dJVUHvbVHmkMiHeyGvwebkDSZgM6TXM3W4ud5UOj3JoY6bAbEwRuxXAsQnhJCx4NuE81hqmOCVznXeG09TumL_VmmJLaPJiYcKJe0rzWRTMn4XGNrkQCT6nNpaI5DEaH7CIzvgXELouPK1w4sPyTVIH1gFonR9XoEH5ZLjhEUBaCBO-xrOHLu9JL-SgP5yalOBPDYKI6T5nH20DdBq4wi_2Bauw6sRRkiz80amQvIfC5",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 1594,
+      "orientation": "square",
+      "original": "photos/g05.orig.jpg",
+      "web": "photos/g05-1600.webp",
+      "thumb": "photos/g05-800.webp",
+      "scores": {
+        "food": 5,
+        "room": 1,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 1,
+        "dark": 2
+      }
+    },
+    {
+      "id": "g06",
+      "source": "google",
+      "ref": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSNn_3fkCEbr0G41DXUjbnc1GMe9SUwnWtoxRdkC33s2MVIMNMFa2da0rMKRCNMJPU2xtHCGcxcBsn_q56b38bBDmUTiahriOiwjO9hS5tXImDEpAden7IK725yEmqZD1XuPAG6qU1bWUCfxkOoz8qCavHO2eBn3NXIIzuRmujZXmQsA8q5vQ4GRkMjSRvN0_LRL9mGZP7NLpaOWMeF1siO4FALe7TMHflU6hvCdAA05Jed_WlmAuOMTIsc-Stj2dM1kxgECynqlrp0txRZmhhxpu5bKABTyRwZyNrJm0kuZX8Va-4oQa2Fj9zJfh9bLxi0nI_2bJPOt-hhBLq5DXgFSSPkQYlURjFzNtmn4QN1qMjMUqV_PMh_acfYk10zNjjjQe4KY2rLgqAy7XeWNXkzWoy8oZ0AZG81EeZkh3Ea6J92GykgyHnivZRLmWBP",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 1200,
+      "orientation": "landscape",
+      "original": "photos/g06.orig.jpg",
+      "web": "photos/g06-1600.webp",
+      "thumb": "photos/g06-800.webp",
+      "scores": {
+        "food": 1,
+        "room": 2,
+        "exterior": 5,
+        "people": 0,
+        "textHeavy": 0,
+        "dark": 0
+      }
+    }
+  ],
+  "picks": {
+    "hero": "g06",
+    "gallery": [
+      "g01",
+      "g03",
+      "g04",
+      "g05"
+    ]
+  },
+  "note": "g06 was chosen as hero because it is the only fully daylit landscape shot and it conveys Liburnia's identity at a glance: the vine-covered terrace, antique stone mill, and produce cart together signal a rustic, generously furnished place before any copy is read. The gallery opens with that exterior, then moves into the warm evening dining room (g01) to show the indoor atmosphere, and closes with three food shots (g03, g04, g05) that progress from a single sizzling meat platter to a full table spread, giving a clear picture of the hearty cast-iron cooking. g02 was excluded from the gallery because its dark score of 3 and a figure dominating the frame make it unsuitable for site display.",
+  "curated_at": "2026-09-12T18:37:02.641Z"
+}

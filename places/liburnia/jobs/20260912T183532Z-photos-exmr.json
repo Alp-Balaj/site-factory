@@ -1,0 +1,18 @@
+{
+  "id": "20260912T183532Z-photos-exmr",
+  "type": "photos",
+  "slug": "liburnia",
+  "params": {},
+  "status": "done",
+  "createdAt": "2026-09-12T18:35:32.925Z",
+  "startedAt": "2026-09-12T18:35:32.926Z",
+  "endedAt": "2026-09-12T18:37:02.642Z",
+  "error": null,
+  "logPath": "places/liburnia/jobs/20260912T183532Z-photos-exmr.log",
+  "result": {
+    "pool": 6,
+    "store": "local",
+    "instagram": null,
+    "hero": "g06"
+  }
+}

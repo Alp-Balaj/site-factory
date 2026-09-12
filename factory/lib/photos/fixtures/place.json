@@ -1,0 +1,28 @@
+{
+  "place_id": "ChIJtestPlaceIdForPhotos",
+  "name": "La Tarté",
+  "address": "Rr Behije Dashi, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 49 000 000",
+  "website": "https://www.instagram.com/latarte.ks/",
+  "rating": 4.5,
+  "reviews_count": 90,
+  "lat": 42.65,
+  "lng": 21.16,
+  "type": "cafe",
+  "types": ["cafe", "bakery"],
+  "business_status": "OPERATIONAL",
+  "hours": ["e hënë: 07:00–22:00"],
+  "photos": [
+    { "name": "places/ChIJtest/photos/AAA1", "width": 4032, "height": 3024, "author": { "name": "Arta B.", "uri": "https://maps.google.com/maps/contrib/1" } },
+    { "name": "places/ChIJtest/photos/AAA2", "width": 3024, "height": 4032, "author": { "name": "Blerim K.", "uri": "https://maps.google.com/maps/contrib/2" } },
+    { "name": "places/ChIJtest/photos/AAA3", "width": 4032, "height": 3024, "author": null },
+    { "name": "places/ChIJtest/photos/AAA4", "width": null, "height": null, "author": null },
+    { "name": "places/ChIJtest/photos/AAA5", "width": 4032, "height": 3024, "author": null },
+    { "name": "places/ChIJtest/photos/AAA6", "width": 4032, "height": 3024, "author": null }
+  ],
+  "review_snippets": [ { "text": "Ushqimi #1", "author": "Arta", "rating": 5 } ],
+  "vertical": "restaurant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T10:00:00Z"
+}
