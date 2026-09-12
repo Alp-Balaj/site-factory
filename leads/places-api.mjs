@@ -1,19 +1,18 @@
-// Usage: npm run leads:api -- "restorant" "Prishtinë" [--pages 3] [--types cafe,bar] [--allow-no-phone] [--all]
+// Usage: npm run leads:api -- "restorant" "Prishtinë" [--pages 3] [--types cafe,bar] [--all]
 // Output: leads/out/<vertical>-<city>.json
-// Keeps only real, open businesses of the requested vertical that have a phone number. Website is NOT filtered:
-// many listings link a Facebook/Instagram page there, and those still need a site. Check the website field by hand.
+// Keeps only real, open businesses of the requested vertical. Neither phone nor website is filtered: a website is
+// often just a Facebook/Instagram link, and a missing phone can be found on the spot. Check both fields by hand.
 // Google text search also returns street addresses, homes and random POIs; those are dropped (see isLead).
 import 'dotenv/config';
 import fs from 'node:fs';
 import path from 'node:path';
 
 const [vertical, city, ...rest] = process.argv.slice(2);
-const usage = 'usage: leads:api <vertical-keyword> <city> [--pages N] [--types a,b] [--allow-no-phone] [--all]';
+const usage = 'usage: leads:api <vertical-keyword> <city> [--pages N] [--types a,b] [--all]';
 if (!vertical || !city || /^\d+$/.test(city)) { console.error(usage); process.exit(1); }
 const pages = Number(rest[rest.indexOf('--pages') + 1] || 3);
 if (!Number.isInteger(pages) || pages < 1) { console.error(usage); process.exit(1); }
 const keepAll = rest.includes('--all');
-const allowNoPhone = rest.includes('--allow-no-phone');
 const KEY = process.env.GOOGLE_PLACES_KEY;
 if (!KEY) { console.error('GOOGLE_PLACES_KEY missing in .env'); process.exit(1); }
 
@@ -65,7 +64,6 @@ function rejectReason(l) {
     const isRestaurantLike = verticalId === 'restaurant' && [l.type, ...types].some(t => /_restaurant$/.test(t ?? ''));
     if (!isRestaurantLike && !allowedTypes.has(l.type) && !types.some(t => allowedTypes.has(t))) return `wrong type (${l.type || types[0]})`;
   }
-  if (!l.phone && !allowNoPhone) return 'no phone';
   return null;
 }
 
