@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
+import { fixTheme } from './theme.mjs';
 
 const VIEWPORTS = {
   mobile: { width: 390, height: 844 },
@@ -43,6 +44,10 @@ export function checkConfig(config) {
 
   const noGallery = !Array.isArray(c.gallery) || c.gallery.filter(filled).length === 0;
   if (!filled(hero.image) && noGallery) warnings.push('hero.image and gallery are both empty: the site will have no photos');
+
+  // The template computes text colours from the theme; a theme fixTheme would repair is one it cannot make readable.
+  if (!c.theme || typeof c.theme !== 'object') errors.push('theme is missing (run: npm run theme -- <slug>)');
+  else for (const change of fixTheme(c.theme).changes) warnings.push(`theme: ${change} (npm run theme -- <slug> regenerates it)`);
 
   return { errors, warnings };
 }

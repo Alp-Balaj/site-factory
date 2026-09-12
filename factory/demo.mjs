@@ -1,11 +1,13 @@
 // Usage: npm run demo -- leads/out/restorant-prishtine.json <place_id|index> [--intake intake.json] [--vertical id]
-// Produces clients/<slug>/config.json with Albanian copy generated from the lead (+ optional intake answers).
+// Produces clients/<slug>/config.json with Albanian copy generated from the lead (+ optional intake answers) and a
+// theme derived from the lead's own photos (theme.mjs). Intake answers override both.
 // batch.mjs imports generateDemo() from here and runs it over a whole leads file.
 import 'dotenv/config';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { query } from '@anthropic-ai/claude-agent-sdk';
+import { generateTheme, placeFromLead } from './theme.mjs';
 
 const schema = {
   type: 'object', additionalProperties: false,
@@ -74,7 +76,17 @@ export async function generateDemo(lead, { intake = {}, verticalId } = {}) {
   const slug = slugify(intake.name || lead.name);
   if (!slug) throw new Error(`could not derive a slug from name "${intake.name || lead.name}"`);
 
-  const copy = await generateCopy(buildPrompt(lead, intake, preset));
+  // Copy and theme are two Claude calls with nothing in common, so they run side by side. The theme comes from the
+  // restaurant's own photos; the vertical preset is only the fallback when that call fails (the demo still ships).
+  const photos = [intake.heroImage, ...(intake.gallery ?? []), ...(lead.photos ?? [])].filter(Boolean);
+  const [copy, themed] = await Promise.all([
+    generateCopy(buildPrompt(lead, intake, preset)),
+    generateTheme(placeFromLead(lead, vertical), photos).catch(e => { console.warn(`theme: ${e.message}; using the ${vertical} fallback theme`); return null; }),
+  ]);
+  if (themed) {
+    console.log(`theme: ${themed.photosUsed} photo(s) read. ${themed.theme.note ?? ''}`);
+    for (const c of themed.changes) console.log(`theme repaired: ${c}`);
+  }
 
   const config = {
     slug, vertical,
@@ -92,7 +104,7 @@ export async function generateDemo(lead, { intake = {}, verticalId } = {}) {
       rating: lead.rating, reviews_count: lead.reviews_count,
     },
     hours: intake.hours || parseHours(lead.hours),
-    theme: { ...preset.theme, ...(intake.theme || {}) },
+    theme: { ...(themed?.theme ?? preset.theme), ...(intake.theme || {}) },
     hero: { ...copy.hero, image: intake.heroImage || lead.photos?.[0] || '' },
     about: copy.about,
     items: intake.items?.length ? intake.items : copy.items,

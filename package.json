@@ -9,10 +9,11 @@
     "leads:api": "node leads/places-api.mjs",
     "leads:scrape": "node leads/scrape-maps.mjs",
     "demo": "node factory/demo.mjs",
-    "build": "node factory/build.mjs",
-    "deploy": "node factory/deploy.mjs",
+    "theme": "node factory/theme.mjs",
     "dev": "node factory/dev.mjs",
     "verify": "node factory/verify.mjs",
+    "build": "node factory/build.mjs",
+    "deploy": "node factory/deploy.mjs",
     "demo:batch": "node factory/batch.mjs"
   },
   "dependencies": {

@@ -10,7 +10,8 @@ npx playwright install chromium   # needed for the scraper and for verify/build 
 
 npm run leads:api -- "restorant" "Prishtinë" --pages 3     # -> leads/out/restorant-prishtine.json (open businesses of that vertical; phone/website not filtered)
 npm run leads:scrape -- "restorant" "Prishtinë" --max 60    # free alternative, brittle
-npm run demo -- leads/out/restorant-prishtine.json 0        # -> clients/<slug>/config.json (Albanian copy via Claude)
+npm run demo -- leads/out/restorant-prishtine.json 0        # -> clients/<slug>/config.json (Albanian copy + a theme from the place's photos, via Claude)
+npm run theme -- <slug>                                     # regenerate only the theme from the photos in config.json (--dry-run to preview)
 npm run dev -- <slug>                                       # preview at localhost:4321
 npm run verify -- <slug>                                    # config sanity check + preview-mobile.png / preview-desktop.png if built
 npm run build -- <slug>                                     # -> clients/<slug>/build
@@ -50,14 +51,20 @@ and the same screenshots after, so a bad config fails before the build starts. B
 
 ## Where things live
 - `leads/` collectors. Output schema: place_id, name, address, phone, website, rating, reviews_count, lat/lng, photos[], hours[], review_snippets[], vertical, city, status.
-- `template/` one Astro site, zero client JS, fonts + CSS vars from config. `CLIENT=<slug>` picks the config.
-  The visual world is "the kilim": woven border bands, patches with a 4px frame, stitch rules, the name set huge on a colour field.
-  It is driven entirely by the seven theme tokens; text on each coloured surface is picked at build time from `ink`/`bg` by
-  contrast, so any token set stays readable. Product truth lives in `PRODUCT.md`, the direction contract in
-  `template/.impeccable/surfaces/template-src.md`, the recorded system in `DESIGN.md` (impeccable reads all three).
-  A client's `config.json` snapshots the preset theme at demo time; to move an old client onto new preset tokens, copy
-  `theme` from the vertical JSON into its config.
-- `template/src/verticals/*.json` per-branch labels, item groups, default theme, and the copy brief for Claude. **Only `restaurant` has been designed; the other three still carry their stub themes (light, Instrument Sans) and render on the same structure.**
+- `template/` one Astro site, zero client JS. `CLIENT=<slug>` picks the config.
+  **The template is the skeleton, not the look.** It fixes structure (sections, order, the name filling a phone, the price column,
+  the locked call/WhatsApp bar) and draws every surface from the client's theme tokens: `bg`, `ink`, `primary`, `accent`, `muted`,
+  `display`, `body`, `displayWeight`, `radius` (corner language), `frame` (edge: none/line/thick), `weights` (Google Fonts weights
+  per family) and a `note`. Text on each coloured surface is computed at build time from `ink`/`bg` by contrast, so any token set
+  stays readable. Product truth lives in `PRODUCT.md`, the direction contract in `template/.impeccable/surfaces/template-src.md`,
+  the recorded system in `DESIGN.md` (impeccable reads all three).
+- The theme comes from the restaurant itself. `factory/theme.mjs` sends the lead's Google photos, name, category and reviews to
+  Claude (vision, via your Claude Code login) and gets back a palette, two faces from a curated Google Fonts catalogue, a corner and
+  an edge language, plus a one-line `note` saying what drove it. `fixTheme` then repairs contrast (ink/bg 7:1, readable text on every
+  coloured surface, accent visible on bg) and snaps fonts and weights to the catalogue. `demo` runs it for every lead (falling back to
+  the vertical's plain theme if the call fails); `npm run theme -- <slug>` reruns it for an existing client from the photos in its
+  config. `verify` warns when a hand-edited theme would be repaired. Intake's `theme.primary` still overrides.
+- `template/src/verticals/*.json` per-branch labels, item groups, the fallback theme (used only when generation fails), and the copy brief for Claude. **Only `restaurant` has a proper fallback; the other three still carry stub themes (light, Instrument Sans) and render on the same structure.**
 - `clients/<slug>/config.json` single source of truth per client. Commit these; they are your CRM.
   Optional top-level `credit: { label, url }` drives the footer link "Uebfaqe nga <label>"; defaults to `Alp` and `https://REPLACE-ME.com` when absent, so set it once per client (or put your own site there).
 - `factory/` glue scripts. `factory/hooks/design-skills.mjs` is the Claude Code hook that makes the design skills mandatory for `template/src` edits (see CLAUDE.md).

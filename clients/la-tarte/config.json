@@ -1,0 +1,176 @@
+{
+  "slug": "la-tarte",
+  "vertical": "restaurant",
+  "business": {
+    "name": "La Tarté",
+    "tagline": "Kafeja dhe shija që të kthejnë sërish.",
+    "phone": "+383 49 877 771",
+    "whatsapp": "38349877771",
+    "email": "",
+    "address": "Rr Behije Dashi, Prishtinë 10000",
+    "city": "Prishtinë",
+    "mapsUrl": "https://maps.google.com/?cid=9423822292599900350&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": 42.657390899999996,
+    "lng": 21.1660145,
+    "instagram": "",
+    "facebook": "",
+    "rating": 4.5,
+    "reviews_count": 90
+  },
+  "hours": [
+    {
+      "day": "e hënë",
+      "time": "07:00 - 22:00"
+    },
+    {
+      "day": "e martë",
+      "time": "07:00 - 22:00"
+    },
+    {
+      "day": "e mërkurë",
+      "time": "07:00 - 22:00"
+    },
+    {
+      "day": "e enjte",
+      "time": "07:00 - 22:00"
+    },
+    {
+      "day": "e premte",
+      "time": "07:00 - 22:00"
+    },
+    {
+      "day": "e shtunë",
+      "time": "07:00 - 22:00"
+    },
+    {
+      "day": "e diel",
+      "time": "09:00 - 17:00"
+    }
+  ],
+  "theme": {
+    "bg": "#F3F4EF",
+    "ink": "#1A1D18",
+    "primary": "#1D4A2F",
+    "accent": "#B2860F",
+    "muted": "#E6E8E0",
+    "display": "Bricolage Grotesque",
+    "displayWeight": 700,
+    "body": "Figtree",
+    "radius": "8px",
+    "frame": "line",
+    "note": "La Tarté's own menu mats and circular logo (deep forest green + citrus amber circles) drove the primary and accent directly; the glass-block column's precise grid suggested the hairline frame; the terrazzo floor, sheer curtains, and flooded daylight kept the ground a barely-cooled off-white rather than any warm cream; dark walnut chairs with their organic curves and the sculptural pendant lamps called for Bricolage Grotesque — warm, contemporary, new-café — at soft 8 px corners.",
+    "weights": {
+      "Bricolage Grotesque": [
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "Figtree": [
+        400,
+        500,
+        600,
+        700
+      ]
+    }
+  },
+  "hero": {
+    "headline": "Çdo vizitë fillon me kafé të mirë.",
+    "sub": "Ambient modern, atmosferë relaksuese dhe ushqim i vërtetë. Vend ku ndalesh dhe ndiehesh mirë.",
+    "image": "https://places.googleapis.com/v1/places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXTENtGZ2wzzqg5J738PIZ1uf2dWQbXwjWjlHYhZGRa0zLAfSCOUE1Uu8xGHpklCghjCvdxYKpRuBOxo96vFKc1vV4FcSiuDztmTEM1QdfmAkBrpleF1FmthnFTa48m6vs_mYIPM_71BPslUWx6_tjKe3QMF2_8AYQJ-CotEj6OSDgPPj04R0OHLlsbMMyp93dKmTirAalzaxauBgBXSs10sDQurncTe9SPzAi2b5OSEmMTnnmToq8uBrG0fhLKNUl-JtNho_72JndSRCBa-Z1nVmVROu2psgkNAdDJ9i6_fJxIjuqXic4bp7LFe8s6PGUF8fLKE7YxWguSIPPYNvjmhsXftrP2GOAX5KZ1xa5BKtusLnD7tvbe2T_4r1tXvsvCjJsa2AS85D6xF-3ZuwA3TkJyKinU3cYfIGnzQwWEIvslJ7E_KHsMQ9igVNLOv/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8"
+  },
+  "about": {
+    "title": "Shija fillon nga kujdesi.",
+    "text": "La Tarté është kafé dhe patiseri në zemër të Prishtinës. Ambienti është modern dhe i qetë: nuk ka zhurmë, nuk ka nxitim. Mund të vish vetëm, me mik ose me familje.\n\nTartat bëhen çdo ditë. Brumi është i hollë, mbushjet janë me produkte të freskëta. Espresso ka aromë të pastër, kapuçino del me shkumë të mirë. Kafeja këtu ka shije.\n\nNjerëzit vijnë herët për mëngjes dhe kthehen pasdite. Nota 4.5 nga 90 vlerësime tregon diçka të thjeshtë: ka vend që e viziton shumë herë."
+  },
+  "items": [
+    {
+      "group": "Të ftohta",
+      "name": "Sallatë me ton",
+      "desc": "Ton, misër, ullinj, leturë, veshje me limon.",
+      "price": "4.50 €"
+    },
+    {
+      "group": "Të ftohta",
+      "name": "Karpaccio pule",
+      "desc": "Fileto pule e hollë, rukola, parmigian, vaj ulliri.",
+      "price": "5.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Tost La Tarté",
+      "desc": "Djathë, proshutë, domate, pesto jeshil.",
+      "price": "4.00 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Krokmadame",
+      "desc": "Proshutë, djathë, béchamel, vezë mbi bukë të thekur.",
+      "price": "5.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Omëletë shtëpie",
+      "desc": "Vezë të freskëta, djathë, perime sipas zgjedhjes.",
+      "price": "4.50 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Tarté me luleshtrydhe",
+      "desc": "Krem i butë, luleshtrydhe të freskëta, brumë i brishtë.",
+      "price": "3.50 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Tarté me limon",
+      "desc": "Krem limon, aciditet i lehtë, brumë e hollë.",
+      "price": "3.50 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Cheesecake i shtëpisë",
+      "desc": "Krem djathë, bazë biskoté, shurup manaferre.",
+      "price": "4.00 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Kroasan i fllad",
+      "desc": "Gjalpë francez, i pjekur herët çdo mëngjes.",
+      "price": "2.00 €"
+    },
+    {
+      "group": "Pije",
+      "name": "Espresso",
+      "desc": "Kafé e fortë, aromë e pastër.",
+      "price": "1.00 €"
+    },
+    {
+      "group": "Pije",
+      "name": "Cappuccino",
+      "desc": "Espresso, qumësht i shkumëzuar, ekuilibër i mirë.",
+      "price": "1.80 €"
+    },
+    {
+      "group": "Pije",
+      "name": "Café Latte",
+      "desc": "Espresso e butë, qumësht i ngrohtë.",
+      "price": "2.20 €"
+    }
+  ],
+  "gallery": [
+    "https://places.googleapis.com/v1/places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXTbRtM0_RVrVs2Meoqwc4S2dNh2Jwpgzqfp4dtTRJDcg4_9XcWOSXrd2i4ZHwZqhI69HPyVXP3APEMrdQ3FvBG3rRfn2mJuIYvqDJ14HSSI-V4xPlk56n_jPBxFNp1M_Tmnp6dCfMDAgQ2H-124Te_jmD1aUfmCWxsE0Z_NrT_zICCFP2iWpkn3iOmrInH6c9cdIJe7F3cNe3f9pdKcATV_6yjl0Z_62ArMPyQthpwl_4WS5Brg_o6HY-0K7czLlUwWQPxJgKv4xPOSwpW5-6NTHudyUDSh6gpGPTULRYs94YRHpjSEK-TCzHeADJ1LI8eidQX-ASMEmNzpww88POPGRdDkv6N0N25x_h5pTQpAiw4U4vZlj7tzcRftc8bA6z8gW9hYD9AAVOi__UvgrEhoRjCJHD_k5zZvUyCqMXQpgTQkpG8xlgXijVCEwJtD/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8",
+    "https://places.googleapis.com/v1/places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXQep3p_aYNczgdCliPPEfDpCBBN1PaFZpB7aDYjK7ExSDKOLfCP3HwWyiVH2XaUKMmffHJlD7j_QuQYa49LqvE4jD5Le-FW2oYUaQMQ5YyeJm6Nlv-crjDTLBY5pNDLrjcxL6LhHRGupOXzB1L6U8JgSqJiKoTkbyNoLvvQ8aeFxAeKLxVNNkPsqMjGFhzurVfICAPdKfBTAmBsEmq-xuhZMHfhZFNdD2KYRcy80W3GCiGlPZW-oypPPIS5QEChQMrl9vXy6ZDo78zjZW2V7HYLpj6U3cGYMoYUF7xy86_YmtZW2-5ZG9SgkGOoXcWQi8HRle3x0hCWndQHXG8i6O1v4EvVkoUf_ovIbu7UKfiBR_SPVEJK7uWrmWYRfCpbwIvDbOgn_4I7p-CFKPVTA_ojwAy-F39dyxUYybLT5RjmK_59THJWiegR2ApdWISJ/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8",
+    "https://places.googleapis.com/v1/places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXT4dtcYQOdbS_qbKMhdXXrkCbLPFglcIAdg0v_Ogy2sV9IuOgkAhw_RgOrBm2LYrL8pf0q1H8p6_9WGWcircZIXU2qInpImi2cUbTCJ8swDWlB6mnCNXNipqy01xgmTZtOR9ZQU6m9iVvhCMkxnDSlNKiTD1Pnsr3ipiLY-5f8QmzM8dBbo6rhaoddkXGzHfK5Orr3JeOMibZ5dsDEs44XHU_Qe9uXgqOPOfEioJd1fIecerQSaQNjTiwO2Ef9re-2Fk4sK6LlPRF8fHF7i96EIAt9cRryNKDtBiw28QE1wVoemqsn-BRqrOq9zbUHioMZ6t_Nl6lO7YLGJJXF_6BlWqepd-PFdfGSzqpSbcOwvPi7BM7XktMbVvOGm-8uHcth8Bd8VZEvjuCuHaOSsD9TNIfbl6vink36VU6td2I-Bu3U3J56rKTfag3nVYtVB/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8",
+    "https://places.googleapis.com/v1/places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXTqZqK-NRBpx9eJon8vscgq5izVm9RFkLuIS4U35rCUJgCK2n4e7bI-4E4vZURqmVXOqViq65wBzpqxEED3UJ9x7cjVHn-Ine7fiXe5HzGs96j1rCKbK4daJKDOBSu5OPV89quNTSC1gYhRwWPKhULUhhM0VRnc5t_NvPgsXUYeVsiKTs2_bn2d9mniWRInvrgWPsVIroriMYGu8P5lkWbe8Q7rYb0xSYuxHBUlFHdWldUiWWh8u91aFcalJfl-JXK3-YE8yiFZSJRWWRQJYceMMri_kgPnOqLjZtBDHaBDrIOYid5lhFf1WvHuQIEoOq_aeum4OQzs7-EHd1bJW-oDILDsi3PzodPDLyUaXogaYzFEBUz9qkCRFPNTpOJQjjaS4pq3aPOCWDgCDRkNALMtjocz1GGTp6Rcw-gOZmIYpoqD8orF8rOuLPBkyg/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8"
+  ],
+  "seo": {
+    "title": "La Tarté: Kafé dhe Patiseri në Prishtinë",
+    "description": "Kafé e mirë, tarta të freskëta dhe ambient modern në Prishtinë. La Tarté të pret çdo ditë nga ora 7 e mëngjesit."
+  },
+  "meta": {
+    "lead_place_id": "ChIJbd7VBgCfVBMRvgjTEHIkyII",
+    "generated_at": "2026-09-12T13:09:19.309Z",
+    "source": "places-api"
+  }
+}

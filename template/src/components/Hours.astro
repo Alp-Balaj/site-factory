@@ -9,9 +9,9 @@ import { site, t } from '../lib/config';
   </dl>
 </section>) : null}
 <style>
-  .list { max-width: 30rem; padding: .5rem 1.25rem; --patch: var(--muted); color: var(--on-muted); --rule: color-mix(in srgb, currentColor 45%, transparent); }
+  .list { max-width: 30rem; padding: .5rem 1.25rem; --patch: var(--muted); color: var(--on-muted); }
   .list div { display: flex; justify-content: space-between; gap: 1rem; padding-block: .7rem; }
-  .list div + div { background: repeating-linear-gradient(90deg, var(--rule) 0 var(--stitch), transparent var(--stitch) calc(var(--stitch) * 2)) top / 100% 2px no-repeat; }
+  .list div + div { border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent); }
   dt { text-transform: capitalize; }
   dd { font-weight: 600; white-space: nowrap; }
 </style>

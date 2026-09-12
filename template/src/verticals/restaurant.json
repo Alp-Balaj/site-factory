@@ -1,11 +1,41 @@
 {
   "id": "restaurant",
   "labels": {
-    "items": "Menyja", "itemsIntro": "Çka gatuajmë", "about": "Për ne", "hours": "Orari", "contact": "Na gjeni",
-    "cta": "Rezervo në WhatsApp", "gallery": "Nga kuzhina", "call": "Thirr",
-    "reviews": "nga %n vlerësime në Google", "readReviews": "Lexoji vlerësimet", "map": "Harta", "allHours": "Shih orarin e plotë", "otherGroup": "Tjera"
+    "items": "Menyja", "itemsIntro": "Çka gatuajmë", "about": "Për ne", "hours": "Orari", "contact": "Na gjeni", "cta": "Rezervo në WhatsApp", "gallery": "Nga kuzhina", "call": "Thirr", "reviews": "nga %n vlerësime në Google", "readReviews": "Lexoji vlerësimet", "map": "Harta", "allHours": "Shih orarin e plotë", "otherGroup": "Tjera"
   },
-  "itemGroups": ["Të ftohta", "Kryesore", "Ëmbëlsira", "Pije"],
-  "theme": { "bg": "#1A1717", "ink": "#F3ECDD", "primary": "#B5311F", "accent": "#D9A441", "muted": "#2E5A4B", "display": "Unbounded", "displayWeight": 800, "body": "Onest" },
+  "itemGroups": [
+    "Të ftohta",
+    "Kryesore",
+    "Ëmbëlsira",
+    "Pije"
+  ],
+  "theme": {
+    "bg": "#FAF9F6",
+    "ink": "#1F1E1B",
+    "primary": "#2F3A34",
+    "accent": "#C8552D",
+    "muted": "#EEEBE3",
+    "display": "Archivo",
+    "displayWeight": 700,
+    "body": "Onest",
+    "radius": "0px",
+    "frame": "line",
+    "weights": {
+      "Archivo": [
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "Onest": [
+        400,
+        500,
+        600,
+        700
+      ]
+    }
+  },
   "copyBrief": "Restorant apo kafene. Toni: i ngrohtë, konkret, pa fjalë boshe. Theksoje ushqimin, atmosferën dhe pse vijnë njerëzit. Krijo 8-12 artikuj menyje realistë sipas emrit dhe reviews (çmimet në euro, tipike për Kosovën). Mos shpik adresë apo telefon."
 }

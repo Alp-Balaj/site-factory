@@ -6,7 +6,7 @@ Product truth for the site-factory template. The template renders one static pag
 web
 
 ## Stack
-Astro 5 static build, zero client JavaScript, CSS inlined at build. One template serves every client; per-client differences live in config.json (copy, photos, hours, seven theme tokens: bg, ink, primary, accent, muted, display font, body font). Fonts are loaded from Google Fonts. Photos are Google Places URLs at demo stage and self-hosted copies for paying clients. Deployed to Cloudflare Pages at `sf-<slug>.pages.dev`.
+Astro 5 static build, zero client JavaScript, CSS inlined at build. One template serves every client; per-client differences live in config.json (copy, photos, hours, and the theme tokens: bg, ink, primary, accent, muted, display, body, displayWeight, radius, frame, weights). The theme is generated per restaurant from its own Google photos by Claude vision (factory/theme.mjs) and repaired for contrast. Fonts are loaded from Google Fonts. Photos are Google Places URLs at demo stage and self-hosted copies for paying clients. Deployed to Cloudflare Pages at `sf-<slug>.pages.dev`.
 
 ## Users
 - **Primary judge: the restaurant owner, on their phone.** They receive the demo link cold on WhatsApp, open it on a mid-range Android or iPhone, and decide in seconds whether it feels like their place and worth paying for. They did not ask for it. Most have never had a website; their online presence is a Facebook or Instagram page.
@@ -25,11 +25,11 @@ Phone first, often outdoors or in the restaurant itself, sometimes on slow mobil
 - One page, sections: hero, menu (grouped items with prices), about, gallery, hours, contact with map, sticky call/WhatsApp bar on phones, footer credit.
 - Everything visual must work for any restaurant name (2 to 30 characters), 0 to 5 photos, 6 to 20 menu items, with or without a Google rating. Photos may be absent at demo stage; the page must still look finished.
 - Zero client JS is a hard constraint. Motion is CSS only (transitions, `@starting-style`, scroll-driven where supported), always under `prefers-reduced-motion`.
-- The seven theme tokens in config.json remain the per-client customization surface; the template may add tokens but must keep sensible defaults in the vertical preset.
+- The template is a skeleton: structure only, no look of its own. The theme tokens in config.json are the whole per-client look and come from the restaurant's photos; the template may add tokens but must keep sensible defaults in the vertical preset and must never bake in a colour, face, corner, edge or ornament.
 - No new copy may be hardcoded in components; labels come from `template/src/verticals/<vertical>.json`.
 
 ## Brand Commitments
-None inherited. The previous look (dark green, gold accent, Fraunces display, photo-then-name hero) is replaced entirely and serves only as anti-reference. Each client gets colours and fonts via tokens; the vertical preset defines the restaurant default.
+None inherited by the template. Each client's brand is derived from the client: colours, faces, corners and edges come from their own photos and name, repaired for contrast, and the owner can override them at intake. Two earlier template looks (dark green with gold and Fraunces; the madder-red kilim with stepped-diamond bands and Unbounded 800) are anti-references: both were one house style stamped on every client, which is exactly what the factory must not do.
 
 ## Evidence on Hand
 - Google rating and review count per business (real, shown when present).

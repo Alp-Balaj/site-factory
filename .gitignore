@@ -14,3 +14,4 @@ clients/_preview-*
 .claude/settings.local.json
 **/.impeccable/hook.cache.json
 **/.impeccable/questions
+template/.astro

@@ -1,21 +1,21 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-12T00:00:00Z",
-  "title": "Design System: Site Factory Template",
+  "generatedAt": "2026-09-12T17:00:00Z",
+  "title": "Design System: Site Factory Skeleton",
   "extensions": {
     "colorMeta": {
-      "wool-black": { "role": "neutral", "displayName": "Wool Black (--bg)", "canonical": "#1A1717", "tonalRamp": ["oklch(15% 0.008 20)", "oklch(25% 0.008 20)", "oklch(35% 0.008 20)", "oklch(45% 0.008 20)", "oklch(55% 0.008 20)", "oklch(70% 0.008 20)", "oklch(85% 0.008 20)", "oklch(95% 0.008 20)"] },
-      "undyed-wool": { "role": "neutral", "displayName": "Undyed Wool (--ink)", "canonical": "#F3ECDD", "tonalRamp": ["oklch(15% 0.02 85)", "oklch(25% 0.02 85)", "oklch(35% 0.02 85)", "oklch(45% 0.02 85)", "oklch(55% 0.02 85)", "oklch(70% 0.02 85)", "oklch(85% 0.02 85)", "oklch(95% 0.02 85)"] },
-      "madder-red": { "role": "primary", "displayName": "Madder Red (--primary)", "canonical": "#B5311F", "tonalRamp": ["oklch(15% 0.06 30)", "oklch(25% 0.11 30)", "oklch(35% 0.15 30)", "oklch(45% 0.17 30)", "oklch(55% 0.17 30)", "oklch(70% 0.13 30)", "oklch(85% 0.07 30)", "oklch(95% 0.02 30)"] },
-      "ochre": { "role": "secondary", "displayName": "Ochre (--accent)", "canonical": "#D9A441", "tonalRamp": ["oklch(15% 0.04 80)", "oklch(25% 0.07 80)", "oklch(35% 0.09 80)", "oklch(45% 0.11 80)", "oklch(55% 0.13 80)", "oklch(70% 0.14 80)", "oklch(85% 0.10 80)", "oklch(95% 0.04 80)"] },
-      "kilim-green": { "role": "tertiary", "displayName": "Kilim Green (--muted)", "canonical": "#2E5A4B", "tonalRamp": ["oklch(15% 0.03 165)", "oklch(25% 0.05 165)", "oklch(35% 0.06 165)", "oklch(45% 0.07 165)", "oklch(55% 0.08 165)", "oklch(70% 0.08 165)", "oklch(85% 0.06 165)", "oklch(95% 0.02 165)"] },
-      "on-primary": { "role": "neutral", "displayName": "On Primary (computed, WCAG pick of ink or bg)", "canonical": "#F3ECDD", "tonalRamp": [] },
-      "on-accent": { "role": "neutral", "displayName": "On Accent (computed, WCAG pick of ink or bg)", "canonical": "#1A1717", "tonalRamp": [] },
-      "on-muted": { "role": "neutral", "displayName": "On Muted (computed, WCAG pick of ink or bg)", "canonical": "#F3ECDD", "tonalRamp": [] }
+      "bg": { "role": "neutral", "displayName": "Ground (--bg, per-client theme; fallback shown)", "canonical": "#FAF9F6", "tonalRamp": [] },
+      "ink": { "role": "neutral", "displayName": "Ink (--ink, per-client theme; fallback shown)", "canonical": "#1F1E1B", "tonalRamp": [] },
+      "primary": { "role": "primary", "displayName": "Field (--primary, per-client theme; fallback shown)", "canonical": "#2F3A34", "tonalRamp": [] },
+      "accent": { "role": "secondary", "displayName": "Tap colour (--accent, per-client theme; fallback shown)", "canonical": "#C8552D", "tonalRamp": [] },
+      "muted": { "role": "tertiary", "displayName": "Card surface (--muted, per-client theme; fallback shown)", "canonical": "#EEEBE3", "tonalRamp": [] },
+      "on-primary": { "role": "neutral", "displayName": "On Primary (computed, WCAG pick of ink or bg)", "canonical": "#FAF9F6", "tonalRamp": [] },
+      "on-accent": { "role": "neutral", "displayName": "On Accent (computed, WCAG pick of ink or bg)", "canonical": "#FAF9F6", "tonalRamp": [] },
+      "on-muted": { "role": "neutral", "displayName": "On Muted (computed, WCAG pick of ink or bg)", "canonical": "#1F1E1B", "tonalRamp": [] }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "The restaurant name only; sized from its longest word via --chars so it fills a 390px phone." },
-      "headline": { "displayName": "Headline", "purpose": "Section headings." },
+      "display": { "displayName": "Display", "purpose": "The restaurant name only; --font-display at --display-weight, sized from its longest word via --chars so it fills a 390px phone." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings, same face and weight." },
       "title": { "displayName": "Title", "purpose": "Menu group names inside patches; the desktop brand link at 1rem." },
       "lede": { "displayName": "Lede", "purpose": "The hero headline under the name, max 34ch." },
       "body": { "displayName": "Body", "purpose": "Paragraphs at max 60ch; item names, times and prices at 600." },
@@ -23,10 +23,9 @@
     },
     "shadows": [],
     "motion": [
-      { "name": "ease-out", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Exponential ease-out for the weave-in and the button press." },
-      { "name": "weave-in", "value": "clip-path 600ms var(--ease-out); .late adds transition-delay 140ms; @starting-style clip-path: inset(0 100% 0 0)", "purpose": "One left-to-right reveal on load for the hero words and photo patch. Reduced-motion gated." },
-      { "name": "stitch-in", "value": "animation: stitch-in linear both; animation-timeline: view(); animation-range: entry 0% entry 40%", "purpose": "Menu row stitch rule sewn in as the row enters the viewport, under @supports (animation-timeline: view()) and no-preference; already drawn otherwise." },
-      { "name": "state", "value": "160ms", "purpose": "Hover background/colour and the stitch rule turning ochre; button press scale(.97)." }
+      { "name": "ease-out", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Exponential ease-out for the rise and the button press." },
+      { "name": "rise", "value": "opacity + translate 500ms var(--ease-out); .late adds transition-delay 120ms; @starting-style opacity 0, translate 0 10px", "purpose": "The one load moment: hero words and photo settle into place. Reduced-motion gated." },
+      { "name": "state", "value": "160ms", "purpose": "Hover background/colour, the menu row rule turning accent, button press scale(.97)." }
     ],
     "breakpoints": [
       { "name": "nav", "value": "640px", "purpose": "Below: desktop nav hidden." },
@@ -38,104 +37,93 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The single ochre control per surface: Rezervo në WhatsApp.",
+      "description": "The single accent-filled control per surface: Rezervo në WhatsApp. Corner from --radius.",
       "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Rezervo në WhatsApp</a>",
-      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 3.25rem; padding: .8rem 1.4rem; font-family: var(--font-body, Onest, system-ui, sans-serif); font-weight: 700; text-decoration: none; white-space: nowrap; border: 2px solid currentColor; color: inherit; background: transparent; border-radius: 0; transition: transform 160ms cubic-bezier(.23,1,.32,1), background-color 160ms ease, color 160ms ease; } .ds-btn:active { transform: scale(.97); } .ds-btn:focus-visible { outline: 3px solid var(--accent, #D9A441); outline-offset: 3px; } .ds-btn-primary { background: var(--accent, #D9A441); border-color: var(--accent, #D9A441); color: var(--on-accent, #1A1717); } .ds-btn-primary:hover { background: color-mix(in srgb, var(--accent, #D9A441) 86%, white); }"
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 3.25rem; padding: .8rem 1.4rem; font-family: var(--font-body, system-ui, sans-serif); font-weight: 700; text-decoration: none; white-space: nowrap; border: 1.5px solid currentColor; color: inherit; background: transparent; border-radius: var(--radius, 0); transition: transform 160ms cubic-bezier(.23,1,.32,1), background-color 160ms ease, color 160ms ease; } .ds-btn:active { transform: scale(.97); } .ds-btn:focus-visible { outline: 3px solid var(--accent, #C8552D); outline-offset: 3px; } .ds-btn-primary { background: var(--accent, #C8552D); border-color: var(--accent, #C8552D); color: var(--on-accent, #FAF9F6); } .ds-btn-primary:hover { background: color-mix(in srgb, var(--accent, #C8552D) 88%, var(--on-accent, #FAF9F6)); }"
     },
     {
       "name": "Outline Button",
       "kind": "button",
       "refersTo": "button-outline",
-      "description": "Transparent, framed in currentColor; Menyja in the hero, Thirr in the sticky bar.",
+      "description": "Transparent, a 1.5px currentColor border, corner from --radius; Menyja in the hero, Thirr in the sticky bar.",
       "html": "<a class=\"ds-btn ds-btn-outline\" href=\"#\">Menyja</a>",
-      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 3.25rem; padding: .8rem 1.4rem; font-family: var(--font-body, Onest, system-ui, sans-serif); font-weight: 700; text-decoration: none; white-space: nowrap; border: 2px solid currentColor; color: inherit; background: transparent; border-radius: 0; transition: transform 160ms cubic-bezier(.23,1,.32,1), background-color 160ms ease, color 160ms ease; } .ds-btn:active { transform: scale(.97); } .ds-btn:focus-visible { outline: 3px solid var(--accent, #D9A441); outline-offset: 3px; } .ds-btn-outline:hover { background: color-mix(in srgb, currentColor 12%, transparent); }"
-    },
-    {
-      "name": "Band",
-      "kind": "custom",
-      "refersTo": "band",
-      "description": "24px chain of stepped diamonds in the accent, masked from the 24x24 motif tile; frames the hero, contact and footer.",
-      "html": "<div class=\"ds-band\"></div>",
-      "css": ".ds-band { height: 24px; background: var(--accent, #D9A441); -webkit-mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 0h6v3h3v3h3v3h3v6h-3v3h-3v3h-3v3H9v-3H6v-3H3v-3H0V9h3V6h3V3h3z'/%3E%3C/svg%3E\") 0 0 / 24px 24px repeat-x; mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 0h6v3h3v3h3v3h3v6h-3v3h-3v3h-3v3H9v-3H6v-3H3v-3H0V9h3V6h3V3h3z'/%3E%3C/svg%3E\") 0 0 / 24px 24px repeat-x; }"
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 3.25rem; padding: .8rem 1.4rem; font-family: var(--font-body, system-ui, sans-serif); font-weight: 700; text-decoration: none; white-space: nowrap; border: 1.5px solid currentColor; color: inherit; background: transparent; border-radius: var(--radius, 0); transition: transform 160ms cubic-bezier(.23,1,.32,1), background-color 160ms ease, color 160ms ease; } .ds-btn:active { transform: scale(.97); } .ds-btn:focus-visible { outline: 3px solid var(--accent, #C8552D); outline-offset: 3px; } .ds-btn-outline:hover { background: color-mix(in srgb, currentColor 12%, transparent); }"
     },
     {
       "name": "Menu Patch",
       "kind": "card",
       "refersTo": "patch-muted",
-      "description": "A muted patch with a 4px ink frame holding a group title and stitch-ruled rows with a fixed price column; the row stitch turns ochre on hover.",
-      "html": "<div class=\"ds-patch\"><h3 class=\"ds-patch-title\">Kryesore</h3><ul class=\"ds-rows\"><li class=\"ds-row\"><span class=\"ds-stitch\"></span><span class=\"ds-name\">Tavë kosi<small>Mish qengji, kos, oriz</small></span><span class=\"ds-price\">7.50 €</span></li><li class=\"ds-row\"><span class=\"ds-stitch\"></span><span class=\"ds-name\">Flija e Rugovës<small>Për dy persona, me kajmak</small></span><span class=\"ds-price\">9.00 €</span></li></ul></div>",
-      "css": ".ds-patch { border: 4px solid var(--ink, #F3ECDD); background: var(--muted, #2E5A4B); color: var(--on-muted, #F3ECDD); padding: 1.25rem 1.25rem 1.5rem; font-family: var(--font-body, Onest, system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.55; font-variant-numeric: tabular-nums; --rule: color-mix(in srgb, currentColor 45%, transparent); } .ds-patch-title { font-family: var(--font-display, Unbounded, system-ui, sans-serif); font-weight: 700; font-size: 1.25rem; line-height: 1; letter-spacing: -.02em; margin: 0 0 .35rem; } .ds-rows { list-style: none; padding: 0; margin: 0; } .ds-row { position: relative; display: grid; grid-template-columns: 1fr auto; column-gap: 1rem; align-items: baseline; padding: .8rem 0 .75rem; } .ds-stitch { position: absolute; inset: 0 0 auto 0; height: 2px; background: repeating-linear-gradient(90deg, var(--rule) 0 4px, transparent 4px 8px); transition: background-color 160ms ease; } .ds-row:hover { --rule: var(--accent, #D9A441); } .ds-name { font-weight: 600; display: grid; gap: .1rem; } .ds-name small { font-size: .9rem; font-weight: 400; max-width: 30ch; } .ds-price { font-weight: 600; min-width: 6.5ch; text-align: right; white-space: nowrap; }"
+      "description": "A muted patch in the theme's corner and edge language holding a group title and hairline-ruled rows with a fixed price column; the rule turns accent on hover.",
+      "html": "<div class=\"ds-patch\"><h3 class=\"ds-patch-title\">Kryesore</h3><ul class=\"ds-rows\"><li class=\"ds-row\"><span class=\"ds-name\">Tavë kosi<small>Mish qengji, kos, oriz</small></span><span class=\"ds-price\">7.50 €</span></li><li class=\"ds-row\"><span class=\"ds-name\">Flija e Rugovës<small>Për dy persona, me kajmak</small></span><span class=\"ds-price\">9.00 €</span></li></ul></div>",
+      "css": ".ds-patch { border: var(--frame-w, 1px) solid var(--frame-c, color-mix(in srgb, currentColor 22%, transparent)); border-radius: var(--radius, 0); background: var(--muted, #EEEBE3); color: var(--on-muted, #1F1E1B); padding: 1.25rem 1.25rem 1.5rem; font-family: var(--font-body, system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.55; font-variant-numeric: tabular-nums; } .ds-patch-title { font-family: var(--font-display, system-ui, sans-serif); font-weight: var(--display-weight, 700); font-size: 1.25rem; line-height: 1.05; margin: 0 0 .35rem; } .ds-rows { list-style: none; margin: 0; padding: 0; } .ds-row { display: grid; grid-template-columns: 1fr auto; column-gap: 1rem; align-items: baseline; padding: .8rem 0 .75rem; border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent); transition: border-color 160ms ease; } .ds-row:hover { border-top-color: var(--accent, #C8552D); } .ds-name { font-weight: 600; display: grid; gap: .1rem; } .ds-name small { font-size: .9rem; font-weight: 400; max-width: 30ch; } .ds-price { font-weight: 600; min-width: 6.5ch; text-align: right; white-space: nowrap; }"
     },
     {
       "name": "Photo Patch",
       "kind": "card",
       "refersTo": "patch-muted",
-      "description": "A rectangular photo in a 4px undyed frame; when no photo exists, a large ochre stepped diamond with a smaller primary one inside.",
-      "html": "<figure class=\"ds-photo ds-motif\"></figure>",
-      "css": ".ds-photo { border: 4px solid var(--ink, #F3ECDD); background: var(--muted, #2E5A4B); aspect-ratio: 4 / 3; width: 240px; overflow: hidden; margin: 0; } .ds-motif { position: relative; } .ds-motif::before, .ds-motif::after { content: \"\"; position: absolute; inset: 0; margin: auto; -webkit-mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 0h6v3h3v3h3v3h3v6h-3v3h-3v3h-3v3H9v-3H6v-3H3v-3H0V9h3V6h3V3h3z'/%3E%3C/svg%3E\") center / contain no-repeat; mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 0h6v3h3v3h3v3h3v6h-3v3h-3v3h-3v3H9v-3H6v-3H3v-3H0V9h3V6h3V3h3z'/%3E%3C/svg%3E\") center / contain no-repeat; } .ds-motif::before { width: 62%; height: 62%; background: var(--accent, #D9A441); } .ds-motif::after { width: 28%; height: 28%; background: var(--primary, #B5311F); }"
+      "description": "A 4:3 photo in the theme's corner and edge; when no photo exists, the name's first letter in the display face, accent on muted.",
+      "html": "<figure class=\"ds-photo\"><span>T</span></figure>",
+      "css": ".ds-photo { border: var(--frame-w, 1px) solid var(--frame-c, color-mix(in srgb, currentColor 22%, transparent)); border-radius: var(--radius, 0); background: var(--muted, #EEEBE3); aspect-ratio: 4 / 3; width: 240px; overflow: hidden; margin: 0; display: grid; place-items: center; } .ds-photo span { font-family: var(--font-display, system-ui, sans-serif); font-weight: var(--display-weight, 700); font-size: 9rem; line-height: 1; color: var(--accent, #C8552D); }"
     },
     {
       "name": "Hours List",
       "kind": "custom",
       "refersTo": "patch-muted",
-      "description": "Day and time rows in a muted patch, divided by 4px stitch rules, times at 600 and tabular.",
+      "description": "Day and time rows in a muted patch, divided by hairlines, times at 600 and tabular.",
       "html": "<dl class=\"ds-hours\"><div><dt>e hënë - e premte</dt><dd>08:00 - 23:00</dd></div><div><dt>e shtunë</dt><dd>09:00 - 00:00</dd></div><div><dt>e diel</dt><dd>10:00 - 22:00</dd></div></dl>",
-      "css": ".ds-hours { border: 4px solid var(--ink, #F3ECDD); background: var(--muted, #2E5A4B); color: var(--on-muted, #F3ECDD); max-width: 30rem; padding: .5rem 1.25rem; margin: 0; font-family: var(--font-body, Onest, system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.55; font-variant-numeric: tabular-nums; --rule: color-mix(in srgb, currentColor 45%, transparent); } .ds-hours div { display: flex; justify-content: space-between; gap: 1rem; padding: .7rem 0; } .ds-hours div + div { background: repeating-linear-gradient(90deg, var(--rule) 0 4px, transparent 4px 8px) top / 100% 2px no-repeat; } .ds-hours dt { text-transform: capitalize; } .ds-hours dd { font-weight: 600; white-space: nowrap; margin: 0; }"
+      "css": ".ds-hours { border: var(--frame-w, 1px) solid var(--frame-c, color-mix(in srgb, currentColor 22%, transparent)); border-radius: var(--radius, 0); background: var(--muted, #EEEBE3); color: var(--on-muted, #1F1E1B); max-width: 30rem; padding: .5rem 1.25rem; margin: 0; font-family: var(--font-body, system-ui, sans-serif); font-size: 1.0625rem; font-variant-numeric: tabular-nums; } .ds-hours div { display: flex; justify-content: space-between; gap: 1rem; padding: .7rem 0; } .ds-hours div + div { border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent); } .ds-hours dt { text-transform: capitalize; } .ds-hours dd { margin: 0; font-weight: 600; white-space: nowrap; }"
     },
     {
       "name": "Sticky Bar",
       "kind": "nav",
       "refersTo": "sticky-bar-button",
-      "description": "Phones only: two equal woven buttons locked to the bottom edge, Thirr outline and WhatsApp in ochre, 2px top edge only.",
+      "description": "Phones only: two equal buttons locked to the bottom edge on the ground colour, Thirr plain and WhatsApp in the accent, a 1px line above and between; no corner.",
       "html": "<div class=\"ds-bar\"><a class=\"ds-bar-btn\" href=\"#\">Thirr</a><a class=\"ds-bar-btn ds-bar-primary\" href=\"#\">Rezervo në WhatsApp</a></div>",
-      "css": ".ds-bar { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; background: var(--bg, #1A1717); color: var(--ink, #F3ECDD); font-family: var(--font-body, Onest, system-ui, sans-serif); } .ds-bar-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3.75rem; padding: .8rem .75rem; font-size: 1rem; font-weight: 700; text-decoration: none; white-space: nowrap; color: inherit; background: transparent; border: 0 solid currentColor; border-top-width: 2px; transition: transform 160ms cubic-bezier(.23,1,.32,1), background-color 160ms ease; } .ds-bar-btn:hover { background: color-mix(in srgb, currentColor 12%, transparent); } .ds-bar-btn:active { transform: scale(.97); } .ds-bar-btn:focus-visible { outline: 3px solid var(--accent, #D9A441); outline-offset: 3px; } .ds-bar-primary { background: var(--accent, #D9A441); border-top-color: var(--accent, #D9A441); color: var(--on-accent, #1A1717); } .ds-bar-primary:hover { background: color-mix(in srgb, var(--accent, #D9A441) 86%, white); }"
+      "css": ".ds-bar { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; background: var(--bg, #FAF9F6); color: var(--ink, #1F1E1B); border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent); font-family: var(--font-body, system-ui, sans-serif); } .ds-bar-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3.75rem; padding: .8rem .75rem; font-weight: 700; font-size: 1rem; text-decoration: none; color: inherit; } .ds-bar-btn + .ds-bar-btn { border-left: 1px solid color-mix(in srgb, currentColor 18%, transparent); } .ds-bar-primary { background: var(--accent, #C8552D); color: var(--on-accent, #FAF9F6); }"
     },
     {
-      "name": "Rating Diamonds",
+      "name": "Rating",
       "kind": "custom",
       "refersTo": "rating",
-      "description": "Five stepped diamonds in faded ink, filled to the Google rating in ochre.",
-      "html": "<p class=\"ds-rating\"><span class=\"ds-diamonds\" style=\"--r:0.92\" aria-hidden=\"true\"></span><span><b>4.6</b> nga 212 vlerësime në Google</span></p>",
-      "css": ".ds-rating { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin: 0; font-family: var(--font-body, Onest, system-ui, sans-serif); font-size: 1.0625rem; font-variant-numeric: tabular-nums; } .ds-rating b { font-weight: 700; } .ds-diamonds { position: relative; width: 120px; height: 24px; background: color-mix(in srgb, currentColor 40%, transparent); -webkit-mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 0h6v3h3v3h3v3h3v6h-3v3h-3v3h-3v3H9v-3H6v-3H3v-3H0V9h3V6h3V3h3z'/%3E%3C/svg%3E\") 0 0 / 24px 24px repeat-x; mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 0h6v3h3v3h3v3h3v6h-3v3h-3v3h-3v3H9v-3H6v-3H3v-3H0V9h3V6h3V3h3z'/%3E%3C/svg%3E\") 0 0 / 24px 24px repeat-x; } .ds-diamonds::after { content: \"\"; position: absolute; inset: 0 auto 0 0; width: calc(var(--r) * 100%); background: var(--accent, #D9A441); }"
+      "description": "Five star tiles in faded text colour, filled to the Google rating in the accent.",
+      "html": "<p class=\"ds-rating\"><span class=\"ds-stars\" style=\"--r:0.92\" aria-hidden=\"true\"></span><span><b>4.6</b> nga 212 vlerësime në Google</span></p>",
+      "css": ".ds-rating { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin: 0; font-family: var(--font-body, system-ui, sans-serif); font-size: 1.0625rem; font-variant-numeric: tabular-nums; } .ds-stars { position: relative; width: 120px; height: 24px; background: color-mix(in srgb, currentColor 44%, transparent); -webkit-mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.5l2.8 6.3 6.9.7-5.2 4.7 1.5 6.8L12 17.5 6 21l1.5-6.8L2.3 9.5l6.9-.7z'/%3E%3C/svg%3E\") 0 0 / 24px 24px repeat-x; mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.5l2.8 6.3 6.9.7-5.2 4.7 1.5 6.8L12 17.5 6 21l1.5-6.8L2.3 9.5l6.9-.7z'/%3E%3C/svg%3E\") 0 0 / 24px 24px repeat-x; } .ds-stars::after { content: ''; position: absolute; inset: 0 auto 0 0; width: calc(var(--r, 1) * 100%); background: var(--accent, #C8552D); } .ds-rating b { font-weight: 700; }"
     }
   ],
   "narrative": {
-    "northStar": "The Kilim on the Oda Wall",
-    "overview": "The page is a woven rug hung flat on a wall. A madder-red field carries the restaurant's name at the top and the contact block at the bottom; between them the wool-black ground holds every content block as a patch of cloth set inside a 4px undyed frame. Two decorative devices exist and no others: the 4px stitch unit (stitch rules, patch frames, dashed dividers) and a 24px stepped-diamond tile used as a CSS mask (border bands, the no-photo motif, the rating diamonds). With every word removed, the bands, patches and stitch rules still read as a rug.\n\nThe system is defined in token roles, not fixed colours. Every client ships seven theme tokens from config.json (bg, ink, primary, accent, muted, display, body) plus an optional displayWeight; Base.astro injects them as --bg, --ink, --primary, --accent, --muted, --font-display, --font-body, --display-weight, and computes --on-primary, --on-accent, --on-muted at build time by WCAG contrast ratio (whichever of ink or bg contrasts more with the surface) and color-scheme from bg luminance (dark below 0.4). Everything in global.css derives from those roles. The hex values in the frontmatter are the restaurant vertical's reference instance (template/src/verticals/restaurant.json), not the system.\n\nIt refuses the category default: no full-bleed photo with a white serif name floated on top, no cream sections beneath, no rounded corners, no shadows, no client JavaScript. Density is confident and phone-first: the name fills the 390px width, prices sit in a fixed right column, the call and WhatsApp buttons are locked to the bottom edge of every phone viewport.",
+    "northStar": "The skeleton is not the look",
+    "overview": "The template owns structure only: sections, order, how the name fills a phone, where the price column sits, where the call and WhatsApp buttons lock. Colour, face, corner, edge and every trace of a look come from a per-client theme in config.json, generated from the restaurant's own photos by factory/theme.mjs and repaired by contrast rules. The frontmatter hex values are the restaurant vertical's plain fallback, not a reference look.",
     "keyCharacteristics": [
-      "Token-role world: seven client tokens, three computed on-colours, one stylesheet; the restaurant set is the reference instance",
-      "Field and ground: primary-coloured hero and contact bands, bg-coloured content ground, patches in muted or primary",
-      "Two devices only: the 4px stitch unit and the 24px stepped-diamond mask",
-      "Sharp corners everywhere, 4px solid ink patch frames, no shadows, no gradients except stitch dashes",
-      "Unbounded (800 where the vertical asks) set tight at line-height 1; Onest body; tabular figures",
-      "Motion is CSS only: one weave-in on load, scroll-driven stitch reveal on menu rows, 160ms hover and press",
-      "All copy from config and vertical labels; every element survives 0 photos, 2 to 30 character names, 6 to 20 items"
+      "Per-client theme tokens: bg, ink, primary, accent, muted, display, body, displayWeight, radius, frame, weights, note",
+      "Computed at build: --on-primary/--on-accent/--on-muted by WCAG contrast, color-scheme from bg luminance, --frame-w/--frame-c from frame",
+      "One stylesheet, no hardcoded hex, family, radius or border width in components; secondary text and rules follow the surface via currentColor",
+      "Structure: primary field with name and photo patch, menu patches with a fixed price column, about with rating, gallery in whole cells, hours patch, contact on the field, locked call/WhatsApp bar below 800px",
+      "One authored motion: the hero rise on load; 160ms hover and press; reduced motion gated",
+      "Survives 0 photos (the name's initial stands in), 2 to 30 character names, 6 to 20 items"
     ],
     "rules": [
-      { "name": "The Role Not Hex Rule", "body": "Components reference --bg, --ink, --primary, --accent, --muted and the computed --on-* only. No component may hardcode a colour; a new client with different tokens must stay readable without touching CSS.", "section": "colors" },
-      { "name": "The Follow-The-Surface Rule", "body": "Secondary text and rules are currentColor faded via color-mix, never a fixed neutral. On a patch the text colour is set once (--on-muted or --on-primary) and every faded tone inside follows it.", "section": "colors" },
-      { "name": "The One Bright Control Rule", "body": "Ochre is the only colour that asks for a tap. It fills exactly one primary button per surface (WhatsApp) plus the fixed decorative bands and rating; it never fills a patch or a heading.", "section": "colors" },
-      { "name": "The Fixed Column Rule", "body": "Every figure is tabular (font-variant-numeric: tabular-nums on body). Prices sit in a right-aligned column of min-width: 6.5ch, white-space: nowrap; hours times are 600 and never wrap.", "section": "typography" },
-      { "name": "The Longest Word Rule", "body": "The name is sized from its longest word, not its character count, so \"Te Liria\" and \"Liburnia\" both fill 390px without breaking mid-word.", "section": "typography" },
-      { "name": "The No Label Rule", "body": "There is no uppercase label style, no kicker, no eyebrow. Section context is carried by the headline and the lede in Ink 2.", "section": "typography" },
-      { "name": "The Flat Weave Rule", "body": "Nothing lifts. No box-shadow, no blur, no gradient fills except the 4px stitch dash pattern. A surface is distinguished by its token colour and its frame, never by shade.", "section": "elevation" }
+      { "name": "The Role Not Hex Rule", "body": "Components reference --bg, --ink, --primary, --accent, --muted and the computed --on-* only. A client with any token set must stay readable without touching CSS.", "section": "colors" },
+      { "name": "The Follow-The-Surface Rule", "body": "Secondary text and rules are currentColor faded via color-mix, never a fixed neutral. On a patch the text colour is set once and every faded tone inside follows it.", "section": "colors" },
+      { "name": "The Repair Rule", "body": "fixTheme enforces ink/bg 7:1, a readable on-colour (4.5:1) for primary, accent and muted, accent 3:1 against bg, a catalogue face and weight, and a visible edge when muted equals bg; verify warns when a config would be repaired.", "section": "colors" },
+      { "name": "The Fixed Column Rule", "body": "Every figure is tabular. Prices sit right-aligned in a min-width: 6.5ch column, white-space: nowrap; times never wrap.", "section": "typography" },
+      { "name": "The Longest Word Rule", "body": "The name is sized from its longest word, not its character count.", "section": "typography" },
+      { "name": "The No Label Rule", "body": "No uppercase label, kicker or eyebrow. Headline plus lede is the whole hierarchy.", "section": "typography" },
+      { "name": "The One Weight Rule", "body": "Every heading uses --display-weight, a weight the display face really carries; the skeleton never asks for a synthesized bold.", "section": "typography" }
     ],
     "dos": [
-      "Do reference colours by role (--bg, --ink, --primary, --accent, --muted) and put text on coloured surfaces in the matching computed --on-* variable.",
-      "Do frame every content block as a patch: 4px solid --ink border, --patch fill, sharp corners.",
-      "Do build every decorative edge from the two devices: the 4px stitch dash or the 24px stepped-diamond mask in a token colour.",
-      "Do set figures tabular and give prices a fixed right column (min-width: 6.5ch).",
-      "Do keep the 800px breakpoint as the only layout switch, and keep the sticky call/WhatsApp bar reachable at every scroll position below it.",
-      "Do gate every animation behind prefers-reduced-motion: no-preference and, for scroll-driven work, @supports (animation-timeline: view()), with the resting state already drawn.",
+      "Do reference colours by role and put text on coloured surfaces in the matching computed --on-* variable.",
+      "Do take every corner from --radius and every edge from --frame-w/--frame-c.",
+      "Do use --display-weight for every heading.",
+      "Do keep the 800px breakpoint as the only layout switch, and the sticky bar reachable at every scroll position below it.",
+      "Do gate motion behind prefers-reduced-motion: no-preference with the resting state already drawn.",
       "Do read all copy from config.json and verticals/<vertical>.json labels."
     ],
     "donts": [
-      "Don't add client JavaScript; motion is CSS transitions, @starting-style, and scroll-driven animation only.",
-      "Don't set border-radius, box-shadow, blur, or gradient fills; the weave is flat and sharp.",
-      "Don't hardcode a hex in a component or assume ink is light and bg is dark; another client's token set may invert the scheme.",
-      "Don't float the name over a full-bleed photo or use a white serif on a photo; the name sits on the primary field beside a framed patch.",
-      "Don't add uppercase labels, kickers or eyebrows above headings; headline plus Ink 2 lede is the whole hierarchy.",
-      "Don't fill a patch or a heading with --accent; ochre is reserved for the primary button, bands, rating fill and hover stitch.",
+      "Don't add ornament, texture, pattern, or any device that makes the skeleton look like one particular place; the look is the client's theme.",
+      "Don't hardcode a hex, a font family, a radius or a border width in a component.",
+      "Don't assume ink is light and bg is dark, or that primary is saturated; a theme may be quiet or loud.",
+      "Don't add client JavaScript, shadows, blur or gradient fills.",
+      "Don't add uppercase labels, kickers or eyebrows above headings.",
       "Don't hardcode Albanian strings in components or introduce a second display face."
     ]
   }

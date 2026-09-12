@@ -1,0 +1,172 @@
+{
+  "slug": "princesha-gresa-restaurant",
+  "vertical": "restaurant",
+  "business": {
+    "name": "Princesha Gresa Restaurant",
+    "tagline": "Shije të vërteta, në zemër të Prishtinës.",
+    "phone": "+383 38 245 841",
+    "whatsapp": "38338245841",
+    "email": "",
+    "address": "77 Rrugë Fehmi Agani, Prishtinë 10000",
+    "city": "Prishtinë",
+    "mapsUrl": "https://maps.google.com/?cid=2865257156701558903&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": 42.6638708,
+    "lng": 21.1599751,
+    "instagram": "",
+    "facebook": "",
+    "rating": 4.7,
+    "reviews_count": 622
+  },
+  "hours": [
+    {
+      "day": "e hënë",
+      "time": "11:00 - 22:30"
+    },
+    {
+      "day": "e martë",
+      "time": "11:00 - 22:30"
+    },
+    {
+      "day": "e mërkurë",
+      "time": "11:00 - 22:30"
+    },
+    {
+      "day": "e enjte",
+      "time": "11:00 - 22:30"
+    },
+    {
+      "day": "e premte",
+      "time": "11:00 - 22:30"
+    },
+    {
+      "day": "e shtunë",
+      "time": "11:00 - 22:30"
+    },
+    {
+      "day": "e diel",
+      "time": "11:00 - 22:30"
+    }
+  ],
+  "theme": {
+    "bg": "#171C18",
+    "ink": "#F0EDE5",
+    "primary": "#1E4836",
+    "accent": "#C07A38",
+    "muted": "#262018",
+    "display": "Gloock",
+    "displayWeight": 400,
+    "body": "Hanken Grotesk",
+    "radius": "8px",
+    "frame": "line",
+    "note": "Floor-to-ceiling monstera plants lock the primary into deep forest green; the cognac leather chairs become the warm amber accent that cuts through the near-black olive ground — itself pulled from the matte-black chair frames and exterior storefront visible through the glass — while Gloock display carries the regal weight demanded by the Princess name and crown signet on the window.",
+    "weights": {
+      "Gloock": [
+        400
+      ],
+      "Hanken Grotesk": [
+        400,
+        500,
+        600,
+        700
+      ]
+    }
+  },
+  "hero": {
+    "headline": "Ku çdo vakt bëhet kujtim i veçantë.",
+    "sub": "Ushqim i freskët, gatuar me kujdes çdo ditë. Vjen për një herë, kthehesh për shijen.",
+    "image": "https://places.googleapis.com/v1/places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXSDI4kXwH9fdTndEqilY_YVzejXWl3dg2d4NdbzIoI6wivMldUaBcdXBj72wOCPf-DC3A5HJHoWucv60hK4AgFmq0-h2OvMiYG04fzktHZ55SnjyNA_Db_FJOaQ-fvIPbHSW4nxFn5fhUrtqQKFvMeymINc7O6mr43YFgMfNZ81oEQkDG0Vq75bsTHlheKGbvUOT-j017cpV_oTcAT2Y4iADltqfefS77_HrRXZJVDWaYy7bMsPUw1eg_1yRL0sI9ct3YztAKUqA5p00JSeykH3N2mWJK-gVgoPoq0wKZkO7x7qZeRNjv--fzh0s86kcblCPyJc8JzHoUDYNJd2C-zFjdHUSCv8yklH8DOuXXGRmcEjFXUtMDq_S33tEs50FdSA_mL4V6xAkDpK4UmlQs4TCsAdVCDMUylwBUjhIT6rjjG5/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8"
+  },
+  "about": {
+    "title": "Restorant me zemër, shije të vërteta",
+    "text": "Kuzhinierët tanë punojnë me produkte të freskëta çdo ditë. Fileto salmoni dhe fileto viqi janë specialitetet që kthejnë mysafirët te ne rregullisht. Receta e mirë nuk ndryshon.\n\nAmbienti është i ngrohtë, pa pretendime. Vjen me familje, me miq, me kolege: të gjithë gjejnë vendin e tyre këtu. Hapet nga ora 11:00 deri 22:30, çdo ditë të javës.\n\nMë shumë se 622 vlerësime me mesatare 4.7. Kjo nuk ndodh pa arsye."
+  },
+  "items": [
+    {
+      "group": "Të ftohta",
+      "name": "Sallatë greke",
+      "desc": "Domate, kastravec, ullinj, djathë feta, vaj ulliri.",
+      "price": "3.00 €"
+    },
+    {
+      "group": "Të ftohta",
+      "name": "Pjatë antipasto",
+      "desc": "Mish i tharë, djathëra të zgjedhur, perime turshi.",
+      "price": "5.00 €"
+    },
+    {
+      "group": "Të ftohta",
+      "name": "Supë ditës",
+      "desc": "E gatuar çdo ditë, me perime dhe mish sezonale.",
+      "price": "2.00 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Fileto salmoni",
+      "desc": "I pjekur në furrë, me salcë limon dhe barishte.",
+      "price": "11.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Fileto viqi",
+      "desc": "I butë, me salcë kërpudhash dhe patate të ziera.",
+      "price": "13.00 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Qoftet e shtëpisë",
+      "desc": "Recetë tradicionale, me patate dhe sallatë.",
+      "price": "7.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Pulë e griluar",
+      "desc": "Marinuar me erëza shtëpie, servohet me perime të griluar.",
+      "price": "8.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Pasta me fruta deti",
+      "desc": "Me kallamar, karkalec dhe salcë domateje të freskët.",
+      "price": "9.50 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Tiramisu",
+      "desc": "Klasike italiane, e bërë çdo ditë.",
+      "price": "3.00 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Torta çokollatë",
+      "desc": "Me çokollatë të zezë dhe krem të lehtë.",
+      "price": "2.50 €"
+    },
+    {
+      "group": "Pije",
+      "name": "Lëng frutash natyral",
+      "desc": "I freskët, pa sheqer të shtuar.",
+      "price": "2.00 €"
+    },
+    {
+      "group": "Pije",
+      "name": "Kafe turke",
+      "desc": "E fortë, e vogël, me shumë shije.",
+      "price": "1.00 €"
+    }
+  ],
+  "gallery": [
+    "https://places.googleapis.com/v1/places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXT6gCu25t5vpINZwnfzgj48N1BVuTDpsy1bauXaxWHXsNC3Mt9Yswjt5VCj6fdI-ycirptXZSrwpPag6bG7ThM7pa-hqervmxbB-rtqQvny7llfGBsvyuL-OdM2v050gw7BkHEKavZI14g2Er0rHzryp0sZFhGmyeLl7CNVDboKtjbYCId8dXfpe5RYsw_J4uTD5LPZ9pmFkrtOTCNxoBQkO1AD8hPEeNt0rPRGYh2Stwiu5Tef-Ckpj3imvnMhFc7O4dM_PMVpURRbtJMNuttAzgyLD3jh8PYNZVab_IS_VgB1E_gIu4ZOS0PYwEAwyhuJadGfIjNAnuGwKt2qSXUNXeQYS2pBlH14MLUMgo5isWV06M97E8BV1dw_9FXc5RC7w7VlvBb9-8W0VCxUzTlsOPBBruW674me8qiUYfpCpRP5/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8",
+    "https://places.googleapis.com/v1/places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXT9tmFvuteCx0PbrmzXEOE9wTVw1pJcXjtvyUFcywoX6FGSrQb_4AXAILP9VymH4W6-ePcydlciskG9bXgYFpvhNSkKdNItXBzgiwbOqkbQDNuo8TsbSa6sY49JikYXt7OeU6uamAUUlfrXv_jXQVo3wlqvpD3PAJFhzP0MHGL5jVQpWe3hQJYeI91pRec29Uty0Rh1Fp3D5qXtBZIUp73XpwMN33SrsNpnPBB8TyaKoNlA78LDu0jI4OnrWj9Nso7vqVhOoX0znfM0djCXmB8CYk3SqpimcZiV2JJDLNkyDwR6dP1auA5S4i6XrNgNRmvf7lNZqeMBm85iQC02r_bXrIh7VS6FoaLqd2de-3kh6kEZqQ8EcDu39XCyfHreGkg4JW1HEvefWZ3FmrzGKT_AOSBmfT8MllJg4QxDsaMxZ8YxPPUomkSm2epiai49/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8",
+    "https://places.googleapis.com/v1/places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXTAT-9G-YM6x7Dq6dvhujMIYZQx99kD39_TJz8KcIWy4k-pyImc-wIdat1qsGinWIpgvRQtfl1_7tOPHYbO6JZUlHQq96E_rh4pa_e38JNzzjcZRXuu0mGeQ155MvrCd1zLxUuAzGfiCgiRmn2NSr-YlGyKTUCHdyOq0C8PwEqkTXR3WGGEnLCj6yokS-Cigd8MclOwWh68ON_Z0BywMOEHme-XOdhCIc247rORrhyqIIj_Z4-f3kzZlC33-70oAl87vKSrvkO6eAFBU_S40WOdQFihCRkjbQW7zy9LfiMFiN9139qyNa56cIOmIzkM3Lpa5H8yY4JkMV5wTYz8YuiRSgbGyKfJyvu3oY7PgFB4vIBv-u5-ZfYErUaZNUJvwyNd7if7mOLcIij4AFiYU08gXLPU1XCvDPRA0whTc6PD9n3u4LbyTXa4DQDGWVaz/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8",
+    "https://places.googleapis.com/v1/places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXRrwfoeNmSt_vXv1drcts61b3I0ZxR8imve-AebgUfjnGzGsPAwevxeLxpThnNo534hsGKW9jJ-vHXuR8de86dbPsOrEGTTKN4jfyOv8DDK3pEDrmTdRitFz6rZ8VERBXXcEI3uf8wOEys8xU3k6tTjz5aYU8uTJnTnDSUkilpfUp4CY1lY0spWIDJQ2f3L_f5JVLajvirRSJ5wt-zKmcekxEWtoWxiNmpa1xr8KzTGiiFjXM0t3XXzRe50rS-EEkfyUTvUPv23iJ1idgkQeRMGo5hW-X4UhuN0KaWLy8AvrHVLwYMHKz0ntVF3ENTrjUY6iDyuAvlA6ZyUWFWF5nPy0FIpT4UvPSdjLr4_C69yDu-7dfeHJ0_W6ndiNwRfasZm5vKcsrlCwp0saRl1sthkwo4z3XBL9m2mmbFK_W7yLEiC/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8"
+  ],
+  "seo": {
+    "title": "Princesha Gresa Restaurant, Prishtinë",
+    "description": "Restorant me vlerësim 4.7 në Prishtinë. Fileto salmoni, fileto viqi dhe shumë të tjera. Rrugë Fehmi Agani 77, hapur çdo ditë 11:00-22:30."
+  },
+  "meta": {
+    "lead_place_id": "ChIJn809heGeVBMRd5hXBzRwwyc",
+    "generated_at": "2026-09-12T16:58:33.527Z",
+    "source": "places-api"
+  }
+}

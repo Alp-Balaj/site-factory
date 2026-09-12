@@ -6,14 +6,14 @@ const photos = site.gallery ?? [];
 <section id="gallery" class="wrap">
   <h2>{t.gallery}</h2>
   <div class={`cells n${Math.min(photos.length, 4)}`}>
-    {photos.map((src, i) => <figure class="patch"><img src={src} alt="" loading="lazy" decoding="async" width="800" height="600" /></figure>)}
+    {photos.map(src => <figure class="patch"><img src={src} alt="" loading="lazy" decoding="async" width="800" height="600" /></figure>)}
   </div>
 </section>) : null}
 <style>
   /* whole cells at every width: every photo is a 4:3 patch; the first is the large one and fills whatever rows the others stack into */
   .cells { display: grid; gap: 1rem; margin-top: 1.5rem; grid-template-columns: repeat(2, 1fr); }
   .n1, .n2 { grid-template-columns: 1fr; }
-  figure { aspect-ratio: 4 / 3; overflow: hidden; }
+  figure { aspect-ratio: 4 / 3; }
   .n3 figure:first-child, .n4 figure:first-child { grid-column: span 2; }
   .n4 figure:last-child { grid-column: span 2; }
   @media (min-width: 800px) {

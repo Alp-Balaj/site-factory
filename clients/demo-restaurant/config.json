@@ -32,14 +32,28 @@
     }
   ],
   "theme": {
-    "bg": "#1A1717",
-    "ink": "#F3ECDD",
-    "primary": "#B5311F",
-    "accent": "#D9A441",
-    "muted": "#2E5A4B",
-    "display": "Unbounded",
-    "displayWeight": 800,
-    "body": "Onest"
+    "bg": "#231914",
+    "ink": "#EDE0CB",
+    "primary": "#6B2416",
+    "accent": "#D48A30",
+    "muted": "#5A3D28",
+    "display": "Gloock",
+    "displayWeight": 400,
+    "body": "Vollkorn",
+    "radius": "0px",
+    "frame": "line",
+    "note": "Dark walnut ground from the aged wooden tables and soot-darkened oven walls; ajvar-brick primary lifted from the paprika relish that sits on every table; amber accent from bakllava honey glaze and the warm incandescent glow of the room; Gloock and Vollkorn chosen as the face of a handprinted seasonal menu left on bare wood.",
+    "weights": {
+      "Gloock": [
+        400
+      ],
+      "Vollkorn": [
+        400,
+        500,
+        600,
+        700
+      ]
+    }
   },
   "hero": {
     "headline": "Tavë, flija dhe kafe si te gjyshja.",

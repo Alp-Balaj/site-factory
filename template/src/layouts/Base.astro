@@ -1,16 +1,22 @@
 ---
 import '../styles/global.css';
-import { site, luminance } from '../lib/config';
-const { theme, business, seo } = site;
-// Google Fonts css2: one family per entry, static weight list every catalogue face carries.
-// An optional theme.displayWeight (e.g. 800) is requested for the display face only; every face carries 400-700.
-const weights = (f: string) => [400, 500, 600, 700, ...(f === theme.display && theme.displayWeight ? [theme.displayWeight] : [])].filter((w, i, a) => a.indexOf(w) === i).sort().join(';');
-const fonts = [...new Set([theme.display, theme.body])].map(f => `${f.replace(/ /g, '+')}:wght@${weights(f)}`).join('&family=');
+import { site, theme, luminance, contrast, fontWeights } from '../lib/config';
+const { business, seo } = site;
+// Google Fonts css2: one family per entry with exactly the static weights it carries (see fontWeights).
+// The display weight the theme asks for is added to the display face when the family has it.
+const families = [...new Set([theme.display, theme.body])];
+const fonts = (await Promise.all(families.map(async f => {
+  const w = await fontWeights(f);
+  const list = [...new Set([...w, ...(f === theme.display && theme.displayWeight && w.includes(theme.displayWeight) ? [theme.displayWeight] : [])])].sort((a, b) => a - b);
+  return `${f.replace(/ /g, '+')}:wght@${list.join(';')}`;
+}))).join('&family=');
 const scheme = luminance(theme.bg) < 0.4 ? 'dark' : 'light';
 // Text on each coloured surface: whichever of ink/bg contrasts more with it (WCAG ratio), so any token set stays readable.
-const contrast = (a: string, b: string) => { const [x, y] = [luminance(a), luminance(b)]; return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
 const on = (surface: string) => (contrast(theme.ink, surface) >= contrast(theme.bg, surface) ? theme.ink : theme.bg);
 const onColors = `--on-primary:${on(theme.primary)};--on-accent:${on(theme.accent)};--on-muted:${on(theme.muted)}`;
+// Edge language: none, a hairline in the surface's own text colour, or a solid ink frame.
+const frame = { none: '0px', line: '1px', thick: '3px' }[theme.frame ?? 'line'] ?? '1px';
+const frameColor = theme.frame === 'thick' ? 'var(--ink)' : 'color-mix(in srgb, currentColor 22%, transparent)';
 const ld = {
   '@context': 'https://schema.org', '@type': 'LocalBusiness', name: business.name, telephone: business.phone,
   address: { '@type': 'PostalAddress', streetAddress: business.address, addressLocality: business.city, addressCountry: 'XK' },
@@ -31,7 +37,7 @@ const ld = {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?family=${fonts}&display=swap`} />
-  <style set:html={`:root{--bg:${theme.bg};--ink:${theme.ink};--primary:${theme.primary};--accent:${theme.accent};--muted:${theme.muted};--font-display:"${theme.display}";--font-body:"${theme.body}";${theme.displayWeight ? `--display-weight:${theme.displayWeight};` : ''}${onColors};color-scheme:${scheme}}`}></style>
+  <style set:html={`:root{--bg:${theme.bg};--ink:${theme.ink};--primary:${theme.primary};--accent:${theme.accent};--muted:${theme.muted};--font-display:"${theme.display}";--font-body:"${theme.body}";--display-weight:${theme.displayWeight ?? 700};--radius:${theme.radius ?? '0px'};--frame-w:${frame};--frame-c:${frameColor};${onColors};color-scheme:${scheme}}`}></style>
   <script type="application/ld+json" set:html={JSON.stringify(ld)}></script>
 </head>
 <body>

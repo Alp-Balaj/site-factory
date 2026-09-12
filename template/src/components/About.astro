@@ -10,7 +10,7 @@ const score = typeof rating === 'number' ? Math.max(0, Math.min(5, rating)) : nu
   <div class="text">{paras.map(p => <p>{p}</p>)}</div>
   {score !== null && reviews_count ? (
     <p class="rating">
-      <span class="diamonds" style={`--r:${score / 5}`} aria-hidden="true"></span>
+      <span class="stars" style={`--r:${score / 5}`} aria-hidden="true"></span>
       <span><b>{score.toFixed(1)}</b> {t.reviews.replace('%n', String(reviews_count))}</span>
       {mapsUrl && <a href={mapsUrl} target="_blank" rel="noopener">{t.readReviews}</a>}
     </p>
@@ -20,8 +20,5 @@ const score = typeof rating === 'number' ? Math.max(0, Math.min(5, rating)) : nu
   .about { display: grid; gap: 1rem; }
   .text { display: grid; gap: .9rem; }
   .rating { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-top: 1rem; }
-  /* five stepped diamonds, filled to the rating in the accent colour */
-  .diamonds { position: relative; width: calc(24px * 5); height: 24px; background: var(--ink-3); -webkit-mask: var(--motif) 0 0 / 24px 24px repeat-x; mask: var(--motif) 0 0 / 24px 24px repeat-x; }
-  .diamonds::after { content: ""; position: absolute; inset: 0 auto 0 0; width: calc(var(--r) * 100%); background: var(--accent); }
   b { font-weight: 700; }
 </style>

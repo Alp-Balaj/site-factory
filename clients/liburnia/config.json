@@ -1,0 +1,172 @@
+{
+  "slug": "liburnia",
+  "vertical": "restaurant",
+  "business": {
+    "name": "Liburnia",
+    "tagline": "Shija e shtëpisë, zemra e Prishtinës.",
+    "phone": "",
+    "whatsapp": "",
+    "email": "",
+    "address": "10 Meto Bajraktari, Prishtinë 10000",
+    "city": "Prishtinë",
+    "mapsUrl": "https://maps.google.com/?cid=2584328258921758568&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": 42.6668014,
+    "lng": 21.1632353,
+    "instagram": "",
+    "facebook": "",
+    "rating": 4.4,
+    "reviews_count": 1945
+  },
+  "hours": [
+    {
+      "day": "e hënë",
+      "time": "08:00 - 23:00"
+    },
+    {
+      "day": "e martë",
+      "time": "08:00 - 23:00"
+    },
+    {
+      "day": "e mërkurë",
+      "time": "08:00 - 23:00"
+    },
+    {
+      "day": "e enjte",
+      "time": "08:00 - 23:00"
+    },
+    {
+      "day": "e premte",
+      "time": "08:00 - 23:00"
+    },
+    {
+      "day": "e shtunë",
+      "time": "08:00 - 23:00"
+    },
+    {
+      "day": "e diel",
+      "time": "08:00 - 23:00"
+    }
+  ],
+  "theme": {
+    "bg": "#1B1208",
+    "ink": "#E6DCC2",
+    "primary": "#1E4228",
+    "accent": "#E09820",
+    "muted": "#3A2030",
+    "display": "Gloock",
+    "displayWeight": 400,
+    "body": "Vollkorn",
+    "radius": "0px",
+    "frame": "thick",
+    "note": "Cascading ivy across every beam and rafter drove the forest-green primary; the amber lanterns and brass pots lining the open shelves gave the gold accent; dusty-rose tablecloths and kilim-patterned chair cushions yielded the dark mauve muted; the aged walnut floor set the near-black ground; Gloock's heavy classic serif mirrors the forged-iron wagon-wheel chandelier and the rough stone hearth arch above the wood-smoke kitchen.",
+    "weights": {
+      "Gloock": [
+        400
+      ],
+      "Vollkorn": [
+        400,
+        500,
+        600,
+        700
+      ]
+    }
+  },
+  "hero": {
+    "headline": "Vend që e zgjedh rastësisht, kthehesh me dashje.",
+    "sub": "Ushqim i freskët, ambient i ngrohtë dhe staf që kujdeset për çdo detaj. Mbi 1.900 vizitorë e kanë vlerësuar me 4.4 yje.",
+    "image": "https://places.googleapis.com/v1/places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSiAl793KmL-w-pQDq11_4nu1QmMIifKMG-2PNZ1pJRcNWRSEfnmHXwqj2mdtUFGB2bXopjDlOqP44EcXrBxRnZMMV9PCUJ7nDct7dDJK1oX7bn2pOpHQ20NBMR9w3Jc4RimYuy6tFVNs8XaIGPTOArWi2kIxkNXMJeW8z2IT7gOzOiG4HB401AUtl0GkrEQXaHQLsaKV2V0E-NqnmOCWdI-YB5HFhmgoyFzudWr8v_SqaHPM2axear8RhIC8g8Nq4D0nhXMMdn4pIb-OhRyy3PXq4X-dnFsA7H9mtHivnayY8bmWKSkw_u1AlTxVhHEyMiz1zk_PirZWMxHoIOFiRUoy-R_g6aHzqWBwQ7gPQCNJtoTzl0GM7j2siK3n3MClpIo_l2KpU9shpnI0rJP3BVfH975O4Mp3J5Uvsnq2_CbQ/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8"
+  },
+  "about": {
+    "title": "Pse vijnë njerëzit te Liburnia",
+    "text": "Kur hyn, nuk je vetëm klient. Stafi të përshëndetet, të tregon historinë e restorantit dhe të bën të ndihesh i pritur. Kjo ndryshim ndihet.\n\nUshqimi vjen nga produkte të freskëta. Çmimet janë të arsyeshme dhe cilësia flet vetë. Ka pjata tradicionale dhe specialitete që kthehen rregullisht.\n\nLiburnia hapet çdo ditë nga ora 8:00 deri në 23:00. Eja për mëngjes, drekë apo darkë: vend ka gjithmonë."
+  },
+  "items": [
+    {
+      "group": "Të ftohta",
+      "name": "Sallatë stinore",
+      "desc": "Perimet e ditës, vaj ulliri, limon.",
+      "price": "3.50 €"
+    },
+    {
+      "group": "Të ftohta",
+      "name": "Tarator",
+      "desc": "Kos, tranguj, hudër dhe fëstëkë.",
+      "price": "2.50 €"
+    },
+    {
+      "group": "Të ftohta",
+      "name": "Meze të ftohta",
+      "desc": "Përzierje aperitivash tradicionale.",
+      "price": "5.00 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Mish viçi i pjekur",
+      "desc": "Në skarë, me patate dhe sallatë.",
+      "price": "9.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Qebap tradicional",
+      "desc": "Mish i grirë, i aromatizuar me erëza.",
+      "price": "7.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Tavë kosi",
+      "desc": "Mish qengji, kos dhe vezë, pjekje e ngadaltë.",
+      "price": "8.50 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Peshk i pjekur",
+      "desc": "Me limon dhe barishte të freskëta.",
+      "price": "11.00 €"
+    },
+    {
+      "group": "Kryesore",
+      "name": "Pilaf me mish",
+      "desc": "Oriz me copa mishi, recetë tradicionale.",
+      "price": "7.00 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Baklava shtëpie",
+      "desc": "Me arra dhe mjaltë, e bërë këtu.",
+      "price": "2.50 €"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Trilece",
+      "desc": "Kek me krem qumështi, i freskët.",
+      "price": "3.00 €"
+    },
+    {
+      "group": "Pije",
+      "name": "Kafe turke",
+      "desc": "E zier, e shërbyer me ujë.",
+      "price": "1.00 €"
+    },
+    {
+      "group": "Pije",
+      "name": "Lëng i freskët",
+      "desc": "Fruta stinore, të shtrydhura freskët.",
+      "price": "2.50 €"
+    }
+  ],
+  "gallery": [
+    "https://places.googleapis.com/v1/places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXQEHvE_jOhecG7HUe73ePdp9WuLq2aeafVDZi6SmOf3TJTwCa5tR5rynLzg136tKTnZ1-fYKhx8nAe69sQK3V4VDeSi-cIXsx_cXYro_KOT35UuaGTEfObu5TySjezzUgnFX8Tvl2oPgKa1uw_3flLVide_IJzwqkA7ClyHEdZ4oWF26D4ogzggrmljlLk3iu3R8D1IKHiEzcXljo2dV7JDG2miRlabydReBkP-748xSHgrLKVFeeSXofN-fv9sbIjgpbEqUJgRyeBElIrAMRujd-FnekDOOYaYZnOrpnG-CVhRPVfyI-1zstJ7x7Uu4XMocjf8ZvAV8qiQ0tbQJG9VJmnckBJuCsXpC1xIHKLYJgEYqCSoA-M7tz7lCcKIkm0Xbmto0WyeQej5qQD24433GEGL1MWthWAd62uDOVepuWjSH-HSlL4I-KlqyA/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8",
+    "https://places.googleapis.com/v1/places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXRt5eLSCEtg2dNYgMpetS4pVHo1NqqhSPzBPJbjJP0QVPz5UilNDMWoWBlfr2TKDPMn0AbfG4vFvqZRPfJ-B7qSd9prfyEW5R_IHFvJUF29EA6hYMkqgP5JiIJ8G7uIdZVjAuNbR4M7Q3uApgny7M_PI3HU8bStBDr7PgLE3R-a790hZd5q162Zx9GBip8ZpLW5voWfBnlz5OMDtpv9R734eHOwDuS4_0afG5dcUvdxPCyzOn0NLcQsuDiD5t-y7M2HKa8N1rsA_AzoFqAWzwQb3NgfCCgVqTeIbsEOB5oFlvfK4yhdYu__9f4hwOnsna-vpbMugoSJhffHyuvEMzakgkw_pRjXfg38BwPvOxTkACZD7-wXMINB4jTJZfrn69E_AFMleGKZBMO1Seo7PHxEpwE176BbJKzoCh4yOj4MBlKdFQLsrimQk646Sqa4/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8",
+    "https://places.googleapis.com/v1/places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXTZsVb_ngxQ2VnxO5zuJ1_o-lc8eraKyEYOAF_LnVBlj0UpbzkfGrqOJ0BYp8VA1wpnZSoT6PY6UGS2RN-gaaWpN1kGJbGgjCfXfS2mHSMVuBwisazqus5C7tTCrY7vvP0BUzU8cIb5Tmkir2vZ2lxnYtxoTh0f_1Yrm7pKiH74P0zKHpN7nRt3_lTwbDFnzxf3-Tx_HExT3pms3_lAafPRRJtjC9bN_IzFKYQy0IYIgBHqiURMq_w6X9-dSsXBrOysYB-ebbPhnVdqCR7jO5hiSm4GEa4uRTegOm4vvG-XYike0OuRItgLPveCbAPAPNfYmHEDnaEjFr2D4zmmDGmoJlV8EPdRUrsQtaQ50s7PN-gSLaPBPMNCm_HWrRBza1zJU1IuoDj8T3Eu1qbs-_x6-QQBjCylNSwtggyg4UxJmwCgLjKnXJLDdZwxqg/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8",
+    "https://places.googleapis.com/v1/places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSzrj6dzKMp5TPNDmzKAySIZbaR9vLxSy0ZCPrU9l45HylK8mWNwXoj02aVtCETZ1tsXR3ArSTM02j7uOHUPrtUUKBMXrGb8c1pi-TUF5KXGv-n_yFW0PpT812m8tzQf7ylr4SeUMALu-8mdunKVJBMW7HvtTRLNnXQn81aPtWZRncjT00ypEhMqy1XeT9fSHlk6yzXqNJgoE55SP58dJVUHvbVHmkMiHeyGvwebkDSZgM6TXM3W4ud5UOj3JoY6bAbEwRuxXAsQnhJCx4NuE81hqmOCVznXeG09TumL_VmmJLaPJiYcKJe0rzWRTMn4XGNrkQCT6nNpaI5DEaH7CIzvgXELouPK1w4sPyTVIH1gFonR9XoEH5ZLjhEUBaCBO-xrOHLu9JL-SgP5yalOBPDYKI6T5nH20DdBq4wi_2Bauw6sRRkiz80amQvIfC5/media?maxWidthPx=1600&key=AIzaSyCpuAf2-YhOo77ZxRJEoCBhXZN-yCwycm8"
+  ],
+  "seo": {
+    "title": "Liburnia – Restorant në Prishtinë | Meto Bajraktari",
+    "description": "Restorant Liburnia në Prishtinë. Ushqim i freskët, ambient i ngrohtë, çmime të arsyeshme. Hapur çdo ditë 8:00–23:00."
+  },
+  "meta": {
+    "lead_place_id": "ChIJt060ux-fVBMRaP8I8Ntg3SM",
+    "generated_at": "2026-09-12T16:55:13.114Z",
+    "source": "places-api"
+  }
+}

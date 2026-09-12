@@ -1,0 +1,3 @@
+# The repo is the CRM
+
+Every Place's config, status, notes and job log live as files under `places/<slug>/`, and the Portal commits after every change. There is no database and no hosted service. Alternatives were a local SQLite file or a hosted database reachable from a phone; both would have created a second copy of the truth next to the configs that already have to be files for the Skeleton to build, and neither gives history for free. Git does, and `git pull` on another device restores the whole factory. Consequence: concurrent edits from two devices are resolved as merge conflicts, which is acceptable for one operator.
