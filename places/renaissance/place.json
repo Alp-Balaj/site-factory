@@ -1,0 +1,153 @@
+{
+  "place_id": "ChIJF2ox41mfVBMRvWWkjvkwl8A",
+  "name": "Renaissance",
+  "address": "35 Rrugë Musine Kokalari, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 44 239 377",
+  "website": "https://www.facebook.com/Renaissancepristina",
+  "rating": 4.8,
+  "reviews_count": 189,
+  "lat": 42.653159699999996,
+  "lng": 21.1579619,
+  "maps_url": "https://maps.google.com/?cid=13877614625163601341&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 5:00 – 11:00 m.d.",
+    "e martë: 5:00 – 11:00 m.d.",
+    "e mërkurë: 5:00 – 11:00 m.d.",
+    "e enjte: 5:00 – 11:00 m.d.",
+    "e premte: 5:00 – 11:00 m.d.",
+    "e shtunë: 5:00 – 11:00 m.d.",
+    "e diel: Closed"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXSvxo2bbwQQ5sVBd9vU-7xb415FxTByYnUhR46iqqmU34CaX6ZFhYUwDO1ypF1R7dcqK360VVGy1A8umDzjD4MzmciLTNr5afkzdAwAsLsVFlRxkG4wBaV6xwjSPWlRhECFZvFGGc4kXC6vOhf3GTjAVoFY46OTHzeJLPRK6ubdtli7_MnGo32GIrLcje_t98Bg0GhhH392ErXDHAe5BXFGEyS-1fI6enkafKkz_W4y1uJLdqMQjzOa6iQH5KaXhq7_RGiaOWkVDfAfymEEKQPXiZVDwn5qFRCEXmzUEIFECtWjK2c6GyB62E6jJVvUJHl_96VkHas2HeWTzOTeQ9-781LuhT-E6ArT_OoRE57cwzISPKnYZWSY3VRyOFew2G8bkYS3gUMXZPMWcrG4_9lwXm70ITC1YGPQLZhf_EwugPc",
+      "width": 960,
+      "height": 720,
+      "author": {
+        "name": "Renaissance Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/110529340155984046837"
+      }
+    },
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXQZ5SlbOkp9n_6jSDNwY1FgAh66nslhmocPk0M3whsba5bZGTHixhVFaGkyClL8Dywu9EEJmFLKUKMdaORHDDT4IBA6cggpipxazUT6mLXsUexgr8SO_jTKgj4ordl-fXmvPuD15jtT2V4evG8wjFzSb7vztBTeIFwCInE6rqZBBZroiP8VXjWU30Ubkz5mWI-KvwZbxMEqhD4k4jrcY8inZUneymEY8rxB0gwXTpJlQwEdrxpGNrThzVgx6jUP6Z1THDi8w6QPGiwzjB3EANNLdeWA5vw2LD6uOmg3sFvQN9iQQkztNs9ILlzMiowMg2jq4Xzz89hGbtEBpDDS4sSq7gZwfmTyJMHWP8AAUEhmD-k4tA2ugrCJtT78Jx1fIy4hwyDGyCKqYVdfhG0aj6zaysO3yCAJDRW2Nm4T6NGW5e0",
+      "width": 960,
+      "height": 659,
+      "author": {
+        "name": "Renaissance Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/110529340155984046837"
+      }
+    },
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXSHh9A83ArbPmkb4cLBHWLs0VnikphyNMpzrtbdCN_kJTCDbs2wYvalV-eiNybHqfhG-40YVSynI3TqidUT6f1pN4TYPgV2UbxrkQRFj05R1bVkLAjkQJzWY8doeKtKYE7qnpQ7ZwyBBMrpDFlBtkvjmy3ngL-XEDmtKKdDtGn5uW8jCtL9UIydQ0Uy-Tn5zlybY4ncu1Y-BHowDCl3s90Ax_pCzNlet7mwbB9mljMKyYVXIYSE-1muKGWGqqKtnZjmuNDf-2BN7SgOiYBVoUzH32GUZRLwJo60tRiTMnO8VycmAmZiYG1sDhFbejnrSFSoQ5LIqqOmtkhWWWtiGmnfK0HXUKgpD_rbTUkSjbKcdr8o6z5KMs302ilYS9xowjQREkQxHAlqXJq72gw-1Ly-h32MHGoAffd3vwvzdeC3wA",
+      "width": 1536,
+      "height": 2048,
+      "author": {
+        "name": "Renaissance Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/110529340155984046837"
+      }
+    },
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXTZNofdvR_b0zAEey_B9hMhsywMtgEhhRiBFL7sqbryMcZTc7cju6buB22zc6r4FvMMcMsoGG9aJZ0k5UCfhZNlz1YDTxNqQ_zmVJAbn6BA_bufrsdGNoseWmYqo1N0bE9kslUbR4SfnSORMMJvuJUjpN5owzIVxtBtUYL1DjF_lcgE9j749LXegg6VctZ9YqBDqtN5e1l-i3TARwNlq6-foRdLhdiKfCzWRkShC5wQUD_ZmFbr72sVzz22zlF0NnzZHsJS4_9vHn2Y4gPxDIT0DdAg1dPiF9elZLjtxruAKZpDM4Tf9q9mWVrEjtvqptcxdsxthry8suuG-F_bHq-Rq4op4K9U22f1b6tfrfN0_VOEyjCu2V8M1nHvhbkDdkl_OFLnSkzvBGAqC21tUPCIuc-2zhtIsOeFFHu3sXeoWKMsAmkX7GYsQZM-VaZ4",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Bertrand Eberhardt",
+        "uri": "https://maps.google.com/maps/contrib/117597271809235540658"
+      }
+    },
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXSUqiLFQgysDowEyu2nwVWDdCt9Vsd4kTBhfNdH5-pqPCl4afwi_UiiowDX2feyGTEiYyyoeApZg3P6icOv8m7pe9r8yZ-ExZzjWpkBMjib6GActdzWPBuBAriKjTLoGTuIZ6sp6Sek1Nvwrfz70VePb1EqeU7r0XZVm3XTOQRLBNq8tsNOjr2mkw-FLCcyJjWmEJuALMi-JWsaPaJhdf5_lIpPWMwnNsCcpTAUChrP3ZdKPz1MT9myDKCNVW4kJ6YKtnUCYZ9wBYqcnIUlSZ7pBcHbqiRgjhbSS2tr4IURy3usKL7YpckaLvfHKcOCOXeXt2hAkNlc2duUN_9ts1SbbLyThu1U78BISJ8T1QW7usJ3xX4Ad6V0LAOeWS__KGyQskqwacpdw6zd-aP1I-j5N539D1yZuF90r3mth4dLsaaZY8mv_YMgXWLpXlJ7",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Alyssa Rivera",
+        "uri": "https://maps.google.com/maps/contrib/117364840140222952137"
+      }
+    },
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXQgqk9sq9fZ38ZP1xRP7x68p0uuMqTv5WW4-A7LPBBy-4qZMKhZZsT5YDxD5uZNvOYPfXAOKRh0WmIgBaGHVi9Qv2f-3nvXxIFNiQa64lbJGEA0ywmf3aYlil4pf37yPq2FW1q_HK_wPaz97dnkwL4910JMDd8f2ZeNik5p7Arr4_7C9sifdyHutcVd0Q8k1H52Jg63KefPKYinIBCP6LgmO3G0isAUBTe0qb9lJ9SDFGWhfqdQfpHzgJY2WndWPfMOImLwGxyvp11ftYlIP5FMyoWR4avjQzpk9GVxtKry3nvVwwwOp8lH3Fe-Sce6n_jM7N3lWxyJAlrD1BzBrqMbg7ztSet3ervwXtlXrlrl_FtCDL5ervlTmMShDtqs2K3_SIb6c1wWtQRH8VRi6Th7sWkrRynQQHMgtNuBMa-0iOtMs0iWcXLXezuMYLKV",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Nicolas FB",
+        "uri": "https://maps.google.com/maps/contrib/113997338393810202884"
+      }
+    },
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXS0zY6n7C8-cC6l9OfPtepGw4ZgNdHe2tRziquyTXMZ6pYSpqTVtutYO92XX7whWZMN6uayoUbTrEwzT0PTYzqbDPSZXI14goz22JzP9GdfW-ikwHmPUD_ajWTrKSyTH_CWnQBcx1G55pBE2pvHq2M3WxsSOyYK9dVLodCDYVj0LaWQgESQbMP9EP6gn4G8fMoFhxnwnt0TdZUmClpiG7o52FJTDqQq8eOekqxrAE6GCQsboa4wS2i4fOrTsm_57ve0l8zduXIDqeL7w220NPSZfGfTL24QnCZ4kKefBCDosK5JPAUUSGiHPZG-g0Y1zxDFFdEu4VMrn489KtOwmNtP0-PwfmvwoWP4NKuoBID2WIW7ZgwxxkJ1yfjGnpPI3kz40Kv-oAvHy5_oIs_t6QWYRUTiMcd8vFPz5nAkJOIpY4Dj8WXXhPxpXuG8SPl1",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Austin Graff",
+        "uri": "https://maps.google.com/maps/contrib/101810068829626301924"
+      }
+    },
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXSygT_tfi5BWp4JAeIwv3ZPOQhgVN9LMHkjMJi4nQcT_sJS-zgkepRI0i7Tx4cSPb3MCcC2MAEfTfv2lYdHvEqqGCI6Tx4PqFwJ_XqqAej9wulcSO93hSuD0QsnB9qVG9EJ0vkJ_PKAMQVZ_BA3MCgPafWF9t48efCcQYCReXwj-zzQcFY4xlkTI2Fnw1tZEiMF5PjTUaJBlRDWut6lczDByphupOAA9rH1kjWhehekDykPOBP-yL6W4jnfLCfDuNqMn9NgGUAAF-TXACa3joxsgRiFUX4J5pBd2ZlG5CklHOEnL-leAIM5BjrGv88voQ3LVwFfS9CtywkPCMU5WCEoCI1iZNGd5KsLb3k0jUiWwQgCFtR0Msue9y_VW2SJgFfd1yZSiYQ1afherQRyBJj6W3R7ByrrAYs-M6kA0skQnjsXrQqCiu4SBzMgjhIe",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Nicolas FB",
+        "uri": "https://maps.google.com/maps/contrib/113997338393810202884"
+      }
+    },
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXQ0cCARsx62TgopGIfB1wIWfrtrwOtEkeSvuLh0smBcITpE3DZ8No2_MpMq_9RR9wYmPH8kRdRGJBn37TlL1o7i2nyWG7LuBZEaC8AO9NaSGxtEdqqAbUb1tIXgGMSOqWnCcSRW0a6Y-IynoOvVQVrOksUspRZ0KGe0hLD0s0zqy5gLf73olihtMFKtk43DTlCpf-gNSt8u29aX67ZoWjtZ1wX3wuuKOgY-at19OE-CY2wf6O7nF5r1GGi_3SIo_ZFw4z3ELvMW9FzNgyaQqwVl2sWTqT7lR1LuGgt_Qs6w64z8rQQyJ_dKX0rVhHasZVaS0eRapqzBzEEpNwSK_G1BlPnk89vy2K3d6d3LsI9jbmm0P2XkNu3TSo9-NsNyhWLKwEmtLpAfgeXTX2EqoyRZ98gz_FVC7lFAneAFx31LseC75eyfYW1Hz5aUKl2d",
+      "width": 1246,
+      "height": 1375,
+      "author": {
+        "name": "BESA HAJZERI",
+        "uri": "https://maps.google.com/maps/contrib/109682259908788953032"
+      }
+    },
+    {
+      "name": "places/ChIJF2ox41mfVBMRvWWkjvkwl8A/photos/AVoNoXQmFLJksvw8qi19-ewJHzP8AxSyrAgNTePpazajlFod2ASUQMrDlqM_moRBL81rsFzEDdbgStPOpfRJKWipWK5pc2u5nDTOK4YI_nViyFe2pizrcKKgANCbNbmBBEezuNxrVJCgfo3FkiMdoH_oZUkZekd8PAj48-t68mU9ffxQ1RvJd4qJ6mldPJaFS7qf3zkaSOZ3VvaqhYvc7xJNdrFVCB-xS6hc9VAzdlaCVdM-H9IYv-IsS9WB3hQ-q9vAA5iYn3vT87bjZlE_3hm4aZ7gSeaz2mYFO8wvtgb_APPBY52VdqVcTNDN7hZworr56VqB58CQ6JnWNpAolPojyjDxyqLHey0B1riAEuHl7NVaC394V8s4517X6a82OvdyRA5me2ttjWSTepmr8UWZpeqMA0_gTaVsSLugXrZJJp2p2L6gIgQ2R-9hUvFDogWH",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "noelle mandolfo",
+        "uri": "https://maps.google.com/maps/contrib/108565057855903252383"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "The best restaurant in Prishtina.",
+      "author": "Ilir",
+      "rating": 5
+    },
+    {
+      "text": "The best restaurant in Prishtina.",
+      "author": "Vigan",
+      "rating": 5
+    },
+    {
+      "text": "Ushqimi ishte perfekt",
+      "author": "F.",
+      "rating": 5
+    },
+    {
+      "text": "Vështirë se mund të gjej fjalët e duhura për të përshkruar sa i bukur ishte ambienti. Restoranti është dekoruar me shumë stil dhe vëmendje ndaj detajeve. Ndihesh menjëherë rehat.\n\nDhe të mos fillojmë fare me ushqimin - ishte absolutisht i shijshëm dhe me shije të jashtëzakonshme. Çdo kafshatë ishte një kënaqësi.\n\nRespekt i madh për dy vëllezërit që drejtojnë këtë restorant. Patjetër që do të kthehemi përsëri e përsëri.",
+      "author": "Astrit",
+      "rating": 5
+    },
+    {
+      "text": "Udhëtimi juaj nuk do të jetë i plotë pa një vizitë në Renaissance. Nuk ka menu, vetëm një vakt me 5 pjata i projektuar për t'ju lënë një përshtypje të jashtëzakonshme të Kosovës. Çdo gjë ka shije hyjnore. Edhe domatet në sallatë ishin më të mirat që kam provuar ndonjëherë. 25 euro dhe shtoni një karafë verë për 5 të tjera. Vetëm para në dorë! Ju rekomandoj të bëni një rezervim sepse është mjaft i vogël. Është një vend i drejtuar nga familjarë me disa djem shumë të mirë.",
+      "author": "noelle",
+      "rating": 5
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

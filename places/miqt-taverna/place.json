@@ -1,0 +1,153 @@
+{
+  "place_id": "ChIJgTksJOGeVBMRRMGpTUlDrNM",
+  "name": "Miqt Taverna",
+  "address": "nr.16 Bulevardi Nene Tereze, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 45 999 957",
+  "website": null,
+  "rating": 4.6,
+  "reviews_count": 75,
+  "lat": 42.6616959,
+  "lng": 21.161745500000002,
+  "maps_url": "https://maps.google.com/?cid=15252640020111671620&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 8:00 p.d. – 12:00 p.d.",
+    "e martë: 8:00 p.d. – 12:00 p.d.",
+    "e mërkurë: 8:00 p.d. – 12:00 p.d.",
+    "e enjte: 8:00 p.d. – 12:00 p.d.",
+    "e premte: 8:00 p.d. – 12:00 p.d.",
+    "e shtunë: 8:00 p.d. – 12:00 p.d.",
+    "e diel: 9:00 p.d. – 12:00 p.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXSqOfVCpZoIKsrwpGea7dj6sVq5SLL0f3KI3L4ELls3rohUylqXhW3NYEg4vYvH0l-zIFP8EgoFGR5ZzDUgvVJodxgY6ycnh0VxxNKc0iex4mUjpIqYQERZbejTuEEyqkKUvzyjrsWpMfWJHxVc8ps0MDpufRHaz4pmbecYxe2UW6m1nR29roGPxdFYyLb4gFF4q5LoQZ_bUFCnSsN3l6g-ofxbMP6xRIKDi1ik-cpPwhwSOJuB3tmp-_Pf_1EmTiA7ZzO-GdpCP3gWYuvM8hUJM1dTMQ2rKFshg6Mhu83H5f_2nlotSvbbIqxkJ2yMEkEN_m2AlPxpOd_ftS1JxY3bOizE3IwAIYkL1k0gC3p5vKTjZpRU2hN54z9kRqZ9fv3tZ6o8fQHAIF9XUoRpvS5qcJk1hYAcm0mEPPKqSAjeBA",
+      "width": 3000,
+      "height": 4000,
+      "author": {
+        "name": "Arta Sejdiu",
+        "uri": "https://maps.google.com/maps/contrib/108663501544668763097"
+      }
+    },
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXR3FdzSFJFyLQHf1N3phLvSTS4PBga_ADKrBbPx5k7uwF8oMKbrGCQy2owBjXw_EGSTA2tKAFRy_7GMHyD2ticcBEINT6JVrhpJkSDODdLBSMwd8rOgGFjW0V5ICYmZhWYGWkt_Fpdpm06uFV-oa9Q9xhZil70YH689_dMBZlJcAVz7P5rngKeF0PgFAV56tnMqMQ__dhyB1jktl2sgLa6ACxY-vPe2pXZehIrBbqdge4q2b3btPgkPjxbNWkEa5uii-BuDaf3onn8-gAan6THQDiZCIynOTW_pphVNHYQH_zun0OFYZ9-5FKPmru8YpIXTKSg5LzD-crJO7pNsA6cRHGA6qT5XqSgB-nztJ1eqE0dCBxxmRSxRFBMGttkMQkvQzuW4_9iVMM_3iJHI3Vd28KlSghq8oEzb6-6FibRWrDzC",
+      "width": 1280,
+      "height": 1600,
+      "author": {
+        "name": "Justin Mc",
+        "uri": "https://maps.google.com/maps/contrib/106620874819551809003"
+      }
+    },
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXS1Hle8YyliTcUQmBkNalDzD0Hvj4wu38dTTW1wHUx864R5h9WyDvBw5M-C9lx9Ulh_MOW_KUczgqovktEwlkDnCKWUJUlZuJAMLDlsRCeP4AYGJM7B5Zt1rqf6kNAcR00u-SpKJtqP6HrBUYWMuS8T6-qnRfk83Lh-plsNQWv8u3oOo2LGycDr1WAtrmqosvF2mYOwlTfcsWalqE-ta0rdLYlggPXZkhGuJ6eglurO5_7BAJTJ2n-Ci_2rgPLiJBIBdASNIRigiXNgKRHFlb7FnLcvsXvPP_1R5-0r1_YhVeKZFf7I_M-gPRB2hAendWpKXTPoEkctMgoTJu7zBssaan_Yt-Ue1Ex4wAkhg1zP04Bfgx0mgDYp4P5RM09kbbvOS5q_FCnDk5mkAiNlqYuXG4fgiABJaAdDJVyFqbw",
+      "width": 4000,
+      "height": 2000,
+      "author": {
+        "name": "Catalina Rotaru",
+        "uri": "https://maps.google.com/maps/contrib/116298987696986501641"
+      }
+    },
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXQ69KurMNnFqQ96VUhSnCqSngRPMns8kcLxg6Xk5w4BT2ld-OZaWcMI52KQRLbX4Z9GU_QxusV53uPw_3bTWKSCfmSSTihprfhPdxVQMrv7UkDuc__qLCMVVEbGNPjdUj1euCPS3NVwi2vxmzWeRUpozo5XJ6IyE_Qat_nhnFLEamwHAlqp17deGxs7yFLJffj2zvpC37fF6_r__0kOtrBAGJM5liNxFdYcF2kqM1oYkBacPToe9XDUoLgYi2CCz53K1cDfqwA4I16oFV6YDOxoCToDW2-e__1F7CN3CHXaYUISZGRARLBZDkNIlys6N89YRjz19MWAWWpA_YiAJqcNqF-GaURoRhz1ypNydMT082i6ytdkczxz5eg52My5rGyOAyLOe-zKXjLf1Gea4F_woJCEFjTJ88dEs502Knn5XA",
+      "width": 4032,
+      "height": 1960,
+      "author": {
+        "name": "Shega Hysaj",
+        "uri": "https://maps.google.com/maps/contrib/116522471849866507395"
+      }
+    },
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXRn01UkxzoxPld92UHATI_ksjn34hYWPb2kfVz_wx2WaMRcN-LIjG7U45GFGYqzKunAdMo0nw9r_md-hHvhouQCkdIZr0NO2qfaW2KN_SiWiMfI6LNetmQCsK2c3pLGUrygb9HCb7DWszDfcVfk-lLBt2tzjtasDlTU_P94lfE2b241BFHIQVptiHQgUuGJmxtXCkGlcxMrp9J0zrrx-Goy7yfzqZheIiJ86t0Wdo95diQyv7sJRk5pdBXHB2XU5Ur1y_TJFN7a6eXJLtzrldb1R-2VXD5KLeJBmtAHiGAYVtRCVzAfdlZaePKCH5pvx4Fn5fLU_xIzQmBWI1qUzEzi1RqWmLGWyHCL0zFOfy8xz8_DGBrXa1YMUCxfufLRJoJO5zHXoUHSJNnZ6ssjh-gQrearKAIsQLcqoP2rgTXVWnAj",
+      "width": 3000,
+      "height": 4000,
+      "author": {
+        "name": "Arta Sejdiu",
+        "uri": "https://maps.google.com/maps/contrib/108663501544668763097"
+      }
+    },
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXQMiXiHH8XiWhBSO4oKOBQlK7lh7J4CpzxvKie8yt86AuqqwBstegJsBMY1CQ-Kc7SzZD5aHfeGfD2p_zn7N2UXV5nIQ3pyb9XSr076KybJfxCEcanddg4UvPnEy-5nfK6q9fKfpG2_YhjcXQ9ZcC2OWUyxOxrBdpF2OdM0jAmFmvoYUnNlvJLK4D_Bl0-x6N-dfr5-8FVHVyVbA6kdMYKOqYXboz14gVw1eO433XWfixrDoHKzo72V-ur3CcJgKINQTEDDqHd4cqkY6jRpgXn6NBqtbQhGs5RYUl6zOSjuyerPtKYwf-ptD0KRIoViIoJVfSAKMhr5ZQvB-NMhiK816MXOBJvhXqSG5ttim3zRmFCgk9PynBaCPxpbke_nA-1pu6De3D408e8RCpaUq-ejmQo_ikCFzj0lE8vgOhnCfQ",
+      "width": 4000,
+      "height": 2000,
+      "author": {
+        "name": "Catalina Rotaru",
+        "uri": "https://maps.google.com/maps/contrib/116298987696986501641"
+      }
+    },
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXQREkCPl3b_A4gUpYhA04fGYKqTybpizBSzSqUk4PZuruQlSPZ35zhNke5Y7l-BhAFN2beprlZn1f0TRnxCCT_LQSoU8yfo7JAHYGLnCZsTgjXC1KwpBnYAQuCPz3Jq3BbA6NqgnJvI-2n3LCGqSfJAn1xRHLrdwImh8eN4xVpH_nP0eGbaO1kD6cVQBF5uqgXHeTudezVe3OPwl6gzMSaV8aUGIi73zgw_AjZBPP-U-3pxLIs0ARQziaouShzlnmeo8QqELg7uWx-wT0Ypffx4fXsgC0tqbp9RYyrg7sycxjQ1y8Zzp85iHIq4n8TWXX5MWJf_UlR39_0j74O3MEGY_bd8n86lTSXsGcv6S-Ep2p12KJV90LMp4TAEukoyf95EXRvUbGO0LjFBU4Ce8L4HKI5XjcbXY2qcqA",
+      "width": 2112,
+      "height": 4608,
+      "author": {
+        "name": "Travel Woman",
+        "uri": "https://maps.google.com/maps/contrib/108558686149468055348"
+      }
+    },
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXTDgRkH1lxhGuNzYjfc7syp3jos2pHnUOGoqnSqGiZAGe_kEq8XW1lmb5DJpt9Zum6m-KlFYueE86S40Ih6kE89138lj4K--NvaRKUT9qhmFCTiqQ3IrsIzo9-y8ISU9OEZBng6p5WT_iJ5KG4wu0aF39E0X67KawYr3Qfyexz1iw2RJYim4LqNT8fbCPmP_LKijTfLGu_gxreZYucQDyYGTZ5BKUZgy60lwoD8uRrRiNcyX3tpZpYty_ZxsJnituZifAH7l2uI6ukzN5L54wBMMgqVrLjLMY1durtJUkNARCeRcUmgtW0nWIFLW-moICuOM4UzYIydtKv1rZ16FPI8DsIfXs9Yh0ANQxAQPL2BWt8ub3ER5pA2P2PeQruZ-k2HmC5j7Qd630lYa3Nk9hlmNcR_da0mUqtOGlQeag3W1Tvz",
+      "width": 3000,
+      "height": 4000,
+      "author": {
+        "name": "Arta Sejdiu",
+        "uri": "https://maps.google.com/maps/contrib/108663501544668763097"
+      }
+    },
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXRrHM1kmLMPsu5Zc9dj-mBqvsHR6qc-oHdTdGxYbgGvzocmbHMgrSK4u0FL2ObZNxvKx7qktQONFvOWLp1lYb1mXHMGqmFHwhm1zHhdkqoDOWTWShH-poVH5lL_zJAOzlWUZ8adz-wtAqI7sU9LgMYddHQaiEWDJL5ZlPkLfYSvWVTpaRSOUBF5oooAYLIbNtkVt2u6rIM5UlunWAA9WPfNSvormkkWyx_JBPWd6ViaRbg3PKPqTKLFbnnuNM8wZcpvuiLjVQEz62_G2l30I91ac5Ve9AdAVREEEg1R_Of13czwDL2eoSp1QgUwBmNuzsJuD33wTNpXpDfGCe95ykvxxlGfpUwBr6IO9VOJmLyJiNad-eEZlyqBCo5KI2HJCYToBIt6Jus323vtle8lqhwvL8AxpT0UX3PZijwgXBdG9Q",
+      "width": 4000,
+      "height": 2000,
+      "author": {
+        "name": "Catalina Rotaru",
+        "uri": "https://maps.google.com/maps/contrib/116298987696986501641"
+      }
+    },
+    {
+      "name": "places/ChIJgTksJOGeVBMRRMGpTUlDrNM/photos/AVoNoXQBT9rMxDfeI8kuT7ki9bh021slFsPvZz7PXaGVymsrG1qu2A5EwkoMoo7ldEhf_UcetTQqZ8AIN73aH0RHOGM8fbr8-Gn2QzTEUGJYCwlBT1GvtebsrrX75H5IfnfWr0AZunCcjXoKZugh8MZR4l648Qq_QixNz2GGyH9AC9wtbu89y2bGpOfTgC4pYBu7fuhfqHsLxzfWluv9P1NbOabNxKZntsftGu_B9IZJX0FWRGQOfeLIXwApZx4Gh6TTrVveCn-yRaBnHjquUtNagXPC9ALbRdNNBYY8H_1JsB-t5iUjc1T2SIO2x9XAqKZvm7m88DQlw8sOBIGsHr4ThQHGtXDV9T7Pg1Kun1rDPUgqFaRBjz61sN8nfiZiTTfDyPIsY2OpuDliK43I3Tk_cbAmRdWsmVmYgLu4OlI3EWYeTler",
+      "width": 4216,
+      "height": 2884,
+      "author": {
+        "name": "Pablo",
+        "uri": "https://maps.google.com/maps/contrib/102571095615194763268"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Sehr schöne Kleine Lokal, ist mit einen Oldi Style eingerichted, sehr Nette Personal  Essen ist sehr Lecker gemacht, Ich werde gerne wieder Kommen Ich habe nichts Negatives zu berichten.\nNjë lokacion shumë simpatik, shërbim shumë i mirë,  ushqimi shumë i shijshëm  për mua i Meritojnë   5 Yje, me gjithë qef pas çdo vizite në Kosovë do ta vizitoj .",
+      "author": "Afrim",
+      "rating": 5
+    },
+    {
+      "text": "Vend fantastik ,ushqim i shijshem ,nje staf shume i sjellshem,flm shume Miqt Taverna per ushqimet e mbrekullueshme qe beni❤️",
+      "author": "LMK",
+      "rating": 5
+    },
+    {
+      "text": "Restorant shumë i mirë, i vogël dhe i fshehur. Ushqimi ishte i shijshëm dhe shërbimi shumë miqësor. Ambient i shkëlqyer. Absolutisht e rekomandoj!",
+      "author": "Travel",
+      "rating": 5
+    },
+    {
+      "text": "Ky vend është jashtëzakonisht i mirë! Çdo gjë që hëngrëm ishte e shkëlqyer, do të doja shumë ta kisha gjetur më herët gjatë vizitës sonë për të ngrënë sipas menusë!",
+      "author": "Justin",
+      "rating": 5
+    },
+    {
+      "text": "Vend i shkëlqyer, shumë miqësor dhe me porcione të bollshme. I mirë për të ngrënë ose për të pirë diçka. Shërbejnë edhe mëngjes, por unë nuk e provova! Gjithçka dukej e shijshme.",
+      "author": "Tim",
+      "rating": 5
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

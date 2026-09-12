@@ -1,0 +1,153 @@
+{
+  "place_id": "ChIJy11SoBqfVBMR73LyvNym72o",
+  "name": "Salt Prishtina",
+  "address": "Rruga, nr 2 Rrugë Fehmi Agani, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 48 867 867",
+  "website": "https://salt.al/",
+  "rating": 4.5,
+  "reviews_count": 503,
+  "lat": 42.663193799999995,
+  "lng": 21.1622061,
+  "maps_url": "https://maps.google.com/?cid=7705560954447229679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 12:00 m.d. – 12:00 p.d.",
+    "e martë: 12:00 m.d. – 12:00 p.d.",
+    "e mërkurë: 12:00 m.d. – 12:00 p.d.",
+    "e enjte: 12:00 m.d. – 12:00 p.d.",
+    "e premte: 12:00 m.d. – 12:00 p.d.",
+    "e shtunë: 12:00 m.d. – 12:00 p.d.",
+    "e diel: 12:00 m.d. – 12:00 p.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXSsbGIqu0iswUz1L14KPDOdtKYLFXQOVftrL1ZCUboYwv0B59Bc4uui9NHzQS6LJ8MHx7rIKj0BQ6itv7UjeMSfXrccqPfAem7H7Egl4vzTyw55Ps-srlXD8wZvkveArYmuh6W6Qj88OUEgkwC-I2z2a8tP3bUV2KOy7pETE_0YafTeZw8apYsfN-1jrFwJ-k50LDuBatRChX25XFNxjnjb3zaRo0zJo8RDBcdtDiyHeOeAZyyROxmIEvzWyJsX8S6nxjC-iktTqS0JHSrHBeW1owMDjY2WyISiRrZE3fCxN5CLxLH5-y9s2CVZ3HEnkZdqYoKWl46OciV8a8PKSLbLOH3BTZ2zqL15gSnJx9hUTsKMsjTX_nTQM4d6DhgK7-mplQvxcVOQ9mty3FA0IShZwFyev1E-Oz4F6_KpPy_wkg",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "DTS",
+        "uri": "https://maps.google.com/maps/contrib/109700265710304031449"
+      }
+    },
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXQ-ibzQgIpDuSoekffznUaaykCdcB_SrkoIUPRRA9_3GDSj8aVDim6cMExEzQoJVPS2oc2_HTbcXgOOkqs1d5o-LLezWbXD5oOrkoKK9mRbQTv86n6xAjdVHf7AaPgBdRwyTUkPHgUs8mQAFbZFG-URRRDm5pN46ReFW1GdU8Lrn-vuUpDfXIQRwkUCGtFSQnKUYXqTkTEM0n3R6WOje4AESxkLaiBUOVV6HIOpEdbLm8jCjSKmUxppbTyg6ZdNRUf8XeXf07dTxHvWPcImLvsyB5rtROBbN2_D-PTqtM652HlW1ppfhJVU08Lfvp6X99on3EhazlPgAdd_MUb7RwjNG5jTRPlQemzPookBorgw4kUjpbzVG-zNgX8g84xINvO_DMoPJXVsrMxgx_8R4DBHOT72Mm8",
+      "width": 3840,
+      "height": 4800,
+      "author": {
+        "name": "Salt Prishtina",
+        "uri": "https://maps.google.com/maps/contrib/104646595554542781526"
+      }
+    },
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXQAlaeoP1xBrLD_B5ngvwhUOC0IVWxaralDs-UbA0IqlfGF2dXbs30teHw-snPTFaLgJlnxSx7YUnJV80f5szfgyjXkKUL9nAnDVwN2QVVoHmOkYWvT79UH2tS477DgIVwxjCgPD-IPYiYrEIae3qYtjR0yQ4DjyicyHIj7c0CRrSgKbfj4A7Oe4Rc1McpvlAT2q7kli8JCyBvKJJHenJ_skoLyLj-X89Clp4Ha5dEtAW_NLeOJhdFOkH1xypBCRiGd0aaz3f_5z2Te6T8vPNa7NZ_Zgw8t5obT00HV256RHKwkrBesyWxsqEmArfilkWsDBTRuohuH0IaY7vT92hty28AGixj0FDIVDOoRYdi8EwACytfuqmLNAbZwtGRwBXJtrVXRnjUhqTved-aQgoDRCNh5LlsBW8kgi4JG3iJiOw",
+      "width": 4800,
+      "height": 3599,
+      "author": {
+        "name": "Hannah Crisp",
+        "uri": "https://maps.google.com/maps/contrib/103915281478679276394"
+      }
+    },
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXTOWKTXusoI6trNdB_vhbEyiYfVu43oqsx7zi1xX5MPymH5FZG24NlenE-9ZuCBwHHoLG3guC5KR9XdzQoSlyuh6FFjFpGwRU6FsOC0KhZEear6xNniJc4-sBzw_12Ab1LlH194cohwnLR9gEMPsxFV91pYnfyHQkcA0TNYpxJurvgt44KDwXa-GEuof70PjFozmUt4gpxSPx4-5Nrb4YqRI8IMBS1sDE4C2dPMDiJxZdXjqQ-FV_Xe7OenzN3UjkhxlK__pAxqWdi0ogNA2XzRJM34SJ1VEZzNyCjK7ZAluVjFDDmWACrpyvoqeaNYXJ40tgKUCuXcsxhragK9lhrZfryaiEp0KB6lcyTkZc2zLSrgQqXpnSrC02c8iGSzUZChnRu-pIX6uo-kp_2ImBtstFdNSa8",
+      "width": 906,
+      "height": 810,
+      "author": {
+        "name": "Salt Prishtina",
+        "uri": "https://maps.google.com/maps/contrib/104646595554542781526"
+      }
+    },
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXS5CQZZGWTkIAIMIf6nTFQn8jTdErbNRntTHvUTEkmIltErywCCDwJRZK3DWAxKMtB9o6eEJNCrzyvzZcdxtxUt711suOW0ZsepIEqQpR4uqyikuxQZNTwX9m1rjeNZS21kbbhCv2fBPMsNF9D1XcpJGJTA_IOvYFZqOi11-_1bRk45URHfhlFRKjlHCvlnhhTF5WfQgj7zep6U9fSmZRKGSJZ0bKt2Sx8LUOAHfNcc96ZGUc4Zh7zwxF9cX4NqTAI_3cb9dCXCcHQZ_an8ovkexZVYZgk0xFhvMqJKcw18YKHRcqhy1OBj7qJ1D3yj06R7ZfKxI8i2jYLAQ8s3Yyk8E1ZPLbRcieFHfVV9S5X0niG7zCNJdHvJ3zQp6KyC4tzDOgqSDP7j0IKy5wc9xcEjdkeskrk_bJsMGI196M9WuQ",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Victoria Khm",
+        "uri": "https://maps.google.com/maps/contrib/103901378946254801193"
+      }
+    },
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXQm-3ku461hkkyxSv6elBMJkyOsgdnUvrO4qAQeTb3joGLScOPALizlOk5BfuZCgSVv5cDH2x_IdQkYiJuZIEB4BrdMImlVTMR8o7MOT5-pHnde2NFRPcGUFXtuDIoNBnynilGJ1Hg5ci8sCUB1GIAonOrwO8bM3nE3-h8vJQ-EvNpSHwFGbD-qu0vYWHELa2Lw6N1S9Lz9ys4-EioKLwzMy3sIa4SlgpXi9Y2RFR4hEkA3akzq3d8Y46pLYTMtuIpjLM2XsgJ1BuBGsNTXBhcj4Tz8M3EDRBz8E4LjmyFyKToLsjsMxKb73tEa0F4LU8Nz3i69DT3p68RXw9ppKTVaru3ZME934mZP4EuKRtrum35MpozZuS7QPL9z1AUpZsQiC2mNFkgfrnWh0GZqgsjTn8s95SFuOOU2NqbaaxlM",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Aaron Sybrant",
+        "uri": "https://maps.google.com/maps/contrib/103998164503757985220"
+      }
+    },
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXQwboBobwPexXIojWj8qBI3p5PT1OsArZfUsKNJSSl1l0SgL3webcoye0-rHNSXAsBZpmnSPu7TOF7lyJlcZGLDnr1SEh2vaQ3rqaX5lPKtkss5O8OIlWh66doMwhMVQa92IB_62J260_vbEXR0GG2fT4v6Xa79LPeVnsDl6kdh59cxnD49JdGGbrVWjZi3YfISrVGiUY8SmKLNMfIzhTyZGvF7b8Xy_jb1lL1359CfQBa1qQonxQjEYdvk-09covTpMjgz5xONQx0lA21UZkX6Z4EjzNmlopgbrHupJ-bDnTRG2AkaNWxRyESa8muw5kk0k9VPevfw7AbahIoxBVPss1PE6sLOdb6yzNYb4JKG9k_82vX4YLI78_n0NUvtOQzdlj-NRGQoV2lVxWnmlqvTpt_cveUbh1t4ER9-Sl3X",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Victoria Khm",
+        "uri": "https://maps.google.com/maps/contrib/103901378946254801193"
+      }
+    },
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXQmPu9B4adXOJzoS0vquz0mnwG7O-enC9MtSAkw7PWJLTaNxFf531uOjAYj-gqMISjL2VETjkj45KYGKzuAjJZoRrSrm1jPRVmFkXvZ01KIRG3ZyUVyiTDMXlqSQkCfvXXo5lNoZ0-BzEZUe1H0jTunwL02faGa61VoUnPiw493GswluRk-5R5v7VFxVR6nUEtPNCRvfUzvYT1c-UJJ4NluXrePzJprM32ox-Bas-DX2-A3wfryXB8jZMSaHaK6iQqRVlkm2ZLojFJ3QLg69pe1-5tn1QEe82w_9NDMR5ktMSmCROjN7T4EYqYBuzGW5an7a-vyVqJ68fp8MUlg5wyZw32hC1OOBbtAECr4eGeVYYaWVAo5WDV6wSLHpYy5JpzGasoTgBuPyf4LUri43stoECPeNVJWRitbWWU5dQV7",
+      "width": 4800,
+      "height": 3200,
+      "author": {
+        "name": "Vanessa Karaqi",
+        "uri": "https://maps.google.com/maps/contrib/108191327910640798307"
+      }
+    },
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXS52JIMjnf7tn4__2MRpojA7NlyfpnQtEwzeOPoMxVmraQWBgsDrwsBhCKW1JyZUKD08hDmGLiUJjSO5yT0zBbwcMksGRMvEWhFTWf2yzFZozZfVnTr0UQ3WNHFG1FZ5maLHnAVlA6uraPf2wWZpiRsK-V4vs9-gnuJrTV9d4Dar6SkmmuDcCxIgQcuy61cy_hYJsMp6pJvhaRXkEtuyjWr9HWnVu9qE6yHf6kE5EqEHM2_IiLWZu71Yv029p1ta5tsg_Xlqx5MrIqIykxSIU48loD0l0L5WTmPMG_BI-mR1oFa_Sl2VjMvuhq6qFNhnnJrV1HCcoWhWxjx2BaONg19GyMAjWDrjyqygU0hf3ujIwfU2Bboa3a10D_aDiSs9AdLFD0MBlvtBoeAI4I0pZj10bou-XzCWpBKTuJlGpdkYA",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Review",
+        "uri": "https://maps.google.com/maps/contrib/110096967086912745610"
+      }
+    },
+    {
+      "name": "places/ChIJy11SoBqfVBMR73LyvNym72o/photos/AVoNoXS0RZuKoKyZOFCQKEUsIYRd85iPlFzZZQergNpChO_6hRTSp2K4t9fSMYM8P3WAePvZXUIwioCKBCUPRFFgGJvLLfwD2HTri5LlFdSBa98mkmEISm_FcICY83HGQGhO6oVrhRDBn8IPYv89gbVgCg44gZJhhx5RVeDWlgJd-TSlJoiiHo-QHeBrs5C-yX_MwJFcKVHX_vyPLkpwk-cKB8l4PpNYkGbUX-4SCZkZCznaBh20XjX3ZmnqQBBRgdZJiqcyQuEaWm8ysWAWaQEmAgwEPBHwhIZLgqDsJfSo8BDq691gdG85QIXBywuIY3aXtlmOTwwv5MkcUIqXqGBMsG3NVxnkQxhv-4CwX1n_glLfsb2ixv9X0ckYNkfSEwIryV03XPruTDTOgUNa9qu6zUghYy23k1IAg3kDPuUZihAfPw",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Jovana",
+        "uri": "https://maps.google.com/maps/contrib/108934135726500928799"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Sehr gutes Essen! Ich gehe jedes Mal mehrmals ins Salt Restaurant, wenn ich in Pristina bin. Die Sushi-Auswahl ist hervorragend – besonders empfehlenswert sind der Salt Roll, das Tuna Tataki und der Hot Night Roll, einfach sehr, sehr lecker.\n\nAuch die Vorspeisen sind ein Highlight: Die Dynamite Shrimps und die ringförmige Käsepastete sind ein absolutes Wow-Erlebnis.\nZum Dessert sollte man unbedingt die Baklava probieren – ein perfekter Abschluss.\n\nDer Service ist super und das Ambiente einfach sensationell. Absolute Empfehlung!\n\n—————-\n\nUshqim shumë i mirë! Sa herë që jam në Prishtinë, shkoj disa herë në restorantin Salt. Sushi është i shkëlqyer – veçanërisht Salt Roll, Tuna Tataki dhe Hot Night Roll, jashtëzakonisht të shijshme.\n\nEdhe antipastat janë fantastike: Dynamite Shrimps dhe piteja e djathit në formë unaze janë vërtet WOW.\nPër ëmbëlsirë, bakllavaja duhet provuar patjetër – perfekte!\n\nShërbimi është super dhe ambienti shumë elegant dhe mbresëlënës. Rekomandohet pa asnjë dyshim!",
+      "author": "Vanessa",
+      "rating": 5
+    },
+    {
+      "text": "Menuja e ushqimeve dhe pijeve nuk më la përshtypje. Ambienti është i sofistikuar dhe stafi i sjellshëm. Pijet alkoolike nuk ishin kush e di sa të paraqitshme. Banjot janë të përbashkëta. Lokacioni është në qendër të qytetit, me kod të veshjes dhe nuk lejohen kafshët.",
+      "author": "Diella",
+      "rating": 3
+    },
+    {
+      "text": "They confirmed on WhatsApp that our Saturday 19:30 request was approved, then sent an email confirming Sunday instead. When we arrived, the receptionist was not only rude but openly dismissive and unwilling to listen, even when shown clear proof of their mistake. Her attitude alone was enough to ruin the experience.\nA disgraceful visit that ruined our weekend and our first time in Kosovo. Definitely avoid.\n\nAta e konfirmuan në WhatsApp kërkesën tonë për të shtunën në 19:30, pastaj dërguan një email që konfirmonte të dielën. Kur mbërritëm, recepsionistja jo vetëm që ishte e vrazhdë, por edhe përçmuese dhe nuk pranoi të dëgjonte, edhe pasi i treguam provat e qarta të gabimit të tyre. Vetë qëndrimi i saj mjaftoi për të na prishur gjithë përvojën.\nNjë vizitë e turpshme që na prishi fundjavën dhe herën tonë të parë në Kosovë. Shmangeni patjetër",
+      "author": "Lexzy",
+      "rating": 1
+    },
+    {
+      "text": "10/10 👍",
+      "author": "Linda",
+      "rating": 5
+    },
+    {
+      "text": "Ambienti është i bukur dhe cilësia e përbërësve duket e mirë, por fatkeqësisht përvoja jonë nuk ka qenë ajo që prisnim. Kemi pritur rreth 1 orë për ushqimin (1 herë wagyu steak dhe 2 herë pasta me tartuf). Ushqimi erdhi i ftohtë dhe pa erëza, gjë që nuk duhet të ndodhë në një restorant që konsiderohet “i nivelit të lartë”.\n\nDuke marrë parasysh çmimet dhe të ardhurat në krahasim, më duket një lloj zhvatje. Në një restorant të tillë nuk duhet të jetë e nevojshme të shtosh kripë apo erëza vetë, e aq më pak të presësh kaq gjatë për servisim. Për këtë arsye, nuk do të kthehem përsëri.",
+      "author": "Charlotte",
+      "rating": 3
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

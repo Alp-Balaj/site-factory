@@ -1,0 +1,156 @@
+{
+  "place_id": "ChIJaYOLN7yfVBMRTatPaOpziTs",
+  "name": "Arabella Taverna",
+  "address": "16 Nurije Zeka, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 48 702 777",
+  "website": null,
+  "rating": 4.7,
+  "reviews_count": 46,
+  "lat": 42.66157030000001,
+  "lng": 21.1617806,
+  "maps_url": "https://maps.google.com/?cid=4290087570656701261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "pub",
+    "bar",
+    "cafe",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 8:00 p.d. – 12:00 p.d.",
+    "e martë: 8:00 p.d. – 12:00 p.d.",
+    "e mërkurë: 8:00 p.d. – 12:00 p.d.",
+    "e enjte: 8:00 p.d. – 12:00 p.d.",
+    "e premte: 8:00 p.d. – 12:00 p.d.",
+    "e shtunë: 9:00 p.d. – 12:00 p.d.",
+    "e diel: 8:00 p.d. – 12:00 p.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXSisCKoIa-1JFIZj0w6XncEYJu0T9WLQGR-FVMiU60Uu9V60mgD8u3mnGFXh-gVz7jBoyzQBQNQLRO7kJgI4G6lmiOvMW4T2yaV-RTo5IFh6M6oATB7mVMX3fupUF3whuI_UT6MU8OeY5wQcC1zR4f43hiybXrw578b3J40ilZ2JqKT-b1uOTpQ1UhTrSMGN2UOsGOK4J2BOlvwzeg5jr8VqQNgd2TJhLBCKaZvrcavv5Vla9nBdxew7d3rpG6-81m-n7eaekC3QbMcLCWyd5zdW7EmhFof02KZkSRhznSlASvrS9R0JCOGSocHDHTGrY_kR1lTAF-Lm7SRIssk8etzYWIoeVrIsBil6uxeGShujfSuPiYJPbV5-c8GN6ChilCk64DqpCauaSa2IpWCrUdbXRbRaSMF87mvZHvrwN-FpA",
+      "width": 1284,
+      "height": 2778,
+      "author": {
+        "name": "Arabella Taverna",
+        "uri": "https://maps.google.com/maps/contrib/113073429918021803637"
+      }
+    },
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXRJgEbj0Q3CjP_dEcBE6kEdUemul97gE0Ch104cXX25lne3Mbzzqj0g_qj5R81qdzj7VtaLTSJ-RcjdyHRSntIQsVIFJQ7A6ME6zuzM2i_M6kiIcxX-SqUqSbde7mrPKi1jkHcHGNnl_jjszQ7NnRp6xRb56heZViciiGE1VaCbv59ithC4fn6qwjmp7ewKx6HlKy2hROyQM8ufYJDR8C-ZsqOF85d5TFVUsEUy4paMPsMagA-4B6b50pW5wEQzuHe4bp09KxbwM9lKyc0OIkTmW2Mt3yLxA-04PjRHriyQYtnXRKnT9FvVl3g83sYcmQEPm5HNtrGLneRSlkq9MZsAppwkxiBfJfNYsnpN48mVIc5oCIXb_Ni6y2Kqk9z2SHxzrF70txl45MFwyaNXCciuLvrz-UYztuZYjp70LEM",
+      "width": 1348,
+      "height": 1800,
+      "author": {
+        "name": "Qendrim Sejdija",
+        "uri": "https://maps.google.com/maps/contrib/111663313235070345462"
+      }
+    },
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXRuaOPwUPn-D285oA3vXzXQqr7iWhorJWQcUmmmRBLbfxWpStyBg9vQfB9GHvt3ZIYaDXrBsrblYuYPMHRYDktFK16lmb5v5qYlIviRV1pCqIAMxIFt2zUS2moFD20wzEZxZ6ozY30GRZVhdVFm84Y6HK7dXBA55KwerMM9Imq_Ck-ymHeQR96P-alowzyjhKN3P9n1xK7SLBus6ucwsiHtY5j9ogcR_p1FkXXc5WSdTMf44xEaIpi9ID3gw5B7mdAkOeENrsEHtWtuTVCSeWq6cfqrb3PbKC4nLID3CekgCooCh86ADvIFj90ql-bn5yc_N5eBrKc07q5hU9N91VoTVEg9jIm9GXOZslMdc9Y1MMQj7_vgCzuvaIYl0qBIevJdrQ9HbUNYh_4d7Xb0ZS4coD8pF0mjo-edC1M8-FGITQ",
+      "width": 1920,
+      "height": 1080,
+      "author": {
+        "name": "Marco Mezzini",
+        "uri": "https://maps.google.com/maps/contrib/114894894465474092369"
+      }
+    },
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXQWUPKi0QgJf3lqI4EOJv97MPVl7NGDRBR1vBm3zeTvZZaqXn0JsfvOlE6eZUvYCt_YZQ6UZIgXSk1tzJdGqPh9PMtL524cNo0X1FgK4KrbuMCoiZLx2zNQtgj-iAi-je3edKAOTlOwrFzH7MheN6i4vtGMqgQ1z6rrqFqCO_mcXi9OkfR1AVUuKkJFwOZyU0oRLorZxuD28UftZx3N_BzUiTanR1emuFoXQ_UjVn3LM1oSf_fM3Mt7Jorn7LpAdzJLBM5rl9FJXuVqiuTZc_EWb9xwDS6rPcC_8j5_6PtP9auTopiwhdBEmUwfCVaEUXYPWTr7KdMvGPD8JcJFP8hTcWAzx4QCe39o7TmK9-GkWf8iOuEt4U9mVKzpKivmHiTN0IVuLgiJdeWpgh5TlPaUazxFIufCCG6NLo_sbknkLQ",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Arabella Taverna",
+        "uri": "https://maps.google.com/maps/contrib/113073429918021803637"
+      }
+    },
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXTs5wTW4USVKOdJDTl6r5yNXk6sf5HLF_ewpflcLYiU62PksVTxoSixSmyc4kjz1vL-kdGuL6RXBnTqtDiqIy79OyON9kBs8eresO5R8DfrKX-yM2sbKgidybprwgPZr74U7pdesxdOd20AqGd--60-o0x1iIMX5htBaVdBoaV98CMX5j3oZZ0TSpf0ZdY2vhd-BNiUEb0d3Mk5fmpS_XkU7Ob2p1lnGubn0WPCBerbrdpI0_U_XCqYfNuCxq0v_tNJR3SfnDcItk2MYOELRuFAwUJU3BqFLXv6prPOhydkbRXj-keXoaPSzcjeL15rpDNtXjGiLDPn8l-rl-qYcrYPzWAIz4AaZXe6bsf0L7ZeheLksyFXAX0wcFDRWsJyWMptyG9KT2TXPcxIAhlbLWECsqpROJhFJY8hq9Sy0CfpE4rh",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Helen Nguyen",
+        "uri": "https://maps.google.com/maps/contrib/114784067380583666928"
+      }
+    },
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXQH_WajFx6za9Jnworca2FreVzG7vSiLfQtgLT91Z0wNOvYCVqMgn-RDEFKlsau_uAot1scEkBGsfhDh_sF8lAqnwCKzd4XwgCP4-LaYin0JQbcu7-EuN91s4Km-Q0zOF4tF9Gzpf3UsYH99NfftAB9C8nTO5Zxh-8T8Dgcc9cpXWLkULcu6XIDqo90heH43xZgwHKVEPfR5qc0HMKbkiYyyJXuW4GK2FbGrmvKc-5PkE2yUMPRZJd7gVQXiU_mX-KvoyinUusYaT_tlJQcbUm0zOvlJBRpju8lahdprr2lTclBEzat84JxhChitOGozCN8UIqgmggEzQcgJGxrT_d3Dh-VTT-Z1dz-arhB2q_87YfqsmOJPw4xNCN4NgOPvgOXa2gmvpHFvFZxAOydU0RxyXcfmDYXEIjkji7t3SW7EA",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Helen Nguyen",
+        "uri": "https://maps.google.com/maps/contrib/114784067380583666928"
+      }
+    },
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXQAVtXCaJmI_pkMHeCW3ri_RbSqocZ-QEKqh9siDM6GjgqAxDy8VYeOC90gj2xdLnupZ21IqzlVuk_xmOgea8drYXJag_Ltu1_u_cBHVP-BtI7TSVI5uUR_cvdkCA-NdW5ntZsAi_yFW9F_r0xz3tolqCqQb_AsVa5absPPDI4YAiMFiiDPkpypgwm7NfGq46jC9CkyWK-HfP34LaAFhFySP1QX5rrUBR26fGk6VVBGhRbGP_POz0f2aiHTSiFP7WKzhLTdIeflaBAK9BDUfzg6oFHENO4nA1OX-1xL20VazYYAy_NM7vsqU7CKKCGKb0cS5EAhpdLI6Jl6N5DnF3be5W8HxaFG0XetrtA5asjuVAwWiXtd-hJGDwwM3UGYo3DXHyG8T0lF_eYFeEL9W--4bOr-U3gqEL14tX3e-HnwHFQ",
+      "width": 1170,
+      "height": 1162,
+      "author": {
+        "name": "Toni Muhadri",
+        "uri": "https://maps.google.com/maps/contrib/117852593447595741849"
+      }
+    },
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXTwkGQEx-JAupyXKFLxEb3gvXeSUFr6PRuTd_Ciq6aNMgxHvuGrwWi9dyxvQ-Cp0ISiEtqOt4X27NXJk5s2DqXTa38D393AxcrX0KytekVCYdhEKbY1nuwafy-ba5vODoabG212daazEJtI81IgXAa8p5QmTa8tUJ3AE5_sDpEhvlWAxpsDBXnzRwsACCcvLdvTNBUqe6BtapdQdrO0CQXI2M-MZ4eCZGE8CCMxvaLdiUlY4TLry1SSIjSPw_XXd1Buv2Qce1Gqj0E3prTB6mQyO2849-sj98iK07DulyP4MGCOmy8MwLTpqq8nflb-qSDUmbOjqZWupLJvB57DejF8vzbBvEZhQOGdpw5nuW-TP3V2cWAd0OENn8KV_KesH7_vcCwDRA2bOvWGf3o-Z4Fc3RPDRbgHYqYU3ovsqERbLA",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Toni Muhadri",
+        "uri": "https://maps.google.com/maps/contrib/117852593447595741849"
+      }
+    },
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXQyjYRTDFelD6ZO31dSLutSd1lGf_NY14K2iscytrBpkbiHtd5InFSg1I3bqmZS_y_NGs2pIWdztmPFOW-R17-XRMxTC-opxhO4ZAmLhv5_Oo2LiATQyRWSvChcwkpPd3NDt3CI38StTeNJ7h2mkQfpAzSoMSd6yq2dMYCUaygrBwauDcujvTFdTEKYk-ueVB-w-AEzJNrDddrEp6yopI-_7Cf6y2ud-XFyvQWKwiM9rg006JRNY_4o53c4ysHxGxWtUQ8a1HdSQpKJnqZcnSrjml3YV0TuW_CQW0uqBO0r7cefMpMTVeN7HYk7JNc-cf5uJ9cMSKcAwjxLqP5jgK55_lAyhO1nHIsDBOtD_m7MXCo9zbWVUn09MkrarA7MhCnjfJnnqXsaJ6SyXJlkQ0418_hL1D8ADXT4UWFzm1lAAQ",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Toni Muhadri",
+        "uri": "https://maps.google.com/maps/contrib/117852593447595741849"
+      }
+    },
+    {
+      "name": "places/ChIJaYOLN7yfVBMRTatPaOpziTs/photos/AVoNoXQasZfQLlrTzyebsreIzK_z3BEJgz67plLtGo6hjecMeZjJzs7z7NqfW6L21WaVFrOL3kVOL-wXTz342LO03jjZwB9Mtd2QEUUXDDeVQ3RB4S1daKjHcCEntH2cvjrLIDFBEYWwPLIhFQHk-la2XlZ9G1RTqWi0l37CMkHDCIPs_ZMPluqA8IB14oIUe3G8WhvI8mBEvPqvNTtZTxIQMqMj3cXaG-7jw0rIWs-t_KqfzqV_koOouWJFtReO1MYfgothgZu3pMm0vJ4QVjDsMKR1eL8L8tXg7ql0Lgl6NHEIOA3MlF6iPhz0QGIOc3OV7CjQXiprTsmzblh8Mz7fGEpSjedDoHTC_GlFQXsNStL6jbEv0IvgV5osSLKhEQnGHdhEYQFoSDYJu6llKiMykCs53Jj_xOKLPE5rQvqPWxm8Hw",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Helen Nguyen",
+        "uri": "https://maps.google.com/maps/contrib/114784067380583666928"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Ushqim i shijshëm vendas. Ambient miqësor dhe i këndshëm.",
+      "author": "Helen",
+      "rating": 5
+    },
+    {
+      "text": "Njihuni me sallatën më të mjerueshme dhe më të pangrënshme në qytet. Me 5.50 euro, do të prisnit që tre fetat e avokados të ishin të freskëta, në vend që të dukeshin sikur të ishin mbledhur nga plehrat. Gorgonzola, e njohur edhe si djathi blu, që sipas menusë është kurora e pjatës, shkëlqente në mungesë të saj. Pjesa tjetër e vaktit nuk ishte aspak një përmirësim. Kamarieri porositi pijet siç duhet vetëm në përpjekjen e tretë. Vendndodhja është mjaft e mirë, por vetëm për pije.",
+      "author": "Nadja",
+      "rating": 1
+    },
+    {
+      "text": "Ushqimi ishte fantastik dhe shumë i lirë, atmosferë vërtet e këndshme dhe shërbim miqësor. Nuk mund ta rekomandoja më shumë.",
+      "author": "Fabio",
+      "rating": 5
+    },
+    {
+      "text": "Rastësisht hasëm këtë tavernë pranë Airbnb-së sime. Staf miqësor, atmosferë e relaksuar. Vend i këndshëm dhe i qetë, fantastik për një birrë me shokët në një pasdite të qetë🍻",
+      "author": "D.",
+      "rating": 5
+    },
+    {
+      "text": "Vend super i qetë, ushqim i shijshëm dhe të gjithë njerëzit atje shumë miqësorë. 🥂 ua rekomandoj të gjithëve ✨",
+      "author": "Ermal",
+      "rating": 5
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

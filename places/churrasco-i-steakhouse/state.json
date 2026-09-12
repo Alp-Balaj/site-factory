@@ -1,0 +1,32 @@
+{
+  "status": "found",
+  "flags": {
+    "hasRealWebsite": true,
+    "fixture": false
+  },
+  "archetype": "",
+  "instagram": {
+    "handle": "",
+    "how": ""
+  },
+  "contact": {
+    "person": "",
+    "phone": ""
+  },
+  "feedback": "",
+  "followUp": null,
+  "priceAgreed": null,
+  "paidAt": null,
+  "domain": "",
+  "pagesUrl": "",
+  "notes": [],
+  "qa": null,
+  "log": [
+    {
+      "at": "2026-09-12T18:27:55.589Z",
+      "from": null,
+      "to": "found",
+      "reason": "lead search restorant Prishtinë"
+    }
+  ]
+}

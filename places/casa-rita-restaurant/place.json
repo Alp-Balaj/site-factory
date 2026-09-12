@@ -1,0 +1,153 @@
+{
+  "place_id": "ChIJ_-TX9yyfVBMROlPKKqastS8",
+  "name": "Casa Rita Restaurant",
+  "address": "Dr. Shpëtim Robaj, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 48 350 333",
+  "website": "http://www.casaritarestaurant.com/",
+  "rating": 4.5,
+  "reviews_count": 339,
+  "lat": 42.666893699999996,
+  "lng": 21.1855402,
+  "maps_url": "https://maps.google.com/?cid=3437843720249692986&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: Closed",
+    "e martë: 8:00 p.d. – 11:00 m.d.",
+    "e mërkurë: 8:00 p.d. – 11:00 m.d.",
+    "e enjte: 8:00 p.d. – 11:00 m.d.",
+    "e premte: 8:00 p.d. – 11:00 m.d.",
+    "e shtunë: 8:00 p.d. – 11:00 m.d.",
+    "e diel: 8:00 p.d. – 11:00 m.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXR4pnD8akQu9GGB3UF0rhyLoz0vMeDStWLxsVADRfgRw9M3Z51fDOvtHso3R7fm9uWOxBYc-T8XGargPAYTOxj5WuZPkXnOo7K4YCUUK4EBouTouDfcxVPrjRHlaNfjzdIfyDk7IvVssqrIZhVGAKBORD9tFLtmCutWWCOH24g_itX1sMY9PmQoAMlHBI1yAbhJdvkiq2K712vZRTtZNpVf6XLrIRFonyipMt-fYV527wfDZ_TKbVqmImWdOht9QPbfIbGFa4O6TQ2EGeW5e69zxxd3zWtIS6-yOZhhQJekO7CJBygrzhXiqP7H_4fLbX9xZ7UfePQ8RcR5HaJjen0W48hwFRBh7oH_QONG5BrEl-tfc45HGS41oJvYd4ufU074m30tTEGTmEZTTu-RZuKlX48_W7qOS2VaqUe8duem6A",
+      "width": 1000,
+      "height": 1000,
+      "author": {
+        "name": "Casa Rita Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/111450153422477305057"
+      }
+    },
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXSnK7nTIhlDO7o1AOfTjjZ1zd6C2kwZgTayjQdPUu72fzqx6EP6k9wLOg9ZLl-3CPELLY5ztn-0gtYHfzDtphLuzn_iOAgbg6y4vXV-set1Lhs1z3WdUhu2IVxFPGrn8ECPg1vjsMIGJgILHUyJXkuHR5Mx_AmmYp1BOUn3D7bYNHHaL0z9G63XyRjjGXBuRsU_flqMec3IpTNNJ-GL2UkAw2YtmUbZp5oprOJodaFtBe6dfBmd8pccU0dBugboUECmkHBMkjAZdcr1Msrv4M0_OhQITMmbQFORp1kxS4SklXT6zjRnQU_PXp1_6bRu9Wd0zLcr8pJzcB2U-z4DGP9k-ne5wwk74grIWZZVQ7sv6SMR4UnV4h3UdVpgzK7zUikFVGvIAzxCtahKEFkkL1CqUd1Bf9IG9L7u1imZPUMZEg",
+      "width": 2256,
+      "height": 2820,
+      "author": {
+        "name": "Casa Rita Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/111450153422477305057"
+      }
+    },
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXRKUd418gJ6UhlbODNTS_DnZv89c7LWD3kRupX8I5d4ljTKAUAEI_35BBPwagrFgxBNkP_L3ox_RsdVSIuo_W5brfUfV4SaOrTdn64Wq5eZD2D2D1TXnVohhDI9YpjVl8paWBY4SoqvQBe6Mu8DbNe66zLzj5ddCW8FSfyKEvI9dWpUEX-h-2S-T-YvHwXXP5u8GEEaoV3B9eEpHaE2jHllWO8bfIFITZGTTfU44LwbZb8MTfyNTeli2_ovIgmUCylmBN0TuZydMb05OemtneM81vwxok8dIeqBSrZWqt-m0eA7_TeDLEnVzg3aN2w3a9QTYM1iid8CNcPoo76h_fFnbRAUxXjEu3_BKT20LfB8gnicbWD3MSNXMgdAK1Y2VFMLCgccE-SLWF6Stxmn0yhk19fG6frmZ9sRlgV11O4",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "U O",
+        "uri": "https://maps.google.com/maps/contrib/107014458201898056105"
+      }
+    },
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXQ4jLUjGM9YUqld1H--aISzOOOcya_QNKLPS_lyPrj_hbzZvPjf1_JZMa5sjjHjgySonAhkGRiihS25bV2BSItmCdp4fIPctKce06YsVdF_BoaaQGHcwXJoR3UtfFhYijZU_zPWZnFg7wyAS4hWJNqCUFvNlG0KEeZJVg_NYSPwROiAxwjr7YWaL5HtIrUr_zXD3RPyNx2qr1JlZq-dIRKzBN-RRNaeCi0iiNTznVJ4woc35gRtUvc3N8zf-HYEUiRzMJJ66HhdNbQm-M3jx-PC6bFL5CHSFpEVBli6c5jbSXXoYii-7nen252KeJG-o3pKMT5F8ytY7v2hCzgec_U4xQ_ClAgfvi7fTx1peHtjUXxpgXI4JVGOhKje_p8axWmx-X2uiu5NTICo1xaVzz3KDIR-SRLHf9pQFFlNXedY2g",
+      "width": 3394,
+      "height": 4242,
+      "author": {
+        "name": "Casa Rita Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/111450153422477305057"
+      }
+    },
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXRu6EaQ9mWegk6U6uy0GbBzIMTlGB57bXsl4VYsp6XmB9aynf_BrOQpWRcxHE9SlEO9YuitudcyMB_bWH2Sjav5YfWWQPgDbB9rsPCybsIb0ifrS49Y1FlEEmU-CTB0PKVE8yiwI_rQD47mdoGUKLC-h1q4vFbZWZscG2OZU-zUSe_IFwFakzTm91pm2PfcNNjlaWGlBp-PrmyfadHHv6u-zv8ypopzk9fXxlsQuNbW8nqfYIWgfVRhijt5fiDLQQZhnyCZpQGGHWa8Az4fecmVzJWCiGyZ4UWN_NuDQp-Z_HVEfD0ZFHZ8lI-1OfGtLTA4u1ZMHfRbzH4oy5dUZxNAQndZ8xrN_xB55TgwAUqA6MMj42y04kiuZW5I0O3Tzc54Pr3BVsh37fmjxtM3NtwSs3MA3YnA4CHeBDJQjUXfyA",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Dana U",
+        "uri": "https://maps.google.com/maps/contrib/105235105406202258026"
+      }
+    },
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXQ677yxjYrMuBNRVD-ZteVXqaZ0vOkMD8fKGp8xquW41Xq_EnZigdO8Dw5qaYiLO_QG4ae6uE5-57tTHUvvnPLTySkgy1dJE4nmJI4nH6CXsxN5PZh_m9BR9wFkGta5s4LWJy_1MGgUuPXVI8xdnO5klhqnrUzY_mHj7ukGe2a44qZTJE_NJhG-aEKl_SHaf7lFreo5CYAfT6CLM2qvYlhhISbcfTHF6v6kAoSaQGSzBEuRav4E2lrf411mox1xjn_5YKd5MyxMjFVLub8BSq8iN900NIfcA3cQwC3T6hEtg5oiPKvJYkl9UnenpUekNqIkyWRUlRd0XVhf51ZUys5vQbcqFz568MT8SS3EMoILG83f2Zh4naw0pUtezsGg52y1mkHQ6PhKUEJvxcy5S_8Z5XyHVvD3FVpkuHK3tnLpFxuB",
+      "width": 2246,
+      "height": 2807,
+      "author": {
+        "name": "Casa Rita Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/111450153422477305057"
+      }
+    },
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXS1XcqNoe3g6LYby9hfOtVNeSxm6awnWcFVnX91rEYwuXSYAbG14OdE820T7dxhlQZRxF40Bo6judjSz4aa2ENVu5CIoXkz-m7OfZ8j7rrs61NnxFn_r-gPtxfnwLvscWmhWA99FmRAA2lMx8Yjgqg3xjGk20qAU6EsWqEQfNUHt7RPax0FyfL7hi_pMn7RloDeaVOOzqzOt_Di-Q3Ms4f-5XU_wzrX0I3hXel93571RGoRlfSBbYZ7f16VE9BermEWXPbpn6qy6koAudPooLRA_Z-CGj9flz5gTMEyRnwujon7YJ6QzBrcpNVjWsZbWJK6VZ1grwbNKsV8zmsF1VVjNrvww7TX6Rx2hpG2gW8qh_AOBBDD-dqoZTBqEE4OKlnJiCM2WH2hnFqzuRn8vn55dl6HCzWf-FSAlhf09-HJ_g",
+      "width": 1440,
+      "height": 1800,
+      "author": {
+        "name": "francis mauric",
+        "uri": "https://maps.google.com/maps/contrib/100344603105366430172"
+      }
+    },
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXQdArHEBzMBZY7oPofMOIq6SpHCHa7oG4dbi4py_6I0zhfGiwXM1PHUiyk6lSwszIT309s3ttxE26J037ByLauTSvmoXicGFBbvV_P9tJd_2Frkw3OZoC4pTKQ6Fe6yKKb0fFsV3G27SMY3RoCdjiokDZWq_NO33LW9QfSONXUR0LagkJTBCeH3GTgwBmQICJ-nr6U65Sno0lbaX1UeVh04S3zueGclmZDWZ6DNDrUcFvymYnNXEXnEYTWg-pKoR5tFw2wfhezhWFVQ8oqoAt6fiTxVyzxRGfrMCNc6Cuv0MaxMV37pkRUMAP5U7JC0lJHWRp_w0o51zo1tVJzhUClgddAVrnxbR3X3mm6QNhBlMY7LPwNRAyk67NZhzxV5DqolohP14EsdFgLC_7sv69_aszcu20N3ibk9Y0yhHPbGd20dsTDhx6ibjIC_n2Uq",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Anyla",
+        "uri": "https://maps.google.com/maps/contrib/111892909624337731136"
+      }
+    },
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXRthmAf-fPhg1gu78cKcq2dkZduynG-yYIf_Fs--F_WXORu3CwN6NxRfBX6OTGJncGuRYwoRxFGj8kNC-co1FFMHQ3JvPWXKYyDjnVeiwQqghmxLzG1lYZWSogzT2eJzHAna51trUU5fYoeM8Nnj5wMpULOphATkqTGxKAso2ce5juvM5cBLmc3QaSNIJvi6BnUzbM95Db1Zs3xDTrfXT9mTh1r_58kGQ2hotXsWb9otgVjKrJqQudHT0IsP-7tF2GHR_pakb33-1xrABFinOxmVXi-eJGka2uIm5DfuO64VsLz20GgDjb-W_q0yiaihU_1AdgY-6HLG_IFu1OKIFQrh4pxdGtEvnFkt7nJXguHY4Vlf6VpVhWuGPEqLtGNbyhPgKc4fPRT_vDnQT-yzcMSo2drh34ad2bij130pJLZtgNReGwnUy4obTAiyG2B",
+      "width": 1143,
+      "height": 1484,
+      "author": {
+        "name": "Endrina Zendeli",
+        "uri": "https://maps.google.com/maps/contrib/106139171071494947967"
+      }
+    },
+    {
+      "name": "places/ChIJ_-TX9yyfVBMROlPKKqastS8/photos/AVoNoXQXyXUxTEMnjCssVG-CQXyyVg8Z0COfhENcuU49U9ysBDMw1amjFylIy58QqUpIIB4V11m-lPVuGoSzdGh8YIpGWOPgxbRYNVue2T-_0iUv2BDA2dgJpQkC9HY7ErSqy77P1eZRWveTXeiyeezuYq8SYvXaxQAn8H6AmQoETCyRtQFpIinAz_5Lo-laWLkH8s8KlTGjZqnWQtUy8scDkyF6HLVHc9rdxY9p4-fRJQRHxSwOpbrGA3ZQqwAvpjuO2FSGoXhohR10mZ7tfSI69pyGEjLEi25hS1lxT_W_kz7T_ls1zt0dHsNf1ANhqDTSZUgN2MBWQpINPg1IQ3feGuwvyB_dOmREQPNhlJILdo9xeF0qe8nDol0uQ6iDEkOc1pyMx9tuz5IJuua2BwQCWHRcwq7KckH2gqQYfHjofEkBjsxE",
+      "width": 2948,
+      "height": 3781,
+      "author": {
+        "name": "francis mauric",
+        "uri": "https://maps.google.com/maps/contrib/100344603105366430172"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Super Ambient.\nSuper shërbim.\nUshqim i shijshëm,estetik dhe i veçant.\nTe gjitha nevojat për nje restaurant te duhur.",
+      "author": "kristi",
+      "rating": 5
+    },
+    {
+      "text": "Sherbimi eshte mbreslenes, ushqimi 10/10",
+      "author": "Gezimlind",
+      "rating": 5
+    },
+    {
+      "text": "Një nga vendet më të mira në Prishtinë !! Ambienti shumë i këndshëm dhe relaksues, ushqimi me cilësi të lartë. Rrallë gjendet një vend si Casa Rita në qytet - i rekamendoj shumë !",
+      "author": "Arben",
+      "rating": 5
+    },
+    {
+      "text": "The location is pretty nice near germia.\n\nThe food is good.\n\nThe atmosphere is really good, and the place has its own good vibe.\n\nIt is fairly priced.\n\nThe staff is nice mostly.\n\nBeen here for more than 10-15 times and and all experiences have been pleasant.\n\nThe only bad time was when I ordered their breakfast and found a hair in it. The manager at that time told me “these things happen”\n\nThere is a lot of free parking there but there are cases when all of it is taken.\n——————————————————————————\n\nVendndodhja është shumë e bukur afër Gjermanisë.\n\nUshqimi është i mirë.\n\nAtmosfera është vërtet e mirë, dhe vendi ka pamje të mirë.\n\nËshtë me çmim të drejtë.\n\nStafi është kryesisht i këndshëm.\n\nKam qenë këtu për më shumë se 10-15 herë dhe të gjitha përvojat kanë qenë të këndshme.\n\nE vetmja kohë e keqe ishte kur porosita mëngjesin e tyre dhe gjeta një fije floku në të. Menaxheri në atë kohë më tha \"ndodhin keto sene\".\n\nAty ka shumë parkim falas por ka raste kur merret i gjithë.",
+      "author": "Dragodani",
+      "rating": 3
+    },
+    {
+      "text": "A beautiful restaurant with wonderful people and food. One of the gems of Pristina with the kindest and most attentive staff.\n\nFood: Some of the best food in Pristina. My personal favorites are the salmon and chicken Parmesan.  Breakfast is also excellent.\n\nService: Impeccable. The staff is so kind and accommodating.  Always promptly taking care of anything you need.\n\nAtmosphere: Elegant, relaxing and beautiful. Honestly you can forget you’re in Pristina. Open, filled with light, and a great view of the greenery going into Gremia - dining at Casa Rita is always a peaceful and pleasant experience.\n\nNjë restorant i bukur me njerëz dhe ushqime të mrekullueshme. Një nga perlat e Prishtinës me stafin më të sjellshëm dhe më të vëmendshëm.\n\nUshqimi: Disa nga ushqimet më të mira në Prishtinë. Të preferuarat e mia personale janë salmoni dhe parmixhani i pulës. Mëngjesi është gjithashtu i shkëlqyer.\n\nShërbimi: I patëmetë. Stafi është kaq i sjellshëm dhe mikpritës. Gjithmonë duke u kujdesur menjëherë për çdo gjë që ju nevojitet.\n\nAtmosfera: Elegante, relaksuese dhe e bukur. Sinqerisht mund të harroni se jeni në Prishtinë. E hapur, e mbushur me dritë dhe një pamje e mrekullueshme e gjelbërimit që shkon në Gremia - darka në Casa Rita është gjithmonë një përvojë paqësore dhe e këndshme.",
+      "author": "Sajid",
+      "rating": 5
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

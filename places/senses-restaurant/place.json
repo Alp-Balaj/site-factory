@@ -1,0 +1,155 @@
+{
+  "place_id": "ChIJBfGNH_eeVBMRY-yAPXb_FbM",
+  "name": "Senses Restaurant",
+  "address": "Ahmet Krasniqi, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 44 504 250",
+  "website": "https://restaurantsenses.com/",
+  "rating": 4.4,
+  "reviews_count": 203,
+  "lat": 42.6570282,
+  "lng": 21.1458496,
+  "maps_url": "https://maps.google.com/?cid=12904501190603107427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "italian_restaurant",
+  "types": [
+    "italian_restaurant",
+    "european_restaurant",
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 7:00 p.d. – 11:30 m.d.",
+    "e martë: 7:00 p.d. – 11:30 m.d.",
+    "e mërkurë: 7:00 p.d. – 11:30 m.d.",
+    "e enjte: 7:00 p.d. – 11:30 m.d.",
+    "e premte: 7:00 p.d. – 11:30 m.d.",
+    "e shtunë: 7:00 p.d. – 11:30 m.d.",
+    "e diel: 7:00 p.d. – 11:30 m.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXRTI7_WphH5N2QSmIgJzeO1E-rMjhQqGQk3uc3us_95StxMKTkLTvS0JUnKw4mMFr2mNBjkkc89XAcKQVgXeCQb_IWScj7-mOzLBnM6U33V6qTBAhnzVa5vaIAGcVEwVog_ujPoal6e-05MCcj3syppDYDDWwlBWcWAodhlBnVyETxqfknBWNBjhrYPXttO1Vaci3rpjEN1PzEsSTJRVSoRNZLLyjFykMygVccP7VHkcEXjpvQCkgWsiVhwN0YaWtP8sXQma2YJAftafXVGFZa2LGzg5K4MfdXPBFLAmxg1u_pLTzprLAJjlVy2Cw-nPwq5OlG6O9rUnfwF0QRPIqxScRtZcz6IBOI3Kvucj95ZzJ7h5h0Rg2IgxH40t-uDkaCaC1La56hIxQPIC8Jle7lzTPZdCEokFcxcvn47JpM",
+      "width": 4800,
+      "height": 3178,
+      "author": {
+        "name": "Senses Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/100221926959421848117"
+      }
+    },
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXTZOb5WIggswAZMDHk-3ovrwY7C5s9dhC8T1P0OonfVn9Diwt697TQovGJi3cRvD-N_UbT6vo41GxBCV5RoT7mguCUcvXPxM_5CrZXYdVDh6krOqUFgjqkcnanLFO8LP2_qPfd_bpVdlUTL1F9vFsEmUtWj8FZQhwOiLDl3xK6XxZzdrbPqw1PigHOZjK5fR59ko5czSlJVPmv8xuMyU14Fu-6eFeXwOYacDA94S9WUnR5UVHCEvdF1IbPWe7UMaAgvQ2IYu18cYWhxHd7NfcmNBrjc7UdnHzLShH_l2BIVzAXW517x5ceSp23Td5DSFFlxEAwnQopFqdu-mzv5W2SMEOVFWH1dTp4vyVU15SvfEnJJi92BpbjmPP-xMhOVPkVmkGdMY8uZCGgpzaK6GAPqO7ZWbgeinBgrxzHflFqIAg",
+      "width": 720,
+      "height": 960,
+      "author": {
+        "name": "Senses Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/100221926959421848117"
+      }
+    },
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXTvDzzRWqfdWeDGWV5rc1AEIyRfH5K_fsWJhIvdz_vKi9BE-CGtzCRTyqMMHADN45A_6EgIvUIBvXBDBKFmQBPnTtJt3q8rl3ied1rG7LLdv9CqRlDsjRxB9ctq3HRDa_UorRKLQRHG6TUNVFmaNn6DeRy_d_TEb7QFuv06STgga1SLXQOVpuJ2aqQvPPRgEDDPmCWTfCIG1ge1pA426Be7NUVUavI9Y5ckbCPWstdXTUCkRNVdarsA6V2IRsaqhoJKMawA20f0_e73HOJjzbruFjBd6fPc84Nlol7guBh-yKZgPMCz20c92eYaw8aebEa8ZPaHWycrRCyqSa8gZo3FU3Q7baUxdujBc3e5LfbXiEoaBmEsr3gMXUBooslL9WBFFWpt_gwXJI7gdS7TcofBjQC781zl-V_5ZnN_hO0",
+      "width": 1076,
+      "height": 710,
+      "author": {
+        "name": "Alfa9",
+        "uri": "https://maps.google.com/maps/contrib/110259339073973175992"
+      }
+    },
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXQooppwhMb7KB3P4q43N0iZANa2D5Bf6TVQQo8q5EcxNtbA3_Kiwg_NDNwWLMLOjrz_dUr7atUy7gpApTqqSKxAQp8qpPtsL7akhLGj14q6FAl4F0NYa7DjVNHc9J2HsWjf6MLy0J4L7ZIXChNi2PInnj3GClt2QqdVp2Nu9Qm0UVw6IwhLKZrJ8PmOIO-K73e5bWiAGKkiMB0cP8Ca6ghN3JoJ6hH24v20oS1rAuX3_ZOceXo51PMBeQKdcWKjw-M7y09qJ1nKofkdJfcRHQVWA3r16Rj8SwCijCkHE323wFKiwnzj_DjcTK6XgriGno0LiWhvoAqFhDw028kgufn2bDuTcQgfMXEw85FjZ-yR3yUlk5mJV6ORNY71NMxDsvapBv2ytm8eT_tgtanu-YYxin9PXKzW6mZdsS2Gs-b9s4xtA-gwc5P9VilU479q",
+      "width": 2992,
+      "height": 2992,
+      "author": {
+        "name": "Doruntina Krz",
+        "uri": "https://maps.google.com/maps/contrib/118117602535140144103"
+      }
+    },
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXTmtuDtwQMZ_6MtXR0o8L0VY0gQdGug8xs8QCRHhnWgn47_HMbv73VDVr0cNkiz7KPpcc6HULkBOk7mrAoTlyWsOCni3elZz2rEKNI_gepPt1otAeh4s-pAaFVn_Muo6aWVbFMf8Tb7JAyBbgTy2QyBpweT1cLQlYNnBGkgve01Cqj_HnF6JqRsfgW_fP4t8-szbRirM9h3SH9WGG4LzuuY7i2ki5ETIOfX1rizhC2s3865E1IF0DCayAARoCmwtVdAI_LXpuXYxNaYYk28oImYD7mLVONYlm9-kgHMH5-5hl7G1GU2MJb8XZYHorUtOhKvRNZRbRhnDw53-MFfDJT4eMUOk2Ej4Ssgxvrs3m2LN67KVjckwUg4UlWnuC16kDUkypyvN3XM6L9vKxwD6aE6-jac_PrAMoHiV3LJxvE",
+      "width": 1801,
+      "height": 1206,
+      "author": {
+        "name": "Lorena",
+        "uri": "https://maps.google.com/maps/contrib/111666590658319769318"
+      }
+    },
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXRMuTvOSdXQGhYiJk9CzgMucBkL5SmMI-blojRqgolHmkdp9iWvvsKhmZUlbEjtTHD1ky8ObKvVVuxxYGEgRpN0n-Az_C9NH_eC6ntVmrhYEecP63IW_xLAxFz7Nc75FNjmoWSXdwQHgWV9CTBxl9EqTEyLwky5hb03cYXGRTkCw3iDQy5dp1V8LaoNgDwvfPImcpq52Aa4YbcRLOaP4OPPPKepos3MPFia-2Ijrucx4EyvCTxtnJlBfee5W8l27SihWCRJkCH3FHTF1phENoJ5HlvUnabxLBjaT-QQmVIAfj469CmbJYRouE1b-7Lsjw9cjY71NqT8kq2yf6rs-aH9uEjOIOR6IRQ9BjF6Ku1Suk0ZWK0n-MGMUxFCz7zAkWry1U6FqlAKOpDEr5O5niK6WReBTh36ufF_XVkEPDMxgkVs",
+      "width": 3000,
+      "height": 4000,
+      "author": {
+        "name": "Lorena",
+        "uri": "https://maps.google.com/maps/contrib/111666590658319769318"
+      }
+    },
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXR2vzv78Fmuf5nQtlu7JQEUX7wOJ3pfWvsaL6kI9E6yyRmBfvA1wAR7TWuKHgpQpgkkwExGxpLL99cGAgCSzmQ5Cc8n5YYEjyzkRqhRRF-90FXRslCc2M1NDv2vTIfAY6e59reH08imYyKot57WGL6ZSYZkODSu-_9Jl3J8W04ksWdJHA3jWNhyEmKtDobKnD9bqRQN-QUMI4-bJrw3hI3Br2nHyPSLStv5zRI1wDC5QkGJMd_bEcL3cRmWBwVXtIdRwlcOwO8w7SRcL8-UvnyKOewd2jG1LurxuEh0h2cKRrjBjvUw5xS2mAtLJfM_nwV6jCFEwSdPOCtupSYZ9U5g7iZ1mICnlkYiQOFbjucsffJ5AsmGcYVUWvWq2DOH2Rr4PNFmKSMB93xlTZfxQDi2nl0OJMbGTN75pjBduQ5fk3K1WG0egan1VM2ska4A",
+      "width": 2992,
+      "height": 2992,
+      "author": {
+        "name": "Doruntina Krz",
+        "uri": "https://maps.google.com/maps/contrib/118117602535140144103"
+      }
+    },
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXTajP1ALzrZ3zCxm4WT_xj0XV3ccMb7q383iDJ40fF55jOiJqjfvnMDluA25xLO76KVDcmbQf89_1YUKk9-vjC7oFcRvKLU5Ce363MeU4uJvhUVn1yPfJhlZoGK5qmHvORM5zz22ywkapNFQg_o9mrrj8rd756EOpGyznR4BY4lCWjJC20VlMTiULTBvkVH2ZlxtbOIodcijIV9alNJD7GOA332Lua4ZR9ndxrRnNThXqH0j2PA0Dn2tQZmQbhb6xGZwhUETGGOCwB_uEph10J9VmGD6ZA_JG53kPk3rE3653EQgxML67fRX5o8o1HhRXAg5uZUyMMnRvqsjSbU-O1dyxfsdNiR6oT8t48OifhRBeKdJn-pgOCvogYgznmh1_CnbdadmO3V78YJyzniAeVn5ycCJbnzw4uxvRlgCzipNxUDEyPQ2jJf50vaErtN",
+      "width": 1052,
+      "height": 1560,
+      "author": {
+        "name": "muhamet barja",
+        "uri": "https://maps.google.com/maps/contrib/107171087715810493348"
+      }
+    },
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXSj2RtsL5WKrNw03aF5-kdxKVV9h9Fv3kYK1p21uV_6vUnWt_6CWTjOO6hE8Ho4sKGjILVc_bh0GBcORv628qeJuMzct0Sj7aMy42NPgDvZ32r7mbX2o1FuFLSc4EUfL88G44EZDtga--50h_uIAZAuD2fGZ1WXZSA2RmB474HDxicss_DArvaWZMJ7Q-vy0ME8uitXnG9kKx6AfgEgbjRihDQ7LyKG_aCqqCcnuodCoUYjEVYq9sraOaCgtndzhXQ6MI5U1RiHCZASnbikm1UD4YAiQ9NvfGCd-Ryc7kUFqRZ7nyxiEJXVe1BZMxaD2eiWSKdY2iJOSvcvp8qznaH5Csf2x4NwBtb0Sh4DD1QrJyuXzSwlGZ8xvRrNsO-c2JaXyhfLA3fDWWh3XJNkLgiOd51nfvYWvkjjdg8NpArfdXcq",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Helen Nguyen",
+        "uri": "https://maps.google.com/maps/contrib/114784067380583666928"
+      }
+    },
+    {
+      "name": "places/ChIJBfGNH_eeVBMRY-yAPXb_FbM/photos/AVoNoXTm-QNyIUamXG5MMC4pK3tMhvHS_t7OnSlu2R8lleQ4EbHb_G-dfaJX6xlz6JvwEG2Yz1dNAsBpeZ36nxZ6KjgdOQz_TaT_mqRO5CsPNu0XVxnx8lc-knUoikGAw38uds0Iq1wRlJrUADnUJQ7QR0dhHt-AmsGZu4uq0JA6keWh24DT8EBsHzg5BcR7LPxFO_n8cSgMZ-pD8S1IHyzy4GG6e9stk0oO0hQz788d92mP2xRz52ExjM6lSk9QbqFnOYMlmW5CcIzhuSWR18OG1HxWNYwh673QVQ36gawhRx5mLl34-8k5sbRH02BN7sVidj8pJ4IsuQaFWGE8iYVkN4yei-w0xKvNZ6ope4r96nVoVkwRtSFUPFwL8NwyP2BaRLkqnSP0yNgyMBMwxnuIhn6v1ezcQqNhLyC9Q6D5T6Y",
+      "width": 2268,
+      "height": 4032,
+      "author": {
+        "name": "Sebastian Rost",
+        "uri": "https://maps.google.com/maps/contrib/115859594605320181701"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Ushqimi ishte shume i mire, sidomos supa ditore.",
+      "author": "muhamet",
+      "rating": 5
+    },
+    {
+      "text": "Nje broke ven ose ver e barrdh e mushur SA kushton kush mund te me trgoje qmimin ?",
+      "author": "kristi",
+      "rating": 5
+    },
+    {
+      "text": "Jam mahnitë prej këtij restoranti! Qysh kur hyna mrena, atmosfera ka qenë super edhe muzika shumë e këndshme. Ushqimi ka qenë fantastik, i freskët, kreativ edhe me shije perfekte. Çdo pjatë ka qenë kënaqësi.\n\nSidomos shërbimi, kamarierët jashtëzakonisht të sjellshëm, të vëmendshëm por jo bezdisës. Ndihem si në shtëpi këtu.",
+      "author": "Erjon",
+      "rating": 5
+    },
+    {
+      "text": "Në këtë restorant, çdo gjë flet me shpirt: nga aroma e parë që të përqafon, te buzëqeshja e ngrohtë që të mirëpret, e deri te shija që të mbetet gjatë në kujtesë.",
+      "author": "verona",
+      "rating": 5
+    },
+    {
+      "text": "Fafaroni ke seni vetem qe pat sense. Aaaa edhe cocacola",
+      "author": "sude",
+      "rating": 4
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

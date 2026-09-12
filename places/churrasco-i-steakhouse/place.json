@@ -1,0 +1,143 @@
+{
+  "place_id": "ChIJzceKHICfVBMRDY7oaQAs9M4",
+  "name": "Churrasco I Steakhouse",
+  "address": "76 Rrugë Fehmi Agani, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 45 611 611",
+  "website": "https://www.churrasco-ks.com/",
+  "rating": 5,
+  "reviews_count": 4,
+  "lat": 42.6641572,
+  "lng": 21.160052699999998,
+  "maps_url": "https://maps.google.com/?cid=14912592646419025421&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 11:00 p.d. – 11:00 m.d.",
+    "e martë: 11:00 p.d. – 11:00 m.d.",
+    "e mërkurë: 11:00 p.d. – 11:00 m.d.",
+    "e enjte: 10:00 p.d. – 11:00 m.d.",
+    "e premte: 11:00 p.d. – 11:00 m.d.",
+    "e shtunë: 11:00 p.d. – 11:00 m.d.",
+    "e diel: Closed"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXRTqVv08m6OpUoAuyobvJdjYE_FdRintYIp0lKsZ1htXbMBDUngnkomTuGVhzaMVPlvzi54UMidK-rHlasxFxCUf6_U2D1j1nNsT2gLoUqM_beiSjrPD2q8QWUgJdCOViDhABm_4y5ZyjgWH93_3-RCLk4IKhSI2t94BD-QixeeH46sO4Iu6Z67TefWImlE6-eYDewOSpTFcRsffzghTjE0whMqDMV0jyXh-z7YIiJeFdeKvOkn2Q4m2sM_I-cxWnMLVQcSATxOtryZOd6EhtJsqzkzntyuELU4EsMV1YtrrubVakg_repHnbuXOMKRXYRO-TEDtIUOXODI_d3zrEuZcl28I43FnbOKtFFkM0Y-0imW1BWa178qgGrY_E4JvwQx8HTA4N3S7wFz5JNS0vNBWKVXbWwbUetQPzPxxh6DkYT7GCen-bphMRCRl0ek",
+      "width": 1800,
+      "height": 1012,
+      "author": {
+        "name": "Churrasco I Steakhouse",
+        "uri": "https://maps.google.com/maps/contrib/113141112434404793539"
+      }
+    },
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXRlaZSYvvomQfcjVtCgqy2F_wI_QFZKnr3GRnaa1-JpIEMMXfyEEOchCSTSnP3WIgwgPBivQEXmYqsvX3-ICWA4qYY4qHqyWLVMZBlse7MO6icenL3yD9wfJNBCrzcdlAXroyuH4vcq5CvABYRYswRyyRVCTXyeOGVCKZy3kaldBmKkZxDtsrrrhcMhX5ROCvskKbj_Vu_DXTIuqkEHpJyEKIfuiDhlrSdE0D1VOtwaNfoL_KTNJ3faxTAZeWHy6jjHT3cHp0Kyb_mwlkk4PPU_hcpTtRA4EaSLRZTXCgCI92kwyp7qF4C60GDbMgdDBgbodXsTf4JelRe7pTGrXWkQBXyxkHf_rDk8xXYCptbKSc0-mBwIc1bPqrWcotD1shBDPNSC3wBeo06uBfNDryj3iFnbG1HJRmgJB1giGI1f-Ylc_ZDeD-5tVC5EIW8M",
+      "width": 1320,
+      "height": 2346,
+      "author": {
+        "name": "Arianit Berisha",
+        "uri": "https://maps.google.com/maps/contrib/106243681176380007524"
+      }
+    },
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXQwj648AmvIHeUopPcopxin_eyhAkyWx9958Zk2fjddUmMHXZ0YQwFSuRtl-eVEiLClR43PsLZJv6shI93qTBV2d8ZtKbJxhq7byxjk5KmCwqPj4-8a0SueA5waNfQDQjIrt6yuRYrwYd3tDi5gXuoQZLuEd6ct4kH2brDMVJQw_XRLsQxh2HzYG4NQb1ysjaCigpTIzzd2QnXapKBQYw1YdSVjHPJpYOK770rhi3UzVjrdi1jpAm5tSrE0kprGGaSaR6We8q9D_NiEXJmtjyvrxaxlAU-m546yGV5rRsdryLOCABsuppxoKBtIuPuX4BNY7aKTQ-kqyIPo3LBvj6B68jLnycTeMOa4TJ2BjZIWrWUg6TdweAXrrFyyToGwT7Aroi8gVFeVCjvy-TJEDCfhKMo_w1t3YlNi22D0FVSWxDw-3tpa3aKGKxhsHAUe",
+      "width": 949,
+      "height": 2056,
+      "author": {
+        "name": "Churrasco I Steakhouse",
+        "uri": "https://maps.google.com/maps/contrib/113141112434404793539"
+      }
+    },
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXRQkhTsD338it5pQr9mP2FSuoDb8WvLm4NletEVYM35fHXsgrPi4h3y4CF1r3ONlNCaNXQX6WoO8en3KV_760uqw1uF_1uIodNAHa83TZqXr_oQ0wiCH3eHp1MoUhU2fZuN7L7NaJIAAOjeVftKoQI4ZOn1UfGgqRhxSW9sm9LHVv4OlzV7x8HTDBGRspLI3vKtZW1CMNzHjoI5zpsjyLsn-scZgz9-5-lyVRlz3DVAlB5AKE76uwW2g55t-2NT-1PM2VkVue082kYvKuIDnXWYrRuH5PrA_G9T4z-mNji0lvot_5VV1IStpQS4JQZTFFAsuTYIUZoqCSgHQrNUAxrgIso9Pz7snKKVFznmApSlf-gXs2lPMOMcw3vfcWDrWaR5LGlSz27qytgFIwfNLRmG5lHBg9-R68OP9iOplyxjrBMzaazapMyta7id3-_A",
+      "width": 1853,
+      "height": 3294,
+      "author": {
+        "name": "Churrasco I Steakhouse",
+        "uri": "https://maps.google.com/maps/contrib/113141112434404793539"
+      }
+    },
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXRaHqlff09hCqmX5ot83a8DlIcdpCxp1D1jVaudQaOfjvbk2Iwqo5kF8UsifUVsoPeZaLHllNLmuskfGdeFPr3qq7nMgGvkeniM-ruLm4LJWcus3Pn_TENQSYvQzJ84ll-ZxFGKRQUx6TXI6lQufq68P-ew1Z1T4sZtlNy-ha3xXgRTEdP40gX0iSENdG_ZZMUMR8hTFqcWo86XcrKr4sLWFLpCajGwyVYKzZHvVuS9jpvyLwm8t8M5U1ZSAo_2OAFDxVd1I_Xa7d6IEoZoaoCmz0Do2Yi9QwWdoyyAx6d4-ia5BPhrsFqrlGf3nX4DM7LtOywHAe3pkqQTCzBGbheBTH6R99jzWLwJSRw84nX9cFx6DCCvSSTLQNDx8Tbt5f3fDc2fIVUd3MzTwXxUyN4W0q2zESBrJTKfDtXitkq05KgAGDykZS_iLHAWzurR",
+      "width": 2268,
+      "height": 4032,
+      "author": {
+        "name": "Churrasco I Steakhouse",
+        "uri": "https://maps.google.com/maps/contrib/113141112434404793539"
+      }
+    },
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXRC7CCh1qwHD-DtdP2nREgJZOBRqck5cJdcuBa7Zl1iSfQInjTKu1TDoZrWppgROQ0GxxuTVjWMHP3UtjfslQqhjo9rTjFxKQWXE6QexqH4gttXtATkd8AAJtCL-eXkXw5PimnaM8MQa6Z3mY5MjFttH-6UrZycEvLZ-kyPXCTdiEC4w7YgllWuQ4C-9eOkR25C-35ALw8ewBFgFGdz9-_mvaBweO2iCVr_I6c4-m_3cGeuGD4PnlnockGboHxl9Vx1degBmLy1MsFjKTLY33cpvLgxHvvBLM9p8KZYAWLMU4kZC7GMRJu3DCBqr5Tf7X7s0qyYnfOrnMNLzDRN5gsj54_QUxfCrLEdk4frInKOAleORgkIZoe58ce23iRmtdhPYZ68KO9ywP5gQ0NoJzFp956Avxe5fbBqXbx_r4JDW7K-_opV7glB-WbaDoqS",
+      "width": 2700,
+      "height": 4800,
+      "author": {
+        "name": "ZZhinipotoku",
+        "uri": "https://maps.google.com/maps/contrib/104154126324514030133"
+      }
+    },
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXR5JHgs4tQ0NmsCHLr71sk8CWDit7UgnSAi-9TstX5nFI2WhqTSrmBXW9bOQBQMZf68k_robFdzKbzdji9umeAZJlgUf3FKMCteeG3d2edG3YH27yy-2DMrGzcf3LKypfYiyFxWO-oxW_wM3dHyYGLZdnV9UH8GPjTq6HjOZoyyokGOpwGZtnZgf2Swn1W_NT2f4vjPd2KtnQ91acztNMD1cvUeuvsj9WSjp75JM0QOCjpKZderNQgPq42Ugdebmlr-Igc-yZdhNwFwJ_RGnJ11hcMmWWlNbYbGd0s66msAJdv9UCP9aKIRWwsaMbZTt0u0ItA_iBI7eRaH7kqmXXjl9ptjT3y4YSpJ7Hb18EhMNDzelQvG5Q6cER-fDWCiKxmkCfG0D-U2idMF_mV6Vobjda0lFx6LbiHQGCWMednuSmYevFOBItsrbgmg8Rtl",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Arbnor Berisha",
+        "uri": "https://maps.google.com/maps/contrib/101873352950574069921"
+      }
+    },
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXR6N_AFgh0rT4_R9rjOpBO13YxSD9r7IaPbIWszdSAEufz09pomllCblxVk1UyVdEmkuFJag6jEIz2pQhRLyRaWEI0gfrLblgnO_SRaE-kwK0RH159lI-IHioV9TwXb7eYzY1tswvofv2tJjP_VdfAFUCV_cd2sGm9MVwsnfQap_CtXBCAP68lXndQDaWQ6bX0i8pSZ2OshwAKuPwGCkJCnCfw3RdD-fU2WGrawQTLXK3xb4vH_DEGNbK4WrQARBi6rR7ymtwDU1PrfVnhy9zbb5zZbU8wzrjs1NSVGQNr0ETaxP4QdufPpK1HdnwgV_0r35KBAxw0jII1yQSz9JtODj5vVkcalSoijLC_sTSMmQX-KBm8WUtBoy0FW1JelbBjPDcQGL8A8H-jnrFbQFZ6SDHz35eJcDWdZuPZ45s0FbSH2UPxuvIq-NeKqAdJ9",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Arbnor Berisha",
+        "uri": "https://maps.google.com/maps/contrib/101873352950574069921"
+      }
+    },
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXQNBeTwDA4LeTjyAYIYh7IptHcKveOkslRuhsNr5IynVb1hkLGdjCO4KFVUu3imsFeXjbZrATjIoueoA2p06GtcBq2d7ObFpexTkcWPj-CoO94kJ8-LKjNtvTk2NteZGmW8aZdwWRYQHrCMwcOJbeZ2OFGHbeyqJLcArMScR6usf7UIqVDR3mUVKrmtAPClBSJb_IXz0g56V2e7j5DdFRfqblxb0kNjAIrWSUY5cvNWnEATkp1HvSwck9iOKkEvfETL-QeEmn2QSWxZxNo8zgmYd3EknP-cki_quqaB8w1m46k7LmGkng72jQ6k0ARN32bBosWpkeQjIBjQfIcmL9mMfEQW6U7B0EwDjBHUnwq_wvDcyFD3lrwvk8INaGG9rqh_xkmAvUKxkPi8S5DEc6HCYpBXr05YlP2ST0BBuFt8yNs6xmYOONBM2aku_aml",
+      "width": 1366,
+      "height": 1366,
+      "author": {
+        "name": "ZZhinipotoku",
+        "uri": "https://maps.google.com/maps/contrib/104154126324514030133"
+      }
+    },
+    {
+      "name": "places/ChIJzceKHICfVBMRDY7oaQAs9M4/photos/AVoNoXSXAurJLhY2R9RkZ3goIJ_y_FqD-ejyf6YQsRO1ybxD6hixcPMx79nXtE4v4Grw9mThQTiI0yq-iFcq30xSRLS600EVaJHm7khb6XNENuVBPCL6P7pnKxWqv6nmJB_nqD1wWHB4cC2X-ZlXPC9_o3QG3Qgxv9KwZjt_8nKeEiUCO86SoECLOT_R24oipqxlXnkKWc_HqAC9pwQuUsxJWHTvNHE2MfUltjVHXoxEj7a_vHgZkTmdJfthlJYWo03a8DaYmXizA8Nc1dxy6wLz1BouooYRnELnaoMHwYyINprYF8a_4BPo8pFJOQgj-6lHxkwgEJJyeCCqfzF28jdgUlrbJOcCl57Nb9cLpMpFp4nFDhQ05y2lFNxZWt0O9Nx9HTRgmBHSpWZhPRNXaeAc7bj8B62uvzs4AIDUPPyXsmUmZfSs963DnhQ5TPwP_XcF",
+      "width": 949,
+      "height": 2056,
+      "author": {
+        "name": "Churrasco I Steakhouse",
+        "uri": "https://maps.google.com/maps/contrib/113141112434404793539"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "⭐⭐⭐⭐⭐\nKaluam një mbrëmje të mrekullueshme në Churrasco. Provuam ribeye, fileto mignon dhe brinjë qengji - gjithçka ishte gatuar në mënyrë perfekte, lëngshme dhe me cilësi të jashtëzakonshme. Na bëri përshtypje veçanërisht vera kosovare nga Suhareka, e cila shkonte në mënyrë të përkryer me biftekët. Për ëmbëlsirë, hëngrëm një mus çokollate të butë dhe të shijshëm. Shërbimi ishte miqësor dhe i vëmendshëm, duke e bërë mbrëmjen perfekte. Do të kthehemi me kënaqësi dhe do ta rekomandojmë shumë këtë restorant biftekësh!",
+      "author": "Arbnor",
+      "rating": 5
+    },
+    {
+      "text": "Ishte hera e parë që vizitonim këtë restorant të ri me mish bifteku në qendër të Prishtinës dhe i tejkaloi të gjitha pritjet tona. Ne porositëm Ribeye dhe brinjë qengji, dhe të dyja pjatat u gatuan në mënyrë perfekte - të buta, lëngshme dhe plot shije. Atmosfera ishte e mrekullueshme, shërbimi ishte i shkëlqyer dhe ushqimi ishte sinqerisht më i miri që kemi provuar në Kosovë. Patëm një përvojë të jashtëzakonshme ngrënieje dhe patjetër do të kthehemi përsëri. E rekomandoj shumë! ⭐⭐⭐⭐⭐",
+      "author": "Arianit",
+      "rating": 5
+    },
+    {
+      "text": "The dishes we tried were delicious! The prices are a bit high, but for the overall experience, we think it's worth it for a different evening spent in Pristina.\nAt the beginning, we got a plate of appetizers from the house, and at the end of the dinner, each lady received a rose from the restaurant donated by the co-owners Musa and Alma.\nThe atmosphere was pleasant, the restaurant is very nicely decorated, it makes you think of a building located in Asador La Vaca Argentina.\nThe Steak House, one of the best we've tried at Churrasco 1",
+      "author": "ZZhinipotoku",
+      "rating": 5
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

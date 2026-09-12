@@ -1,0 +1,155 @@
+{
+  "place_id": "ChIJk3Pu5-afVBMRdJ5Mt92v3eQ",
+  "name": "Simpsons Taverna",
+  "address": "Simpsons Taverna, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 48 200 777",
+  "website": null,
+  "rating": 4.8,
+  "reviews_count": 82,
+  "lat": 42.6615908,
+  "lng": 21.161723199999997,
+  "maps_url": "https://maps.google.com/?cid=16491530777298509428&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "bar_and_grill",
+  "types": [
+    "bar_and_grill",
+    "bar",
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 7:00 p.d. – 11:00 m.d.",
+    "e martë: 7:00 p.d. – 11:00 m.d.",
+    "e mërkurë: 7:00 p.d. – 11:00 m.d.",
+    "e enjte: 7:00 p.d. – 11:00 m.d.",
+    "e premte: 7:00 p.d. – 11:00 m.d.",
+    "e shtunë: 7:00 p.d. – 11:00 m.d.",
+    "e diel: 7:00 p.d. – 11:00 m.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXSOzFF0RxGZxxsP6E-CZb6Vl3jWvTdwCyU03wCWMYNWp5lMAEAdJYlC_I9NoJZwwlfQmBKlYxcbnv0oZiv4Gmurm5bkDx5vXt63rixPO0QHc67QQWRqWoGvLAPoNQ7MUR3H5DHr-O0p6VhpCSYO-T4FnPVj8OG73Y52_VP3zj9tze-pc1xJcTMmkklBgc5VP3UXMsc5Diwbk6yFQF0u9OwMhBiv6Z3JEULkYH8J_LyYr0T7IMQkNoI6rKcQz9DY_ze0bWyloC7b-xXQOXB58jS2NVJOybCXF3CnstUvAotKg1HG60yHRPd2aECXjT6nSiGBYqTqx17GFRZYfkh5AWYnctwIEU479CTc_aVukjVA-kzBnOr8uYIvIv_2rnRUHeaMoK5NmKSuGK_VNhLid5Ua3qx4tNmqrA8MSXgc9EsOig",
+      "width": 1125,
+      "height": 1415,
+      "author": {
+        "name": "Simpsons Taverna",
+        "uri": "https://maps.google.com/maps/contrib/111052071218051672940"
+      }
+    },
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXSJ8oMBhs6E_DdOpJQcsZBLgFMrhTj1c5cQrbJz1WwtF7VqCwnGPk4KFaz8ukYPmmHMo1d8wNx3l708S9EB5K-jzc1CUHbGnQVlMhTvgOqpML5EU9NBaO9cFcE9QccICEBzTkckBwkkr_gGPmaBFvoW04iMAph5sVUNowyandqU-Cc4o8BJzX0q5YWl6uqXK2sHhtrWiw_vlja6enJQ0wuGPPRwG14lU3BGx2QEFthpGPoKaQjVAHekclUVAK7ns0dDLiuzibmFOBrOKjhtwVvrJqs-m2a3pldfA6utCPtJbJCZHAtYpV4dYulSXyRo-_nCPtyvgmjab5ctsRw70qx7z6qzDascYVtumKbxEp7wB4-YrQ6ITf4eVGwaYkNdLqd4aqkzefQAcDu832PERnXFlgg-C-ePQjhS4yvVAwuUXA",
+      "width": 1125,
+      "height": 1118,
+      "author": {
+        "name": "Simpsons Taverna",
+        "uri": "https://maps.google.com/maps/contrib/111052071218051672940"
+      }
+    },
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXSfdlPmNB5EBOEQZdOHlwnkJw9m5ctKrP6C1SB2DoQDyuPJQZlIZX3OsfgxfwUB8EV6DW-I8uPDadwixCvdkkso96-7m4XEc-Yv-Nsu0Do9AFsRVnkygQt6Phr0hExsX69gYY9iuJ6FiIafL4OOv_PAcoKWT8nYHIz3NspICL4p92KRxB59bb7lnYYmYzkKvHm_PlU91UbiSufs3LKJIaHXT08XB9AWnJHrHE1vuklarN3wgEfOrt61cFX1Kbssms-uwQjZ1QboydszD9PuYJ29rVq2hJ7GhD5N0KtfdbUc_jLc9SThbGV_5NsMgO_cW1UXfblz6ZGDVu-pMRVpQF7O9VZaGK2zi76T37QwMeccHLIS_ZyTwfdHGt3-Mzh09xSf_pyOnve__WvF-JD9UAxK6i4q9JVLRNhmkGxujdZjmLN793jjD4GuNqpYHPU7",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Chih Yen Li",
+        "uri": "https://maps.google.com/maps/contrib/101677594532744636450"
+      }
+    },
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXTz1asdmlxyF_VMNksEGZTgCpTy8vPP1MHl9ukBBigsZusAjtKhv1nWzXoTTwW7gVhOFdkdg4N_rHL1L3Dh2iWUb4O1tgPqVy8MbHwXbyVmbuz06tMrQpMf3tizEFhlT_GeqzKLb4yMTN4tg14rdvK4CaeLAjqQhhFSZGnxUAqpbySs1p6x46HXZ0NG7dGvfx30ZTtAtLM-0TZHv65s1_extrk1nwaMJELkph8fDN7yTnTT_G9wWTWIjkWjeCqkfRtn0bzdJ78yJ2LjdLobJBp3enNRRkiKEeRAipcVCE5-kJVlQoL5gddHIemb3bNPquBmvq2snI0K23R3EOcjX6_QUbsB0PS2WrqUOV6oHW4DG8EOoLlHAydeCJ7lHhsfNoUpw475dY8OLNqWgiHBgljfSEuktFOX53gFNMxMiUMkBySWlv-CS0oQjyDL0BSR",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Ide Akira",
+        "uri": "https://maps.google.com/maps/contrib/108142630444761255359"
+      }
+    },
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXQfh4W3NuxQvWSBcHUw1ZuQtGYi4SdiQ0-Y1OviEk0UxV5FZHRth6zfBuZ11zLN7ppozbUEU54nU6rFa2OHsNHsttrY_45JpjHXWSzqRU_kySXWMIR35OYJDvoqOcuv1ALgZqvSKdawHB66fNcwoCBgemOSb5XgOYtYkolM27f-R9VONU5fXRU4KyKLnxiqGwyXPusG_scVWzlCDpVd3cjwC1ZErspJr9drvJUhVmKBq_bBXES4QM5iH86Tfh8ngotqVk1y_xJdiMPNllXuArBWUze0d7X4a1XmPTw18g-cSKm4JcWGyNeqc8fnYcoa2OP83AEERomZuWXxecLraDjR8v6ttXD7gmyc35OvnX_Ije9CQF-dWmAordhxbV76vLPC-RVbKLr4TXyZ2v7hO7pZ9b1b5of3mCpWji-ukPbXQ1BwNapqrIwIyw_i4l2E",
+      "width": 4080,
+      "height": 3060,
+      "author": {
+        "name": "elena stoilova",
+        "uri": "https://maps.google.com/maps/contrib/105504023023143857440"
+      }
+    },
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXQl69t0x03XLXS9tPnZrJzI8dOzH7C9pMXFYVEw6dewBPvUtWPtjo7ZR_6ctcN82t1cpCdf4vQYZMrTlM14_LVHAyp55nmw1NF4UPMWaiQiO0P_vNaQ-_XvBP8M7qg11AB8tM8Arg-UP--vqebfmgawRHOWNKvn85BBsVY7fkEAb9I2xY95etp-4PoK0E2WfkFhoWlsYrdivaq72ptH2Pn_FVdoqKZxIL0yUstlWyB8or3-uQCKcXTvl6Uc8GCk6dw-wDofunBSXA2il2YnkRqIMp2R1CWSCg2fGiKzsKxiWXrkejxMwvg1885Wtjn-o7Y92r9vJPRpKainQElH5BjNAPw9HTN9eOmm0fQdkcXEev8ELtvYwPB3qPFeDMzt7XMxk7TEDAG8M50_juQgvdmAkAvgXzvGSXW5ZkTRt_LD5aU",
+      "width": 4800,
+      "height": 3614,
+      "author": {
+        "name": "Alper AKGÜL",
+        "uri": "https://maps.google.com/maps/contrib/117271936642809810757"
+      }
+    },
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXTzIiig9fqGzvFPotFw03yNCtxVr_GMynUHYm9QBVpQSQurlcjS0YqQfVhuand0S9f-upbJUsvuvv0S85Jc5Auz3rhLBgimQDd52_Fin8y6kOY832LbItEu7B2Autos4nnJIkQDpUesqLelBfmcGziHDLkBUsHhqqOhmSXmqRbZTOfc-snUhKTeVQl1BaEQs9LpLYUQNsHhAyPm7VH1W301BLoCkN576qxpmK5ZDvGJfGBK-BLTgJ7Rb5p0CIU1rDXXjvRtkAPU2TDbcYxv50afMZrcSfPYC1Y0SHyTg0yfRh61oRo-yAZ84a91HCaj0vRmtZyvjkIuU7dmAgS0_ICU877eAXHeqqWVkfz38SAUdQY0ErGpT7jPHsH6YQk8yZLSrYN7qiV0TtARhJdonWDoYxhSebAkfALqgjZ3UXNYKY4",
+      "width": 1125,
+      "height": 1108,
+      "author": {
+        "name": "Simpsons Taverna",
+        "uri": "https://maps.google.com/maps/contrib/111052071218051672940"
+      }
+    },
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXRWNB2G_w7CfJqxwG6M8LetqCsZ2cH8ltnMn5vY8BIAeIEu16RJdSh9_QgljpsO-RubgcBC9cInUm-u9jbiFgnPxf05adH4MA7RIEpIPfwbSJn1PN0yIyzoQRyTysngIa7MSnRfqqcRpr2REgYIBzlU8THi6D8vEyF3rRMO6msn7RuZsyVO1MUla739JRIcXRybrwCjYRvFqq-TU6p6Nm13AL1C8a6jIlrU-bjYAjck6PqrhqWh8gQ2zMCDzbV9FEDbwn0ZUiGfYZLoWi7ypaHJaGQuO3OkzcEYbbWAfprXxV32FuFvwlGr1YqoZ16EaQJCqmHz5hdmMrinM5glY0ydxm4PFP4I3yUntCV4HG7w1HkolhhnHvHlA8RV-P1_f22Fr8Pn7DBjEEoc-C0oXpYE_sWS-ibEXGQ2eSz8ieuHET0",
+      "width": 1080,
+      "height": 1080,
+      "author": {
+        "name": "Simpsons Taverna",
+        "uri": "https://maps.google.com/maps/contrib/111052071218051672940"
+      }
+    },
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXRoEJMp7VyDvjCRGSGWZ1nZdL8L-z240rHgaOKPef5Nl0n0jAMTqP1taqp_dA2vtIeRrVojCvkGw8q9nQ8W593zViYXnhOQK3UQruI3OFRZfy3w38w81uuOSrJJ2yy7_46MU3UhrnpCGUfnE2OvOnB6dV-y-XQMqRF3z85aOXh4LocMYs48wJQQ_i0GPAWnRNPZ1kzb2M2D6AwU1XhuosdSj_oi-xiwAvtg5WRrZ3ML-_Bivd6PKc3yfII3ECUyeqEX8UqekqaqnfazT_W2oeemhpaP9FtOhj0R_6A_3p1ApRJqV5Fxc2ipzIMsuphB0kAGII6-OUObTFdXtFrpZApRR8JPKZ3WQp73-kNJqR0Q1PJtlTx7pegzdnoj61SRZoXeemYwsEu9Lfi-CdFz-iiuBe_6l7zvO2MShsiwuBBYGAqK",
+      "width": 3200,
+      "height": 4800,
+      "author": {
+        "name": "Simpsons Taverna",
+        "uri": "https://maps.google.com/maps/contrib/111052071218051672940"
+      }
+    },
+    {
+      "name": "places/ChIJk3Pu5-afVBMRdJ5Mt92v3eQ/photos/AVoNoXR_yIWXR3SGK4CDi03XF11gfazBjI_khm72_M0scgMGAGHwzFW98zsqE73IBYbsSnacQOYewgz8ZehkS5pZOqaIcOT1-VfFktG-AUrI73-GmKjMnA3vN6ddK1lbOSP44Y0dydHAdq6sJnW04aBoJE0pO0kLfpJBH0reR0rEy5slRdFsD5SKcHgyMKV_39Rb_fPQbisjzw9Bp6jyzrRnJElajWkdb1jnmn8Ih1WmXIwTS-ItmnWcPYPzNQvrXraQb5OZGHIYrlWnHROlfn5hwipFp_41066xOg_OiU4UKCjI7vwcTlePGVi8Gf9ywYgzwfbUpwk30-HTSDnfFbGGFDGdSgMxSEuHhlDKkyprju1_rwZCa32BdpfvPiz_vicRCEn-iKIYa0k_cwGeZAxmdldAyzIlotvcAgxT16KmyzoLbQ",
+      "width": 4800,
+      "height": 2700,
+      "author": {
+        "name": "Simpsons Taverna",
+        "uri": "https://maps.google.com/maps/contrib/111052071218051672940"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Jam shume e kenaqur. Ambjenti super i ngrohte , Stafi shume te gjenshem dhe komunikues dukej silur kishe vite qe njiheshim sigurish sa here te vizitoj Prishtinen Simsons Taverna do jet nder vendet e para qe do vizotoj",
+      "author": "Blerina",
+      "rating": 5
+    },
+    {
+      "text": "Ambjenti shume i ngrohte.\nSherbimi shume cilesore dhe shume miqesore.\ndhe  dhe ushqimi ishte vertet shume i shijshem.\nnje nderlidhje qe te ben te ndihesh si ne shtepi\ngjithmon do e vizitoj kur te ndodhem ne prishtin\nwa rekomandoj do ngeleni vertet shume te kenaqur",
+      "author": "Ramazan",
+      "rating": 5
+    },
+    {
+      "text": "Vendi i qetë dhe relaksues.\nShërbimi me xhentiles dhe pozitiv.\nUshqimi i shijshëm dhe pjata estetike.",
+      "author": "kristi",
+      "rating": 5
+    },
+    {
+      "text": "Një vend i shkëlqyer për drekë dhe darkë. Ne porositëm meze për dy persona. Ushqimi ishte shumë i mirë, porcionet ishin të mëdha dhe çmimet ishin të arsyeshme. Pecetat Simpsons ia shtojnë hijeshinë. Pronari është shumë miqësor dhe gjithmonë i buzëqeshur. Vendi është pak i fshehur dhe duhet të ecësh nga zona e këmbësorëve përmes një kalimi midis ndërtesave.",
+      "author": "Bartłomiej",
+      "rating": 5
+    },
+    {
+      "text": "Ishte një përvojë e mrekullueshme. Kur thashë se doja të haja ushqim tradicional kosovar, pronari më shpjegoi menynë në detaje. Çmimi ishte gjithashtu i arsyeshëm, me ushqimin e përgatitur në foto që përfshinte kafe për 11 euro. Dhe sigurisht, shija ishte shumë e kënaqshme.",
+      "author": "Ide",
+      "rating": 5
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

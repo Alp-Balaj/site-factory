@@ -1,0 +1,153 @@
+{
+  "place_id": "ChIJoyL1anmfVBMR-cmOj93uVG8",
+  "name": "Pastatore Eatery",
+  "address": "nr 48/1 Rrugë Fehmi Agani, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 49 440 001",
+  "website": null,
+  "rating": 4.6,
+  "reviews_count": 161,
+  "lat": 42.664823399999996,
+  "lng": 21.1585218,
+  "maps_url": "https://maps.google.com/?cid=8022299471617378809&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 10:00 p.d. – 11:00 m.d.",
+    "e martë: 10:00 p.d. – 11:00 m.d.",
+    "e mërkurë: 10:00 p.d. – 11:00 m.d.",
+    "e enjte: 10:00 p.d. – 11:00 m.d.",
+    "e premte: 10:00 p.d. – 11:00 m.d.",
+    "e shtunë: 10:00 p.d. – 11:00 m.d.",
+    "e diel: 10:00 p.d. – 11:00 m.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXRzMFhtnW4yXZ7NCYvwoQcqYRYCFTUJewW1NAxAV_COnYQ1NLMnZ_GNn7-z0u0KljVAO1J3IZEwz6_P36N-nA5ok6scTWrXdP-5LpxMzsy4xXmGLDHet5oT4dfVLwQNTL5YtkljlqoGObtauLP_WyoI8YtVyojW9vR8laUrW2AaPKJzFh01x2FSo_ie5uWbv0FaHFcoW4nhmpi41xbEnxop7ScWwftVM7p4MOkKwhg60FKTXBFN8pHMc8F3qX0ZN_pRnWQz5tyTa6iQdZlFiJb9BZE8m6VGZ9Czw28choT2E8968vEdFD3m5Bu7q0BasY_hWw28PIkXyMSQ_LeJ1O1JPchjL0rl87XpW1sEwRAP-SZmFv40NtFR9luvNcwzDCgiKoc54hBf8uhZNPhsFg4GY430r8r7I1R1VsOjQ4voQrJ7",
+      "width": 2048,
+      "height": 2048,
+      "author": {
+        "name": "Pastatore Eatery",
+        "uri": "https://maps.google.com/maps/contrib/114350650250126347662"
+      }
+    },
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXQJaaU-Dr-sN2q8qWSEsxvU8LvLWy5JQMuBqsqC25y1d9TNY4hUA6s6shfM97mFbD5Mv5tJwPl1sVsNBULaa7Kr_FknyCcvcoWXSDNGWyO97c3GejpjFBd8_mwyUuBShGUGgh2J8lnPJy6Dld-P7DtQiuUD0NMXw9ljKyB8rxtEWiYzvz7HgEeF4MGyIhRYdf8rPcN4S9FDZ1Kht72AtmxTASXqE4C_Pzrrf-xxzM-K9G63gTqnzDYkr26y1Sb554TAE0jVz7EKD1gH4qpiOsZDCl20vl7pSudc5ovRRyHOieiJ0NY0u3fRBki_mqPQF4LMigoliJY-nh-aY078Ye9gv5oUBpcTFj44m3wyafI3SX-F_r4zYpjUpgTtuOtx0vXcu1TZ8g-GEW4iq7oi9O2LMkQYL5S4hsHwiYXxCvvrTQ",
+      "width": 1080,
+      "height": 1080,
+      "author": {
+        "name": "Pastatore Eatery",
+        "uri": "https://maps.google.com/maps/contrib/114350650250126347662"
+      }
+    },
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXSo8IJYM0w1VgVHxPw5NXe9pWcb1Q6hhu0bsFjkJbsRUYjy-EnDD9_MwjJmyctG05zcuOOtnvygc-0jF8-x51o9sKR0eWtnYCp0mXRQq0KsFeE1IyLFzKuLlasGo2h6A0hj1BlrkFlS-OiMrARTt1abmKnevaoLlm1P7NwcfaroEDmapHKufGl73C55sUn-3V3768y3jfbwBSfdPmgBOeM1Eu7iTE8JXHW_OJFioLqLTsxW9HrhsXAA7oDwrY-oy1PUhXLLHv-LcWZL156AzdnFIeRoBw7acpyLkSEmnxdKlOU5Ro7-4BL2RnKPCp6RrQxcE1-H_FXuEXE6jpxWePpLwMA8Mf0blVoO8xzcDSkyPjxgy1TZ2wqdqR3FE3FEbdco_7L-ul41QzaXeRqTXAwPTjG9gVzHori6tEml8gaBW0FIrPvBckmIzwz0Exhw",
+      "width": 816,
+      "height": 1056,
+      "author": {
+        "name": "Pastatore Eatery",
+        "uri": "https://maps.google.com/maps/contrib/114350650250126347662"
+      }
+    },
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXTz7H7iogfdor4qUR8MFKrPyASf3PMYc5KN7TD4TGbijY4Oh0eBkv9g56mZNfStf0gRrDzy7fXH_ZnHTaGgO9Nx6aSsQP23VnArSkelwXi4vv3McjDVXAkujFIMPw6ADAUdog1VLMMXYzq05jKBrRVUXc7B3-Xvy48cRQOQ6C1HLBCXc2Pl_7A219RToGEEwwiXhUKPiIJ1NK2eC7IHWHplNksh2yc-a1ZGlv4XJRKZ3SfDVK3IvRJlMJiAqPTe18gqDlIDCVikx4JwR7PgptlcEnkeCWQHPfuDE8AaxEqqmZaxJAEvJAsYoXWdbGEieRQJk0Jzx9tUkmwRt3z-MmNJqUx0dw2ulPpb1_4hCmGvKPmv_0TsGxogYhVRpkg0Xs9_vujgH4EW7NBWL23CvO2VAQsOK9k3ghUO2UWqxdWQBbJd4YbOBzKrAXblpA",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Anyla",
+        "uri": "https://maps.google.com/maps/contrib/111892909624337731136"
+      }
+    },
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXQUDxnUg-6_MOPq4D45Z8RAJKprf4iRGpSJo9cFn-4G1w7qpcG0pUjtYt8MVDbH9QBK5Sl1SddvEsazzjs2tk93PlWRRBsQPjr4k0-6yX27513vi_OblCn6t6e-aUof1oJq9fY4Xeki7vLLsXL5VPy7AV9uiLQ0pp2Nd3_KWOowP3IbyK0-k0dlqoqP7jrJyBMvTUsfcrR1BzqFKuFylNegRSmhZ9jjCCvrAFjkmXBlNlCDi9a-lHOsrow2K-NjtBmbUp-9Oq50ci67RfZ9v6YGzCbUNymJazxpR6B675hbgb2rfng6YpnKbrjJJc8VE0upQgprbCpY0Y0J7wjkcVfkMUfkGIDxcFcvoamubcbuGY7c9pSDrjhHtcmfUYY4Wf2avcriVsrtf-w1s8F8eQ1zQB6BHxEVdsNsOkL1NTtimJ88DUnIG-MHnuf3H_nv",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Astrit Beqiri",
+        "uri": "https://maps.google.com/maps/contrib/112918576508026600723"
+      }
+    },
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXSjmloibEqMfIK2D0WqEQFgfUhoREKYfAiLorIwioR4rIgEuAKFaEcx4DzomK7UjYgVQDcMbpCC0iEFAf-tnEoHLIvvGNv7qRB1CSPkLM9fnpVFE4VJ4zyOnmq21ERYex1a5KJC4bjYcmnYpN6sK857sv11vagnrkHxZHvno3PddAW0RN69nTxkQ6FH5FSghnngUdV90wIYa9EkcDqvbovEbiNL4AK17eJZjDpw97q5Od85nBTa11aWN5cBOcqetQNYpw7vXsPL2AuR7nxQofxnsoT-vZApIAbKhdlkhzhZIGft9StB0R0mjlrRDsFGruSoslqgctU8vueLBzfOD4qwCp4akYeXzOZ-IWxndF4Sma7wbRJ0kL-fi2xxsuT2o3fcSWiHx7AASGLt3YrjCnWoia9RExZv94eQD_P1ceycTYeFZB9JfUX1xW4p6ptT",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "HappyTraveler",
+        "uri": "https://maps.google.com/maps/contrib/105406353759372088770"
+      }
+    },
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXTvYE4Hej-N2b29vUjw00M2fCeeBdfdmBVRiOaotqm8TsoXlxIM6TIRDd-oAfxjjX9_w6RKDmNdYVM9thJx-PIZFGQrhi3o7WkBqZBPyVK9Y0GYTED8ESoYuX93oUBtRxt4KcsTiS7ZLi5W3HpN9Ei5gZX4oRtjPxOBCN0jRB6A_tcFTi0VsybnaHrX3YM33OJy1q0pcrIILwdM5piYfshc6XL8Bin0cJmoU-ceVDt_XneIwRCc9CksSsGJpYE6kJnq48Nsa5NcJA7njlzwYkX6l6fOBNdjFWzEVn6nNSbA3t4IRoBQ47kPhIH-yrXySFQdRkJxfRJy-6ojINWR40Ik8BzI1pwQ2goMQ5df-RvUIELoG1tpg5yjRfeVaRzKaWBuxqVh5aRAENOFMC42gPrsRnZTrXN94vJoDX9232vBuQ",
+      "width": 1080,
+      "height": 1080,
+      "author": {
+        "name": "Pastatore Eatery",
+        "uri": "https://maps.google.com/maps/contrib/114350650250126347662"
+      }
+    },
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXTFFkYuP_FLu487Ffni7eu2542ZjEKzNAdPITE44AVhop5qWZcXKB3qzQEpm_7kqi2nDNI0wIryeqbAPtlXOTSVK7eZwCOUkY5H0U5kHSPRgLyUNexUS9-0wKYdOHqI6eU3T0JI-Zk3zQPEAIUFtqtu-T0GgRKOMPI_ypjcyl2eVqs11UNk3TCb1lJiepQ4ez0w85fjWpGxjDtfYqymqLpqjPGwYwZsF1hp4P6oid_ltwGZ4K8C83uU4GNLxGDOFFfLMpUbQ55eze_rur-U_XaL6YroReITcNJuvDYU1A7fYDdIK9oU1SAbfBA10hSLgwlRgPpHIweigAUa6-BarID3m9X-1yf9_E07bYTlGfZWQxOos7shUn54KJcaG9dRdhl37WjIC2Mb1TYSO1sk8W40Jma1D2MkGEUgZdefd7gWqwJBeXbSF6ky7YGioJ1W",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Anyla",
+        "uri": "https://maps.google.com/maps/contrib/111892909624337731136"
+      }
+    },
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXTABPGNtA9Yz5UhTzw1NWl7cvly7erWrBtPu--NlRqjDWkT9HZ40dG_Yl5DgdzT4_4De6i6yqpYjmfoP58sUVffF9ohMvtRHb53mjRR85mGHqVJq5pq0ZQ09mgyknYGmnmS1bQbbVDWbKY5pxKghfLvkAGKUhyFtuVMyN9oHa-0Y1xLpoThsdeYJTBQXiKaaPlZMGf2xRTBfLRt_FDb8-Aeeam0tAckMVJouE4qWpn_Mg9tsMj5rR0p_LSp5xzCkT_tAYRksohPAkfzTLa6V7YhSuYOZRSUbWjzLTgQdR6I4UFHrCZC7NOvf9_IanI7IPgAx81orud4WAGPw2EIUAQ-cSnp_jlLKzi88j33aftip7bkzUobzA4G46ym3_0gKjy5-LcRKum8w-Bf5tMaLQP-2e9_hokL8WP3-dL9rSCApGzyBphpP9aa7r3Z59Xe",
+      "width": 1170,
+      "height": 1091,
+      "author": {
+        "name": "Pastatore Eatery",
+        "uri": "https://maps.google.com/maps/contrib/114350650250126347662"
+      }
+    },
+    {
+      "name": "places/ChIJoyL1anmfVBMR-cmOj93uVG8/photos/AVoNoXQqP7hYCj3_kZS6LkEw1wJO41OjuXq1G7UCR77T1V-QpWZgz_zLouoZ72c-0c15aLtuwvAexrsnpnsneNMUIqMONo2EQz6yHuo-hg5Cidm7h019BykKe7LrCdCqPnwPZ40PBePvBC5Gu0y1z4U-sR-pv8mNZwQGNlA7Iwq8MW_C2l5jQBPRtAyy8gmxFWPDDiHYRsmfdEKcyDOaZRD-wAlVKJ-X7nZgSH6idrnyQ0gmrOQJNaNBHU9Sykn2hnJvC5Hlj4GK5ElEj5vBZy7MYVA4oDR752p-l0B0VtQXXOJVgPxmA3dnq53rhK6Zrh7fQH04kXgo3T6c9UQ6DzCmx-fPVJzTp1LTPRIXPQSOvDZzy0OAtunJagXWwWTGuZraHxaHHIhpom-WNpWaZ8jRx7lrjOQ8Ops5kckuXEyfjk-_fAdfassNzQum6KqrcQ",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Arianit Sejdiu",
+        "uri": "https://maps.google.com/maps/contrib/117648548578543823296"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Kamarieri shume i sjellshem, ambjenti shume i lezetcem .Ama nese do flisja per makaronat do i cilesoja makarona kosovare . E para skane variante dhe salca e kuqe ngjan salce kavanozi jo pasata me domate dhe nuk kane spageti, kane 3 forma gjithsej. Rigatonin i quajne makeroni per ju qe do shkoni. Nese jeni klienta shqiptar mos kini aspektativa per pasta si ne Shqiperi. Kalueshem por shume dobet per si jemi mesuar ne. Gjithashtu jane teper pikante kur as nuk e lajmerojne fare qe do jene aq pikante. Ne raste alergjish apo mosdeshire pikanteje ska paralajmerim fare. dmth nese mer ragu ti se pret fare qe ka per te qene super pikante. Ne nje cope brumi te pjekur qe shoqeronin per scarpetta ishte shume e mire.",
+      "author": "Mo",
+      "rating": 3
+    },
+    {
+      "text": "Pasta shume te shijshme ne nje vend qe te ngjan me nje trattoria ne Itali",
+      "author": "Akan",
+      "rating": 5
+    },
+    {
+      "text": "Sherbimi 5/5 ushqimi mundem me than 6/5 atmosfera shum e paharushme dhe unike ju faleminderit",
+      "author": "Rocky",
+      "rating": 5
+    },
+    {
+      "text": "Best tiramisu in Prishtina ✨",
+      "author": "Donika",
+      "rating": 5
+    },
+    {
+      "text": "Kemi mbet shume te kenaqur me sherbimin! Nje falenderim i vecante per kamarierin Afrim, i cili ishte shume i sjellshem, simpatik dhe gjithmone i gatshem me na ndihmu. Sherbimi ka qene top, na ka bo me u ndi shume mire. Respekt per Afrimin, patjeter qe kthehemi prape! ⭐️⭐️⭐️⭐️⭐️",
+      "author": "Rinesa",
+      "rating": 5
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

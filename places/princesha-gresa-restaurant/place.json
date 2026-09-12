@@ -29,60 +29,125 @@
   ],
   "photos": [
     {
-      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXSDI4kXwH9fdTndEqilY_YVzejXWl3dg2d4NdbzIoI6wivMldUaBcdXBj72wOCPf-DC3A5HJHoWucv60hK4AgFmq0-h2OvMiYG04fzktHZ55SnjyNA_Db_FJOaQ-fvIPbHSW4nxFn5fhUrtqQKFvMeymINc7O6mr43YFgMfNZ81oEQkDG0Vq75bsTHlheKGbvUOT-j017cpV_oTcAT2Y4iADltqfefS77_HrRXZJVDWaYy7bMsPUw1eg_1yRL0sI9ct3YztAKUqA5p00JSeykH3N2mWJK-gVgoPoq0wKZkO7x7qZeRNjv--fzh0s86kcblCPyJc8JzHoUDYNJd2C-zFjdHUSCv8yklH8DOuXXGRmcEjFXUtMDq_S33tEs50FdSA_mL4V6xAkDpK4UmlQs4TCsAdVCDMUylwBUjhIT6rjjG5",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXS25S3PFgUzbDLAeQZHThdzgdivuDCiqCFP54dXEi1UXwq27tHBkFAc6DRxbx8oH2e3EXoHkRcFTunHK6np2fxLTMW3ByYAVVU2EhQxQEPX6C0cTN5m6pEk2SevaBmfSWVTglQKhYuBjjY1LTIMm3PO78VmjdEqpbMjAnH0MNUuyivB4KzLkisoY8-yjqvMRmy1gl2LEuJ2-d0JJozLOawEXfdlPIyXimZ8lPBdHlNr8JQexpwr3Fizs1odxl7T11YsJ8TR7vV1iWsTgqw6HCERfeKJDFw2hSl5lvr1tBhhBwP2B5kp9OQtx1cFhairlX0ucL16voAo5101d3z6ueCUDBRhPh4EuvTRgyZoeEW6Q8fS1beXsaQ1-mwF1wDG3fkbCUBL0tc6rN0dBxr8nC1zbleebJjcPhiS1m2d98osqPjw",
+      "width": 3840,
+      "height": 4800,
+      "author": {
+        "name": "Princesha Gresa Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/118032608899408539923"
+      }
     },
     {
-      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXT6gCu25t5vpINZwnfzgj48N1BVuTDpsy1bauXaxWHXsNC3Mt9Yswjt5VCj6fdI-ycirptXZSrwpPag6bG7ThM7pa-hqervmxbB-rtqQvny7llfGBsvyuL-OdM2v050gw7BkHEKavZI14g2Er0rHzryp0sZFhGmyeLl7CNVDboKtjbYCId8dXfpe5RYsw_J4uTD5LPZ9pmFkrtOTCNxoBQkO1AD8hPEeNt0rPRGYh2Stwiu5Tef-Ckpj3imvnMhFc7O4dM_PMVpURRbtJMNuttAzgyLD3jh8PYNZVab_IS_VgB1E_gIu4ZOS0PYwEAwyhuJadGfIjNAnuGwKt2qSXUNXeQYS2pBlH14MLUMgo5isWV06M97E8BV1dw_9FXc5RC7w7VlvBb9-8W0VCxUzTlsOPBBruW674me8qiUYfpCpRP5",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXQyeiVn8TPMIV4NhG0UkW8cZRtMHqgNmiMlgTlvqhH1bgKFWusxYexa3XjWDBiIcW16058tWalCBXg7pBjVs6-PuFtYNBSpEbo9jM6ic7Npj_Es2Rjd13czpQuSRNL_DqdwSXKuqqCPbcliSkysYtRKfdlSaPS7Acj4M5xDxN1p9GXVKgBbc-5cCmAY6QUeKM9judtOjkRu2zMOILC3vuKx9LGrJRpNNF1Jo_E5ObeHjqVs-BI4YJ-8FgW3rhHs81w_WtE2OwnKEZ1x5svu4BTNl3qlfhXHIkD3CcLqW2o0xk0KmuD-suCszwSO-H8A6RbU8KYw3xnnjc1nvbqXksZP_CezUx_jF6-wuePoMkNe88An1utGmqyghNrVKqs1i8GK5p7XsyjKzH0MJ_ysQtbJbYmRpV1zwpC-FmTyO2HMDbhP",
+      "width": 1600,
+      "height": 1200,
+      "author": {
+        "name": "Princesha Gresa Restaurant",
+        "uri": "https://maps.google.com/maps/contrib/118032608899408539923"
+      }
     },
     {
-      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXT9tmFvuteCx0PbrmzXEOE9wTVw1pJcXjtvyUFcywoX6FGSrQb_4AXAILP9VymH4W6-ePcydlciskG9bXgYFpvhNSkKdNItXBzgiwbOqkbQDNuo8TsbSa6sY49JikYXt7OeU6uamAUUlfrXv_jXQVo3wlqvpD3PAJFhzP0MHGL5jVQpWe3hQJYeI91pRec29Uty0Rh1Fp3D5qXtBZIUp73XpwMN33SrsNpnPBB8TyaKoNlA78LDu0jI4OnrWj9Nso7vqVhOoX0znfM0djCXmB8CYk3SqpimcZiV2JJDLNkyDwR6dP1auA5S4i6XrNgNRmvf7lNZqeMBm85iQC02r_bXrIh7VS6FoaLqd2de-3kh6kEZqQ8EcDu39XCyfHreGkg4JW1HEvefWZ3FmrzGKT_AOSBmfT8MllJg4QxDsaMxZ8YxPPUomkSm2epiai49",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXQHS_v0jCgGZl-6OJ6Br0q4skDxWNt8TavnnUEg5GvhmzO2ynlDE_AvVtiWL0_ngdC3OwA7yWbb144GKahiHGVgD_6pUjmtBJ4LuxRSaKBRDK8mdYbiuhOZui3dL0vbi4eOMu1z1GX4l-Sqz35JL5YjqR4ZQNRBTutEQ6IXuD1whJKHt8nkvmzrm7ESQFly2aAzS_hwXX4c0NcbGw9NjK0ODpOSpmmGLD5u7wJJV8gTmSD138Vh1hkm9WjffujMuzq5DOYz9Xjh-x8n9kpu5Yb0j2wqmGG1IdDWdcrtfF_GYNE-u9Qrp-XmKBdnp8OC9uOqG1MmCeg4xtV8a9stmc-oc3AI-EF752GlouYtfdv09EBcHDzv2U5rkzLfNlOO9njG41MPsy9tKPo8Ded1nWkVG3kBSw__AwthgGKEl5kK7R7ZHVJ1PhT5pmK_6WZn",
+      "width": 4000,
+      "height": 3000,
+      "author": {
+        "name": "Raimund S.",
+        "uri": "https://maps.google.com/maps/contrib/109865535953884386886"
+      }
     },
     {
-      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXTAT-9G-YM6x7Dq6dvhujMIYZQx99kD39_TJz8KcIWy4k-pyImc-wIdat1qsGinWIpgvRQtfl1_7tOPHYbO6JZUlHQq96E_rh4pa_e38JNzzjcZRXuu0mGeQ155MvrCd1zLxUuAzGfiCgiRmn2NSr-YlGyKTUCHdyOq0C8PwEqkTXR3WGGEnLCj6yokS-Cigd8MclOwWh68ON_Z0BywMOEHme-XOdhCIc247rORrhyqIIj_Z4-f3kzZlC33-70oAl87vKSrvkO6eAFBU_S40WOdQFihCRkjbQW7zy9LfiMFiN9139qyNa56cIOmIzkM3Lpa5H8yY4JkMV5wTYz8YuiRSgbGyKfJyvu3oY7PgFB4vIBv-u5-ZfYErUaZNUJvwyNd7if7mOLcIij4AFiYU08gXLPU1XCvDPRA0whTc6PD9n3u4LbyTXa4DQDGWVaz",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXQNXZpPKTjkexswEC2Xw3unRCJ5HgxTuvgbgVVi05yM27s1Ts96KjZANVor5NC5e476C4KxDxIrIE6t6oSLHH25BN-MecFhhCY5lOVB3xQkWzihEtFDdfsgdKms0Ov_oA6bPH7Cm3SDx926y1egUGBR1PVQGLWSi7nWL9FKam1N8q9JHxcYzw3ETErfLRv490KEG8ZqedQ-1smx5FoeAjqPuyhYtk7ev4pkiGvTBb8nMuv6nzoOMoMOc9oxe2pDqw8IIVaICKnrdlQKYgUXvGdY40Rq1jFHiN37BkRx3aig1xxMsApdN3H4jz-hl2LA4O1MAGek3gd064xYP5lqWeGFw9GWrz1hK74oUsBXymrrShpCobDAHad4jARxlQpRmw8aGtf4XS7L9Qc8UDZ4_OFhNXy0MzmvLRS-Rx2pjx8rpUArrf6gQRb7AQlqUu4T",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Oissila La",
+        "uri": "https://maps.google.com/maps/contrib/114743223424373923761"
+      }
     },
     {
-      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXRrwfoeNmSt_vXv1drcts61b3I0ZxR8imve-AebgUfjnGzGsPAwevxeLxpThnNo534hsGKW9jJ-vHXuR8de86dbPsOrEGTTKN4jfyOv8DDK3pEDrmTdRitFz6rZ8VERBXXcEI3uf8wOEys8xU3k6tTjz5aYU8uTJnTnDSUkilpfUp4CY1lY0spWIDJQ2f3L_f5JVLajvirRSJ5wt-zKmcekxEWtoWxiNmpa1xr8KzTGiiFjXM0t3XXzRe50rS-EEkfyUTvUPv23iJ1idgkQeRMGo5hW-X4UhuN0KaWLy8AvrHVLwYMHKz0ntVF3ENTrjUY6iDyuAvlA6ZyUWFWF5nPy0FIpT4UvPSdjLr4_C69yDu-7dfeHJ0_W6ndiNwRfasZm5vKcsrlCwp0saRl1sthkwo4z3XBL9m2mmbFK_W7yLEiC",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXT-6N5IF3X18HjEiYHIKrfElVnRMSPv4cbesm-jyqbQ11gDwmFIKNvhheI_0Hlpqw3xjGRZ1pTIpX4R2tda8pqmbxFHFgnrDQmgyw46jRZIwcrmblLChtegDA1nX9rHdvZQ2HiVHdQammnnSbP-Ttl3bHwBBvH0e4Ndk_xJUbl5stUjGU1NhZU-BKjSXZs8_MnK4IrDjVqUqZcyLxxWzfKlyFYk23n8Umwp_nhubdlsbqISM6TF9cjButaJQ-aUijeXAEK392wJA-UYv6vSThAZ1pqLgcHq5I2xOvkSL5W0e_GzQ25nvLvZlikdYXqKBM5W__pTjEta3e5XJFO750x3FpNthYQZMBSV3vgLoU7WXq2XdVEBMN_UAoYwnudaLUj5p7VATP4X_ta5GqpZYP9kjyWK-4sGuHLDZiXVe-tE7MjT",
+      "width": 4000,
+      "height": 3000,
+      "author": {
+        "name": "Cretin Pierre",
+        "uri": "https://maps.google.com/maps/contrib/113005933107660973789"
+      }
     },
     {
-      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXRcTghJ2aLi8sTQaf4TBwGuEJM4IFuQh9Jr3xTuRkZ6b0aPDh8mxfAZ50RkUCV-3JEoVRtgDtiKsehslBupnq9GSMU96O8M6yg11y9YqvDtsjz36YsjQsMnhoKKrIjgREjUkxvlfNsThQYk9P4aien_Tk5AqmxmJvRoQzOZWQ07QdDDJEWJ8ZjxImFMkEVuyxExiql0rOJOKebvPROtMe2PTDrRV1TULVJDaqBxmUvJMjel8i2zbuTvq5ZL4Zk-mXDEokQ-KFafCJCh2cSoimEVU29MbFe9uc1DsQ4sgf_IaT7rPhSUovOAs4UbLJjXofbAefdaMyfju_XMTKywCbNmvOUyiM2Oijg0dRkEE62-drsMdJLNxxnfO9i5dwO9DUwwVoH_m7zchamdLkvTXxYgrFySqL4BKJ3ALDDrMTqplC5n",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXRW6RZpCt7B7qxHbiyrLC_FNGjJawCecMY66vPRY564u3heFFqr4ibDMeyQgACy-3UYGHrWb8eaIdC06L-ByRqrM89kd19fPnbOJ12FPijM8MKM33vE-V4QwcvytYA0bDsXOsvy4kjV6byAqLygYhoxc3tmfjiXPyD6V2apNf7lzMM7UENt9PSO5maL-ImG91ef-cdoC6bl0MHH38VfEIP3aoY25FZSCMF-fy2fWHE8wjUurtTO3_CRWbfcWzTR4kkmqesMLxbusP6k0IZ-yQBJsxirdAXWW5XqM_lCv3ePRfz5I3dMibBIv_0THQ2OCL20wy7-gtPK43-FeX2zLGQXp_dBZ2dmmQfVRhw6n_WB8fRi-Gkka5MjvGH_vzQEhDylhsEOGMJgRWfA-BB0mSGKcaPZzEk0CPSsdD1jOuhtoPFD",
+      "width": 1079,
+      "height": 1347,
+      "author": {
+        "name": "Blerta Berisha",
+        "uri": "https://maps.google.com/maps/contrib/115606797524956820325"
+      }
+    },
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXSe8M1bZ1aIDwr_JP0IcNNqILFfr95fwrc-XPp3WketZF3Yorqmz-9RmwtdRgEBai-g_r5a02nsCEDCBTKfzx3kYIet_h26hpp1efKVnwn0M1Q-Kh2DYGVPB-RIPh32k6AJJkhe8ADhSIqQHE-Rdp67LnIZQAqWRk0dK6NzuvQDCWS8yP2bKodf046VdwhG-2h5YQZoTh8GVGCmzjqY5apzjMY54yoeyn8LHqrcoAHQ7K3Fe4DKpKaYzwYSSu7iTHLd1RcWGt4MH6f0hh1lrhUqwgW_EQxukNcrnxYdMtRNCUZrf2llXSu_qTXM4lxXt77npSj0lyLMUbrrP4PCyA7p7iT9aRZlKLMs7r6lRGC3rOWVsItn2sk1JaIdto2g3eDGOto1_9mLduO9-IZCNGfZjUwupCFtERGy0sE2qfLJ7mSItYAnrNN_D5D6phTR",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Cumali Akman",
+        "uri": "https://maps.google.com/maps/contrib/117336911527789714216"
+      }
+    },
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXQXuA3MANxmNYEJXENHUpWMGuR4oWClPHZrwdjEKHoGTfUUhxovZwJ7JUluCx40vTwpyC31pXNyI9VNME0EnEBCQKqr57_SYoWu-hDseJO6uS_IYUsN7dbWfxthlcUWfJvRQNXGNNIvK-RDPlXaQWUgcpqbfwUpkf6O_vNl3bGPldlLWWYTxHej7xrTi7AqAq3eGGxku9AmZhz_U0KwtGcTs_Du8SIt7LvyIMnFG6-Y8EuV_J0z_Kj-odSUEw7qKvHKJI2ObBV11JjlxF8HuzyKzlPlQo7iUb9HkU9Kokmrr7uU_eCdwOQQQQ1kIXhH5PzieZ6zo43ypVKlZs6MG49XfSl6Yke5yTXtDS2mskmXUEpOW4wTnRkxAlimS1wF1YhbHUG71ADx0kqk4OIsDgmaiH85R0EWSRpbqo-VXOh_WQ",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "t a",
+        "uri": "https://maps.google.com/maps/contrib/109189562419964976668"
+      }
+    },
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXSLl4ILD9vxiqZq2ih3_GEogWI57ZIoAYTlnB5ORHHRloJLqXFX5n7dK4w3JfqBAJb1DBCxXjeZd0Cu6UePoCmKCOUbLS5aM7r2r_kE-ygsNeJgGL-8dKc2D-DEEXr5-OhzzmLyUbiom05plShPt9bPhmDNaiR_WqxOCqXlrtNVJ_XD0nMXU0GjZeOqu8hb1ziw9ZLcqT9xIyds-RGUAN3BJykiz7Qt7wv7Yoa3SAWk_Jb5-CLj_EGmyNVaGpVwJE2opDf0U4xt2wtIyKAZfyEJ3UATx48pxhnd2Y8h70dJEzvDy-Z5e4Bmk_P1nZhAutG8yRKI6p9xXEdl713OL2VxH7wmCYUR9cP3HGs8XFtBSs5eu9jGrzeLJqbeNZAjrYkop3Zk3VhjthlQw-GHUtMxur2SSf0gQAFdet29dZfUB_MoyOU3yWzslgFPl-pP",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Anıl Aydın",
+        "uri": "https://maps.google.com/maps/contrib/113494820516723703145"
+      }
+    },
+    {
+      "name": "places/ChIJn809heGeVBMRd5hXBzRwwyc/photos/AVoNoXRG9maG-pfn4yf68DrPizF--TOwCNM13AUqCsyMgMD1PKJyYwFU0bSSXkD1goQt9wXMWvcvxJfFYDz2UKZi44UMFrOBCroCVkxP5RAcy0UB_NvDfFG0AZZ0MEMlnxBWncHwP3R9OnrKqMiGmaT7dBrtcFehFNnis0SLevFhefvjyHDQtRHmkDszZdm7RxP7Sa-F-c2McRyany8JrvhnnYMvlF3KRBRd1X8roQAAyD9NYekLoC6IA-evxlLnvkLwEuCifuacgVv24_dyDT0TUj00rz7EVl5JvhGMqm_Xsk3ucKcKox2wX6KgB6eD7tI3NFJFn7huzQaymyVM-iKp_AHMI_HquIG_ds2aJZZGacKxJWmjQXa20RS7qTZw5blmJcLbReeuyg4ACZ8kr8B94Lq8Mzhw4gi5KQXA8MBdoPk",
+      "width": 1079,
+      "height": 1077,
+      "author": {
+        "name": "Blerta Berisha",
+        "uri": "https://maps.google.com/maps/contrib/115606797524956820325"
+      }
     }
   ],
   "review_snippets": [
     {
       "text": "Sot vizitova ket restaurant pas shum rekomandimeve, dhe gjithqka doli ashtu siq me kishin rekomanduar.\nFileto Salmoni ishte me e mira qe kam provuar po ashtu edhe fileto viqi ishte TOP.\nRESPEKT PER KUZHINEN DHE STAFIN SHUM MIKEPRITES",
-      "author": "",
-      "rating": null
+      "author": "Enes",
+      "rating": 5
     },
     {
       "text": "⸻\n\nIch war heute Abend mit meiner Familie dort, aber der Service und das Verhalten des Restaurantbesitzers waren sehr schlecht und unangebracht. Ich war gezwungen, das Essen zurückzugeben, da es zu stark durchgebraten war und nicht mehr essbar war. Seine Reaktion war unangemessen, da er den Eindruck vermittelte, ich würde das Essen grundlos zurückgeben, was sehr unhöflich war. Aus diesem Grund würde ich dieses Restaurant niemandem empfehlen.\n\nIsha sonte në mbrëmje me familjen time, por shërbimi dhe sjellja e pronarit të restorantit ishin shumë të dobëta dhe të pahijshme. U detyrova ta kthej ushqimin, sepse ishte tepër i pjekur dhe nuk mund të konsumohej. Reagimi i tij ishte i papërshtatshëm, duke lënë të kuptohet sikur unë po e ktheja ushqimin pa arsye, gjë që ishte shumë e pahijshme. Për këtë arsye, nuk do t’ia rekomandoja askujt këtë restorant.",
-      "author": "",
-      "rating": null
+      "author": "Rexa",
+      "rating": 1
     },
     {
       "text": "Shumë thjesht,Restaurant i kompletuar dhe shumë i mirë,cilësi shumë e lartë!\nE rekomandoj për të tjerët!",
-      "author": "",
-      "rating": null
+      "author": "GG",
+      "rating": 5
+    },
+    {
+      "text": "Stafi dhe sherbimi ishin shume te mire, por pastertia ishte shume zhgenjyese sidomos per nje restaurant te atij standardi. Tualeti ishte ne nje gjendje te papranueshme dhe dukej sikur nuk ishte pastruar prej nje kohe te gjate.",
+      "author": "Ervina",
+      "rating": 2
+    },
+    {
+      "text": "Best steak on Prishtina!",
+      "author": "Flamur",
+      "rating": 5
     }
   ],
   "vertical": "restaurant",
+  "query": "restorant",
   "source": "places-api",
-  "fetched_at": "2026-09-12T18:12:20.427Z"
+  "fetched_at": "2026-09-12T18:28:30.647Z"
 }

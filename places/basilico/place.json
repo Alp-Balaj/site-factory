@@ -1,0 +1,153 @@
+{
+  "place_id": "ChIJLUYtKOKeVBMR0MbV8jqfF34",
+  "name": "Basilico",
+  "address": "Rrugë Fehmi Agani, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 45 276 277",
+  "website": null,
+  "rating": 4.5,
+  "reviews_count": 282,
+  "lat": 42.664121,
+  "lng": 21.159265599999998,
+  "maps_url": "https://maps.google.com/?cid=9085905848774280912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 11:30 p.d. – 9:30 m.d.",
+    "e martë: 11:30 p.d. – 9:30 m.d.",
+    "e mërkurë: 11:30 p.d. – 9:30 m.d.",
+    "e enjte: 11:30 p.d. – 9:30 m.d.",
+    "e premte: 11:30 p.d. – 9:30 m.d.",
+    "e shtunë: 11:30 p.d. – 9:30 m.d.",
+    "e diel: Closed"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXSTg_Cx_fWrc8L9OoEMdOhlWgMRhpU5nz4JYfJkVcjevMHXRHUObQEwjb7PV8sXlMfNV7xNJuNki31pilSbS6NgvpsK5C-Ga6xmdxDDKpyAdquPtmR2687dzfqF1OxO8PUAvCA_RM9EIW-EB1zUjZMS7CtKCyYaOoZyJxYgHkGrXysiuX_tBp7hFI3z95XqlsibBMLjvX5J71-pinqeAczMts1XQL_POIJy0aA8EuqcVpENojEEVvWAIeZz2Nm1rQ1vBFhnIkbHv4hgwUA7RPXq9i6Loz4kt_UqxbxcWKJHiA1ILXp7absEeD-Om532i7TfKaVJvwEzmHEKDy4lbivPh49CtaLo4BlkROmsc6okdgpsbIiAJRFPTNqPEfAHbjqiUnRmP0Fx6lXsLPggj4_e0XuCQGx4uIBuwzZaMLA",
+      "width": 3000,
+      "height": 4000,
+      "author": {
+        "name": "Janusz Dobkowski",
+        "uri": "https://maps.google.com/maps/contrib/103863590613306644911"
+      }
+    },
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXRnC6VOTDpP8sae-aBffbsmDyEaaZM1uKrFKAokZe3sn4cwWO2hKORfLGjP3PEt-QvCADZH2tqvYaWM77QFHteEhrC0NJkcqh_K3kzfxnh72gS0KKcNWiTkk_ax3Tg9HhNdjtylSrZgoewJtlBSJFB6wTY9X0u2hU1gQqy3rpfrWVyT5JJV2w5ndR-eEFsKV-35Yo3D7tz4t_9NcJY2hi2JJOS8cvGcBKzPH8uEieHB5FBGyKuRbzpX5_3OMTelbKG5mumCGixsbGBig-gwfpyw2yiNV6_7-tmwBvr3zBbJj1wYLtfasr1aQ8-rs1LMok4x6T2ffeekEAC9SXGhXEbTfVvzVgKOQcwAm9-hI07R_sgRJloT1jRYDzp_tz_vySSdpUwHNbbOydWBOnSgUu9WVeU__W4AKd1xS4J44BLQqMo",
+      "width": 4032,
+      "height": 2268,
+      "author": {
+        "name": "Blend Rexha PC (BR)",
+        "uri": "https://maps.google.com/maps/contrib/113097327233216793389"
+      }
+    },
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXTeRi-0MH1M_CvuqwsqI1OXXduR89aSl1goJDIvS8C6sI_EcYV90I_U17SpYAuSI8gn4qfYsGzhK33ootdNstF2Gdas7yJkFEIHrb1RiFADQ8vpqyJ4n5E8SeZpQWu4mo2EsuytNuJFAxgR35qlmsv41APOsKB0zNAXKqRUI4NyPzWrsbkkM-4Vz4f61R6HckhWK7hURe1TXRpy17qMyxXXtChApC3lPHT40Y4JWDCWc_wiYzqrUIxhc37CslV8pf-BbBuA7cQFIoDXixhhPRKfMs3Q5oOr-2A0e8DhHZ9q0ct4CJ_18xybXKvnvbo68BW9LHIHowq0nwrBdINXrhaKgWLvfwMn9XdE6MkuLa1rEGawWn9VXZCNjInldkgImpY5fMuJm-wysi5yXLoUm_fOn0Y9OeaD9OmNoZN_6LCzfGGZZp-a4at7nX4ZQTMT",
+      "width": 1290,
+      "height": 1516,
+      "author": {
+        "name": "Dea Salihu",
+        "uri": "https://maps.google.com/maps/contrib/103986028149969735755"
+      }
+    },
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXSa7Bq2vTzawSSJ0Os19WxK7juLwN2kyZ0kcxAuRXuYrRXGXC-Sn9aGI-XCHftIj1M5xz3q28_ENmgPvHmCvZJux14U8CN1QpMwI0lDBQWTV2nV5esSp8_sLpXAYfDdacLY4jG76jiw3CI-6S3kyAgvSdNKpcUs368R_lnVwEOnX4NBJBfNSZyO0fhspW-sgMMY_A9fZxOjm4jRIu8u0hIJgWSqsmBE-75oo1QQlGYM3G3km0bhDNiLRbWr5X62eQGeDHTNBqrcT4uMGBuNyaz4dxVO8WfGNXjo6-ZqJkFJCqBhjrBlpCw-0pod7qwy_U-lTJYpH1qzbOmXr0Ug4pqVu-_Lp_GoqTW4B3SxGmZyX_lPNbvfwi8vKkxhjypx-dw9qCwRm1ssMYzgJzi1Bp_zeKBEFAubZy4NYdrSTgfiuA",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "LIKOZ",
+        "uri": "https://maps.google.com/maps/contrib/108354327426656521204"
+      }
+    },
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXT3Mgrt4xu5CGShITb48_7xYIgFBePCKvujB1s-4hLS5V0fU67_2wifHDciGeZHCS7Z6t_HKaWlF-PiLqu0WOOSSC1TVjzqjdDUaYCghE62MihsHgbW7Rag76Zv3L__jZ4NWSATLBF4KEqy4WL_LonVMmQdfRA8FbIUWZBHScRwlbEQ8RPQcE1e7_qFQ0_Yd0x_o5vDTkFjDnFaL1Cc0v9LbT_ZUsTxik_gwcniSS-y1c8kd1FGWhD1F74PEha59AOyEZ9dCA0jzfQwVa8pcquxV2o30l9rKTKweTgJhuY89zniB2ucpW6Vtq-uwBaaMmAsywCRCu3EZZMV4t5kiuhj77S8uFKbKlfqGkSIUzezoMpmZi_aODhB_JtxGuVr70-5YrahBDvM8UBGxbjGv9lszREnEFh4aLCKoo7eQcPIQiGnDkBAc-skTOd7e8xE",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Ilir Redepi",
+        "uri": "https://maps.google.com/maps/contrib/116572903816965854547"
+      }
+    },
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXT-jD78hgKGixYXR1-0yqo57UiWMgB508qyrHGU1tIQCJ7HPbDlYhvbW6xU-wC0Yljd2FSPw47GwlkCKR1kb4G8Y4uA0lKRA4jwIuBnEw2vH5x_xFvdBMhFTIpnYDJke8Pnl2jdmvOUw5NdND7M3U3eE_SXRvLRbrZi-vUFc7sdDp37y5YdwnfeQ04BoMf88Ja8uuYJC01CCGkdZKCO7XD4WBJDv1Ik0ZhNRwgsJ7A8uJ-rf-Vn9QXb7RJxzg9pbX5Zi13hELOJwZs4A1gXp0JDVsZPZb1STz1Cw_ijDtjwkmbz-yU8UE7Uc0CT_ku18hq9BRSKDA5oQVPNjCWRWsgSYfSmAdOHW-xh9Qvy7l97PQbZgk-mlI3P-WFQPwJLUA9bax5TivliZRy7NNwnAB0D1WsWhKV35gXXtwqyGijgxfMpEBGvkogoHQzZakuT",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Michał Kozarzewski",
+        "uri": "https://maps.google.com/maps/contrib/104387423216665753754"
+      }
+    },
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXSzrSv2AkI2PhXiICAtzc87dI6P1jL142X39vzxrffkNwZNsgtAWd98MOlIps6d_EqIXtMts6hXP3-2yO4CrzIhzj1NvTlINRt_lT40U4UWNtB5iRRV6rZSmuCs4xU9rpIFEc5TN_6aQOt1MnA_BaYUaZqmqcxCx2LmSl98Gco8-3m9U9XpZh0V3VrsQArAzxNC0m3bIqoOG1sKQcJorwFsTcPWOH6UuPghyM6M_Ium6ToORi6dz-3JmdsSbIHXU6s0178HZAN3d5AFz4GRjsywKc3QGUjI4Nq3HTwFbMKxTgAAgwE5QVBASN-3WA-_ObiyUGZsYQFwa5_eVjmSM05wIaAcdyeXkugMTXlV5gVmA5qqlc5hAHK8xGAFs2beGIOs2k6OPnI92DoWY2xLGJRujQoE_xApA1G0bGE4MSQMoLKFBNr5bDwwcT0qHkIk",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Michał Kozarzewski",
+        "uri": "https://maps.google.com/maps/contrib/104387423216665753754"
+      }
+    },
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXSXrdWOcnkYqRLxb7VQtA5JAQ7kagQp0_61y6qOjtfPzlxUoj6uvEhXMOiABqmxVcKOYJFSTC1XLnVhbzIk1P1W2nzrTaP3IYJsWMnCmKtm1FrnhbbRgmA3uYm7-HsGHAuaolE5LZMs3ISRJMregP59WdB4-Tu0sd9CK0dnMqIdhlJd_G6QOefE8Dcr2RpgksNgLdhvDlZMvSGnJVixotr6WOCvWAOaZb44xJUzgmjezGEAu_hhiF2O4JyWFSkzvXaEkHSL2ZtVtgfLpNvjoSFVarLvN5lenfnJ6Uf6DPOSDAVQ5O4CH8yFkMDLFpgbaSfDgxjEGQpm7Slg2ZaaKPl-8FGY6MXnymg5_qvo-AYrJRJOsQLKVbpBOtjhDmjycA6TYROo6oogCp57ImDRcuKereivUhqbEdDVE7AuqdbLp6Hl1pkT9dLl-tDEcJKH",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Michał Kozarzewski",
+        "uri": "https://maps.google.com/maps/contrib/104387423216665753754"
+      }
+    },
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXTOcWHV4Z6BilBIb3IDhaYm7kaDzoPrWoYAiz_qeirfKh_HPJxPh6mcE9zID41zPSHpXaQnkLr9QcFvAGWHzz-1r9E_zb4m_SOeaumWbMJYBz-GJLcVleUsD2JVImei-Ydk6W8JcRmQg3oPoEegk2Ri9XYKjwCHKBptPMTg0QPVQ0kXcNwcy-Yn00dVYb6CTOLNQOhv1G655kpp1Jm835Sh0-umvbCDn175plYljTE1dCWGIHl1xquX0oQu5w1w88e5XB_mdQaUuhQxe6zmfiGRUWZQ_CfhuHobpLys7LGAiDz4KlkcWM2vtm9dDpVIsK-snk_YnvBL1ti8fBcAp-N9Qjf4o3p2E9A1SYHXoRg5_i1zy5RjuquRtmIzMtauNYjE8ZMr44SGjfmv6koZVhqFYftS-jp1PemXw0jb4lgOVIpwBaIB5W9yav733g",
+      "width": 2268,
+      "height": 4032,
+      "author": {
+        "name": "Борислав Данаилов",
+        "uri": "https://maps.google.com/maps/contrib/112988090488877930482"
+      }
+    },
+    {
+      "name": "places/ChIJLUYtKOKeVBMR0MbV8jqfF34/photos/AVoNoXSj8EfvBzQalRHxZFQzU5KPmDwq5bAM7A-4Tq2r75PRu_eHMCOaUung_UEm0tIBS5d7k7i3I60IaAvm-B0uhd_b0VN1kBjCVa3Z0xAibsAeG2CqkubF5RqwoZK1voAqwlHQ6SbbXGpdUbQnVM9i83AZ8l2HUj8T88xbIIqlGbPFt2XPoUaJEWOz2gywyuNQjqc0AIhLTezPqel-OsAJ4o2Vor4SAeRmRw2Py8Kzop9U-Cpe2u1MCK2JgS4JUVSrLfY7IWhasXQ-VE5huNEC5KwGXKCR23CvpJHbWTD4Ea84dNUVQyG_yPedtXBI3yWCe36IHGz0Qorexp2PCyoAkpYoNK2d1Nyaei03AYMpU6K7QCmX2mg3Lo3AG1SJ19e2z-nL6CnXfU78AXrzI4iUtEO5hrexepQiXZ4O6NipKQnmrQ",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Milaim Bediu",
+        "uri": "https://maps.google.com/maps/contrib/110343187186637098629"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Sherbim me te dobet asnjeher s’kam pa. Kamarieri t’u pritu me ardh ne tavolin eshte dasht me ardh tjeret kamariera me sherby se ai duhej me fol me njerez e mos me ba punen e vet. Punetor si ai vetem ja humbin vleren restoranit .",
+      "author": "Valentina",
+      "rating": 1
+    },
+    {
+      "text": "Te Basilico përjetova një nga vaktet më të mira me pasta që kam provu ndonjëherë! Pastat ishin perfekt të ziera, dhe salcat ishin të freskëta, me shije të pasur e të balancuar në mënyrë ideale. Porcionet ishin bujare dhe prezantimi i ushqimit ishte në nivel shumë të lartë. Shërbimi ishte i shkëlqyeshëm dhe ambienti elegant e i rehatshëm e bëjnë këtë vend ideal për një darkë të veçantë. Për të gjithë dashamirët e pastës, ky është destinacioni i duhur në Prishtinë. Pesë yje pa asnjë dyshim!",
+      "author": "Niki",
+      "rating": 5
+    },
+    {
+      "text": "Basilico mund te konsiderohet restoranti me i mire italian ne Prishtine, por eshte larg te qenurit nje restorant i mirefillte Italian. Saclat ne pastat e perdorura jane shume ballkanike per te qene italiane.",
+      "author": "Atdhe",
+      "rating": 4
+    },
+    {
+      "text": "Top 3 in Prishtina 👌",
+      "author": "Schlüsseldienst",
+      "rating": 5
+    },
+    {
+      "text": "Service t‘sjellshem ama jo profesional.",
+      "author": "Shkumbin",
+      "rating": 5
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}

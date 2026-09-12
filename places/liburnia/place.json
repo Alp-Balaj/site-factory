@@ -6,7 +6,7 @@
   "phone": null,
   "website": "https://www.facebook.com/Liburnia",
   "rating": 4.4,
-  "reviews_count": 1945,
+  "reviews_count": 1946,
   "lat": 42.6668014,
   "lng": 21.1632353,
   "maps_url": "https://maps.google.com/?cid=2584328258921758568&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -29,60 +29,125 @@
   ],
   "photos": [
     {
-      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSiAl793KmL-w-pQDq11_4nu1QmMIifKMG-2PNZ1pJRcNWRSEfnmHXwqj2mdtUFGB2bXopjDlOqP44EcXrBxRnZMMV9PCUJ7nDct7dDJK1oX7bn2pOpHQ20NBMR9w3Jc4RimYuy6tFVNs8XaIGPTOArWi2kIxkNXMJeW8z2IT7gOzOiG4HB401AUtl0GkrEQXaHQLsaKV2V0E-NqnmOCWdI-YB5HFhmgoyFzudWr8v_SqaHPM2axear8RhIC8g8Nq4D0nhXMMdn4pIb-OhRyy3PXq4X-dnFsA7H9mtHivnayY8bmWKSkw_u1AlTxVhHEyMiz1zk_PirZWMxHoIOFiRUoy-R_g6aHzqWBwQ7gPQCNJtoTzl0GM7j2siK3n3MClpIo_l2KpU9shpnI0rJP3BVfH975O4Mp3J5Uvsnq2_CbQ",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXTCywAGkqceyHT19ElVKs0rlNPD1WfdZM0NUZNtcsE60_vZVwXPc6o458su_8sESEntcYfvOaoqcr3GhY5bZEwX2kqV8s7cDPYv4Qp4Krba4aebvIcpI9QQOAVtTugUs-lpeBwi48yh6M7Rviafa-r8G-yLWletqko9BAOudQCrUkAWhrBoji3RN4lHRNuApUCJdSu8oXoZlKHwFfdjuLzVg5E21px8tDWZh7YH6Z9zBZfPvrylRbJiuh_r7krcaH60o6R9yB6rTQxgsSfVhYyAyQbxSTgEyEWYtqI2JemlQqSA4z4guE_JX_q-0bGGJiD1Fj18sp8uCBQCAvGo_7gM1fFP2sH3XkCC3746FTxQjO8EedH7Te62DN03rZcNNpRuWQ_YeR_jdyQGG1IIAe8pRqJbS_oJxbVJg6YE6zxVSw",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Vera Gordon",
+        "uri": "https://maps.google.com/maps/contrib/104614225960520182532"
+      }
     },
     {
-      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXQEHvE_jOhecG7HUe73ePdp9WuLq2aeafVDZi6SmOf3TJTwCa5tR5rynLzg136tKTnZ1-fYKhx8nAe69sQK3V4VDeSi-cIXsx_cXYro_KOT35UuaGTEfObu5TySjezzUgnFX8Tvl2oPgKa1uw_3flLVide_IJzwqkA7ClyHEdZ4oWF26D4ogzggrmljlLk3iu3R8D1IKHiEzcXljo2dV7JDG2miRlabydReBkP-748xSHgrLKVFeeSXofN-fv9sbIjgpbEqUJgRyeBElIrAMRujd-FnekDOOYaYZnOrpnG-CVhRPVfyI-1zstJ7x7Uu4XMocjf8ZvAV8qiQ0tbQJG9VJmnckBJuCsXpC1xIHKLYJgEYqCSoA-M7tz7lCcKIkm0Xbmto0WyeQej5qQD24433GEGL1MWthWAd62uDOVepuWjSH-HSlL4I-KlqyA",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXRBCRx-9AImYy6dwDBjPUa6wIpruoeoLcX-ntgaqOZ-sf2LbUrB_VrG8cJhzNPIpKsGyi5cSah2giMyiv4v25RK-nRRYLW12Dn-vTwyqz11e437rcMKwDmjk0wE83rKFN4ZI2I1SKpLfe1apA8jfEt2-ALaetZHEM-3CWfRoj6USjPTfdPp0IUpT_vRcgd3S33Oc1xpr3GkGRuoAGlDjsp04QVTTt5kIGKDO6s6JQ2EVytupMEgHbNjRYN0EpM5UTWL901Y2b2ytz4KaGYi1TCDvvuZWbEZTHSTRIz1Zn7PZC0X9bq2nL2XJ38kQsiQQE8sxwW6fxRT0eWsvvYSmG8Hg07MhsSREb-4XDyoQaUBoxgnuvYpGysnS-lU-1e9ucDYXVANlbg5eHPNJNi9ZOGQfhl289T2nis83Qj6YurstioiQE-r5eDGRJktGA",
+      "width": 4000,
+      "height": 2252,
+      "author": {
+        "name": "TP 142",
+        "uri": "https://maps.google.com/maps/contrib/112026716015605229166"
+      }
     },
     {
-      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXRt5eLSCEtg2dNYgMpetS4pVHo1NqqhSPzBPJbjJP0QVPz5UilNDMWoWBlfr2TKDPMn0AbfG4vFvqZRPfJ-B7qSd9prfyEW5R_IHFvJUF29EA6hYMkqgP5JiIJ8G7uIdZVjAuNbR4M7Q3uApgny7M_PI3HU8bStBDr7PgLE3R-a790hZd5q162Zx9GBip8ZpLW5voWfBnlz5OMDtpv9R734eHOwDuS4_0afG5dcUvdxPCyzOn0NLcQsuDiD5t-y7M2HKa8N1rsA_AzoFqAWzwQb3NgfCCgVqTeIbsEOB5oFlvfK4yhdYu__9f4hwOnsna-vpbMugoSJhffHyuvEMzakgkw_pRjXfg38BwPvOxTkACZD7-wXMINB4jTJZfrn69E_AFMleGKZBMO1Seo7PHxEpwE176BbJKzoCh4yOj4MBlKdFQLsrimQk646Sqa4",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXRvMGlnasAlVywveX6nxN_QbiiHXAo5q1NLwd9JsOccmgT9hBVimHc0xobaqlu5Cph7GtZrbvBsy0Iurj7vuD5tHkeIN3oU5ISFINCCn4vP4rJmpWgWd__1LzNxduBOdC0FXrDHdLc9_fI0x2gxhhJRejJCZ1A6JI3Str8Kwx0csO2T8jquULEzymDaMt8e-yNPLMDXdKqhhaUsbSP8VIquJVt2MoZzV7o9dDH-OLreGOpQDH6rtPVoGXr5uVEZjdTLCv7CE9iwFU9kpB9qEh7YpJmjRVxz6goAnXCuPM3u69VT_MBDz0dJRr8FtTkLvic73dlhlk-oEWrq1w530ZJgDgSp7j8G7Lr3jhO4LxoRdnJ_FOcg-oyVvQgU967Q7QraWM1TVqKuJQaBaL9vs99A3qEqO3Kx7oBRoNhJHb_6BW-H9liHin9D8PBWrYG9",
+      "width": 4800,
+      "height": 3614,
+      "author": {
+        "name": "Emel Şen",
+        "uri": "https://maps.google.com/maps/contrib/111756348970938882487"
+      }
     },
     {
-      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXTZsVb_ngxQ2VnxO5zuJ1_o-lc8eraKyEYOAF_LnVBlj0UpbzkfGrqOJ0BYp8VA1wpnZSoT6PY6UGS2RN-gaaWpN1kGJbGgjCfXfS2mHSMVuBwisazqus5C7tTCrY7vvP0BUzU8cIb5Tmkir2vZ2lxnYtxoTh0f_1Yrm7pKiH74P0zKHpN7nRt3_lTwbDFnzxf3-Tx_HExT3pms3_lAafPRRJtjC9bN_IzFKYQy0IYIgBHqiURMq_w6X9-dSsXBrOysYB-ebbPhnVdqCR7jO5hiSm4GEa4uRTegOm4vvG-XYike0OuRItgLPveCbAPAPNfYmHEDnaEjFr2D4zmmDGmoJlV8EPdRUrsQtaQ50s7PN-gSLaPBPMNCm_HWrRBza1zJU1IuoDj8T3Eu1qbs-_x6-QQBjCylNSwtggyg4UxJmwCgLjKnXJLDdZwxqg",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXT_tYlu9EAd2qf8BZp1x_gbZCau5K-jfXnknbpGY5POBUc9dARKc1oy2vs0NyeYOtWAIuHGiypNUOIEl-MfvDxlKdqc7mCkwMO0LW9-D4T1YcOew7-cwQyU5h40HEl01SccmhJW0d5VUX155V4mgqxO9FzZeqOhJ03uEzuGeMyNGEq-YcbVFX161B9TB4ZC5V8CTyWABOa7TbfC_LYlLWCPdGPToku8kDdba0m0QwINdRmrJ0WJf0W_ip_57xClqDtdGEex0DZp9CVEWLf4kjqI5retIURsLTW-7ED-Y58oQquj9mN9xXQnQ53Cyri-ohXOecEBqg4lPlCRgUp6vclAoxIWapQ5VKAd998J_mOkpcbhfYUzSSKJFaQDKLXb1PM0-VwMpLDVa5EkKEQRknTsP_s8f2hlScsSfplLfxrTznBgtdkP5JbLc0L9_A",
+      "width": 4096,
+      "height": 3072,
+      "author": {
+        "name": "Lorenza Iacobuzio",
+        "uri": "https://maps.google.com/maps/contrib/107731932206208866107"
+      }
     },
     {
-      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSzrj6dzKMp5TPNDmzKAySIZbaR9vLxSy0ZCPrU9l45HylK8mWNwXoj02aVtCETZ1tsXR3ArSTM02j7uOHUPrtUUKBMXrGb8c1pi-TUF5KXGv-n_yFW0PpT812m8tzQf7ylr4SeUMALu-8mdunKVJBMW7HvtTRLNnXQn81aPtWZRncjT00ypEhMqy1XeT9fSHlk6yzXqNJgoE55SP58dJVUHvbVHmkMiHeyGvwebkDSZgM6TXM3W4ud5UOj3JoY6bAbEwRuxXAsQnhJCx4NuE81hqmOCVznXeG09TumL_VmmJLaPJiYcKJe0rzWRTMn4XGNrkQCT6nNpaI5DEaH7CIzvgXELouPK1w4sPyTVIH1gFonR9XoEH5ZLjhEUBaCBO-xrOHLu9JL-SgP5yalOBPDYKI6T5nH20DdBq4wi_2Bauw6sRRkiz80amQvIfC5",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSYf04FjAWMovgY_fxjxl6QH9lSOxvHUQ4m4RbWBr4WAdkH-HZ_QJAhIeJWuXCdQuj_jNGd4emwUzSOVlircCKXfsc9L2MUU65KRmlrJAK5f1YfsqHzDr6rJLOFHR1LWJlVtZLOnfYSKkDXPUN6U3gzHphkBm2497d_MzUSmbyGqgJ5virKhG6ZVJtWfS5Z1h-0eR-9RosClrPv1PqPBRvhSFk_psraIVPbREGbf0d37DlRKZWb395N_f7Wr3oirL-WEl0tRCHLHCOxlV2diSLAEhkBgYJB2x_sFXLSYs0ow2aqjTieoQLTQEdluTMHlwbE3w1EYPxkf5myAN91HA0SUBAddt19TiPDIgnz4QKlunVrLilDcq3YwBTFW_o0dYn0zn--BTlB0T5KyeKxM0tRX0m9I7meQDkzMHIAPFB5ehksdquybFJAOHxgybgO",
+      "width": 1600,
+      "height": 1594,
+      "author": {
+        "name": "Pablo Rodríguez Roldán",
+        "uri": "https://maps.google.com/maps/contrib/110992018343557461146"
+      }
     },
     {
-      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSNn_3fkCEbr0G41DXUjbnc1GMe9SUwnWtoxRdkC33s2MVIMNMFa2da0rMKRCNMJPU2xtHCGcxcBsn_q56b38bBDmUTiahriOiwjO9hS5tXImDEpAden7IK725yEmqZD1XuPAG6qU1bWUCfxkOoz8qCavHO2eBn3NXIIzuRmujZXmQsA8q5vQ4GRkMjSRvN0_LRL9mGZP7NLpaOWMeF1siO4FALe7TMHflU6hvCdAA05Jed_WlmAuOMTIsc-Stj2dM1kxgECynqlrp0txRZmhhxpu5bKABTyRwZyNrJm0kuZX8Va-4oQa2Fj9zJfh9bLxi0nI_2bJPOt-hhBLq5DXgFSSPkQYlURjFzNtmn4QN1qMjMUqV_PMh_acfYk10zNjjjQe4KY2rLgqAy7XeWNXkzWoy8oZ0AZG81EeZkh3Ea6J92GykgyHnivZRLmWBP",
-      "width": null,
-      "height": null,
-      "author": null
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXQN1uqFh2kAzC_OjEi4aHmX_PMlV3wGc78K3CqDLp-ipOyXe-2o1-oM3V4eOZ2y83IxJc0gZ1_2cu2EfEhkKBvH25AB0lbIOiD_rh2ZIpkL-XhzWxQlqd3t2aO0ZC4NtzwVjfhIjOEDdYBECatp71-KSyVWVtnY1cpSIWSNhiqVOZ3hMrFrgPK5viZcrCv3RQnlTEXG2wJBwhOrKhNaFZKb_oRreXeGL6TbSg7RTeHH5gkH57hg2gGr_BB-on0eTIW8ZnBdY4sB5AKBvknfzUuSCQ5WPg2WqEIupHPzFLZ9S3_oKbORlsUSKKYc6ewH8iJ4L_aqWxGCRWIs-DVEAMtqiij62d49-M85q4s-9SmPgzvhhKtUsVQ7ydMZnL3LndVy3H4zP4mJK1QKftcrYSdVLoiDP-wiHcBc1Y5PGGNvgsqP_xhuKAYFiLu0qGM2",
+      "width": 4800,
+      "height": 3600,
+      "author": {
+        "name": "Alicja Zaprzalska",
+        "uri": "https://maps.google.com/maps/contrib/116910035303232564030"
+      }
+    },
+    {
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXRWXVPar4xOGnSf13VkCKq0JE5w4ETIG2CgTuXSo83t6LR3oXVVZDJhxrrtTxCgH4lg7ItZ_oGmztxozIZUnbHJ68F6GFfa5JAO3suYGT5it1-v1YE6C_NLj65C998cCjr2h0Qu90wy1aPGecLjVoKxFZn-_NLpjsrSc6igOvAZv_juI8oJYAW4kfNWy5oORrI4-H2OzstO-69tchqzGCARAmq46aTm9iudx7k8-Y0QlTXPLI-L2yhtm_BySdlXKGUkz76EKb2oQXHWeaz3nbQZMyjyqF3p-hcoDSq4Z4Lx9Vte3r8eXnlu1lu2G8aJPF7FhCIRIzjXLh38ktzD_bfpv-pHK79z0ZCePgm14kzrrZ5VGz6FtPkVG4I44GuCZ7u4lFUIAsTgGt0TadWwTzuN28S-COALiJ54pLGr2yTVOe8cW3HOafFmQx3uIw",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "Yozkan G",
+        "uri": "https://maps.google.com/maps/contrib/117849583065207403704"
+      }
+    },
+    {
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSH7oOuSIjI34HEJZRpp0oT6uoNNTICq6FY1ExPjt3UBre85-tJYMqAiPXtx58wVxc8ty3f3nrad-XnVQt9O5VyHTsC1S8ilrXyk1ZPRPqQdcdnqQ-qq-9u1dwPrnUosChln0QHYMcJhrb3GQuAd4QhorkPxSlLBvwbtMl6mFJqA29DztgyI_i55v0ukIq-GhL3bVJK_0h2EIPEkvPq4Nj1nRydChUp1gWvWebkjfX-zKaLaC5tLHBE-WJTLn5GugeYj85q2O7t7TVggrypONrNq_6HcSOGfMb5bWFCCJPcqmZNCpZMvG9GroNaaR_XRVH-GrbpVs2rGTQknXf9ad2KcG9QiRD-5EpBQgoTfZD2L1w6C4eRLU1xaMp-4jHF1cW0JH6tTJ43kC2gaq2cKL85acNW-0UJvS7LIRGPGWxM5dR84pSQ6Fn7nVWNCQ",
+      "width": 4064,
+      "height": 3048,
+      "author": {
+        "name": "Veli YALÇIN",
+        "uri": "https://maps.google.com/maps/contrib/112460174782629108191"
+      }
+    },
+    {
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXQKvVqOEvrZ-z1xP9y0oOWcuDN50CYQpfQP4iMToGpuDiu791KAYkNaCg1Mxa1vPOVD6dRbxuihk1SlKRrum79tnSq4VAX9wNzq0H4riLbSgOuqbaUR-2ApZcwNgYm4U1OLIbujiRRZjSR4Yv-PhU0aKzRKM5bC-ceFa1j3gyP3UKVL-qTI1WkWF2_jahTxPrQqt_HQQEmARm-GcX8HBjNQJz25jYJIi-D4Sx_Exwhf1bU-hBS4zLcCacmsfzsJJaXfgeHxxOoHsfDe-IDUswfODXOgrqWed0nnwj3qS33hZJwypiLsy75M-o4s7R6rmWBCXLOwwoicy6qTLp9T2kVBcn9RPwfzEtqczja97b_Z48pyOtldgb7yh1TNzOu_Awt-PnZfAu85A2Y1HukiiQ1RuokbjS07Scto8tn2jts9KZnC--VCk_CEPV3uG7dh",
+      "width": 4000,
+      "height": 3000,
+      "author": {
+        "name": "Jan Vandervelden",
+        "uri": "https://maps.google.com/maps/contrib/100115527420178700526"
+      }
+    },
+    {
+      "name": "places/ChIJt060ux-fVBMRaP8I8Ntg3SM/photos/AVoNoXSbjaBoFwS1kK6MliI0YZP7Kdj8F0atcNrWjLcL8hTJNCvT4es4wt9kdnYlzho-SLTTFSPkpqXciT0jV9B0BFXPb0lfM7dpPBYF5UaBqaIDjaXsRUJG03RPzuAQYeIPiCxiJcO2a7Yhrp5xhDyghH9Z5Egl5ARlBm_gSimuWc2i1s9tVWL6LVXSXxDFVApMhI1yOzYjdtLgRL-3nF4pHrVaNprqZu8RS9K0nx7y3Qu_RRBvKk3tJJfVJ2rKJ8nLSJPLzkdMSQTYP3lY_TI_np8ksAXjpxJpFyeEGOFT_-NgRcd7mcXsKn8dAMwOzc5srMyzepIRc28zHlQ_9-LSPVQUTN8rCMPL7TB15m81OOB0qiN78jqod9dPHWA5gFh-uAaip2gWxpyuQI7pIZCFao1U4Th2m5RvgppbasfS-__2S1XpX-E3_gjTZceVs9Nl",
+      "width": 3024,
+      "height": 4032,
+      "author": {
+        "name": "bobo “紅白拖島女”",
+        "uri": "https://maps.google.com/maps/contrib/117304892287026701757"
+      }
     }
   ],
   "review_snippets": [
     {
       "text": "Mbrem zgjodhem rastesisht kete restorant nga restorantet afer locationit ku ndodhesha ne Prishtine, ishte zgjedhja me e mire qe kam bere! Gjithcka ishte perfekte ambjenti, ushqimi, atmosfera, stafi...\npervec cmimeve qe ishin shume te arsyeshme, cilesia e tyre skishte koment.\nKemi ngrene cdo pjate 😍\nSi ky staf nuk kam ndjere asnjehere , na kane tregu historine e restorantit, ambjentin te gjithin, per mua eshte 100/10!\nKishin poashtu nje liber per review, patjeter qe e lash nje review aty por smund te rrija dhe pa e shkrujt dicka dhe ketu per te gjithe ju qe doni te darkoni this is your sign 💌",
-      "author": "",
-      "rating": null
+      "author": "Amelia",
+      "rating": 5
     },
     {
       "text": "Per Emrin duhet shume me shume pune e servisi aspak top ,mishi i pjekur (nuk te pyesin as s i e don pjekjen !?!?) as qeni nuk mundet me ngrene …kam sjell familje Italiane aty dhe ishin te deshpruar …",
-      "author": "",
-      "rating": null
+      "author": "Abdyl",
+      "rating": 1
     },
     {
       "text": "Currently having iftar here, but the service is really slow, nothing arrived on time. The starters were really bad, especially some kind of rice with lungs really disappointing. I don’t get all the hype about this place. Anyway, 2 stars just because the main dish was good, but everything else was pretty bad.\n\nMomentalisht tu honger iftar jom,sherbimi kogja i vonshem,senet nuk erdhen ne kohe asnjo,Starterat shume te kqije,sidomos nifar orizi me mushkni shume shume i dobt,spo e kuptoj krejt ket hype per kete vend,gjithsesi dy ylla per shkak te pjates kryesore tjerat shume dobt.",
-      "author": "",
-      "rating": null
+      "author": "Diard",
+      "rating": 2
+    },
+    {
+      "text": "Restoranti Liburnia është një nga vendet që ia vlen të vizitohet. Përvoja ime ka qenë shumë pozitive në çdo aspekt.\n\nUshqimi është shumë i shijshëm dhe i përgatitur me cilësi të lartë. Çdo pjatë që kam provuar ka qenë e nivelit të lartë dhe e shërbyer me kujdes.\n\nShërbimi është gjithashtu shumë i mirë stafi është i sjellshëm, i shpejtë dhe profesional, duke e bërë qëndrimin edhe më të këndshëm\nAmbienti është klasik dhe shumë i bukur, duke krijuar një atmosferë të ngrohtë dhe të rehatshme për të kaluar kohë, qoftë me familje apo miq.\n\nNë përgjithësi, një përvojë shumë e mirë që padyshim ia vlen të përsëritet.",
+      "author": "BLER-PR",
+      "rating": 4
+    },
+    {
+      "text": "Personalisht jam shume e kenaqur ishe Hera e pare qe une konsumova nje darke dhe kam mbetur shume e kenaqur. Arritem ne orar te mbylljes dhe nuk na kan kthyer na kan respektuar pasi i tham kemi bere rruge te gjate. Ushqimet shume te Mira ambjenti prrallor dhe nje super bravo per servisin qe meritojn respekt shume te sjellshem te gatshem.",
+      "author": "Migena",
+      "rating": 5
     }
   ],
   "vertical": "restaurant",
+  "query": "restorant",
   "source": "places-api",
-  "fetched_at": "2026-09-12T18:12:20.426Z"
+  "fetched_at": "2026-09-12T18:28:30.647Z"
 }

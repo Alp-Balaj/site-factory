@@ -1,0 +1,154 @@
+{
+  "place_id": "ChIJ4dfhsWmfVBMRDPMOA5Nv-kU",
+  "name": "Margo Garden Bar",
+  "address": "2 Rrugë Fehmi Agani, Prishtinë 10000",
+  "city": "Prishtinë",
+  "phone": "+383 49 686 664",
+  "website": null,
+  "rating": 4.4,
+  "reviews_count": 204,
+  "lat": 42.6625124,
+  "lng": 21.162662299999997,
+  "maps_url": "https://maps.google.com/?cid=5042465409996878604&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "type": "restaurant",
+  "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "business_status": "OPERATIONAL",
+  "hours": [
+    "e hënë: 7:30 p.d. – 11:30 m.d.",
+    "e martë: 7:30 p.d. – 11:30 m.d.",
+    "e mërkurë: 7:30 p.d. – 11:30 m.d.",
+    "e enjte: 7:30 p.d. – 11:30 m.d.",
+    "e premte: 7:30 p.d. – 11:30 m.d.",
+    "e shtunë: 7:30 p.d. – 11:30 m.d.",
+    "e diel: 7:30 p.d. – 11:30 m.d."
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXRg7Gx1h1yMFKWygG2tlDPqN78ULX6zyMO43WVKnaiRKvMxrCfyrnj54Vyz0pJiiQRYCn14YTdVu-aCfpJQtbIkzGpDY0PhrSCspsPprrxhDEZkNyV8f3wKPoWi3Mhq2TolM_BS5GhIoY2O6Z3rBYliRRW_XFBOzbXRkihrVSl_DKu3XDGZ9RD9SV_6ZFxLCFbV2Pc276E3MtIbv6HMvZRHkg8mQUfNVNdsd3pw1FTyOXcehOHff4z5LzehcPEY4GI9ve8Soiw9BfSZCzu8lCvls79wfj5g676s_-837Tlk1ytapLPEQC-juPpa4CRQRG0BYY_heCSEcFNm5hWwZVHTxEA9CI1ydNWedR3RW6JYQK9DTNl7H4fIP_RlKJ9nknWK-O_o_75OIQAmJ5bfOwtuyWS3Zi0uVxG16a1b1Yo",
+      "width": 4000,
+      "height": 2252,
+      "author": {
+        "name": "Shkumbin Saneja",
+        "uri": "https://maps.google.com/maps/contrib/114635613706565508880"
+      }
+    },
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXTpTC3uF856PqS7FpBeUNRuhdkVHsT_4PTSpDaKlTAlVOxLWe-RrfHQBkQ6iglzCyhXdSrvbhYWAqV3ZL5dnty5SmZ0Rf1QwbV7NpeRMcCwNCPii07KWVEMslyELgB9x2mMCFKjwaeMV9_FARwelgW09dbTTfOMPSzfYyr4tNE2Iry2enoCw4GxG704CIzTdjpP7bWD930Vx-6fKax2654YAaVTnZilgxQYOJnwAMaM9f_9Ijoo71DQIs2GBOcdOvTsQTk1d5Sp1qtELxHytXNZkC0oQgLIvPZZhl8sFDkPWVZ9w0IyPJb-IBQaP-paRAdaR-yaMc_e1zcPk46Ee1dcBzWwn0AfGqrLVpuYZhYcyeUQGhIOIwW49xLVaJ9RwtFPMAtbTIOwJxsoUyQjjFFt4oN9p5IjRhs0Y6g3tOoqAyZh85w3NE89mGhsew",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Ceren Atalay",
+        "uri": "https://maps.google.com/maps/contrib/102504005585747615727"
+      }
+    },
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXTyE6dqzAXt7vVjJdWpVEBjwS5HImreUsVS5UMd7f_agSdtE1CCxX5IpQaynhH8gImZvdTqt-_MWs9EZKE4QrTJp2GKOisWJ_rH-G7ckM1qzIDUnIw0iVifx0EPwKOXSdz3zDbad_KEuBoVNndcaP4pF7Xj2_QSF2dUCS1UJ4BYahlu6LxJS87T2h_YTDNrF0mdoV7UOIFgWysoAzOKPVIt2Zu58FnKZSpulwW5vKQzsxHlvHiwje6T9-zT6l_ObDcRwE8h_BB6g6AtvYGv7ytmfGdX1mvJyeZNcK4oFz2ib3-htT6w5jeitkHVO-VKL0pZ4ZiMPBOSzvs-yKJMpAH7Ij52Hd12ORY8YPs665Se9wcgYrwYZWzhGBrHgrdA13IgKWlb_xIKuu1qLpwAo4wOO8Q9AObblet024XzN3yNHQ",
+      "width": 4032,
+      "height": 2268,
+      "author": {
+        "name": "Steve Bintley",
+        "uri": "https://maps.google.com/maps/contrib/108010780340305730878"
+      }
+    },
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXROjXmlCOkimCRLdywF1goWE-5nTpZOcfy0k2GVWT5hHRQe6waodPb_eXJxDGlnEAWKwieuUIMrNfJPSsF05YGKSXi1T338v4GEJFabgSOpHjED1GAL0VFPS-yi4MfYN2i39CpeXzAbu52bGlcBBy9hnG1X9i431G7-NcsWlBOv3Udv5m8dGvZbNrhaWegY0Y5zsTAhY9YaX-zS7hrfxosGUw1mekC98aXLZiWoTtB5aYHSuOQAZ7Nx0V7qiuKJ6rFJrgtF26mzpZ5HaUqQ7eXBZ3G2Qy3cqsiRrMx6wzjoJLwjluOZYt6dLsMBcsJGRTXOjaIvU5288oKs2vxoLWm5SWmaBVzUddUHj6phdRnoTjzxwbUI5RZqzise8TO8i3hV7xT9WawFQYpP5Al9W2tIBeXeY6BrLehlAw8OansLAjjWn3-5gxRkv9CB2g",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Lamya B",
+        "uri": "https://maps.google.com/maps/contrib/111039154356440016713"
+      }
+    },
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXS1c45oEVQTN-F15Zw4C45I_ybK8HUBgEcVdYOYgAOkSf-VB5zTl1GxFwh5OPrUMDBsUJxoyHrUUsUqoQpyfa_jpz3c5eRF98uQ5pEl19p34CvxWnwmJEAUPxGKDerIQZJQ0aqu0ldfzcd8wUkKflExiB63_pDUS4T0nOeF7j-6Xcor3OxSvLa7liDWUfDeU8jIOeiIx4Go0907LbsnErphiWPEFoemclHBDn6njcMcGjhTMjNzRqsh9fPzCeGC4-LR-PLyoTRpeU3CitHPl20E4Afw6MI--8y-9IyyzxCEgT_52Xv_xjJveT4EKtONQWlXBCzpKXigPO9vA1kxHa3aucCUBVr0lA47DanS-8fZbOArL8iFV_ZSLmZ-OzR9d4EZ1i5VnHJ-GogjO48gJRvUJeCfHr4MkhoD--Gj3lVi_VEK7WpU5jNKi2fKnYoX",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Lamya B",
+        "uri": "https://maps.google.com/maps/contrib/111039154356440016713"
+      }
+    },
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXT6_ikNkUIbSckIDlieMmrR_GZmDZW5ymAsES_0NEEki3ZwgnzD6QfkVU6hCJVfb0bh13AF6SJVKe9sSRfxggY-EqDiEXPFkIdrBW1N4orKxf3MOvBQnNkOvV3DGc_wvRwK74wcvwBv41dVTYnG0WHs5THxE21wbw6lgbf3_F1pvhbwR0vj572zRJ5z-Q7E2WToS1fhJMv2Wk2wKY-vM3wSN71kb45yYn8_iPqBgiV6vE-X9IM3B3AOmsPB0lMBTmXfXNkWG9n7HVeh9pbt5BSVIvrSxnbdoJbbHyyeM3VRQP17Aqym6WAQPPoQS-6OdAE7fTxWhoWUZeFBZR5MqGPGHUpVGrlEy2mPwHJyF2BSgDO0d3_uhVDd_AlGIMEVisT_RGirIsDuS21TnbPNIByaHZD1QYTrs5MocIvFNvidbtT_26hvpNabCCWkADj6",
+      "width": 4032,
+      "height": 3024,
+      "author": {
+        "name": "Alex Iosifidis",
+        "uri": "https://maps.google.com/maps/contrib/111588069568257808815"
+      }
+    },
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXRlC_hMR083yjlO82iTGp6sUhWHPm0wjcxDIj4EUEEoIYWDoyyKmY7n-3ubIjUz4qZeH7v4pskwNoihVfrY3JD93aV44q673NaWWNJ7ZJMQfKCDdqAKXiAvx_g8_QJPq0mosO9cXWHR-oB_QRMNIG1YEqpJ2ARfEF8S3D3PP6dIpezxtE4QBlu36quI8IBHNQCqOvDRQRULK_6Xu6I5oaZb0RplG9Pp2dR4bozAbrqMv7ZGXkbR02URBeGFbdVwtbJpF5qN0S9OJL6cwfwr3lUZJT2SmlvzbDEDfiPgDYVHfOrfO1Hi0DE9pBn5nTQVSlShx9xPz_iM5ZyvZCQ-ipI7oBJhj8PiF3fKJQhvskXSkpOxoJh4Rqr7M8YMkSIxxdBXXm4WiQzYv0OPpNQwbix6RmB5Dpki_J02QRahLSb6HI1m5EWb9IcTk6DZXw",
+      "width": 4800,
+      "height": 3600,
+      "author": {
+        "name": "Yu Ho",
+        "uri": "https://maps.google.com/maps/contrib/100163046824556606386"
+      }
+    },
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXQck0JgEr6-T5NfjARIqyQFapKKvB41sZUh_dF0r3QBO2EwWFntummUZTmP3X_yiTOwrO9U1bbJJK6IX2i0l7o45QpCli661OCTrQZm0UrFNHoklDfjm9_3nLcI0iuFg7REM-GRcb4zRR8oNVgYbPdWmq1YwoRKPCIX_SuyYm59LdLmqcfGa4OQQbVfkZXth9SZeeMYC9Ca8_P387UwzMf9ORiAkHG8quqOTU5ONCSDEC8f1_y74WKb_92PBa3edCMVPc8dWJB8Q7IkbBdY6TO4Wwv8ZLIg2_3OrXKy_tt8wjUubSLr4FisH7fzY3MUJWcGvk7c65kdOOFjurUs807OObZyTQB-vwHPeHXt_dT118kAJ-J5qNCI3nnTRzizKW6DMA5EukhzYf858lSxyPR16odAo5Kyd09y3V72sdEqsJBd_IzzIl0jT3IfGDSo",
+      "width": 3600,
+      "height": 4800,
+      "author": {
+        "name": "Rachel Ryan",
+        "uri": "https://maps.google.com/maps/contrib/116437969963731870562"
+      }
+    },
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXTKs8hNVEDyBNC_nBeUfqqGd7AgLXhj3tiVk_2Tn6oUnuqmpaxoRtsZk7oiQW7AvVyoUDnmVa7OomEl7al2FR_3S6g-0Hk8ejg04dSIcLIs4Hhxuuh2zuhkRGUlb32FM7u9ZT4riOsKlYEKb7aA0Fx-FOIiUbOV-9di6KCJ6ylBS5EMZP3diXz7RcJmgbRf6a-Y86BEwwe5SIGiXwnsgIHUdClFQN4ipzhI-8AmqX-ls6qIzUDxGlixyGJA9MzEb8Bw8Th0PELtAFb3p3KzCS3UVj1sV87pKVFHla0INwgaxv-lxNYXJYPFXlaUdqdPMScjr7exfU0B-GWl85wETdH3QO86ocaBZpWfxtbb5uAvtG5E5Wtl_N_MbrwILnQb5HQYr6thr0pC9rXi19OlyAJN62bRIjTyGOAqBW7dXRU",
+      "width": 4080,
+      "height": 3060,
+      "author": {
+        "name": "Emine korkmaz",
+        "uri": "https://maps.google.com/maps/contrib/117926837363720736840"
+      }
+    },
+    {
+      "name": "places/ChIJ4dfhsWmfVBMRDPMOA5Nv-kU/photos/AVoNoXSlDB08WLOT5NRwakMC4lPP1vkbdV0-CO93pts22XjLIkVvlyzCTvb5SelUn3_cQjZtAe_KFgQ1RtlFYOW3R5HXWTAbXBksDk_Y90azqICC_2n_KPi6Qr2hFf8RYiXWVCGvSsOKhvE9U2GVhvIY_g0bZUBaPBEGrf4918KZL-ffGzzVQ972t08GLqImJrfcR5yyYN4WnyDpzhgyQ_ZNKHjuV5dyS52foTAftp1AMKMVv_zsfqiyHgwMIyx-gjoY6e7-BJ6en5XZ4CVWqmvAhwqoVd2o_uq4S89X2tDO9CTa_xYjINkH1bsrNo6C4I82p430qFF9LSzI-4S0xWSuROuTBGL0K3ghzAUxc0afbGaRKa6bkAw31nV6DmsXtNrWj9fg9cbjNuRSPQYpYNnbx4pWnKno2br90UEk3ZtWGOEJCH3OHg1f1nhsx2xf7MHc",
+      "width": 4800,
+      "height": 3600,
+      "author": {
+        "name": "Gaye Blain",
+        "uri": "https://maps.google.com/maps/contrib/117864019571699573839"
+      }
+    }
+  ],
+  "review_snippets": [
+    {
+      "text": "Ç‘do her kur jamë në Prishtinë(dy deri tri her në vit),duhet patjeter ta vizito ketê Ambient të bukur.Pritja është fantstike dhe Servisi fenomenal,ushqimi i këndshem, atmosferë perfekte.Ju pershendes edhe deri në vizitat tjera.",
+      "author": "U.",
+      "rating": 5
+    },
+    {
+      "text": "Atmosfera shume e mire,menagjerat mikprites,sherbimi ne nivel.Ushqimi shume i mire.\ne rekomandoj kit vend",
+      "author": "Brilant",
+      "rating": 5
+    },
+    {
+      "text": "Vendi shum i mir,ushqimi shum i mir stafi mikprites,e rekomandoj Meti Cufiii!!!!!!",
+      "author": "Meti",
+      "rating": 5
+    },
+    {
+      "text": "Vendi shum i mir,stafi mikprites,ushqimi shum i mire me qmim te arsyeshem.\nJu falenderojme Muhameti dhe Diari.\nShihemi perseri!🥂🍻",
+      "author": "L",
+      "rating": 5
+    },
+    {
+      "text": "I had a Crunch sandwich today, and unfortunately, I didn't like it at all. I’ve been living in Kosovo for four years and visit this place regularly, but the quality has dropped; there was very little filling, and the bread wasn't fresh. I brought the issue to the manager's attention, but they didn't seem particularly concerned. I’m disappointed; this used to be a place I loved. Sot mora një sanduiç \"Crunch\" dhe, për fat të keq, nuk më pëlqeu aspak. Jetoj në Kosovë prej katër vitesh dhe e vizitoj rregullisht këtë vend, por cilësia ka rënë; kishte shumë pak mbushje dhe buka nuk ishte e freskët. Ia bëra të ditur problemin menaxherit, por ai nuk dukej veçanërisht i shqetësuar. Jam i zhgënjyer; dikur ky ishte një vend që e doja shumë.",
+      "author": "Murat",
+      "rating": 2
+    }
+  ],
+  "vertical": "restaurant",
+  "query": "restorant",
+  "source": "places-api",
+  "fetched_at": "2026-09-12T18:28:30.647Z"
+}
