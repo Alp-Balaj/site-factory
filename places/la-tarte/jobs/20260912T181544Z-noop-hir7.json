@@ -1,0 +1,15 @@
+{
+  "id": "20260912T181544Z-noop-hir7",
+  "type": "noop",
+  "slug": "la-tarte",
+  "params": {},
+  "status": "done",
+  "createdAt": "2026-09-12T18:15:44.672Z",
+  "startedAt": "2026-09-12T18:15:44.673Z",
+  "endedAt": "2026-09-12T18:15:48.679Z",
+  "error": null,
+  "logPath": "places/la-tarte/jobs/20260912T181544Z-noop-hir7.log",
+  "result": {
+    "lines": 5
+  }
+}

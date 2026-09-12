@@ -5,7 +5,7 @@ leads/out
 places/*/build
 places/*/photos
 places/*/jobs/*.log
-jobs/
+/jobs/
 .claude/.design-skills
 .claude/skills/impeccable/scripts/bin
 **/.impeccable/review
