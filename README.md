@@ -8,7 +8,7 @@ cp .env.example .env          # fill GOOGLE_PLACES_KEY (+ Cloudflare for deploy)
 claude login                  # demo copy is generated via your Claude subscription (Claude Code login), no API key
 npx playwright install chromium   # needed for the scraper and for verify/build screenshots
 
-npm run leads:api -- "restorant" "Prishtinë" --pages 3     # -> leads/out/restorant-prishtine.json (no-website only)
+npm run leads:api -- "restorant" "Prishtinë" --pages 3     # -> leads/out/restorant-prishtine.json (open businesses of that vertical, with phone; website not filtered)
 npm run leads:scrape -- "restorant" "Prishtinë" --max 60    # free alternative, brittle
 npm run demo -- leads/out/restorant-prishtine.json 0        # -> clients/<slug>/config.json (Albanian copy via Claude)
 npm run dev -- <slug>                                       # preview at localhost:4321
@@ -18,8 +18,16 @@ npm run deploy -- <slug>                                    # -> https://sf-<slu
 npm run demo:batch -- leads/out/restorant-prishtine.json --limit 5   # demo+build+deploy every lead with status "new"
 ```
 
+## Lead filtering (`leads:api`)
+Google text search returns homes, street addresses and unrelated places alongside businesses. The collector keeps a result only if it
+is a real business (has a Google place type beyond address/area types), is `OPERATIONAL`, matches the vertical's type list
+(restaurant/cafe/bar/bakery..., dentist, car_repair/car_wash..., lodging/hotel/guest_house...), and has a phone number. Having a
+`website` does not exclude a lead: it is often just a Facebook/Instagram link, so read that field per lead before skipping one.
+Every dropped result is printed with its reason. Flags: `--types cafe,bar` overrides the type list (needed for keywords that are not
+one of the four verticals), `--allow-no-phone` keeps phoneless businesses, `--all` skips filtering and dumps everything.
+
 ## Flow per client
-1. Lead list is the "thirsty community": businesses in one vertical + city with no website.
+1. Lead list is the "thirsty community": businesses in one vertical + city with no real website (a Facebook/Instagram link counts as none).
 2. `demo` builds a site from Google data alone, before you contact them. Deploy it; send the link.
 3. They say yes → send `intake/index.html` (host it anywhere). It downloads a `.intake.json`.
 4. `npm run demo -- <leads.json> <place_id> --intake their.intake.json` regenerates the config with their answers overriding everything.
