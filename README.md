@@ -54,7 +54,8 @@ and the same screenshots after, so a bad config fails before the build starts. B
 - `template/src/verticals/*.json` per-branch labels, item groups, default theme, and the copy brief for Claude. **Only `restaurant` has been looked at properly; the other three are stubs.**
 - `clients/<slug>/config.json` single source of truth per client. Commit these; they are your CRM.
   Optional top-level `credit: { label, url }` drives the footer link "Uebfaqe nga <label>"; defaults to `Alp` and `https://REPLACE-ME.com` when absent, so set it once per client (or put your own site there).
-- `factory/` glue scripts.
+- `factory/` glue scripts. `factory/hooks/design-skills.mjs` is the Claude Code hook that makes the design skills mandatory for `template/src` edits (see CLAUDE.md).
+- `.claude/skills/` design skills for Claude Code (impeccable, design-taste-frontend, emil-design-eng, animate, review-animations). `skills-lock.json` pins them; the impeccable binary is gitignored, re-run `npx impeccable install -y --project --providers=claude-code` on a fresh clone.
 
 ## Known gaps (on purpose)
 - Photos from the Places API URLs embed your API key and expire; for a paying client, download them into `clients/<slug>/photos/` and point `gallery`/`hero.image` at copies you host.
