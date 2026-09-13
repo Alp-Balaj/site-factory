@@ -1,5 +1,5 @@
 {
-  "status": "generating",
+  "status": "qa_passed",
   "flags": {
     "hasRealWebsite": false,
     "fixture": false
@@ -119,6 +119,12 @@
       "from": "found",
       "to": "generating",
       "reason": "generate"
+    },
+    {
+      "at": "2026-09-13T22:08:07.783Z",
+      "from": "generating",
+      "to": "qa_passed",
+      "reason": "qa passed"
     }
   ]
 }
