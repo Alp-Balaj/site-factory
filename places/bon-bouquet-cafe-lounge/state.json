@@ -1,5 +1,5 @@
 {
-  "status": "found",
+  "status": "generating",
   "flags": {
     "hasRealWebsite": false,
     "fixture": false
@@ -45,6 +45,12 @@
       "from": "failed",
       "to": "found",
       "reason": "changed in the Portal"
+    },
+    {
+      "at": "2026-09-13T22:03:49.298Z",
+      "from": "found",
+      "to": "generating",
+      "reason": "generate"
     }
   ]
 }
