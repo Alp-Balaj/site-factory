@@ -21,7 +21,14 @@
       "original": "photos/g01.orig.jpg",
       "web": "photos/g01-1600.webp",
       "thumb": "photos/g01-800.webp",
-      "scores": null
+      "scores": {
+        "food": 0,
+        "room": 3,
+        "exterior": 4,
+        "people": 1,
+        "textHeavy": 0,
+        "dark": 0
+      }
     },
     {
       "id": "g02",
@@ -38,7 +45,14 @@
       "original": "photos/g02.orig.jpg",
       "web": "photos/g02-1600.webp",
       "thumb": "photos/g02-800.webp",
-      "scores": null
+      "scores": {
+        "food": 0,
+        "room": 2,
+        "exterior": 4,
+        "people": 1,
+        "textHeavy": 0,
+        "dark": 0
+      }
     },
     {
       "id": "g03",
@@ -55,7 +69,14 @@
       "original": "photos/g03.orig.jpg",
       "web": "photos/g03-1600.webp",
       "thumb": "photos/g03-800.webp",
-      "scores": null
+      "scores": {
+        "food": 5,
+        "room": 1,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 0,
+        "dark": 0
+      }
     },
     {
       "id": "g04",
@@ -72,7 +93,14 @@
       "original": "photos/g04.orig.jpg",
       "web": "photos/g04-1600.webp",
       "thumb": "photos/g04-800.webp",
-      "scores": null
+      "scores": {
+        "food": 0,
+        "room": 0,
+        "exterior": 5,
+        "people": 0,
+        "textHeavy": 1,
+        "dark": 4
+      }
     },
     {
       "id": "g05",
@@ -89,7 +117,14 @@
       "original": "photos/g05.orig.jpg",
       "web": "photos/g05-1600.webp",
       "thumb": "photos/g05-800.webp",
-      "scores": null
+      "scores": {
+        "food": 0,
+        "room": 1,
+        "exterior": 4,
+        "people": 0,
+        "textHeavy": 2,
+        "dark": 0
+      }
     },
     {
       "id": "g06",
@@ -106,7 +141,14 @@
       "original": "photos/g06.orig.jpg",
       "web": "photos/g06-1600.webp",
       "thumb": "photos/g06-800.webp",
-      "scores": null
+      "scores": {
+        "food": 0,
+        "room": 1,
+        "exterior": 4,
+        "people": 0,
+        "textHeavy": 0,
+        "dark": 2
+      }
     },
     {
       "id": "g07",
@@ -123,7 +165,14 @@
       "original": "photos/g07.orig.jpg",
       "web": "photos/g07-1600.webp",
       "thumb": "photos/g07-800.webp",
-      "scores": null
+      "scores": {
+        "food": 1,
+        "room": 5,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 1,
+        "dark": 2
+      }
     },
     {
       "id": "g08",
@@ -140,7 +189,14 @@
       "original": "photos/g08.orig.jpg",
       "web": "photos/g08-1600.webp",
       "thumb": "photos/g08-800.webp",
-      "scores": null
+      "scores": {
+        "food": 0,
+        "room": 4,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 1,
+        "dark": 2
+      }
     },
     {
       "id": "g09",
@@ -157,7 +213,14 @@
       "original": "photos/g09.orig.jpg",
       "web": "photos/g09-1600.webp",
       "thumb": "photos/g09-800.webp",
-      "scores": null
+      "scores": {
+        "food": 5,
+        "room": 1,
+        "exterior": 0,
+        "people": 1,
+        "textHeavy": 2,
+        "dark": 3
+      }
     },
     {
       "id": "g10",
@@ -174,13 +237,27 @@
       "original": "photos/g10.orig.jpg",
       "web": "photos/g10-1600.webp",
       "thumb": "photos/g10-800.webp",
-      "scores": null
+      "scores": {
+        "food": 0,
+        "room": 5,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 1,
+        "dark": 0
+      }
     }
   ],
   "picks": {
-    "hero": null,
-    "gallery": []
+    "hero": "g01",
+    "gallery": [
+      "g10",
+      "g07",
+      "g03",
+      "g02",
+      "g05",
+      "g06"
+    ]
   },
-  "note": "",
-  "curated_at": null
+  "note": "g01 leads because it is the only clean landscape that places the viewer immediately inside the experience: the plant-draped covered terrace opens onto the bar in daylight with no text, no clutter, and plenty of depth to read at banner width. The gallery steps through both indoor moods first (g10 for the bright brick-and-greenery everyday room, g07 for the warm candlelit dinner table), then the signature food spread, then the outdoor spaces in sequence from the lush midday terrace through the character-rich thatched corner to the dusk shot, giving the designer a full picture of how the venue looks and feels from noon to evening. g04 was excluded for being too dark overall, g08 as a near-duplicate of g07 in mood and subject, and g09 for combined darkness and text clutter in the background.",
+  "curated_at": "2026-09-13T22:02:24.750Z"
 }
