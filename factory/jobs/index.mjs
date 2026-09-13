@@ -5,6 +5,7 @@ import * as leadSearch from './lead-search.mjs';
 import * as photos from './photos.mjs';
 import * as generate from './generate.mjs';
 import * as generateAll from '../batch.mjs';
+import * as qa from './qa.mjs';
 import { build } from '../build.mjs';
 import { deploy } from '../deploy.mjs';
 import { canTransition } from '../lib/state.mjs';
@@ -39,4 +40,5 @@ export const jobs = {
   photos,
   generate,
   'generate-all': generateAll,
+  qa,
 };
