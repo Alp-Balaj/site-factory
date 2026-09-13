@@ -1,5 +1,5 @@
 {
-  "status": "found",
+  "status": "generating",
   "flags": {
     "hasRealWebsite": false,
     "fixture": false
@@ -27,6 +27,12 @@
       "from": null,
       "to": "found",
       "reason": "lead search restorant Prishtinë"
+    },
+    {
+      "at": "2026-09-13T22:02:23.705Z",
+      "from": "found",
+      "to": "generating",
+      "reason": "changed in the Portal"
     }
   ]
 }
