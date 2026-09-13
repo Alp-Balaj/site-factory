@@ -18,9 +18,9 @@
       "width": 1600,
       "height": 1067,
       "orientation": "landscape",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g01.orig.jpg",
+      "web": "photos/g01-1600.webp",
+      "thumb": "photos/g01-800.webp",
       "scores": null
     },
     {
@@ -35,9 +35,9 @@
       "width": 1600,
       "height": 2133,
       "orientation": "portrait",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g02.orig.jpg",
+      "web": "photos/g02-1600.webp",
+      "thumb": "photos/g02-800.webp",
       "scores": null
     },
     {
@@ -52,9 +52,9 @@
       "width": 720,
       "height": 480,
       "orientation": "landscape",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g03.orig.jpg",
+      "web": "photos/g03-1600.webp",
+      "thumb": "photos/g03-800.webp",
       "scores": null
     },
     {
@@ -69,9 +69,9 @@
       "width": 720,
       "height": 405,
       "orientation": "landscape",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g04.orig.jpg",
+      "web": "photos/g04-1600.webp",
+      "thumb": "photos/g04-800.webp",
       "scores": null
     },
     {
@@ -86,9 +86,9 @@
       "width": 1600,
       "height": 2133,
       "orientation": "portrait",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g05.orig.jpg",
+      "web": "photos/g05-1600.webp",
+      "thumb": "photos/g05-800.webp",
       "scores": null
     },
     {
@@ -103,9 +103,9 @@
       "width": 1600,
       "height": 2133,
       "orientation": "portrait",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g06.orig.jpg",
+      "web": "photos/g06-1600.webp",
+      "thumb": "photos/g06-800.webp",
       "scores": null
     },
     {
@@ -120,9 +120,9 @@
       "width": 1080,
       "height": 720,
       "orientation": "landscape",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g07.orig.jpg",
+      "web": "photos/g07-1600.webp",
+      "thumb": "photos/g07-800.webp",
       "scores": null
     },
     {
@@ -137,9 +137,9 @@
       "width": 1080,
       "height": 1080,
       "orientation": "square",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g08.orig.jpg",
+      "web": "photos/g08-1600.webp",
+      "thumb": "photos/g08-800.webp",
       "scores": null
     },
     {
@@ -154,9 +154,9 @@
       "width": 1600,
       "height": 2133,
       "orientation": "portrait",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g09.orig.jpg",
+      "web": "photos/g09-1600.webp",
+      "thumb": "photos/g09-800.webp",
       "scores": null
     },
     {
@@ -171,9 +171,9 @@
       "width": 1600,
       "height": 2133,
       "orientation": "portrait",
-      "original": null,
-      "web": null,
-      "thumb": null,
+      "original": "photos/g10.orig.jpg",
+      "web": "photos/g10-1600.webp",
+      "thumb": "photos/g10-800.webp",
       "scores": null
     }
   ],
