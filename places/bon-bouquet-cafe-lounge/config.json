@@ -1,0 +1,264 @@
+{
+  "slug": "bon-bouquet-cafe-lounge",
+  "vertical": "restaurant",
+  "archetype": "modern-cafe",
+  "itemGroups": [
+    "Kafe",
+    "Mëngjes",
+    "Ëmbëlsira",
+    "Pije të ftohta"
+  ],
+  "business": {
+    "name": "Bon Bouquet Café & Lounge",
+    "tagline": "Kafe me kujdes, kohë pa nxitim.",
+    "phone": "+383 48 707 708",
+    "whatsapp": "38348707708",
+    "email": "",
+    "address": "Behije Dashi, No.37 Prishtinë XK, Prishtinë 10000",
+    "city": "Prishtinë",
+    "mapsUrl": "https://maps.google.com/?cid=15705179861857747477&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": 42.6578101,
+    "lng": 21.166290699999998,
+    "instagram": "bonbouquet.ks",
+    "facebook": "",
+    "rating": 4.9,
+    "reviews_count": 559
+  },
+  "hours": [
+    {
+      "day": "e hënë",
+      "time": "07:00 - 23:00"
+    },
+    {
+      "day": "e martë",
+      "time": "07:00 - 23:00"
+    },
+    {
+      "day": "e mërkurë",
+      "time": "07:00 - 23:00"
+    },
+    {
+      "day": "e enjte",
+      "time": "07:00 - 23:00"
+    },
+    {
+      "day": "e premte",
+      "time": "07:00 - 23:00"
+    },
+    {
+      "day": "e shtunë",
+      "time": "07:00 - 23:00"
+    },
+    {
+      "day": "e diel",
+      "time": "Closed"
+    }
+  ],
+  "theme": {
+    "bg": "#17140F",
+    "ink": "#F0EAD8",
+    "primary": "#2A4D38",
+    "accent": "#C8883C",
+    "muted": "#232017",
+    "display": "Bricolage Grotesque",
+    "displayWeight": 600,
+    "body": "Manrope",
+    "radius": "8px",
+    "frame": "line",
+    "layout": {
+      "hero": "split",
+      "menu": "cards",
+      "gallery": "strip",
+      "rhythm": "airy",
+      "order": "menu-first"
+    },
+    "note": "The forest-green velvet banquettes and exposed terracotta brick walls anchored the palette; the rattan pendant lamps' warm amber glow became the accent; dark near-black ground reads like the moody evening interior lit by candlelight and wall sconces; Bricolage Grotesque carries the botanical quirkiness of a place where mosaic tile tables, macramé, trailing vines, thatch umbrellas, and wine glasses all coexist without conflict.",
+    "weights": {
+      "Bricolage Grotesque": [
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "Manrope": [
+        400,
+        500,
+        600,
+        700,
+        800
+      ]
+    }
+  },
+  "hero": {
+    "headline": "Ku dita fillon me kafë dhe qetësi",
+    "sub": "Kafë e përgatitur me kujdes dhe mëngjes i freskët. Ambient i pastër, i mirë si për punë ashtu edhe për relaks.",
+    "image": {
+      "src": "photos/g01-1600.webp",
+      "source": "google",
+      "author": {
+        "name": "Bon Bouquet Café & Lounge",
+        "uri": "https://maps.google.com/maps/contrib/104508415049080205441"
+      }
+    }
+  },
+  "about": {
+    "title": "Vendi ku njerëzit rrinë gjatë",
+    "text": "Ambienti është i pastër, me dritë të mirë dhe hapësirë të rehatshme. Vend i mirë si për punë ashtu edhe për takime apo relaks. Hapur çdo ditë pune nga ora 7:00.\n\nKafja përgatitet me kujdes. Mëngjesi është i freskët dhe i disponueshëm çdo mëngjes. Stafi është i sjellshëm dhe profesional.\n\nNjerëzit vijnë për kafe dhe qëndrojnë gjatë. Dikush punon me laptop, dikush takohet me kolegë. Nuk ka nxitim."
+  },
+  "items": [
+    {
+      "group": "Kafe",
+      "name": "Espresso",
+      "desc": "I zi, i fortë, i shkurtër.",
+      "price": "1.50 €",
+      "source": "evidence"
+    },
+    {
+      "group": "Kafe",
+      "name": "Cappuccino",
+      "desc": "Kafë me qumësht të shkumëzuar, e baraspeshuar.",
+      "price": "2.00 €",
+      "source": "filler"
+    },
+    {
+      "group": "Kafe",
+      "name": "Flat White",
+      "desc": "Espresso me qumësht të butë, pa shkumë të tepërt.",
+      "price": "2.50 €",
+      "source": "filler"
+    },
+    {
+      "group": "Kafe",
+      "name": "Kafe Filtri",
+      "desc": "E ngadaltë, aromatike, e pjekur me kujdes.",
+      "price": "2.50 €",
+      "source": "filler"
+    },
+    {
+      "group": "Mëngjes",
+      "name": "Mëngjes i plotë",
+      "desc": "Vezë, djathë, domate dhe bukë. I freskët çdo ditë.",
+      "price": "4.50 €",
+      "source": "evidence"
+    },
+    {
+      "group": "Mëngjes",
+      "name": "Tost me djathë",
+      "desc": "Bukë e thekur me djathë dhe perime të freskëta.",
+      "price": "2.50 €",
+      "source": "filler"
+    },
+    {
+      "group": "Mëngjes",
+      "name": "Vezë me perime",
+      "desc": "Të skuqura ose të ziera, me perime stine.",
+      "price": "3.00 €",
+      "source": "filler"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Kroasan",
+      "desc": "Me gjalpë, i pjekur në mëngjes.",
+      "price": "1.50 €",
+      "source": "filler"
+    },
+    {
+      "group": "Ëmbëlsira",
+      "name": "Muffin i ditës",
+      "desc": "Ndryshon çdo ditë, gjithmonë i freskët.",
+      "price": "1.50 €",
+      "source": "filler"
+    },
+    {
+      "group": "Pije të ftohta",
+      "name": "Lëng i shtrydhur",
+      "desc": "Portokall ose mollë, i shtrydhur në moment.",
+      "price": "2.50 €",
+      "source": "filler"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "photos/g10-1600.webp",
+      "source": "google",
+      "author": {
+        "name": "Karina Ana Ekhardt",
+        "uri": "https://maps.google.com/maps/contrib/105367720846633180648"
+      }
+    },
+    {
+      "src": "photos/g07-1600.webp",
+      "source": "google",
+      "author": {
+        "name": "Bon Bouquet Café & Lounge",
+        "uri": "https://maps.google.com/maps/contrib/104508415049080205441"
+      }
+    },
+    {
+      "src": "photos/g03-1600.webp",
+      "source": "google",
+      "author": {
+        "name": "Bon Bouquet Café & Lounge",
+        "uri": "https://maps.google.com/maps/contrib/104508415049080205441"
+      }
+    },
+    {
+      "src": "photos/g02-1600.webp",
+      "source": "google",
+      "author": {
+        "name": "Sandor Natalia Maria Florina",
+        "uri": "https://maps.google.com/maps/contrib/111364522786998151283"
+      }
+    },
+    {
+      "src": "photos/g05-1600.webp",
+      "source": "google",
+      "author": {
+        "name": "Sandor Natalia Maria Florina",
+        "uri": "https://maps.google.com/maps/contrib/111364522786998151283"
+      }
+    },
+    {
+      "src": "photos/g06-1600.webp",
+      "source": "google",
+      "author": {
+        "name": "Karina Ana Ekhardt",
+        "uri": "https://maps.google.com/maps/contrib/105367720846633180648"
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Klient",
+      "text": "Kafja është e shijshme dhe përgatitet me kujdes, ndërsa ushqimi është i freskët dhe me shumë shije."
+    },
+    {
+      "name": "Vesa",
+      "text": "Vendi perfekt per ushqim te shijshem dhe cilesi te larte. Ambient i ngrohte dhe staf shume mikprites."
+    },
+    {
+      "name": "Bardhe",
+      "text": "Ushqim fantastik plot shije. Ambient i ngrohte familjar, perfekt per cdo moment."
+    },
+    {
+      "name": "Labinot",
+      "text": "Kafeja e mëngjesit është e papërshkrueshme. Nga Bon Bouquet café ju nisni një ditë pozitive."
+    }
+  ],
+  "seo": {
+    "title": "Bon Bouquet Café & Lounge, Prishtinë",
+    "description": "Kafene moderne në Prishtinë me kafë speciale, mëngjes të freskët dhe ambient të pastër. Hapur e hënë deri e shtunë, 07:00 deri 23:00."
+  },
+  "meta": {
+    "lead_place_id": "ChIJI3vuY9ifVBMRFUKm798B9Nk",
+    "generated_at": "2026-09-13T22:07:03.610Z",
+    "source": "places-api",
+    "archetype": {
+      "how": "classified",
+      "confidence": 0.8,
+      "reason": "Every review leads with coffee quality and the morning/daytime experience (\"kafeja e mëngjesit e papërshkrueshme\", meetings with university professors, \"ideal për takime dhe relaks\"), the \"Lounge\" in the name signals comfortable seating rather than nightlife, and no review mentions cocktails, late hours, or a night-dominant atmosphere."
+    },
+    "photos": "pool"
+  }
+}
