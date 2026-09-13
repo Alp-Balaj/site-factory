@@ -1,0 +1,15 @@
+{
+  "id": "20260913T215959Z-generate-sfgx",
+  "type": "generate",
+  "slug": "bon-bouquet-cafe-lounge",
+  "params": {
+    "only": "theme",
+    "afterPhotos": true
+  },
+  "status": "failed",
+  "createdAt": "2026-09-13T21:59:59.517Z",
+  "startedAt": "2026-09-13T22:02:24.801Z",
+  "endedAt": "2026-09-13T22:02:24.828Z",
+  "error": "--only theme needs an existing places/bon-bouquet-cafe-lounge/config.json; run a full generate first",
+  "logPath": "places/bon-bouquet-cafe-lounge/jobs/20260913T215959Z-generate-sfgx.log"
+}
