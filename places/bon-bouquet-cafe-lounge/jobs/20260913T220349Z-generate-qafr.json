@@ -1,0 +1,31 @@
+{
+  "id": "20260913T220349Z-generate-qafr",
+  "type": "generate",
+  "slug": "bon-bouquet-cafe-lounge",
+  "params": {},
+  "status": "done",
+  "createdAt": "2026-09-13T22:03:49.297Z",
+  "startedAt": "2026-09-13T22:03:49.297Z",
+  "endedAt": "2026-09-13T22:07:03.635Z",
+  "error": null,
+  "logPath": "places/bon-bouquet-cafe-lounge/jobs/20260913T220349Z-generate-qafr.log",
+  "result": {
+    "archetype": {
+      "id": "modern-cafe",
+      "how": "classified",
+      "confidence": 0.8,
+      "reason": "Every review leads with coffee quality and the morning/daytime experience (\"kafeja e mëngjesit e papërshkrueshme\", meetings with university professors, \"ideal për takime dhe relaks\"), the \"Lounge\" in the name signals comfortable seating rather than nightlife, and no review mentions cocktails, late hours, or a night-dominant atmosphere."
+    },
+    "theme": {
+      "changes": [],
+      "photosUsed": 6,
+      "fallback": false
+    },
+    "photos": {
+      "from": "pool",
+      "hero": true,
+      "gallery": 6
+    },
+    "only": "all"
+  }
+}
