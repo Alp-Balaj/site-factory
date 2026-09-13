@@ -1,5 +1,5 @@
 {
-  "status": "failed",
+  "status": "found",
   "flags": {
     "hasRealWebsite": false,
     "fixture": false
@@ -39,6 +39,12 @@
       "from": "generating",
       "to": "failed",
       "reason": "generate: --only theme needs an existing places/bon-bouquet-cafe-lounge/config.json; run a full generate first"
+    },
+    {
+      "at": "2026-09-13T22:03:02.674Z",
+      "from": "failed",
+      "to": "found",
+      "reason": "changed in the Portal"
     }
   ]
 }
