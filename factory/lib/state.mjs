@@ -11,9 +11,10 @@ export const STATUSES = [
   'intake_received', 'paid', 'live', 'churned', 'declined', 'failed',
 ];
 
-// from -> [to]. Anything not listed throws. Approval is only qa_passed -> ready.
+// from -> [to]. Anything not listed throws. Approval is only qa_passed -> ready. found -> declined is the one addition
+// to the plan's table: a duplicate listing or a bad lead is dropped in the Portal before anything is generated.
 export const TRANSITIONS = {
-  found: ['generating'],
+  found: ['generating', 'declined'],
   generating: ['qa_passed', 'qa_failed', 'failed'],
   failed: ['found'],
   qa_failed: ['generating', 'declined'],

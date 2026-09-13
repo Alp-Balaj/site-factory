@@ -10,6 +10,7 @@ import fs from 'node:fs';
 import { resolveArchetype } from './lib/archetypes.mjs';
 import { classifyArchetype, summarizePhotos } from './lib/classify.mjs';
 import { askJson } from './lib/claude.mjs';
+import { checkCopy } from './lib/copy-checks.mjs';
 import { parseHours } from './lib/hours.mjs';
 import { configPath, notesPath, photosPath, placePath, readJson } from './lib/paths.mjs';
 import { hasPhotos, resolvePhotos } from './lib/place-photos.mjs';
@@ -72,6 +73,26 @@ Kthe JSON me këtë strukturë:
 
 // Runs through the local Claude Code login (claude.ai subscription), not an API key.
 const generateCopy = (prompt) => askJson({ prompt, schema, what: 'copy' });
+
+// The copy checks QA will run (factory/lib/copy-checks.mjs), over the copy alone in config shape.
+export const copyProblems = (copy) => checkCopy({ business: { tagline: copy.tagline }, hero: copy.hero, about: copy.about, items: copy.items, testimonials: copy.testimonials, seo: copy.seo }).filter(c => !c.ok);
+
+// One copy call, and one retry when the result would fail QA's copy checks (a long dash, a foreign-language leak):
+// the second prompt names the problem. The second result is used either way; QA still has the last word.
+export async function generateCheckedCopy(prompt, { log = console.log } = {}) {
+  let copy = await generateCopy(prompt);
+  const problems = copyProblems(copy);
+  if (!problems.length) return copy;
+  const detail = problems.map(p => `${p.id}: ${p.detail}`).join('; ');
+  log(`copy failed the copy checks (${detail}); asking once more`);
+  copy = await generateCopy(`${prompt}
+
+VERSIONI I MËPARSHËM U REFUZUA nga kontrolli automatik: ${detail}
+Shkruaje përsëri të gjithë tekstin duke e hequr këtë problem: asnjë vizë të gjatë (— ose –) askund, dhe vetëm shqip.`);
+  const again = copyProblems(copy);
+  log(again.length ? `copy still fails after the retry (${again.map(p => `${p.id}: ${p.detail}`).join('; ')}); QA will flag it` : 'copy passes the copy checks after the retry');
+  return copy;
+}
 
 export const firstName = (name = '') => String(name).trim().split(/[\s.,]+/)[0] ?? '';
 
@@ -143,7 +164,7 @@ export async function generateDemo(slug, { intake = {}, only, feedback, archetyp
   const reviews = reviewsOf(place);
   const themePlace = { ...placeFromPlace(place, vertical), archetype: archetype.label, items: (only === 'theme' ? existing.items ?? [] : []).slice(0, 12).map(i => i.name) };
   const [copy, themed] = await Promise.all([
-    only === 'theme' ? copyOf(existing) : generateCopy(buildPrompt({ place, intake, archetype, reviews, captions: captionsOf(photos), feedback: fb, notes })),
+    only === 'theme' ? copyOf(existing) : generateCheckedCopy(buildPrompt({ place, intake, archetype, reviews, captions: captionsOf(photos), feedback: fb, notes }), { log }),
     only === 'copy' ? null : generateTheme(themePlace, shots.previews, { archetype, feedback: fb, notes, hasPhotos: withPhotos })
       .catch(e => { log(`theme: ${e.message}; using the plain fallback theme`); return { ...fixTheme({ ...FALLBACK_THEME, note: `fallback theme (generation failed: ${e.message})` }, { hasPhotos: withPhotos }), photosUsed: 0, fallback: true }; }),
   ]);

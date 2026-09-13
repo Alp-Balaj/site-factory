@@ -1,9 +1,10 @@
 // Usage: node factory/jobs/run.mjs <type> [slug] [--param key=value …] [--key value] [--no-key]
-// Runs one job in the foreground through the same queue the Portal uses and prints its log. Exit code 1 when it fails.
+// Runs one job in the foreground through the same queue the Portal uses and prints its log, then stays until the jobs
+// it chained (generate -> photos, build, qa) have run too. Exit code 1 when the job or any chained job fails.
 // Examples: node factory/jobs/run.mjs noop la-tarte
 //           node factory/jobs/run.mjs build la-tarte --param screenshots=false
 import 'dotenv/config';
-import { events, registeredTypes, runJob } from '../lib/jobs.mjs';
+import { events, registeredTypes, runJob, whenIdle } from '../lib/jobs.mjs';
 
 // "--param k=v", "--k=v", "--k v" and "--no-k" all land in params; "true"/"false"/numbers are typed.
 export function parseArgs(argv) {
@@ -38,6 +39,8 @@ if (!(await registeredTypes()).includes(type)) {
 }
 
 events.on('log', ({ line }) => console.log(line));
+const outcomes = [];
+events.on('change', job => { if (job.status === 'done' || job.status === 'failed') outcomes.push(job); });
 try {
   const job = await runJob(type, { slug, params });
   console.log(`-> ${job.status} ${job.id} (record: ${job.logPath.replace(/\.log$/, '.json')})`);
@@ -45,3 +48,7 @@ try {
   console.error(`-> failed: ${e.message}`);
   process.exit(1);
 }
+await whenIdle();
+const chained = outcomes.slice(1);
+for (const j of chained) console.log(`-> ${j.status} ${j.id}${j.error ? ` (${j.error})` : ''}`);
+process.exit(chained.some(j => j.status === 'failed') ? 1 : 0);

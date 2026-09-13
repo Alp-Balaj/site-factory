@@ -1,5 +1,5 @@
 {
-  "status": "found",
+  "status": "declined",
   "flags": {
     "hasRealWebsite": true,
     "fixture": false
@@ -27,6 +27,12 @@
       "from": null,
       "to": "found",
       "reason": "lead search restorant Prishtinë"
+    },
+    {
+      "at": "2026-09-13T18:24:16.747Z",
+      "from": "found",
+      "to": "declined",
+      "reason": "duplicate Google listing of princesha-gresa-restaurant (second place ID)"
     }
   ]
 }

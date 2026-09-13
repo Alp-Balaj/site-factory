@@ -5,7 +5,7 @@
 // to drain and exits 1 when any generate failed. --dry-run lists what would be queued and writes nothing.
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { current, events, queued, runJob, whenDone } from './lib/jobs.mjs';
+import { events, runJob, whenDone, whenIdle } from './lib/jobs.mjs';
 import { listPlaces } from './lib/paths.mjs';
 import { readState } from './lib/state.mjs';
 
@@ -34,15 +34,6 @@ export async function run(ctx) {
     jobs.push(job.id);
   }
   return { candidates: todo, jobs, dryRun };
-}
-
-// Resolves once nothing is running or queued (the generate jobs and their chained build/qa).
-function whenIdle() {
-  return new Promise(resolve => {
-    const check = () => { if (!current() && !queued().length) { events.off('change', check); resolve(); } };
-    events.on('change', check);
-    setImmediate(check);
-  });
 }
 
 function parseArgs(argv) {

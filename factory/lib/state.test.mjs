@@ -9,9 +9,9 @@ let tmp;
 before(() => { tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'sf-state-')); process.env.PLACES_DIR = tmp; delete process.env.AUTO_COMMIT; });
 after(() => { delete process.env.PLACES_DIR; fs.rmSync(tmp, { recursive: true, force: true }); });
 
-// The table from the build plan, verbatim.
+// The table from the build plan, verbatim, plus found -> declined (Integration: a duplicate listing is dropped in the Portal).
 const PLAN = [
-  ['found', 'generating'],
+  ['found', 'generating'], ['found', 'declined'],
   ['generating', 'qa_passed'], ['generating', 'qa_failed'], ['generating', 'failed'],
   ['failed', 'found'],
   ['qa_failed', 'generating'], ['qa_failed', 'declined'],

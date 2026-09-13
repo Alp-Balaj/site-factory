@@ -5,9 +5,15 @@
 // set by hand (that value wins and is never overwritten). params.feedback is stored in state.feedback so the Portal
 // shows what the last regeneration was asked for. params.chain false skips the build and qa jobs; params.dryRun (or
 // --dry-run) generates and logs the result but changes no status and writes nothing.
+//
+// A Place with no photos.json yet gets its pool first: the job queues `photos` and then itself again (the queue is
+// FIFO, so the chain is photos -> generate -> build -> qa) and returns without touching the status. params.photos
+// false skips that (generate from place.json alone); params.afterPhotos marks the re-queued run so a photos job that
+// wrote nothing does not loop.
 import fs from 'node:fs';
 import { generateDemo } from '../demo.mjs';
 import { isRegistered } from '../lib/jobs.mjs';
+import { photosPath } from '../lib/paths.mjs';
 import { canTransition } from '../lib/state.mjs';
 
 export async function run(ctx) {
@@ -27,6 +33,19 @@ export async function run(ctx) {
     if (only !== 'copy') ctx.log(`[dry-run] theme:\n${JSON.stringify(result.config.theme, null, 2)}`);
     if (only !== 'theme') ctx.log(`[dry-run] copy:\n${JSON.stringify({ tagline: result.config.business.tagline, hero: { headline: result.config.hero.headline, sub: result.config.hero.sub }, items: result.config.items, testimonials: result.config.testimonials }, null, 2)}`);
     return { dryRun: true, archetype: result.archetype, theme: result.theme, photos: result.photos };
+  }
+
+  if (params.photos !== false && !params.afterPhotos && !fs.existsSync(photosPath(slug))) {
+    if (await isRegistered('photos')) {
+      if (!canTransition(ctx.state.status, 'generating') && ctx.state.status !== 'generating') throw new Error(`${slug} is ${ctx.state.status}; cannot generate from there`);
+      const p = ctx.enqueue('photos', { slug, params: {} });
+      const g = ctx.enqueue('generate', { slug, params: { ...params, afterPhotos: true } });
+      ctx.log(`no photos.json: queued photos ${p.id}, then generate ${g.id} again`);
+      return { deferred: true, photos: p.id, generate: g.id };
+    }
+    ctx.log('no photos.json and the photos job is not registered; generating from place.json alone');
+  } else if (params.afterPhotos && !fs.existsSync(photosPath(slug))) {
+    ctx.log('photos job left no photos.json; generating from place.json alone');
   }
 
   if (ctx.state.status !== 'generating') {

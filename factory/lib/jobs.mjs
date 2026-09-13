@@ -4,6 +4,7 @@
 //   enqueue(type, { slug, params }) -> job record   { id, type, slug, params, status, createdAt, startedAt, endedAt, error, logPath }
 //   list({ slug })                  -> job[]        records on disk (plus whatever is queued or running)
 //   whenDone(id)                    -> Promise<job> resolves when the job ends, whatever the outcome
+//   whenIdle()                      -> Promise<void> resolves once nothing is running or queued (chained jobs included)
 //   events.on('log', ({ id, line }) => …)  every log line, as written to the .log file
 //   events.on('change', job => …)          queued -> running -> done | failed
 //
@@ -77,6 +78,15 @@ function settle(job) {
 
 export const current = () => (running ? { ...running } : null);
 export const queued = () => queue.map(j => ({ ...j }));
+
+// Resolves once nothing is running or queued: a job's chained jobs (photos -> generate -> build -> qa) included.
+export function whenIdle() {
+  return new Promise(resolve => {
+    const check = () => { if (!running && !queue.length) { events.off('change', check); resolve(); } };
+    events.on('change', check);
+    setImmediate(check);
+  });
+}
 
 // Records on disk for one Place, or every Place plus the root jobs/ folder, newest first.
 export function list({ slug } = {}) {

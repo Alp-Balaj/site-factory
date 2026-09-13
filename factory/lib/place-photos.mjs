@@ -3,13 +3,12 @@
 // photoUrl, then nothing. Config photos are { src, source: 'google' | 'instagram' | 'owner', author? } per the contract.
 import path from 'node:path';
 import { placeDir } from './paths.mjs';
+import { photoUrl as keyedPhotoUrl } from './place.mjs';
 
-// Copied from S1's factory/lib/place.mjs contract until it merges (docs/handoff/S3.md). The key is added at call time
-// only; place.json holds photo names, never URLs.
+// place.mjs throws without a name or a key; here a missing key simply means "no Google photos" so a Place without a
+// pool still generates (hero "type", no gallery) instead of failing. place.json holds photo names, never URLs.
 export function photoUrl(name, maxWidthPx = 1600) {
-  const key = process.env.GOOGLE_PLACES_KEY;
-  if (!name || !key) return '';
-  return `https://places.googleapis.com/v1/${name}/media?maxWidthPx=${maxWidthPx}&key=${key}`;
+  try { return keyedPhotoUrl(name, maxWidthPx); } catch { return ''; }
 }
 
 const isHttp = (s) => /^https?:\/\//i.test(s ?? '');

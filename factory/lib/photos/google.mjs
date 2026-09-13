@@ -1,13 +1,9 @@
 // Google Places photos for the pool: the photo names in place.json become pool entries (ids g01, g02, …) and are
-// downloaded through the Places media endpoint at fetch time. The API key is added here and only here, never written
-// to disk (backlog item 11).
-//
-// photoUrl() is a copy of S1's factory/lib/place.mjs export (S1 had not merged when this was written); the integration
-// session replaces it with an import once both branches are on master (docs/handoff/S2.md).
+// downloaded through the Places media endpoint at fetch time. The API key is added by photoUrl() (factory/lib/place.mjs)
+// on the way to the fetch and only there, never written to disk (backlog item 11).
+import { photoUrl } from '../place.mjs';
 
-export function photoUrl(photoName, maxWidthPx = 1600) {
-  return `https://places.googleapis.com/v1/${photoName}/media?maxWidthPx=${maxWidthPx}&key=${process.env.GOOGLE_PLACES_KEY ?? ''}`;
-}
+export { photoUrl };
 
 // Pool entries for every photo named in place.json, without files or urls yet. Ids follow the order in place.json.
 // Old leads carried photos as keyed URL strings; those have no stable name and are skipped.

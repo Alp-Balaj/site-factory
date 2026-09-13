@@ -3,9 +3,13 @@
 // non-zero exit (the caller decides the message), throws only when the process cannot be spawned.
 import { spawn } from 'node:child_process';
 
+// The shell is needed so `npx` resolves on Windows too (npx.cmd), but Node warns (DEP0190) when an args array meets
+// shell: true, so the command goes over as one quoted string instead.
+const quote = (s) => (/^[\w./:=@%+-]+$/.test(s) ? s : `"${String(s).replace(/(["\\$`])/g, '\\$1')}"`);
+
 export function run(cmd, args, { cwd, env = process.env, log = console.log } = {}) {
   return new Promise((resolve, reject) => {
-    const child = spawn(cmd, args, { cwd, env, shell: true, stdio: ['ignore', 'pipe', 'pipe'] });
+    const child = spawn([cmd, ...args].map(quote).join(' '), { cwd, env, shell: true, stdio: ['ignore', 'pipe', 'pipe'] });
     const forward = (stream) => {
       let rest = '';
       stream.setEncoding('utf8');
