@@ -21,7 +21,7 @@
   "pagesUrl": "",
   "notes": [],
   "qa": {
-    "at": "2026-09-13T22:08:07.760Z",
+    "at": "2026-09-13T22:08:48.879Z",
     "passed": true,
     "vision": true,
     "hard": [
@@ -63,28 +63,28 @@
     "soft": [
       {
         "id": "first-viewport",
-        "score": 4,
-        "reason": "Mobile first viewport shows 'Bon Bouquet Café & Lounge' in large bold cream text with the restaurant hero photo visible in the upper-right corner before scrolling."
+        "score": 5,
+        "reason": "Mobile opens with 'Bon Bouquet Café & Lounge' in large white type on a dark-olive hero alongside a restaurant photo — name and place are immediately recognisable before scrolling."
       },
       {
         "id": "hero-suits",
         "score": 5,
-        "reason": "Desktop hero shows a lush plant-filled café interior with warm ambient lighting — exactly the mood expected of a modern café & lounge; no logos, screenshots or irrelevant scenes."
+        "reason": "Hero shows a lush, plant-draped restaurant interior with warm ambient lighting — exactly the aesthetic expected for a modern café-lounge, no generic stock or text-heavy image."
       },
       {
         "id": "nothing-cut-off",
         "score": 4,
-        "reason": "Text and images stay within columns on both breakpoints; on mobile the menu items stack cleanly with prices on their own line, and no visible overflow or clipped elements anywhere."
+        "reason": "Both viewports are clean; two-column mobile menu compresses description text slightly but nothing is clipped or runs off-canvas, and desktop columns align without overflow."
       },
       {
         "id": "menu-reads",
         "score": 4,
-        "reason": "Menu groups (Kafe, Mënges, Ëmbëlsira, Pije të fohta) are clear; each item shows name, short description, and price; alignment holds on desktop and stacks gracefully on mobile."
+        "reason": "Group headings (Kafe, Mënges, Ëmbëlsira, Pije) clearly separate categories; each item shows name, short description, and price consistently right-aligned on desktop and legible on mobile."
       },
       {
         "id": "theme-fits",
         "score": 5,
-        "reason": "Deep forest-green background, cream type, and earthy photo tones form a coherent upscale-café palette that mirrors the plant-heavy interior photos and the lounge positioning."
+        "reason": "Deep forest-green background with white type mirrors the restaurant's abundant greenery, creating a cohesive upscale-café identity that feels designed for this specific place."
       }
     ],
     "reasons": []
