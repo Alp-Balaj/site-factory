@@ -1,0 +1,15 @@
+{
+  "id": "20260913T220703Z-build-gfrz",
+  "type": "build",
+  "slug": "bon-bouquet-cafe-lounge",
+  "params": {},
+  "status": "done",
+  "createdAt": "2026-09-13T22:07:03.635Z",
+  "startedAt": "2026-09-13T22:07:03.657Z",
+  "endedAt": "2026-09-13T22:07:30.610Z",
+  "error": null,
+  "logPath": "places/bon-bouquet-cafe-lounge/jobs/20260913T220703Z-build-gfrz.log",
+  "result": {
+    "dir": "/home/alpi/Documents/Projects/SideHustle/site-factory/places/bon-bouquet-cafe-lounge/build"
+  }
+}
