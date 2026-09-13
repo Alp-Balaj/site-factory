@@ -1,0 +1,12 @@
+{
+  "id": "20260913T215948Z-build-uac1",
+  "type": "build",
+  "slug": "bon-bouquet-cafe-lounge",
+  "params": {},
+  "status": "failed",
+  "createdAt": "2026-09-13T21:59:48.964Z",
+  "startedAt": "2026-09-13T21:59:48.965Z",
+  "endedAt": "2026-09-13T21:59:48.966Z",
+  "error": "places/bon-bouquet-cafe-lounge/config.json not found",
+  "logPath": "places/bon-bouquet-cafe-lounge/jobs/20260913T215948Z-build-uac1.log"
+}
