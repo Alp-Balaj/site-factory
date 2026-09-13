@@ -1,8 +1,27 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-export interface Item { group: string; name: string; desc?: string; price?: string }
+export interface Item { group: string; name: string; desc?: string; price?: string; source?: 'evidence' | 'filler' }
 export interface Hours { day: string; time: string }
+export interface Testimonial { name?: string; text: string }
+
+// A photo in config.json is either a plain URL (configs from before the photo pool) or an object that says where it
+// came from. Google photos carry the author for the attribution Google requires; Instagram and owner photos carry none.
+export type PhotoSource = 'google' | 'instagram' | 'owner';
+export interface Photo { src: string; source: PhotoSource; author?: { name: string; uri?: string } }
+export type PhotoInput = string | Partial<Photo> | null | undefined;
+
+// Layout variants: a few fixed shapes per section, chosen per Place by the theme call, all CSS-only in the skeleton.
+export const LAYOUT_OPTIONS = {
+  hero: ['photo', 'split', 'type'],
+  menu: ['list', 'cards', 'board'],
+  gallery: ['grid', 'strip', 'single', 'none'],
+  rhythm: ['tight', 'airy'],
+  order: ['menu-first', 'about-first'],
+} as const;
+export type Layout = { [K in keyof typeof LAYOUT_OPTIONS]: (typeof LAYOUT_OPTIONS)[K][number] };
+export const DEFAULT_LAYOUT: Layout = { hero: 'photo', menu: 'list', gallery: 'grid', rhythm: 'tight', order: 'menu-first' };
+
 // The theme is the client's identity, generated per restaurant from its own photos (factory/theme.mjs).
 // The template is only the skeleton: it draws every surface from these tokens and adds no look of its own.
 export interface Theme {
@@ -11,17 +30,21 @@ export interface Theme {
   weights?: Record<string, number[]>;           // static weights each family carries on Google Fonts (missing: probed at build)
   radius?: string;                              // corner language: "0px" | "8px" | "20px" (any CSS length works)
   frame?: 'none' | 'line' | 'thick';            // how cards and photos are edged
+  layout?: Partial<Layout>;                     // section shapes; anything missing or unknown falls back to DEFAULT_LAYOUT
   note?: string;                                // why (written by the generator, for the operator)
 }
 export interface SiteConfig {
   slug: string; vertical: string;
+  archetype?: string;
   business: { name: string; tagline: string; phone: string; whatsapp: string; email?: string; address: string; city: string; mapsUrl?: string; lat?: number; lng?: number; instagram?: string; facebook?: string; rating?: number | null; reviews_count?: number };
   hours: Hours[];
   theme: Theme;
-  hero: { headline: string; sub: string; image?: string };
+  hero: { headline: string; sub: string; image?: PhotoInput };
   about: { title: string; text: string };
   items: Item[];
-  gallery: string[];
+  itemGroups?: string[];                        // per-archetype groups written by the generator; the vertical's list otherwise
+  gallery: PhotoInput[];
+  testimonials?: Testimonial[];
   seo: { title: string; description: string };
   credit?: { label?: string; url?: string }; // footer "Uebfaqe nga <label>" link; defaults in Contact.astro
 }
@@ -38,6 +61,32 @@ export const vertical: Vertical = JSON.parse(fs.readFileSync(path.join(process.c
 // The vertical's fallback fills any token a client config leaves out (hand-edited or pre-generator configs).
 export const theme: Theme = { radius: '0px', frame: 'line', ...vertical.theme, ...site.theme };
 
+// Unknown or missing layout values fall back one key at a time, so a hand-edited config can never break the build.
+function readLayout(input: Partial<Record<keyof Layout, unknown>> = {}): Layout {
+  const out: Layout = { ...DEFAULT_LAYOUT };
+  for (const key of Object.keys(LAYOUT_OPTIONS) as (keyof Layout)[]) {
+    const v = input[key];
+    if (typeof v === 'string' && (LAYOUT_OPTIONS[key] as readonly string[]).includes(v)) (out as Record<keyof Layout, string>)[key] = v;
+  }
+  return out;
+}
+export const layout: Layout = readLayout(theme.layout ?? {});
+
+// Normalises a config photo. A plain string is a photo of unknown origin (pre-pool configs): rendered, never attributed.
+export function photoOf(p: PhotoInput): Photo | null {
+  if (!p) return null;
+  if (typeof p === 'string') return p.trim() ? { src: p.trim(), source: 'owner' } : null;
+  if (typeof p.src !== 'string' || !p.src.trim()) return null;
+  const source: PhotoSource = p.source === 'google' || p.source === 'instagram' ? p.source : 'owner';
+  const name = typeof p.author?.name === 'string' ? p.author.name.trim() : '';
+  const uri = typeof p.author?.uri === 'string' && p.author.uri.trim() ? p.author.uri.trim() : undefined;
+  return { src: p.src.trim(), source, ...(name ? { author: { name, ...(uri ? { uri } : {}) } } : {}) };
+}
+export const heroPhoto: Photo | null = photoOf(site.hero?.image);
+export const galleryPhotos: Photo[] = (site.gallery ?? []).map(photoOf).filter((p): p is Photo => p !== null);
+export const testimonials: Testimonial[] = (site.testimonials ?? []).filter(q => q && typeof q.text === 'string' && q.text.trim() !== '');
+export const itemGroups: string[] = site.itemGroups?.length ? site.itemGroups : vertical.itemGroups;
+
 // Labels every vertical needs; a vertical preset overrides any of them.
 const defaultLabels = {
   call: 'Thirr',
@@ -47,6 +96,10 @@ const defaultLabels = {
   allHours: 'Shih orarin e plotë',
   otherGroup: 'Tjera',
   credit: 'Uebfaqe nga',
+  sample: 'shembull',
+  testimonials: 'Çka thonë',
+  photoBy: 'Foto nga',
+  poweredBy: 'Powered by Google', // Google's attribution text for Places photos; not translated on purpose
 };
 export const t: Record<string, string> = { ...defaultLabels, ...vertical.labels };
 

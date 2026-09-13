@@ -1,0 +1,17 @@
+---
+// Attribution under a photo. Google requires the author and "Powered by Google" next to a Places photo;
+// Instagram and owner photos carry nothing, so this renders nothing for them. Always the last child of a <figure>.
+import { t } from '../lib/config';
+import type { Photo } from '../lib/config';
+interface Props { photo: Photo }
+const { photo } = Astro.props;
+const author = photo.source === 'google' ? photo.author : undefined;
+---
+{photo.source === 'google' ? (
+  <figcaption class="credit">
+    {author && (
+      <span>{t.photoBy}{' '}{author.uri ? <a href={author.uri} target="_blank" rel="noopener">{author.name}</a> : author.name}</span>
+    )}
+    <span>{t.poweredBy}</span>
+  </figcaption>
+) : null}

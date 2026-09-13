@@ -1,0 +1,92 @@
+{
+  "slug": "photo-list-grid",
+  "vertical": "restaurant",
+  "archetype": "grill-house",
+  "business": {
+    "name": "Qebaptore Ilirida",
+    "tagline": "Qebapa në zjarr, që nga 1994",
+    "phone": "+383 44 123 456",
+    "whatsapp": "38344123456",
+    "email": "",
+    "address": "Rr. Fehmi Agani 8, Prishtinë",
+    "city": "Prishtinë",
+    "mapsUrl": "https://maps.google.com/?q=Qebaptore+Ilirida+Prishtine",
+    "lat": 42.6602,
+    "lng": 21.1614,
+    "instagram": "",
+    "facebook": "",
+    "rating": 4.7,
+    "reviews_count": 318
+  },
+  "hours": [
+    { "day": "e hënë", "time": "08:00 - 23:00" },
+    { "day": "e martë", "time": "08:00 - 23:00" },
+    { "day": "e mërkurë", "time": "08:00 - 23:00" },
+    { "day": "e enjte", "time": "08:00 - 23:00" },
+    { "day": "e premte", "time": "08:00 - 00:00" },
+    { "day": "e shtunë", "time": "08:00 - 00:00" },
+    { "day": "e diel", "time": "10:00 - 22:00" }
+  ],
+  "theme": {
+    "bg": "#F6F3EC",
+    "ink": "#1E1B17",
+    "primary": "#3B2E27",
+    "accent": "#B84E29",
+    "muted": "#EAE4D8",
+    "display": "Archivo",
+    "displayWeight": 800,
+    "body": "Onest",
+    "radius": "0px",
+    "frame": "line",
+    "layout": { "hero": "photo", "menu": "list", "gallery": "grid", "rhythm": "tight", "order": "menu-first" },
+    "note": "Fixture: the default shape of every section, light ground, a long first word in the name.",
+    "weights": { "Archivo": [400, 500, 600, 700, 800, 900], "Onest": [400, 500, 600, 700] }
+  },
+  "hero": {
+    "headline": "Qebapa, pleskavica dhe bukë e ngrohtë nga furra.",
+    "sub": "Mishi bluhet çdo mëngjes, buka piqet në furrën tonë. Ulu brenda ose merre me vete.",
+    "image": {
+      "src": "https://picsum.photos/seed/ilirida-hero/1600/1200",
+      "source": "google",
+      "author": { "name": "Arta B.", "uri": "https://maps.google.com/maps/contrib/100000000000000000001" }
+    }
+  },
+  "about": {
+    "title": "Tri breza në të njëjtin skarë",
+    "text": "Ilirida u hap në 1994 me katër tavolina dhe një skarë me qymyr. Skara është ende me qymyr.\n\nMishi vjen nga Drenica, buka piqet këtu çdo mëngjes, dhe qepa pritet kur e porosit."
+  },
+  "items": [
+    { "group": "Skara", "name": "Qebapa (10 copë)", "desc": "Me qepë, lepinjë dhe kajmak", "price": "5.00 €", "source": "evidence" },
+    { "group": "Skara", "name": "Pleskavicë", "desc": "Me djathë ose pa", "price": "5.50 €", "source": "evidence" },
+    { "group": "Skara", "name": "Sudzhuk në skarë", "desc": "", "price": "6.00 €", "source": "filler" },
+    { "group": "Skara", "name": "Fileto pule", "desc": "Me perime të pjekura", "price": "6.50 €", "source": "filler" },
+    { "group": "Skara", "name": "Pjatë e përzier", "desc": "Për dy persona", "price": "14.00 €", "source": "filler" },
+    { "group": "Sallata", "name": "Sallatë shope", "desc": "Domate, kastravec, djathë i bardhë", "price": "3.00 €", "source": "evidence" },
+    { "group": "Sallata", "name": "Ajvar me djathë", "desc": "", "price": "2.50 €", "source": "filler" },
+    { "group": "Sallata", "name": "Turshi shtëpie", "desc": "", "price": "2.00 €", "source": "filler" },
+    { "group": "Ëmbëlsira", "name": "Bakllava", "desc": "", "price": "2.00 €", "source": "filler" },
+    { "group": "Ëmbëlsira", "name": "Trileçe", "desc": "", "price": "2.50 €", "source": "filler" },
+    { "group": "Pije", "name": "Kos i shtëpisë", "desc": "", "price": "1.00 €", "source": "evidence" },
+    { "group": "Pije", "name": "Makiato", "desc": "", "price": "1.20 €", "source": "filler" }
+  ],
+  "itemGroups": ["Skara", "Sallata", "Ëmbëlsira", "Pije"],
+  "gallery": [
+    {
+      "src": "https://picsum.photos/seed/ilirida-g1/1600/1200",
+      "source": "google",
+      "author": { "name": "Blerim K.", "uri": "https://maps.google.com/maps/contrib/100000000000000000002" }
+    },
+    { "src": "https://picsum.photos/seed/ilirida-g2/1600/1200", "source": "instagram" },
+    { "src": "https://picsum.photos/seed/ilirida-g3/1600/1200", "source": "google", "author": { "name": "Dafina R." } },
+    "https://picsum.photos/seed/ilirida-g4/1600/1200"
+  ],
+  "testimonials": [
+    { "name": "Arta", "text": "Qebapat më të mira në Prishtinë, buka e ngrohtë dhe shërbimi i shpejtë. Vijmë çdo të premte." },
+    { "name": "Blerim", "text": "Vend i thjeshtë, ushqim i sinqertë. Pleskavica me djathë është e madhe sa pjata." }
+  ],
+  "seo": {
+    "title": "Qebaptore Ilirida | Qebapa dhe skarë në Prishtinë",
+    "description": "Qebapa, pleskavica dhe bukë e ngrohtë nga furra, në qendër të Prishtinës që nga 1994. Hapur çdo ditë. Rezervo në WhatsApp."
+  },
+  "credit": { "label": "Alp", "url": "https://REPLACE-ME.com" }
+}

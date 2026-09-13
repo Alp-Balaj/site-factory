@@ -3,15 +3,21 @@ import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
 import Items from '../components/Items.astro';
 import About from '../components/About.astro';
+import Testimonials from '../components/Testimonials.astro';
 import Hours from '../components/Hours.astro';
 import Gallery from '../components/Gallery.astro';
 import Contact from '../components/Contact.astro';
 import StickyBar from '../components/StickyBar.astro';
+import { layout } from '../lib/config';
+// order swaps the menu and the story; the testimonials always follow the story, the rest never moves
 ---
 <Base>
   <Hero />
-  <Items />
-  <About />
+  {layout.order === 'about-first' ? (
+    <><About /><Testimonials /><Items /></>
+  ) : (
+    <><Items /><About /><Testimonials /></>
+  )}
   <Gallery />
   <Hours />
   <Contact />

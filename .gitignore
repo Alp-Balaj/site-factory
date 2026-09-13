@@ -18,3 +18,7 @@ places/_preview-*
 **/.impeccable/hook.cache.json
 **/.impeccable/questions
 template/.astro
+
+# S6: fixture builds and their screenshots (places/_fixtures/<name>/config.json is committed)
+places/_fixtures/*/build
+places/_fixtures/*/preview-*.png

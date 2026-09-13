@@ -1,17 +1,22 @@
 ---
-import { site, t, waLink, compactHours } from '../lib/config';
+import { site, t, waLink, compactHours, layout, heroPhoto } from '../lib/config';
+import Credit from './Credit.astro';
 const { business, hero } = site;
 const hours = compactHours(site.hours);
 const fringe = hours.length <= 3 ? hours : hours.slice(0, 1); // long irregular weeks: first line here, full list in Hours
 const longest = Math.max(...business.name.split(/\s+/).map(w => w.length), 4); // the name fills the phone width: size from its longest word
 const initial = [...business.name.trim()][0] ?? ''; // no photo yet: the name's first letter stands in, in the display face
+const photo = heroPhoto;
+// Three shapes. photo: the words and a photo patch (the initial when there is none). split: the photo bleeds to the edge
+// beside the words, and leads on a phone. type: no photo, the name and headline set large. split needs a photo to split around.
+const variant = layout.hero === 'type' || (layout.hero === 'split' && !photo) ? 'type' : layout.hero;
 ---
-<header class="hero">
+<header class={`hero ${variant}`}>
   <nav class="wrap nav">
     <a class="brand" href="#top">{business.name}</a>
     {business.phone && <a class="phone" href={`tel:${business.phone}`}>{business.phone}</a>}
   </nav>
-  <div class="wrap field" id="top">
+  <div class={variant === 'split' ? 'field' : 'wrap field'} id="top">
     <div class="words rise" style={`--chars:${longest}`}>
       <h1>{business.name}</h1>
       <p class="headline">{hero.headline}</p>
@@ -20,9 +25,14 @@ const initial = [...business.name.trim()][0] ?? ''; // no photo yet: the name's 
         <a class="btn" href="#items">{t.items}</a>
       </div>
     </div>
-    <figure class={`patch photo rise late${hero.image ? '' : ' initial'}`} aria-hidden={hero.image ? undefined : 'true'}>
-      {hero.image ? <img src={hero.image} alt="" width="1600" height="1200" fetchpriority="high" decoding="async" /> : <span>{initial}</span>}
-    </figure>
+    {variant !== 'type' && (
+      <figure class={`photo rise late${photo ? '' : ' initial'}`} aria-hidden={photo ? undefined : 'true'}>
+        <div class="patch frame">
+          {photo ? <img src={photo.src} alt="" width="1600" height="1200" fetchpriority="high" decoding="async" /> : <span>{initial}</span>}
+        </div>
+        {photo && <Credit photo={photo} />}
+      </figure>
+    )}
     {fringe.length ? (
       <dl class="fringe">
         {fringe.map(h => <div><dt>{h.day}</dt><dd>{h.time}</dd></div>)}
@@ -43,10 +53,11 @@ const initial = [...business.name.trim()][0] ?? ''; // no photo yet: the name's 
   .headline { font-size: clamp(1.15rem, 2.2vw, 1.4rem); line-height: 1.35; max-width: 34ch; color: var(--on-primary); }
   .ctas { display: none; gap: .75rem; flex-wrap: wrap; margin-top: .5rem; }
 
-  .photo { aspect-ratio: 4 / 3; }
-  .initial { display: grid; place-items: center; color: var(--on-muted); }
+  /* the photo: a patch in the theme's corner and edge, the attribution (Google only) below it, outside the patch */
+  .photo { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-width: 0; }
+  .frame { aspect-ratio: 4 / 3; }
+  .initial .frame { display: grid; place-items: center; color: var(--on-muted); container-type: inline-size; }
   .initial span { font-family: var(--font-display); font-weight: var(--display-weight); font-size: min(60cqw, 14rem); line-height: 1; color: var(--accent); }
-  .initial { container-type: inline-size; }
 
   .fringe { display: grid; gap: .35rem .75rem; grid-template-columns: 1fr; font-size: 1rem; }
   .fringe div { display: flex; justify-content: space-between; gap: 1rem; padding-block: .45rem; }
@@ -55,11 +66,38 @@ const initial = [...business.name.trim()][0] ?? ''; // no photo yet: the name's 
   .fringe dd { font-weight: 600; white-space: nowrap; }
   .fringe a { font-size: .95rem; }
 
+  /* split: the photo runs edge to edge; it leads on a phone and takes the right half on a desktop */
+  .split .field { width: 100%; padding-top: 0; }
+  .split .words, .split .fringe, .split .credit { padding-inline: max(1.25rem, calc((100% - 70rem) / 2)); }
+  .split .words { padding-top: .5rem; }
+  .split .photo { order: -1; }
+  .split .frame { border-radius: 0; border-inline: 0; max-height: 48vh; }
+  .split .credit { padding-top: .1rem; }
+
+  /* type: no photo, the name set as large as the wrap allows, the headline a size up, the hours in one row */
+  .type .field { grid-template-columns: 1fr; padding-block: clamp(2rem, 6vw, 4rem) clamp(2.5rem, 6vw, 4rem); }
+  .type h1 { font-size: clamp(2.5rem, calc(min(100vw - 2.5rem, 70rem) / var(--chars, 8) * 1.5), 9.5rem); }
+  .type .headline { font-size: clamp(1.3rem, 2.8vw, 1.9rem); max-width: 28ch; }
+
   @media (min-width: 800px) {
     .ctas { display: flex; }
     .field { grid-template-columns: 1.1fr 1fr; grid-template-rows: auto 1fr; column-gap: 3rem; row-gap: 1.5rem; padding-block: 2rem 3.5rem; }
     .words { grid-column: 1; grid-row: 1; padding-top: 1rem; }
-    .photo { grid-column: 2; grid-row: 1 / span 2; aspect-ratio: 1; max-height: 30rem; }
+    .photo { grid-column: 2; grid-row: 1 / span 2; align-self: start; }
+    .frame { aspect-ratio: 1; max-height: 30rem; }
     .fringe { grid-column: 1; grid-row: 2; align-self: start; max-width: 28rem; }
+
+    .split .field { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 0; row-gap: 0; padding-block: 0; }
+    .split .words { padding: 3rem 3rem 1.5rem max(1.25rem, calc((100% - 70rem) / 2)); }
+    .split .fringe { padding: 0 3rem 3rem max(1.25rem, calc((100% - 70rem) / 2)); align-self: end; }
+    .split .photo { order: 0; align-self: stretch; }
+    .split .frame { aspect-ratio: auto; height: 100%; min-height: 32rem; max-height: none; border-block: 0; }
+    .split .credit { padding: .45rem 1.25rem .6rem; }
+
+    .type .field { grid-template-rows: auto auto; }
+    .type .words { max-width: 60rem; }
+    .type .fringe { max-width: none; grid-template-columns: repeat(3, auto); justify-content: start; gap: .5rem 3rem; }
+    .type .fringe div + div { border-top: 0; }
+    .type .fringe div { justify-content: start; }
   }
 </style>
