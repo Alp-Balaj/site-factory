@@ -2,6 +2,7 @@
 // build and deploy wrap the existing scripts; noop exists so the queue can be exercised without credentials.
 import * as noop from './noop.mjs';
 import * as leadSearch from './lead-search.mjs';
+import * as photos from './photos.mjs';
 import { build } from '../build.mjs';
 import { deploy } from '../deploy.mjs';
 import { canTransition } from '../lib/state.mjs';
@@ -33,4 +34,5 @@ export const jobs = {
   build: buildJob,
   deploy: deployJob,
   'lead-search': leadSearch,
+  photos,
 };

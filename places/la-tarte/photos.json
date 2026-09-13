@@ -1,0 +1,147 @@
+{
+  "store": "local",
+  "instagram": {
+    "handle": "latarteprishtina",
+    "how": "search",
+    "posts": 0
+  },
+  "pool": [
+    {
+      "id": "g01",
+      "source": "google",
+      "ref": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXTENtGZ2wzzqg5J738PIZ1uf2dWQbXwjWjlHYhZGRa0zLAfSCOUE1Uu8xGHpklCghjCvdxYKpRuBOxo96vFKc1vV4FcSiuDztmTEM1QdfmAkBrpleF1FmthnFTa48m6vs_mYIPM_71BPslUWx6_tjKe3QMF2_8AYQJ-CotEj6OSDgPPj04R0OHLlsbMMyp93dKmTirAalzaxauBgBXSs10sDQurncTe9SPzAi2b5OSEmMTnnmToq8uBrG0fhLKNUl-JtNho_72JndSRCBa-Z1nVmVROu2psgkNAdDJ9i6_fJxIjuqXic4bp7LFe8s6PGUF8fLKE7YxWguSIPPYNvjmhsXftrP2GOAX5KZ1xa5BKtusLnD7tvbe2T_4r1tXvsvCjJsa2AS85D6xF-3ZuwA3TkJyKinU3cYfIGnzQwWEIvslJ7E_KHsMQ9igVNLOv",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 2133,
+      "orientation": "portrait",
+      "original": "photos/g01.orig.jpg",
+      "web": "photos/g01-1600.webp",
+      "thumb": "photos/g01-800.webp",
+      "scores": {
+        "food": 0,
+        "room": 5,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 2,
+        "dark": 1
+      }
+    },
+    {
+      "id": "g02",
+      "source": "google",
+      "ref": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXTbRtM0_RVrVs2Meoqwc4S2dNh2Jwpgzqfp4dtTRJDcg4_9XcWOSXrd2i4ZHwZqhI69HPyVXP3APEMrdQ3FvBG3rRfn2mJuIYvqDJ14HSSI-V4xPlk56n_jPBxFNp1M_Tmnp6dCfMDAgQ2H-124Te_jmD1aUfmCWxsE0Z_NrT_zICCFP2iWpkn3iOmrInH6c9cdIJe7F3cNe3f9pdKcATV_6yjl0Z_62ArMPyQthpwl_4WS5Brg_o6HY-0K7czLlUwWQPxJgKv4xPOSwpW5-6NTHudyUDSh6gpGPTULRYs94YRHpjSEK-TCzHeADJ1LI8eidQX-ASMEmNzpww88POPGRdDkv6N0N25x_h5pTQpAiw4U4vZlj7tzcRftc8bA6z8gW9hYD9AAVOi__UvgrEhoRjCJHD_k5zZvUyCqMXQpgTQkpG8xlgXijVCEwJtD",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 2133,
+      "orientation": "portrait",
+      "original": "photos/g02.orig.jpg",
+      "web": "photos/g02-1600.webp",
+      "thumb": "photos/g02-800.webp",
+      "scores": {
+        "food": 5,
+        "room": 0,
+        "exterior": 0,
+        "people": 2,
+        "textHeavy": 1,
+        "dark": 0
+      }
+    },
+    {
+      "id": "g03",
+      "source": "google",
+      "ref": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXQep3p_aYNczgdCliPPEfDpCBBN1PaFZpB7aDYjK7ExSDKOLfCP3HwWyiVH2XaUKMmffHJlD7j_QuQYa49LqvE4jD5Le-FW2oYUaQMQ5YyeJm6Nlv-crjDTLBY5pNDLrjcxL6LhHRGupOXzB1L6U8JgSqJiKoTkbyNoLvvQ8aeFxAeKLxVNNkPsqMjGFhzurVfICAPdKfBTAmBsEmq-xuhZMHfhZFNdD2KYRcy80W3GCiGlPZW-oypPPIS5QEChQMrl9vXy6ZDo78zjZW2V7HYLpj6U3cGYMoYUF7xy86_YmtZW2-5ZG9SgkGOoXcWQi8HRle3x0hCWndQHXG8i6O1v4EvVkoUf_ovIbu7UKfiBR_SPVEJK7uWrmWYRfCpbwIvDbOgn_4I7p-CFKPVTA_ojwAy-F39dyxUYybLT5RjmK_59THJWiegR2ApdWISJ",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 2133,
+      "orientation": "portrait",
+      "original": "photos/g03.orig.jpg",
+      "web": "photos/g03-1600.webp",
+      "thumb": "photos/g03-800.webp",
+      "scores": {
+        "food": 0,
+        "room": 0,
+        "exterior": 5,
+        "people": 1,
+        "textHeavy": 1,
+        "dark": 0
+      }
+    },
+    {
+      "id": "g04",
+      "source": "google",
+      "ref": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXT4dtcYQOdbS_qbKMhdXXrkCbLPFglcIAdg0v_Ogy2sV9IuOgkAhw_RgOrBm2LYrL8pf0q1H8p6_9WGWcircZIXU2qInpImi2cUbTCJ8swDWlB6mnCNXNipqy01xgmTZtOR9ZQU6m9iVvhCMkxnDSlNKiTD1Pnsr3ipiLY-5f8QmzM8dBbo6rhaoddkXGzHfK5Orr3JeOMibZ5dsDEs44XHU_Qe9uXgqOPOfEioJd1fIecerQSaQNjTiwO2Ef9re-2Fk4sK6LlPRF8fHF7i96EIAt9cRryNKDtBiw28QE1wVoemqsn-BRqrOq9zbUHioMZ6t_Nl6lO7YLGJJXF_6BlWqepd-PFdfGSzqpSbcOwvPi7BM7XktMbVvOGm-8uHcth8Bd8VZEvjuCuHaOSsD9TNIfbl6vink36VU6td2I-Bu3U3J56rKTfag3nVYtVB",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 2133,
+      "orientation": "portrait",
+      "original": "photos/g04.orig.jpg",
+      "web": "photos/g04-1600.webp",
+      "thumb": "photos/g04-800.webp",
+      "scores": {
+        "food": 4,
+        "room": 1,
+        "exterior": 0,
+        "people": 3,
+        "textHeavy": 0,
+        "dark": 2
+      }
+    },
+    {
+      "id": "g05",
+      "source": "google",
+      "ref": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXTqZqK-NRBpx9eJon8vscgq5izVm9RFkLuIS4U35rCUJgCK2n4e7bI-4E4vZURqmVXOqViq65wBzpqxEED3UJ9x7cjVHn-Ine7fiXe5HzGs96j1rCKbK4daJKDOBSu5OPV89quNTSC1gYhRwWPKhULUhhM0VRnc5t_NvPgsXUYeVsiKTs2_bn2d9mniWRInvrgWPsVIroriMYGu8P5lkWbe8Q7rYb0xSYuxHBUlFHdWldUiWWh8u91aFcalJfl-JXK3-YE8yiFZSJRWWRQJYceMMri_kgPnOqLjZtBDHaBDrIOYid5lhFf1WvHuQIEoOq_aeum4OQzs7-EHd1bJW-oDILDsi3PzodPDLyUaXogaYzFEBUz9qkCRFPNTpOJQjjaS4pq3aPOCWDgCDRkNALMtjocz1GGTp6Rcw-gOZmIYpoqD8orF8rOuLPBkyg",
+      "author": null,
+      "caption": "",
+      "width": 720,
+      "height": 953,
+      "orientation": "portrait",
+      "original": "photos/g05.orig.jpg",
+      "web": "photos/g05-1600.webp",
+      "thumb": "photos/g05-800.webp",
+      "scores": {
+        "food": 5,
+        "room": 0,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 4,
+        "dark": 0
+      }
+    },
+    {
+      "id": "g06",
+      "source": "google",
+      "ref": "places/ChIJbd7VBgCfVBMRvgjTEHIkyII/photos/AVoNoXRnthfcKBGaopOvXJ_fTNYM27YsmCoYsu5yzySErdQBPgq8-oe90Fn-z-2U9u1rg0PObcCdqHlh9-1SRuGpqk2bw2yItAlJoRVYlLCcxUz-cAyCOsbUkdfx1UM-slhntPfobuZj9FZygYZQKm-nTn-vovnXKyXCiz0N5-zyVMf8UkMQ36yjF5GHOIQ8IVpSaopMp7jAydMREQFc4cIA8d_pOSwdDv6AQRDyPhEcH9_G3pI5gvFH0lMjm4ONLa2ZihByIYr2KmJuJ2mJFK_kPY-gniz_U_PM5DioTX1jgxE-tvTdLeXoDF97Hk80deqhSvpVhBX1Wfh3GpTsanz5Xo-mNVzKdSscEwuhqX4c2T-Xh5YJjuDGfvNdBo7B60JtcMGZsHeV-4AY0ufLRwqy4ARrYo6L-g08Fe2YNonTHKUbe4VXH7cYdk3VK_Ac7w",
+      "author": null,
+      "caption": "",
+      "width": 1600,
+      "height": 2133,
+      "orientation": "portrait",
+      "original": "photos/g06.orig.jpg",
+      "web": "photos/g06-1600.webp",
+      "thumb": "photos/g06-800.webp",
+      "scores": {
+        "food": 5,
+        "room": 0,
+        "exterior": 0,
+        "people": 0,
+        "textHeavy": 2,
+        "dark": 1
+      }
+    }
+  ],
+  "picks": {
+    "hero": "g03",
+    "gallery": [
+      "g01",
+      "g02",
+      "g06",
+      "g04"
+    ]
+  },
+  "note": "⚠️ No landscape photo exists in this set — all six are portrait, so the landscape hero requirement cannot be met; g03 was promoted as the strongest portrait alternative that clears both the textHeavy (1) and dark (0) thresholds and establishes the restaurant's identity at a glance through the zen-garden forecourt, olive tree, and brand signpost. The gallery opens with the room interior (g01) to convey the warm wood-and-glass aesthetic, then carries two clean food plates — penne with burrata (g02) and a toasted sandwich with fries (g06) — before closing with a table spread (g04) that hints at the relaxed, multi-dish brunch occasion; g05 was dropped for its prominent menu text overlay and g03 is already used as hero.",
+  "curated_at": "2026-09-12T18:34:30.002Z"
+}
