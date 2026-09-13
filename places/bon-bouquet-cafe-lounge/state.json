@@ -20,7 +20,75 @@
   "domain": "",
   "pagesUrl": "",
   "notes": [],
-  "qa": null,
+  "qa": {
+    "at": "2026-09-13T22:08:07.760Z",
+    "passed": true,
+    "vision": true,
+    "hard": [
+      {
+        "id": "build",
+        "ok": true
+      },
+      {
+        "id": "images",
+        "ok": true,
+        "detail": "7 images"
+      },
+      {
+        "id": "phone",
+        "ok": true
+      },
+      {
+        "id": "items",
+        "ok": true,
+        "detail": "10 items"
+      },
+      {
+        "id": "contrast",
+        "ok": true
+      },
+      {
+        "id": "hero-overflow-390",
+        "ok": true
+      },
+      {
+        "id": "copy-dash",
+        "ok": true
+      },
+      {
+        "id": "copy-language",
+        "ok": true
+      }
+    ],
+    "soft": [
+      {
+        "id": "first-viewport",
+        "score": 4,
+        "reason": "Mobile first viewport shows 'Bon Bouquet Café & Lounge' in large bold cream text with the restaurant hero photo visible in the upper-right corner before scrolling."
+      },
+      {
+        "id": "hero-suits",
+        "score": 5,
+        "reason": "Desktop hero shows a lush plant-filled café interior with warm ambient lighting — exactly the mood expected of a modern café & lounge; no logos, screenshots or irrelevant scenes."
+      },
+      {
+        "id": "nothing-cut-off",
+        "score": 4,
+        "reason": "Text and images stay within columns on both breakpoints; on mobile the menu items stack cleanly with prices on their own line, and no visible overflow or clipped elements anywhere."
+      },
+      {
+        "id": "menu-reads",
+        "score": 4,
+        "reason": "Menu groups (Kafe, Mënges, Ëmbëlsira, Pije të fohta) are clear; each item shows name, short description, and price; alignment holds on desktop and stacks gracefully on mobile."
+      },
+      {
+        "id": "theme-fits",
+        "score": 5,
+        "reason": "Deep forest-green background, cream type, and earthy photo tones form a coherent upscale-café palette that mirrors the plant-heavy interior photos and the lounge positioning."
+      }
+    ],
+    "reasons": []
+  },
   "log": [
     {
       "at": "2026-09-12T18:27:55.588Z",
