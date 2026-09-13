@@ -1,0 +1,17 @@
+{
+  "id": "20260913T220703Z-qa-xq81",
+  "type": "qa",
+  "slug": "bon-bouquet-cafe-lounge",
+  "params": {},
+  "status": "done",
+  "createdAt": "2026-09-13T22:07:03.635Z",
+  "startedAt": "2026-09-13T22:07:30.636Z",
+  "endedAt": "2026-09-13T22:08:07.805Z",
+  "error": null,
+  "logPath": "places/bon-bouquet-cafe-lounge/jobs/20260913T220703Z-qa-xq81.log",
+  "result": {
+    "passed": true,
+    "status": "qa_passed",
+    "reasons": []
+  }
+}
