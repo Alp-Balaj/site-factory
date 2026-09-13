@@ -1,0 +1,73 @@
+{
+  "slug": "type-board-none",
+  "vertical": "restaurant",
+  "archetype": "bar-night",
+  "business": {
+    "name": "Bar Kalaja",
+    "tagline": "Pije dhe muzikë deri vonë",
+    "phone": "",
+    "whatsapp": "38345345678",
+    "email": "",
+    "address": "Rr. Nëna Terezë 40, Prizren",
+    "city": "Prizren",
+    "mapsUrl": "",
+    "lat": 42.2127,
+    "lng": 20.7397,
+    "instagram": "https://www.instagram.com/barkalaja",
+    "facebook": "",
+    "rating": null,
+    "reviews_count": 0
+  },
+  "hours": [
+    { "day": "e hënë", "time": "Mbyllur" },
+    { "day": "e martë - e enjte", "time": "17:00 - 01:00" },
+    { "day": "e premte - e shtunë", "time": "17:00 - 03:00" },
+    { "day": "e diel", "time": "17:00 - 00:00" }
+  ],
+  "theme": {
+    "bg": "#231914",
+    "ink": "#EDE0CB",
+    "primary": "#6B2416",
+    "accent": "#D48A30",
+    "muted": "#5A3D28",
+    "display": "Gloock",
+    "displayWeight": 400,
+    "body": "Vollkorn",
+    "radius": "0px",
+    "frame": "thick",
+    "layout": { "hero": "type", "menu": "board", "gallery": "none", "rhythm": "tight", "order": "menu-first" },
+    "note": "Fixture: no photos anywhere, the name carries the hero, a price board, no gallery, no phone, no rating, a thick frame.",
+    "weights": { "Gloock": [400], "Vollkorn": [400, 500, 600, 700] }
+  },
+  "hero": {
+    "headline": "Koktejle, birrë e ftohtë dhe DJ çdo fundjavë nën kala.",
+    "sub": "Tarracë me pamje nga Lumbardhi, brenda muzikë deri në tre. Rezervo tavolinën në WhatsApp.",
+    "image": ""
+  },
+  "about": {
+    "title": "Nën kala, mbi lumë",
+    "text": "Kalaja është bar nate me tarracë. Vjeshtës dhe pranverës ulesh jashtë, dimrit brenda pranë barit.\n\nKoktejlet bëhen me pije nga rafti, jo nga shishja e gatshme. Të premteve dhe të shtunave ka DJ nga ora njëmbëdhjetë."
+  },
+  "items": [
+    { "group": "Koktejle", "name": "Negroni", "desc": "", "price": "5.50 €", "source": "filler" },
+    { "group": "Koktejle", "name": "Aperol Spritz", "desc": "", "price": "5.00 €", "source": "filler" },
+    { "group": "Koktejle", "name": "Mojito", "desc": "Me mente të freskët", "price": "5.00 €", "source": "filler" },
+    { "group": "Koktejle", "name": "Espresso Martini", "desc": "", "price": "6.00 €", "source": "filler" },
+    { "group": "Birrë", "name": "Peja (0.5 l)", "desc": "", "price": "2.50 €", "source": "evidence" },
+    { "group": "Birrë", "name": "Birrë artizanale e ditës", "desc": "Pyet për etiketën", "price": "4.00 €", "source": "filler" },
+    { "group": "Birrë", "name": "Corona", "desc": "", "price": "3.50 €", "source": "filler" },
+    { "group": "Verë", "name": "Verë e kuqe shtëpie (gotë)", "desc": "Nga Rahoveci", "price": "3.00 €", "source": "evidence" },
+    { "group": "Verë", "name": "Verë e bardhë shtëpie (gotë)", "desc": "", "price": "3.00 €", "source": "filler" },
+    { "group": "Pa alkool", "name": "Limonadë shtëpie", "desc": "", "price": "2.50 €", "source": "filler" },
+    { "group": "Pa alkool", "name": "Kafe", "desc": "", "price": "1.50 €", "source": "filler" },
+    { "group": "Pa alkool", "name": "Ujë (0.5 l)", "desc": "", "price": "1.00 €", "source": "filler" }
+  ],
+  "itemGroups": ["Koktejle", "Birrë", "Verë", "Pa alkool"],
+  "gallery": [],
+  "testimonials": [],
+  "seo": {
+    "title": "Bar Kalaja | Bar nate me tarracë në Prizren",
+    "description": "Koktejle, birrë dhe DJ çdo fundjavë nën kalanë e Prizrenit. Tarracë mbi Lumbardh. Hapur nga ora 17:00, rezervo në WhatsApp."
+  },
+  "credit": { "label": "Alp", "url": "https://REPLACE-ME.com" }
+}

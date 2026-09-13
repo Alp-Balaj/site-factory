@@ -4,6 +4,10 @@
    Nothing here carries a look of its own: no ornament, no fixed hue, no fixed corner, no fixed face. */
 :root {
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  /* the spacing scale: rhythm "tight" (default) or "airy" from theme.layout, set on <body> by Base.astro */
+  --space-section: clamp(3rem, 7vw, 5.5rem);
+  --space-block: 2rem;
+  --space-heading: 1rem;
   /* secondary text and rules follow the surface they sit on: currentColor, faded */
   --ink-2: color-mix(in srgb, currentColor 72%, transparent);
   --ink-3: color-mix(in srgb, currentColor 44%, transparent);
@@ -11,6 +15,8 @@
   /* one 24x24 star tile, used as a mask so it takes any token colour (the rating) */
   --star: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.5l2.8 6.3 6.9.7-5.2 4.7 1.5 6.8L12 17.5 6 21l1.5-6.8L2.3 9.5l6.9-.7z'/%3E%3C/svg%3E");
 }
+
+body[data-rhythm="airy"] { --space-section: clamp(4.5rem, 10vw, 8.5rem); --space-block: 3rem; --space-heading: 1.5rem; }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scrollbar-color: var(--primary) var(--bg); }
@@ -29,14 +35,21 @@ a { color: inherit; text-decoration-thickness: 2px; text-underline-offset: .2em;
 h1, h2, h3 { font-family: var(--font-display), system-ui, sans-serif; font-weight: var(--display-weight); line-height: 1.05; letter-spacing: -.01em; text-wrap: balance; }
 /* the name fills the width on a phone: sized from its longest word (--chars, set in Hero) */
 h1 { font-size: clamp(2.5rem, calc((100vw - 2.5rem) / var(--chars, 8) * 1.5), 6rem); line-height: 1; overflow-wrap: anywhere; }
-h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin-bottom: 1rem; }
+h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); margin-bottom: var(--space-heading); }
 h3 { font-size: 1.25rem; }
 p { max-width: 60ch; }
 .lede { color: var(--ink-2); max-width: 44ch; }
 
 .wrap { width: min(100% - 2.5rem, 70rem); margin-inline: auto; }
-section { padding-block: clamp(3rem, 7vw, 5.5rem); }
+section { padding-block: var(--space-section); }
 section + section { padding-top: 0; }
+
+/* the filler mark on a menu item the generator invented (items[].source "filler"): the label comes from the preset */
+.tag { display: inline-block; font-size: .72rem; font-weight: 600; line-height: 1.3; padding: .12em .5em; border: 1px solid color-mix(in srgb, currentColor 40%, transparent); border-radius: var(--radius); color: var(--ink-2); white-space: nowrap; }
+
+/* photo attribution (Google photos only): the author and Google's own line, small, under the patch, in the surface's faded text colour */
+.credit { display: flex; flex-wrap: wrap; gap: .1rem .9rem; margin-top: .45rem; font-size: .8rem; line-height: 1.4; color: var(--ink-2); }
+.credit a { text-decoration-thickness: 1px; }
 
 /* a patch: a card or a photo, in the theme's corner and edge language; the fill comes from --patch (default muted) */
 .patch { background: var(--patch, var(--muted)); border: var(--frame-w) solid var(--frame-c); border-radius: var(--radius); overflow: hidden; }

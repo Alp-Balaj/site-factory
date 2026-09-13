@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { site, theme, luminance, contrast, fontWeights } from '../lib/config';
+import { site, theme, layout, heroPhoto, luminance, contrast, fontWeights } from '../lib/config';
 const { business, seo } = site;
 // Google Fonts css2: one family per entry with exactly the static weights it carries (see fontWeights).
 // The display weight the theme asks for is added to the display face when the family has it.
@@ -32,7 +32,7 @@ const ld = {
   <meta name="description" content={seo.description} />
   <meta property="og:title" content={seo.title} />
   <meta property="og:description" content={seo.description} />
-  {site.hero.image && <meta property="og:image" content={site.hero.image} />}
+  {heroPhoto && <meta property="og:image" content={heroPhoto.src} />}
   <meta name="theme-color" content={theme.primary} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +40,7 @@ const ld = {
   <style set:html={`:root{--bg:${theme.bg};--ink:${theme.ink};--primary:${theme.primary};--accent:${theme.accent};--muted:${theme.muted};--font-display:"${theme.display}";--font-body:"${theme.body}";--display-weight:${theme.displayWeight ?? 700};--radius:${theme.radius ?? '0px'};--frame-w:${frame};--frame-c:${frameColor};${onColors};color-scheme:${scheme}}`}></style>
   <script type="application/ld+json" set:html={JSON.stringify(ld)}></script>
 </head>
-<body>
+<body data-rhythm={layout.rhythm}>
   <slot />
 </body>
 </html>

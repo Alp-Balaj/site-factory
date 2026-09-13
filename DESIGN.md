@@ -5,7 +5,7 @@ colors:
   bg: "#FAF9F6"
   ink: "#1F1E1B"
   primary: "#2F3A34"
-  accent: "#C8552D"
+  accent: "#B84E29"
   muted: "#EEEBE3"
   on-primary: "#FAF9F6"
   on-accent: "#FAF9F6"
@@ -96,6 +96,7 @@ The hex values in the frontmatter are the restaurant vertical's **fallback** (`t
 
 **Key Characteristics:**
 - Theme tokens per client: `bg`, `ink`, `primary`, `accent`, `muted`, `display`, `body`, `displayWeight`, `radius`, `frame`, plus `weights` (the Google Fonts weights each family carries) and a `note` explaining the choice.
+- Layout variants per client in `theme.layout`: `hero` photo | split | type, `menu` list | cards | board, `gallery` grid | strip | single | none, `rhythm` tight | airy, `order` menu-first | about-first. Every combination renders; a missing or unknown value falls back to the first of each list. All CSS and Astro conditionals, no script.
 - Computed at build: `--on-primary`, `--on-accent`, `--on-muted` by WCAG contrast (ink or bg, whichever reads better), `color-scheme` from bg luminance, `--frame-w`/`--frame-c` from `frame`.
 - One stylesheet, zero hardcoded hex or family in components; secondary text and rules are `currentColor` faded via `color-mix`, so they follow whatever surface they sit on.
 - Structure: primary field with the name and a photo patch (hero), menu patches with a fixed price column (the largest group on primary), about with the rating, gallery in whole cells, hours patch, contact on the primary field with the map, locked call/WhatsApp bar below 800px.
@@ -141,11 +142,24 @@ Five theme roles per client and three computed on-colours. What each role does i
 
 ## Layout
 
-One column, one reading axis, one page. `.wrap` is `min(100% - 2.5rem, 70rem)`, centred. Sections carry `padding-block: clamp(3rem, 7vw, 5.5rem)`; consecutive sections drop their top padding.
+One column, one reading axis, one page. `.wrap` is `min(100% - 2.5rem, 70rem)`, centred. Sections carry `padding-block: var(--space-section)`; consecutive sections drop their top padding. The spacing scale is the `rhythm` variant, set as `data-rhythm` on `<body>`: **tight** is `--space-section: clamp(3rem, 7vw, 5.5rem)`, `--space-block: 2rem` (heading to content), `--space-heading: 1rem`; **airy** is `clamp(4.5rem, 10vw, 8.5rem)`, `3rem`, `1.5rem`.
 
-The single breakpoint is 800px. Below: desktop nav hidden, hero CTAs hidden (the sticky bar carries them), body padded for the bar, menu and gallery stack. At 800px and up: the hero is a `1.1fr 1fr` grid (words and hours fringe left, square photo patch right), menu patches go two columns dense with the largest group spanning both, the gallery repacks into whole cells, contact and map sit side by side.
+The single breakpoint is 800px. Below: desktop nav hidden, hero CTAs hidden (the sticky bar carries them), body padded for the bar, menu and gallery stack. At 800px and up: the hero splits into words and photo, menu patches go two columns dense with the largest group spanning both, the gallery repacks into whole cells, contact and map sit side by side.
 
-Order is fixed: Hero, Items, About, Gallery, Hours, Contact, StickyBar. Gallery and Hours render nothing when their data is empty.
+Order: Hero, then Items and About in the `order` variant's sequence (**menu-first**: Items, About, Testimonials; **about-first**: About, Testimonials, Items), then Gallery, Hours, Contact, StickyBar. Testimonials always follow About. Gallery, Testimonials and Hours render nothing when their data is empty; Gallery also renders nothing when the variant is `none`.
+
+### Layout variants
+
+- **Hero `photo`** (default): the words on the primary field, the photo as a square patch beside them on desktop and a 4:3 patch below them on a phone. No photo: the initial patch.
+- **Hero `split`**: the photo bleeds to the viewport edge. On a phone it leads, edge to edge, capped at 48vh, the name under it. On desktop it fills the right half of the field, full height (min 32rem), the words and the hours fringe in the left half with the wrap's gutter. Without a photo it renders as `type`.
+- **Hero `type`**: no photo. The name is sized to fill the wrap (`--chars` rule, cap 9.5rem), the headline a size up (max 28ch), the hours fringe in one row of three on desktop.
+- **Menu `list`** (default): group patches with rows, the largest group on primary.
+- **Menu `cards`**: every item its own muted patch, two across on a phone, `auto-fill` at 13rem on desktop; name, description, price at the bottom in 700. No group is highlighted.
+- **Menu `board`**: one patch on primary holding every group; each line is name, a dotted leader in `currentColor` at 45%, price; descriptions small below the name; two CSS columns on desktop with groups unbroken.
+- **Gallery `grid`** (default): whole cells, first photo large.
+- **Gallery `strip`**: one flex row, `overflow-x: auto`, `scroll-snap-type: x mandatory`, gutters equal to the wrap's, each photo `min(78%, 30rem)` wide. The row is a focusable region; the page never scrolls sideways.
+- **Gallery `single`**: the first photo alone, 4:3 on a phone, 21:9 capped at 36rem on desktop.
+- **Gallery `none`**: no section.
 
 ## Elevation & Depth
 
@@ -173,7 +187,19 @@ Grid `1fr auto`, baseline aligned, `padding-block: .8rem .75rem`, a 1px hairline
 `dt` day (capitalised) and `dd` time (600, nowrap) in a space-between flex row, divided by the same hairline. The fringe shows up to three compacted rows, or the first plus "Shih orarin e plotë".
 
 ### No-photo Hero
-The photo patch shows the name's first character in the display face, in `--accent` on `--muted`, sized by container query. Never a grey box.
+The photo patch shows the name's first character in the display face, in `--accent` on `--muted`, sized by container query. Never a grey box. (The `type` variant drops the patch altogether and lets the name carry the field.)
+
+### Photo Credit
+`figcaption.credit` as the last child of a photo `figure`, outside the patch: `.8rem`, `--ink-2`, flex with a `.9rem` gap, "Foto nga <author>" (linked to the contributor page when there is a URI) and "Powered by Google". Rendered for Google photos only; Instagram and owner photos and old string photos carry nothing. Same element in the hero, the gallery grid, the strip and the single photo.
+
+### Filler Tag
+`.tag` next to a menu item's name when `items[].source` is `filler`: `.72rem` at 600, `1px` border in `currentColor` at 40%, `--radius` corners, text in `--ink-2`, label from `labels.sample` ("shembull"). Follows the surface it sits on, so it reads the same on a muted card, the primary board and the primary list patch. Evidence items carry nothing.
+
+### Testimonials
+`ul.quotes` under `labels.testimonials`: `auto-fit` columns at 18rem, each quote a hairline-topped column (`currentColor` at 30%), the text at `1.15rem` / 1.45 with `max-width: 36ch`, the first name below at 600 in `--ink-2`. No cards, no quote glyphs, no stars.
+
+### Menu Cards and Board
+Cards: `.patch.card` on `--muted`, `padding: 1rem 1rem 1.1rem` (a touch more on desktop), grid gap `.3rem`, price last at 700. Board: `.patch.board` on `--primary` with `--on-primary` text, `padding: 1.5rem clamp(1.25rem, 4vw, 2.5rem) 1.75rem`, lines of `fit-content(100%) minmax(1.5rem, 1fr) auto` with a `2px dotted` leader sitting `.45em` above the baseline row.
 
 ### Sticky Bar
 Phones only. Fixed bottom, `--bg` ground with a 1px top line, two equal columns: "Thirr" plain and WhatsApp in `--accent`, `min-height: 3.75rem`, no radius, a 1px line between them.
@@ -190,6 +216,8 @@ Phones only. Fixed bottom, `--bg` ground with a 1px top line, two equal columns:
 - **Do** keep the 800px breakpoint as the only layout switch, and the sticky bar reachable at every scroll position below it.
 - **Do** gate motion behind `prefers-reduced-motion: no-preference` with the resting state already drawn.
 - **Do** read all copy from `config.json` and `verticals/<vertical>.json` labels.
+- **Do** read section shapes from `theme.layout` through `layout` in `lib/config.ts` and photos through `photoOf()`; a variant is a conditional and a stylesheet block, never a second component tree or a script.
+- **Do** keep every combination of the five variants buildable; a variant that only works with a photo degrades to the one that works without.
 
 ### Don't:
 - **Don't** add ornament, texture, pattern, or any device that makes the skeleton look like one particular place; the look is the client's theme, not the template's.

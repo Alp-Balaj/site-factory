@@ -1,0 +1,88 @@
+{
+  "slug": "split-cards-strip",
+  "vertical": "restaurant",
+  "archetype": "modern-cafe",
+  "business": {
+    "name": "Kafe Dardania",
+    "tagline": "Kafe e pjekur në Prishtinë",
+    "phone": "+383 49 234 567",
+    "whatsapp": "38349234567",
+    "email": "",
+    "address": "Bulevardi Bill Clinton 21, Prishtinë",
+    "city": "Prishtinë",
+    "mapsUrl": "https://maps.google.com/?q=Kafe+Dardania+Prishtine",
+    "lat": 42.6519,
+    "lng": 21.1553,
+    "instagram": "https://www.instagram.com/kafedardania",
+    "facebook": "",
+    "rating": 4.6,
+    "reviews_count": 142
+  },
+  "hours": [
+    { "day": "e hënë - e premte", "time": "07:00 - 22:00" },
+    { "day": "e shtunë", "time": "08:00 - 23:00" },
+    { "day": "e diel", "time": "09:00 - 20:00" }
+  ],
+  "theme": {
+    "bg": "#18201B",
+    "ink": "#F0EBE0",
+    "primary": "#2A5234",
+    "accent": "#C8A22E",
+    "muted": "#2D4535",
+    "display": "Prata",
+    "displayWeight": 400,
+    "body": "Onest",
+    "radius": "8px",
+    "frame": "line",
+    "layout": { "hero": "split", "menu": "cards", "gallery": "strip", "rhythm": "airy", "order": "about-first" },
+    "note": "Fixture: the photo leads, cards for the menu, a scrolling strip, airy spacing, the story before the menu, dark ground.",
+    "weights": { "Prata": [400], "Onest": [400, 500, 600, 700] }
+  },
+  "hero": {
+    "headline": "Espresso nga pjekësi ynë, ëmbëlsira nga furra jonë.",
+    "sub": "Kokrrat piqen çdo javë në Prishtinë. Vend i qetë për punë në mëngjes dhe për biseda të gjata pasdite.",
+    "image": {
+      "src": "https://picsum.photos/seed/dardania-hero/1600/1200",
+      "source": "google",
+      "author": { "name": "Genc M.", "uri": "https://maps.google.com/maps/contrib/100000000000000000003" }
+    }
+  },
+  "about": {
+    "title": "Një pjekës, dy tavolina të gjata",
+    "text": "Dardania filloi si një pjekës i vogël kafeje me shitje me shumicë. Sot pjekim po aq, por e pimë edhe vetë.\n\nMenyja është e shkurtër me qëllim: kafe, disa ëmbëlsira nga furra jonë dhe një supë në drekë."
+  },
+  "items": [
+    { "group": "Kafe", "name": "Espresso", "desc": "Kokrra të pjekura këtu", "price": "1.20 €", "source": "evidence" },
+    { "group": "Kafe", "name": "Flat white", "desc": "", "price": "2.00 €", "source": "evidence" },
+    { "group": "Kafe", "name": "Filter kafe", "desc": "Pjekje e javës", "price": "2.20 €", "source": "evidence" },
+    { "group": "Kafe", "name": "Kafe e ftohtë", "desc": "Cold brew, 12 orë", "price": "2.50 €", "source": "filler" },
+    { "group": "Ëmbëlsira", "name": "Kroasan me gjalpë", "desc": "", "price": "1.60 €", "source": "evidence" },
+    { "group": "Ëmbëlsira", "name": "Tortë me karotë", "desc": "Me krem djathi", "price": "2.80 €", "source": "filler" },
+    { "group": "Ëmbëlsira", "name": "Biskota me çokollatë", "desc": "", "price": "1.20 €", "source": "filler" },
+    { "group": "Drekë", "name": "Supë e ditës", "desc": "Me bukë të pjekur", "price": "3.50 €", "source": "filler" },
+    { "group": "Drekë", "name": "Sanduiç me pulë", "desc": "Bukë e shtëpisë, sallatë", "price": "4.50 €", "source": "filler" },
+    { "group": "Drekë", "name": "Avokado toast", "desc": "", "price": "4.00 €", "source": "filler" }
+  ],
+  "itemGroups": ["Kafe", "Ëmbëlsira", "Drekë"],
+  "gallery": [
+    {
+      "src": "https://picsum.photos/seed/dardania-g1/1600/1200",
+      "source": "google",
+      "author": { "name": "Vjosa H.", "uri": "https://maps.google.com/maps/contrib/100000000000000000004" }
+    },
+    { "src": "https://picsum.photos/seed/dardania-g2/1600/1200", "source": "instagram" },
+    { "src": "https://picsum.photos/seed/dardania-g3/1600/1200", "source": "instagram" },
+    { "src": "https://picsum.photos/seed/dardania-g4/1600/1200", "source": "owner" },
+    { "src": "https://picsum.photos/seed/dardania-g5/1600/1200", "source": "google", "author": { "name": "Erion D." } }
+  ],
+  "testimonials": [
+    { "name": "Vjosa", "text": "Kafeja më e mirë në lagje. Filter kafeja ndryshon çdo javë dhe stafi të tregon nga vjen." },
+    { "name": "Erion", "text": "Vend i qetë për punë, priza në çdo tavolinë, kroasanët dalin nga furra rreth orës nëntë." },
+    { "name": "Dafina", "text": "Torta me karotë është arsyeja pse kthehem. Ambienti i ngrohtë edhe në dimër." }
+  ],
+  "seo": {
+    "title": "Kafe Dardania | Kafe e pjekur në Prishtinë",
+    "description": "Espresso dhe filter kafe nga pjekësi ynë, ëmbëlsira nga furra, drekë e lehtë. Bulevardi Bill Clinton, Prishtinë. Hapur çdo ditë."
+  },
+  "credit": { "label": "Alp", "url": "https://REPLACE-ME.com" }
+}

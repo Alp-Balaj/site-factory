@@ -1,7 +1,8 @@
 {
   "id": "restaurant",
   "labels": {
-    "items": "Menyja", "itemsIntro": "Çka gatuajmë", "about": "Për ne", "hours": "Orari", "contact": "Na gjeni", "cta": "Rezervo në WhatsApp", "gallery": "Nga kuzhina", "call": "Thirr", "reviews": "nga %n vlerësime në Google", "readReviews": "Lexoji vlerësimet", "map": "Harta", "allHours": "Shih orarin e plotë", "otherGroup": "Tjera"
+    "items": "Menyja", "itemsIntro": "Çka gatuajmë", "about": "Për ne", "hours": "Orari", "contact": "Na gjeni", "cta": "Rezervo në WhatsApp", "gallery": "Nga kuzhina", "call": "Thirr", "reviews": "nga %n vlerësime në Google", "readReviews": "Lexoji vlerësimet", "map": "Harta", "allHours": "Shih orarin e plotë", "otherGroup": "Tjera",
+    "sample": "shembull", "testimonials": "Çka thonë", "photoBy": "Foto nga"
   },
   "itemGroups": [
     "Të ftohta",
@@ -13,7 +14,7 @@
     "bg": "#FAF9F6",
     "ink": "#1F1E1B",
     "primary": "#2F3A34",
-    "accent": "#C8552D",
+    "accent": "#B84E29",
     "muted": "#EEEBE3",
     "display": "Archivo",
     "displayWeight": 700,

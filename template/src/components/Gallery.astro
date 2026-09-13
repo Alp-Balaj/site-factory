@@ -1,26 +1,61 @@
 ---
-import { site, t } from '../lib/config';
-const photos = site.gallery ?? [];
+import { t, layout, galleryPhotos } from '../lib/config';
+import Credit from './Credit.astro';
+// Four shapes. grid: whole cells, the first photo large. strip: one row that scrolls sideways and snaps, CSS only.
+// single: the first photo alone, wide. none: no gallery at all, whatever the config carries.
+const mode = layout.gallery;
+const photos = mode === 'single' ? galleryPhotos.slice(0, 1) : galleryPhotos;
+const show = mode !== 'none' && photos.length > 0;
 ---
-{photos.length ? (
-<section id="gallery" class="wrap">
-  <h2>{t.gallery}</h2>
-  <div class={`cells n${Math.min(photos.length, 4)}`}>
-    {photos.map(src => <figure class="patch"><img src={src} alt="" loading="lazy" decoding="async" width="800" height="600" /></figure>)}
-  </div>
+{show ? (
+<section id="gallery" class={`gallery ${mode}`}>
+  <div class="wrap"><h2>{t.gallery}</h2></div>
+  {mode === 'strip' ? (
+    <div class="strip" role="region" aria-label={t.gallery} tabindex="0">
+      {photos.map(p => (
+        <figure>
+          <div class="patch"><img src={p.src} alt="" loading="lazy" decoding="async" width="800" height="600" /></div>
+          <Credit photo={p} />
+        </figure>
+      ))}
+    </div>
+  ) : (
+    <div class={`wrap cells n${Math.min(photos.length, 4)}`}>
+      {photos.map(p => (
+        <figure>
+          <div class="patch"><img src={p.src} alt="" loading="lazy" decoding="async" width="800" height="600" /></div>
+          <Credit photo={p} />
+        </figure>
+      ))}
+    </div>
+  )}
 </section>) : null}
 <style>
-  /* whole cells at every width: every photo is a 4:3 patch; the first is the large one and fills whatever rows the others stack into */
-  .cells { display: grid; gap: 1rem; margin-top: 1.5rem; grid-template-columns: repeat(2, 1fr); }
+  figure { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-width: 0; }
+  figure .patch { aspect-ratio: 4 / 3; }
+
+  /* grid: whole cells at every width; every photo is a 4:3 patch; the first is the large one and fills whatever rows the others stack into */
+  .cells { display: grid; gap: 1rem; margin-top: var(--space-block); grid-template-columns: repeat(2, 1fr); align-items: start; }
   .n1, .n2 { grid-template-columns: 1fr; }
-  figure { aspect-ratio: 4 / 3; }
   .n3 figure:first-child, .n4 figure:first-child { grid-column: span 2; }
   .n4 figure:last-child { grid-column: span 2; }
+
+  /* strip: one row, gutters matching the wrap, each photo most of a phone width; the row scrolls and snaps, the page never does */
+  .strip { --gutter: max(1.25rem, calc((100% - 70rem) / 2)); display: flex; gap: 1rem; margin-top: var(--space-block); padding-inline: var(--gutter); padding-bottom: .75rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); scrollbar-width: thin; }
+  .strip figure { flex: 0 0 min(78%, 30rem); scroll-snap-align: start; }
+  .strip:focus-visible { outline-offset: -3px; }
+
+  /* single: the one wide photo */
+  .single .cells { grid-template-columns: 1fr; }
+  .single figure .patch { aspect-ratio: 4 / 3; }
+
   @media (min-width: 800px) {
     .n2 { grid-template-columns: repeat(2, 1fr); }
     .n3 { grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); }
     .n4 { grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, auto); }
-    .n3 figure:first-child, .n4 figure:first-child { grid-column: span 2; grid-row: 1 / -1; aspect-ratio: auto; height: 100%; }
+    .n3 figure:first-child, .n4 figure:first-child { grid-column: span 2; grid-row: 1 / -1; align-self: stretch; }
+    .n3 figure:first-child .patch, .n4 figure:first-child .patch { aspect-ratio: auto; height: 100%; min-height: 0; }
     .n4 figure:last-child { grid-column: auto; }
+    .single figure .patch { aspect-ratio: 21 / 9; max-height: 36rem; }
   }
 </style>
