@@ -27,6 +27,18 @@
       "from": null,
       "to": "qa_passed",
       "reason": "migrated from clients/"
+    },
+    {
+      "at": "2026-09-12T18:35:44.457Z",
+      "from": "qa_passed",
+      "to": "generating",
+      "reason": "generate"
+    },
+    {
+      "at": "2026-09-12T18:49:02.876Z",
+      "from": "generating",
+      "to": "qa_passed",
+      "reason": "restored by hand after the S3 smoke run (qa job not merged yet)"
     }
   ]
 }

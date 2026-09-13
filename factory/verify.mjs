@@ -23,6 +23,7 @@ export function loadConfig(slug) {
 }
 
 const filled = (v) => (typeof v === 'string' ? v.trim() !== '' : typeof v === 'number');
+const hasPhoto = (v) => filled(v) || (v && typeof v === 'object' && filled(v.src)); // photos are strings (old) or { src, source, author }
 
 // Returns { errors, warnings } as plain strings; never throws.
 export function checkConfig(config) {
@@ -34,7 +35,7 @@ export function checkConfig(config) {
   const seo = c.seo ?? {};
 
   if (!filled(b.name)) errors.push('business.name is missing or empty');
-  if (!filled(b.phone) && !filled(b.whatsapp)) errors.push('business.phone or business.whatsapp must be set (both are empty)');
+  if (!filled(b.phone) && !filled(b.whatsapp)) warnings.push('business.phone and business.whatsapp are both empty: the call bar has nothing to dial (QA fails it; set the phone in the Portal and regenerate)');
   if (!filled(hero.headline)) errors.push('hero.headline is missing or empty');
   if (!filled(hero.sub)) errors.push('hero.sub is missing or empty');
   if (!Array.isArray(c.items)) errors.push('items is missing or not an array');
@@ -42,8 +43,8 @@ export function checkConfig(config) {
   if (!filled(seo.title)) errors.push('seo.title is missing or empty');
   if (!filled(seo.description)) errors.push('seo.description is missing or empty');
 
-  const noGallery = !Array.isArray(c.gallery) || c.gallery.filter(filled).length === 0;
-  if (!filled(hero.image) && noGallery) warnings.push('hero.image and gallery are both empty: the site will have no photos');
+  const noGallery = !Array.isArray(c.gallery) || c.gallery.filter(hasPhoto).length === 0;
+  if (!hasPhoto(hero.image) && noGallery) warnings.push('hero.image and gallery are both empty: the site will have no photos');
 
   // The template computes text colours from the theme; a theme fixTheme would repair is one it cannot make readable.
   if (!c.theme || typeof c.theme !== 'object') errors.push('theme is missing (run: npm run theme -- <slug>)');

@@ -1,101 +1,76 @@
-// Usage: npm run demo:batch -- <leads.json> [--limit N] [--dry-run] [--no-deploy]
-// For every lead with status "new": demo (Claude copy -> places/<slug>/config.json), build, deploy.
-// Writes status/slug/demo_url/error back into the leads file after EACH lead, so a crash loses nothing.
-// Statuses written: demo_deployed | demo_built (--no-deploy) | failed.
-import fs from 'node:fs';
+// Usage: npm run demo:batch -- [--limit N] [--dry-run]
+// The generate-all job: one generate job for every Place that is `found` and has no real website
+// (state.flags.hasRealWebsite false), oldest folder first, up to --limit. No deploy: demos are shown, not published.
+// As a job (node factory/jobs/run.mjs generate-all --limit 5) it only queues; the CLI below also waits for the queue
+// to drain and exits 1 when any generate failed. --dry-run lists what would be queued and writes nothing.
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { generateDemo, slugify } from './demo.mjs';
-import { build } from './build.mjs';
-import { deploy, pagesUrl } from './deploy.mjs';
-import { buildDir, configPath } from './lib/paths.mjs';
+import { current, events, queued, runJob, whenDone } from './lib/jobs.mjs';
+import { listPlaces } from './lib/paths.mjs';
+import { readState } from './lib/state.mjs';
+
+// Slugs generate-all would pick: found, no real website, not a fixture.
+export function candidates({ limit = Infinity } = {}) {
+  const out = [];
+  for (const slug of listPlaces()) {
+    const s = readState(slug);
+    if (!s || s.status !== 'found' || s.flags?.hasRealWebsite || s.flags?.fixture) continue;
+    out.push(slug);
+  }
+  return out.slice(0, limit);
+}
+
+export async function run(ctx) {
+  const limit = Number.isInteger(ctx.params.limit) && ctx.params.limit > 0 ? ctx.params.limit : Infinity;
+  const dryRun = ctx.params.dryRun === true || ctx.params['dry-run'] === true;
+  const todo = candidates({ limit });
+  const all = listPlaces().length;
+  ctx.log(`${all} Place(s), ${todo.length} to generate (found, no real website${limit !== Infinity ? `, limit ${limit}` : ''})${dryRun ? ' (dry run, nothing queued)' : ''}`);
+  const jobs = [];
+  for (const slug of todo) {
+    if (dryRun) { ctx.log(`[dry-run] ${slug}: would queue generate (then build and qa)`); continue; }
+    const job = ctx.enqueue('generate', { slug, params: {} });
+    ctx.log(`queued generate ${job.id} for ${slug}`);
+    jobs.push(job.id);
+  }
+  return { candidates: todo, jobs, dryRun };
+}
+
+// Resolves once nothing is running or queued (the generate jobs and their chained build/qa).
+function whenIdle() {
+  return new Promise(resolve => {
+    const check = () => { if (!current() && !queued().length) { events.off('change', check); resolve(); } };
+    events.on('change', check);
+    setImmediate(check);
+  });
+}
 
 function parseArgs(argv) {
-  const [leadsFile, ...rest] = argv;
-  const flags = { dryRun: rest.includes('--dry-run'), noDeploy: rest.includes('--no-deploy'), limit: Infinity };
-  if (rest.includes('--limit')) {
-    const n = Number(rest[rest.indexOf('--limit') + 1]);
-    if (!Number.isInteger(n) || n < 1) throw new Error('--limit needs a positive integer');
-    flags.limit = n;
+  const params = {};
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a === '--dry-run') params.dryRun = true;
+    else if (a === '--limit') {
+      const n = Number(argv[++i]);
+      if (!Number.isInteger(n) || n < 1) throw new Error('--limit needs a positive integer');
+      params.limit = n;
+    } else throw new Error(`unknown option: ${a} (usage: demo:batch [--limit N] [--dry-run])`);
   }
-  const unknown = rest.filter((a, i) => a.startsWith('--') && !['--dry-run', '--no-deploy', '--limit'].includes(a) && !(rest[i - 1] === '--limit'));
-  if (unknown.length) throw new Error(`unknown option(s): ${unknown.join(' ')}`);
-  return { leadsFile, ...flags };
-}
-
-function loadLeads(leadsFile) {
-  if (!leadsFile) throw new Error('usage: demo:batch <leads.json> [--limit N] [--dry-run] [--no-deploy]');
-  if (!fs.existsSync(leadsFile)) throw new Error(`${leadsFile} not found`);
-  let data;
-  try { data = JSON.parse(fs.readFileSync(leadsFile, 'utf8')); } catch (e) { throw new Error(`${leadsFile} is not valid JSON: ${e.message}`); }
-  if (!Array.isArray(data)) {
-    const shape = data && typeof data === 'object' ? `an object with keys: ${Object.keys(data).slice(0, 8).join(', ')}` : `a ${typeof data}`;
-    throw new Error(`${leadsFile} is not a leads file: expected a JSON array of lead objects (as written by leads:api / leads:scrape), got ${shape}`);
-  }
-  const bad = data.findIndex(l => !l || typeof l !== 'object' || Array.isArray(l));
-  if (bad !== -1) throw new Error(`${leadsFile} is not a leads file: entry ${bad} is not an object`);
-  return data;
-}
-
-const saveLeads = (leadsFile, leads) => fs.writeFileSync(leadsFile, JSON.stringify(leads, null, 2));
-const label = (lead, i) => lead.name || lead.place_id || `lead #${i}`;
-
-export async function runBatch({ leadsFile, limit = Infinity, dryRun = false, noDeploy = false }) {
-  const leads = loadLeads(leadsFile);
-  const todo = leads.map((lead, i) => ({ lead, i })).filter(({ lead }) => lead.status === 'new').slice(0, limit);
-  const skipped = leads.length - leads.filter(l => l.status === 'new').length;
-  const totals = { demo_deployed: 0, demo_built: 0, failed: 0 };
-
-  console.log(`${leadsFile}: ${leads.length} lead(s), ${leads.length - skipped} new, processing ${todo.length}${dryRun ? ' (dry run, nothing will be written)' : ''}`);
-  if (dryRun) {
-    for (const { lead, i } of todo) {
-      const slug = slugify(lead.name);
-      const steps = [`generate ${configPath(slug || '?')} via Claude`, 'build'];
-      steps.push(noDeploy ? `mark demo_built` : `deploy -> ${pagesUrl(slug)}`);
-      console.log(`[dry-run] ${label(lead, i)} -> ${slug ? steps.join(', then ') : 'FAIL: lead has no name to derive a slug from'}`);
-    }
-    return { totals, processed: todo.length, skipped, dryRun: true };
-  }
-
-  for (const [n, { lead, i }] of todo.entries()) {
-    const tag = `[${n + 1}/${todo.length}] ${label(lead, i)}`;
-    let stage = 'demo';
-    try {
-      const { slug } = await generateDemo(lead);
-      lead.slug = slug;
-      stage = 'build';
-      await build(slug);
-      if (noDeploy) {
-        lead.status = 'demo_built';
-        delete lead.demo_url;
-      } else {
-        stage = 'deploy';
-        lead.demo_url = await deploy(slug);
-        lead.status = 'demo_deployed';
-      }
-      delete lead.error;
-      totals[lead.status]++;
-      console.log(`${tag} -> ${lead.status}${lead.demo_url ? ` ${lead.demo_url}` : ` (${buildDir(slug)})`}`);
-    } catch (e) {
-      lead.status = 'failed';
-      lead.error = `${stage}: ${e.message}`;
-      totals.failed++;
-      console.error(`${tag} -> failed at ${stage}: ${e.message}`);
-    }
-    saveLeads(leadsFile, leads); // after every lead, on purpose
-  }
-
-  return { totals, processed: todo.length, skipped };
+  return params;
 }
 
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMain) {
-  let result;
-  try {
-    result = await runBatch(parseArgs(process.argv.slice(2)));
-  } catch (e) { console.error(e.message); process.exit(1); }
-  const { totals: t, processed, skipped } = result;
-  if (result.dryRun) console.log(`dry run: would process ${processed} lead(s), ${skipped} skipped (status != "new"), nothing written`);
-  else console.log(`done: ${processed} processed, ${t.demo_deployed} deployed, ${t.demo_built} built, ${t.failed} failed, ${skipped} skipped (status != "new")`);
-  process.exit(result.dryRun || t.failed === 0 ? 0 : 1);
+  let params;
+  try { params = parseArgs(process.argv.slice(2)); } catch (e) { console.error(e.message); process.exit(1); }
+  events.on('log', ({ line }) => console.log(line));
+  let job;
+  try { job = await runJob('generate-all', { params }); } catch (e) { console.error(`-> failed: ${e.message}`); process.exit(1); }
+  const ids = job.result?.jobs ?? [];
+  const results = await Promise.all(ids.map(whenDone));
+  await whenIdle();
+  const failed = results.filter(j => j.status !== 'done');
+  if (job.result?.dryRun) console.log(`dry run: would generate ${job.result.candidates.length} Place(s), nothing written`);
+  else console.log(`done: ${results.length} generated, ${failed.length} failed${failed.length ? ` (${failed.map(j => `${j.slug}: ${j.error}`).join('; ')})` : ''}`);
+  process.exit(failed.length ? 1 : 0);
 }

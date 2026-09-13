@@ -1,0 +1,33 @@
+{
+  "id": "20260912T184001Z-generate-ir5k",
+  "type": "generate",
+  "slug": "la-tarte",
+  "params": {
+    "only": "copy",
+    "feedback": "Më pak fjalë për kafenë, më shumë për tortat me porosi.",
+    "chain": false
+  },
+  "status": "done",
+  "createdAt": "2026-09-12T18:40:01.013Z",
+  "startedAt": "2026-09-12T18:40:01.014Z",
+  "endedAt": "2026-09-12T18:43:13.118Z",
+  "error": null,
+  "logPath": "places/la-tarte/jobs/20260912T184001Z-generate-ir5k.log",
+  "result": {
+    "archetype": {
+      "id": "patisserie-bakery",
+      "how": "config"
+    },
+    "theme": {
+      "changes": [],
+      "photosUsed": 0,
+      "fallback": false
+    },
+    "photos": {
+      "from": "google",
+      "hero": true,
+      "gallery": 5
+    },
+    "only": "copy"
+  }
+}
